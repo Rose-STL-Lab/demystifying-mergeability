@@ -17,6 +17,10 @@
 
 set -e  # Exit on error
 
+# Checkpoint directory to check for existing models
+# Adjust this path based on your regularization settings
+CHECKPOINT_BASE="/home/ubuntu/thesis/MM/Mergeability-Bench/checkpoints/ViT-B-16"
+
 # List of N20 datasets
 datasets1=(
     "Cars"
@@ -67,11 +71,23 @@ CURRENT=0
 # Track successes and failures
 SUCCESS_COUNT=0
 FAILURE_COUNT=0
+SKIPPED_COUNT=0
 FAILED_DATASETS=()
+SKIPPED_DATASETS=()
 
 # Finetune each dataset
 for dataset in "${datasets[@]}"; do
     CURRENT=$((CURRENT + 1))
+
+    # Check if checkpoint already exists (search in all subdirs for {dataset}*/model.pt)
+    EXISTING_CKPT=$(find "$CHECKPOINT_BASE" -type f -path "*/${dataset}*/model.pt" 2>/dev/null | head -1)
+    if [ -n "$EXISTING_CKPT" ]; then
+        echo "" | tee -a "$LOG_FILE"
+        echo "[$CURRENT/$TOTAL] SKIPPING: $dataset (checkpoint exists: $EXISTING_CKPT)" | tee -a "$LOG_FILE"
+        SKIPPED_COUNT=$((SKIPPED_COUNT + 1))
+        SKIPPED_DATASETS+=("$dataset")
+        continue
+    fi
 
     echo "" | tee -a "$LOG_FILE"
     echo "========================================" | tee -a "$LOG_FILE"
@@ -98,7 +114,7 @@ for dataset in "${datasets[@]}"; do
     fi
 
     echo "" | tee -a "$LOG_FILE"
-    echo "Progress: $CURRENT/$TOTAL completed (Success: $SUCCESS_COUNT, Failed: $FAILURE_COUNT)" | tee -a "$LOG_FILE"
+    echo "Progress: $CURRENT/$TOTAL completed (Success: $SUCCESS_COUNT, Skipped: $SKIPPED_COUNT, Failed: $FAILURE_COUNT)" | tee -a "$LOG_FILE"
 done
 
 # Final summary
@@ -108,8 +124,17 @@ echo "FINAL SUMMARY" | tee -a "$LOG_FILE"
 echo "========================================" | tee -a "$LOG_FILE"
 echo "Total datasets: $TOTAL" | tee -a "$LOG_FILE"
 echo "Successful: $SUCCESS_COUNT" | tee -a "$LOG_FILE"
+echo "Skipped: $SKIPPED_COUNT" | tee -a "$LOG_FILE"
 echo "Failed: $FAILURE_COUNT" | tee -a "$LOG_FILE"
 echo "" | tee -a "$LOG_FILE"
+
+if [ $SKIPPED_COUNT -gt 0 ]; then
+    echo "Skipped datasets (checkpoint already exists):" | tee -a "$LOG_FILE"
+    for skipped in "${SKIPPED_DATASETS[@]}"; do
+        echo "  - $skipped" | tee -a "$LOG_FILE"
+    done
+    echo "" | tee -a "$LOG_FILE"
+fi
 
 if [ $FAILURE_COUNT -gt 0 ]; then
     echo "Failed datasets:" | tee -a "$LOG_FILE"

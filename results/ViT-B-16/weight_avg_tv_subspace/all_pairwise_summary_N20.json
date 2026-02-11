@@ -1,0 +1,2210 @@
+{
+    "SUN397__Cars": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7557682394981384,
+                "loss/test/SUN397_epoch": 0.8984928727149963,
+                "acc/test/SUN397": 0.7557682394981384,
+                "normalized_acc/test/SUN397": 0.9584717750549316
+            }
+        ],
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8375824093818665,
+                "loss/test/Cars_epoch": 0.5089065432548523,
+                "acc/test/Cars": 0.8375824093818665,
+                "normalized_acc/test/Cars": 0.9762284755706787
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7966753244400024,
+                "normalized_acc/test/avg": 0.9673501253128052
+            }
+        ]
+    },
+    "SUN397__RESISC45": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7548111081123352,
+                "loss/test/SUN397_epoch": 0.9170912504196167,
+                "acc/test/SUN397": 0.7548111081123352,
+                "normalized_acc/test/SUN397": 0.9572579264640808
+            }
+        ],
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9417460560798645,
+                "loss/test/RESISC45_epoch": 0.19975312054157257,
+                "acc/test/RESISC45": 0.9417460560798645,
+                "normalized_acc/test/RESISC45": 0.9742200970649719
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8482785820960999,
+                "normalized_acc/test/avg": 0.9657390117645264
+            }
+        ]
+    },
+    "SUN397__EuroSAT": {
+        "error": "401 Client Error. (Request ID: Root=1-698cadef-46a2fb481b39c4287a47ea25;5440f368-11c8-4780-a644-b26f141d5e49)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__SVHN": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7446851134300232,
+                "loss/test/SUN397_epoch": 0.9302675127983093,
+                "acc/test/SUN397": 0.7446851134300232,
+                "normalized_acc/test/SUN397": 0.9444160461425781
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9702289700508118,
+                "loss/test/SVHN_epoch": 0.13628433644771576,
+                "acc/test/SVHN": 0.9702289700508118,
+                "normalized_acc/test/SVHN": 0.995232105255127
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8574570417404175,
+                "normalized_acc/test/avg": 0.9698240756988525
+            }
+        ]
+    },
+    "SUN397__GTSRB": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7535516619682312,
+                "loss/test/SUN397_epoch": 0.906912088394165,
+                "acc/test/SUN397": 0.7535516619682312,
+                "normalized_acc/test/SUN397": 0.9556606411933899
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9722090363502502,
+                "loss/test/GTSRB_epoch": 0.11799681931734085,
+                "acc/test/GTSRB": 0.9722090363502502,
+                "normalized_acc/test/GTSRB": 0.9828704595565796
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8628803491592407,
+                "normalized_acc/test/avg": 0.9692655503749847
+            }
+        ]
+    },
+    "SUN397__MNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.74372798204422,
+                "loss/test/SUN397_epoch": 0.9429697394371033,
+                "acc/test/SUN397": 0.74372798204422,
+                "normalized_acc/test/SUN397": 0.9432021975517273
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.994700014591217,
+                "loss/test/MNIST_epoch": 0.0411398820579052,
+                "acc/test/MNIST": 0.994700014591217,
+                "normalized_acc/test/MNIST": 0.9981936812400818
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8692139983177185,
+                "normalized_acc/test/avg": 0.9706979393959045
+            }
+        ]
+    },
+    "SUN397__DTD": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7576322555541992,
+                "loss/test/SUN397_epoch": 0.8999313116073608,
+                "acc/test/SUN397": 0.7576322555541992,
+                "normalized_acc/test/SUN397": 0.9608356952667236
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7170212864875793,
+                "loss/test/DTD_epoch": 1.0800716876983643,
+                "acc/test/DTD": 0.7170212864875793,
+                "normalized_acc/test/DTD": 0.8652117848396301
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7373267710208893,
+                "normalized_acc/test/avg": 0.9130237400531769
+            }
+        ]
+    },
+    "SUN397__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb2dc-1d9e3b870da7d00923847c5b;e36d9bea-7e8f-4f46-a70f-35eadd846577)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb311-624d84207a033734433abdaf;d9b98686-4e8a-47b4-91c7-8251e97e6055)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__FER2013": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7572795748710632,
+                "loss/test/SUN397_epoch": 0.8790123462677002,
+                "acc/test/SUN397": 0.7572795748710632,
+                "normalized_acc/test/SUN397": 0.9603884220123291
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7130119800567627,
+                "loss/test/FER2013_epoch": 1.0026646852493286,
+                "acc/test/FER2013": 0.7130119800567627,
+                "normalized_acc/test/FER2013": 0.9671201705932617
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.735145777463913,
+                "normalized_acc/test/avg": 0.9637542963027954
+            }
+        ]
+    },
+    "SUN397__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb47f-19a1119d098191a456dc22e7;8fceeedc-f10f-4e14-bf82-0e8b4d86510b)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__STL10": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7627707719802856,
+                "loss/test/SUN397_epoch": 0.8465079069137573,
+                "acc/test/SUN397": 0.7627707719802856,
+                "normalized_acc/test/SUN397": 0.9673524498939514
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9901250004768372,
+                "loss/test/STL10_epoch": 0.03517419844865799,
+                "acc/test/STL10": 0.9901250004768372,
+                "normalized_acc/test/STL10": 1.0022776126861572
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8764478862285614,
+                "normalized_acc/test/avg": 0.9848150312900543
+            }
+        ]
+    },
+    "SUN397__CIFAR100": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7438790798187256,
+                "loss/test/SUN397_epoch": 0.9584646821022034,
+                "acc/test/SUN397": 0.7438790798187256,
+                "normalized_acc/test/SUN397": 0.9433938264846802
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8758999705314636,
+                "loss/test/CIFAR100_epoch": 0.5318593978881836,
+                "acc/test/CIFAR100": 0.8758999705314636,
+                "normalized_acc/test/CIFAR100": 0.9811806082725525
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8098895251750946,
+                "normalized_acc/test/avg": 0.9622872173786163
+            }
+        ]
+    },
+    "SUN397__CIFAR10": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.746196448802948,
+                "loss/test/SUN397_epoch": 0.8896844387054443,
+                "acc/test/SUN397": 0.746196448802948,
+                "normalized_acc/test/SUN397": 0.9463327527046204
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9825000166893005,
+                "loss/test/CIFAR10_epoch": 0.06460878998041153,
+                "acc/test/CIFAR10": 0.9825000166893005,
+                "normalized_acc/test/CIFAR10": 1.0009169578552246
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8643482327461243,
+                "normalized_acc/test/avg": 0.9736248552799225
+            }
+        ]
+    },
+    "SUN397__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb82d-336ed7a97878ce663b26bf36;bf8e9038-eb07-4fce-bd70-cd4f42c13894)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb856-0e43b3c22fd87a657cfda94d;8c7265d0-d3d2-4830-a764-39ad502925e2)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cb88c-11f5c270027e3c8607a5c95f;8d561107-ee65-46a1-9f91-2d945ce27faf)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SUN397__KMNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.750931978225708,
+                "loss/test/SUN397_epoch": 0.9002484679222107,
+                "acc/test/SUN397": 0.750931978225708,
+                "normalized_acc/test/SUN397": 0.9523383378982544
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.929099977016449,
+                "loss/test/KMNIST_epoch": 0.3191325068473816,
+                "acc/test/KMNIST": 0.929099977016449,
+                "normalized_acc/test/KMNIST": 0.9446873068809509
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8400159776210785,
+                "normalized_acc/test/avg": 0.9485128223896027
+            }
+        ]
+    },
+    "SUN397__RenderedSST2": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7661461234092712,
+                "loss/test/SUN397_epoch": 0.837464451789856,
+                "acc/test/SUN397": 0.7661461234092712,
+                "normalized_acc/test/SUN397": 0.9716330766677856
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7737506628036499,
+                "loss/test/RenderedSST2_epoch": 0.5397027730941772,
+                "acc/test/RenderedSST2": 0.7737506628036499,
+                "normalized_acc/test/RenderedSST2": 1.0028469562530518
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7699483931064606,
+                "normalized_acc/test/avg": 0.9872400164604187
+            }
+        ]
+    },
+    "Cars__RESISC45": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8297475576400757,
+                "loss/test/Cars_epoch": 0.5230321884155273,
+                "acc/test/Cars": 0.8297475576400757,
+                "normalized_acc/test/Cars": 0.9670966863632202
+            }
+        ],
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9419047832489014,
+                "loss/test/RESISC45_epoch": 0.19302408397197723,
+                "acc/test/RESISC45": 0.9419047832489014,
+                "normalized_acc/test/RESISC45": 0.9743843078613281
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8858261704444885,
+                "normalized_acc/test/avg": 0.9707404971122742
+            }
+        ]
+    },
+    "Cars__EuroSAT": {
+        "error": "401 Client Error. (Request ID: Root=1-698cbb90-1eddba3901d913c727ddf743;201b1373-bec3-4e1d-bbd9-e4eebe9c7100)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__SVHN": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8102226257324219,
+                "loss/test/Cars_epoch": 0.5731750726699829,
+                "acc/test/Cars": 0.8102226257324219,
+                "normalized_acc/test/Cars": 0.9443397521972656
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9693454504013062,
+                "loss/test/SVHN_epoch": 0.14145821332931519,
+                "acc/test/SVHN": 0.9693454504013062,
+                "normalized_acc/test/SVHN": 0.9943258166313171
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.889784038066864,
+                "normalized_acc/test/avg": 0.9693327844142914
+            }
+        ]
+    },
+    "Cars__GTSRB": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8338515162467957,
+                "loss/test/Cars_epoch": 0.5221598744392395,
+                "acc/test/Cars": 0.8338515162467957,
+                "normalized_acc/test/Cars": 0.9718799591064453
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9679334759712219,
+                "loss/test/GTSRB_epoch": 0.13857051730155945,
+                "acc/test/GTSRB": 0.9679334759712219,
+                "normalized_acc/test/GTSRB": 0.978547990322113
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9008924961090088,
+                "normalized_acc/test/avg": 0.9752139747142792
+            }
+        ]
+    },
+    "Cars__MNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8139534592628479,
+                "loss/test/Cars_epoch": 0.5802482962608337,
+                "acc/test/Cars": 0.8139534592628479,
+                "normalized_acc/test/Cars": 0.9486881494522095
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9944000244140625,
+                "loss/test/MNIST_epoch": 0.04303367808461189,
+                "acc/test/MNIST": 0.9944000244140625,
+                "normalized_acc/test/MNIST": 0.9978926181793213
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9041767418384552,
+                "normalized_acc/test/avg": 0.9732903838157654
+            }
+        ]
+    },
+    "Cars__DTD": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8431786894798279,
+                "loss/test/Cars_epoch": 0.4889817237854004,
+                "acc/test/Cars": 0.8431786894798279,
+                "normalized_acc/test/Cars": 0.9827510714530945
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7292553186416626,
+                "loss/test/DTD_epoch": 0.9827487468719482,
+                "acc/test/DTD": 0.7292553186416626,
+                "normalized_acc/test/DTD": 0.8799743056297302
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7862170040607452,
+                "normalized_acc/test/avg": 0.9313626885414124
+            }
+        ]
+    },
+    "Cars__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cbe6e-52198041244ae19b66020237;33a2e5d0-97bf-4f46-88b5-a6363416f5f6)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cbe9b-71716899455d49be7eb80e3b;ba4a0fbf-bab6-4973-9f5a-6a22d80e1c4f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__FER2013": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8337271213531494,
+                "loss/test/Cars_epoch": 0.515338122844696,
+                "acc/test/Cars": 0.8337271213531494,
+                "normalized_acc/test/Cars": 0.9717350006103516
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7099470496177673,
+                "loss/test/FER2013_epoch": 0.9314613938331604,
+                "acc/test/FER2013": 0.7099470496177673,
+                "normalized_acc/test/FER2013": 0.9629629254341125
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7718370854854584,
+                "normalized_acc/test/avg": 0.9673489630222321
+            }
+        ]
+    },
+    "Cars__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cbf74-6edb16700acace9c6dccc334;62f53c19-bf42-4368-b820-36d8b19fa716)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__STL10": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8219127058982849,
+                "loss/test/Cars_epoch": 0.5504529476165771,
+                "acc/test/Cars": 0.8219127058982849,
+                "normalized_acc/test/Cars": 0.9579649567604065
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9881250262260437,
+                "loss/test/STL10_epoch": 0.04478374868631363,
+                "acc/test/STL10": 0.9881250262260437,
+                "normalized_acc/test/STL10": 1.0002530813217163
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9050188660621643,
+                "normalized_acc/test/avg": 0.9791090190410614
+            }
+        ]
+    },
+    "Cars__CIFAR100": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.815072774887085,
+                "loss/test/Cars_epoch": 0.5866358876228333,
+                "acc/test/Cars": 0.815072774887085,
+                "normalized_acc/test/Cars": 0.9499927759170532
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8712999820709229,
+                "loss/test/CIFAR100_epoch": 0.514786958694458,
+                "acc/test/CIFAR100": 0.8712999820709229,
+                "normalized_acc/test/CIFAR100": 0.9760277271270752
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8431863784790039,
+                "normalized_acc/test/avg": 0.9630102515220642
+            }
+        ]
+    },
+    "Cars__CIFAR10": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.7372217178344727,
+                "loss/test/Cars_epoch": 0.8587305545806885,
+                "acc/test/Cars": 0.7372217178344727,
+                "normalized_acc/test/Cars": 0.8592549562454224
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9789000153541565,
+                "loss/test/CIFAR10_epoch": 0.07642531394958496,
+                "acc/test/CIFAR10": 0.9789000153541565,
+                "normalized_acc/test/CIFAR10": 0.99724942445755
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8580608665943146,
+                "normalized_acc/test/avg": 0.9282521903514862
+            }
+        ]
+    },
+    "Cars__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc18e-7cae7fa1641be18373442b27;50bc2936-f30b-47cd-9775-9b0948ce19c5)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc1c4-2231a2856a2c33543b8f52e9;c910321b-7f3d-4399-a861-44b3e6915f8f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc1f9-5adf67f23996b4c931702886;86e739ed-0379-4305-bb29-5bd351f35061)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Cars__KMNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.816440761089325,
+                "loss/test/Cars_epoch": 0.5647855401039124,
+                "acc/test/Cars": 0.816440761089325,
+                "normalized_acc/test/Cars": 0.9515872001647949
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.8956999778747559,
+                "loss/test/KMNIST_epoch": 0.4420609772205353,
+                "acc/test/KMNIST": 0.8956999778747559,
+                "normalized_acc/test/KMNIST": 0.9107269644737244
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8560703694820404,
+                "normalized_acc/test/avg": 0.9311570823192596
+            }
+        ]
+    },
+    "Cars__RenderedSST2": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8450441360473633,
+                "loss/test/Cars_epoch": 0.48706838488578796,
+                "acc/test/Cars": 0.8450441360473633,
+                "normalized_acc/test/Cars": 0.9849253296852112
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7792421579360962,
+                "loss/test/RenderedSST2_epoch": 0.5367938280105591,
+                "acc/test/RenderedSST2": 0.7792421579360962,
+                "normalized_acc/test/RenderedSST2": 1.0099643468856812
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8121431469917297,
+                "normalized_acc/test/avg": 0.9974448382854462
+            }
+        ]
+    },
+    "RESISC45__EuroSAT": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc373-55c1b91f3aee81a74630ce97;0cf205b5-2473-4499-a042-402ea524c0aa)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__SVHN": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9074603319168091,
+                "loss/test/RESISC45_epoch": 0.31830430030822754,
+                "acc/test/RESISC45": 0.9074603319168091,
+                "normalized_acc/test/RESISC45": 0.9387521147727966
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9690381288528442,
+                "loss/test/SVHN_epoch": 0.14215007424354553,
+                "acc/test/SVHN": 0.9690381288528442,
+                "normalized_acc/test/SVHN": 0.9940106272697449
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9382492303848267,
+                "normalized_acc/test/avg": 0.9663813710212708
+            }
+        ]
+    },
+    "RESISC45__GTSRB": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9276190400123596,
+                "loss/test/RESISC45_epoch": 0.24146190285682678,
+                "acc/test/RESISC45": 0.9276190400123596,
+                "normalized_acc/test/RESISC45": 0.9596059322357178
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9679334759712219,
+                "loss/test/GTSRB_epoch": 0.13719221949577332,
+                "acc/test/GTSRB": 0.9679334759712219,
+                "normalized_acc/test/GTSRB": 0.978547990322113
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9477762579917908,
+                "normalized_acc/test/avg": 0.9690769612789154
+            }
+        ]
+    },
+    "RESISC45__MNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9079365134239197,
+                "loss/test/RESISC45_epoch": 0.30537381768226624,
+                "acc/test/RESISC45": 0.9079365134239197,
+                "normalized_acc/test/RESISC45": 0.9392446875572205
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.994700014591217,
+                "loss/test/MNIST_epoch": 0.04025595262646675,
+                "acc/test/MNIST": 0.994700014591217,
+                "normalized_acc/test/MNIST": 0.9981936812400818
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9513182640075684,
+                "normalized_acc/test/avg": 0.9687191843986511
+            }
+        ]
+    },
+    "RESISC45__DTD": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9431746006011963,
+                "loss/test/RESISC45_epoch": 0.1905781477689743,
+                "acc/test/RESISC45": 0.9431746006011963,
+                "normalized_acc/test/RESISC45": 0.9756978750228882
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.707446813583374,
+                "loss/test/DTD_epoch": 1.090208888053894,
+                "acc/test/DTD": 0.707446813583374,
+                "normalized_acc/test/DTD": 0.8536584973335266
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8253107070922852,
+                "normalized_acc/test/avg": 0.9146781861782074
+            }
+        ]
+    },
+    "RESISC45__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc642-14b62aaf46c538fb332c11c4;85c56953-4d65-4bfa-a165-88cc5d8bc117)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc678-28f59d0c32d7a09d4589f1f7;f7b5b3d1-5747-4ea6-b46e-321205b09314)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__FER2013": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9425396919250488,
+                "loss/test/RESISC45_epoch": 0.19093827903270721,
+                "acc/test/RESISC45": 0.9425396919250488,
+                "normalized_acc/test/RESISC45": 0.9750410914421082
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7201170325279236,
+                "loss/test/FER2013_epoch": 0.9289037585258484,
+                "acc/test/FER2013": 0.7201170325279236,
+                "normalized_acc/test/FER2013": 0.9767574071884155
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8313283622264862,
+                "normalized_acc/test/avg": 0.9758992493152618
+            }
+        ]
+    },
+    "RESISC45__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc750-1d661e077ff9b0703e670433;73a3cec9-1d37-4032-9b96-ad5096822de0)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__STL10": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9417460560798645,
+                "loss/test/RESISC45_epoch": 0.18597355484962463,
+                "acc/test/RESISC45": 0.9417460560798645,
+                "normalized_acc/test/RESISC45": 0.9742200970649719
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9878749847412109,
+                "loss/test/STL10_epoch": 0.03710758313536644,
+                "acc/test/STL10": 0.9878749847412109,
+                "normalized_acc/test/STL10": 1.0
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9648105204105377,
+                "normalized_acc/test/avg": 0.987110048532486
+            }
+        ]
+    },
+    "RESISC45__CIFAR100": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9230158925056458,
+                "loss/test/RESISC45_epoch": 0.2587634325027466,
+                "acc/test/RESISC45": 0.9230158925056458,
+                "normalized_acc/test/RESISC45": 0.954844057559967
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.866100013256073,
+                "loss/test/CIFAR100_epoch": 0.5423266887664795,
+                "acc/test/CIFAR100": 0.866100013256073,
+                "normalized_acc/test/CIFAR100": 0.9702027440071106
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8945579528808594,
+                "normalized_acc/test/avg": 0.9625234007835388
+            }
+        ]
+    },
+    "RESISC45__CIFAR10": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9144444465637207,
+                "loss/test/RESISC45_epoch": 0.2845328748226166,
+                "acc/test/RESISC45": 0.9144444465637207,
+                "normalized_acc/test/RESISC45": 0.9459770321846008
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9818999767303467,
+                "loss/test/CIFAR10_epoch": 0.06404750049114227,
+                "acc/test/CIFAR10": 0.9818999767303467,
+                "normalized_acc/test/CIFAR10": 1.0003056526184082
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9481722116470337,
+                "normalized_acc/test/avg": 0.9731413424015045
+            }
+        ]
+    },
+    "RESISC45__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc939-2845290c2b50e7e632ba92fd;c0b3aec6-9467-40fc-9453-76b54e67c43e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc95c-19bd0f9d235e135e1364e2a0;17308990-a9fb-4f8a-9d70-04be10c1c27d)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cc982-33e86bc66d44de774c070e5c;e34979d5-b95f-4c47-a1e2-e4ee9529e868)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "RESISC45__KMNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9188888669013977,
+                "loss/test/RESISC45_epoch": 0.26902318000793457,
+                "acc/test/RESISC45": 0.9188888669013977,
+                "normalized_acc/test/RESISC45": 0.9505746960639954
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9223999977111816,
+                "loss/test/KMNIST_epoch": 0.37171781063079834,
+                "acc/test/KMNIST": 0.9223999977111816,
+                "normalized_acc/test/KMNIST": 0.9378749132156372
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9206444323062897,
+                "normalized_acc/test/avg": 0.9442248046398163
+            }
+        ]
+    },
+    "RESISC45__RenderedSST2": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9444444179534912,
+                "loss/test/RESISC45_epoch": 0.17543302476406097,
+                "acc/test/RESISC45": 0.9444444179534912,
+                "normalized_acc/test/RESISC45": 0.977011501789093
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7688083648681641,
+                "loss/test/RenderedSST2_epoch": 0.5510984659194946,
+                "acc/test/RenderedSST2": 0.7688083648681641,
+                "normalized_acc/test/RenderedSST2": 0.9964413046836853
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8566263914108276,
+                "normalized_acc/test/avg": 0.9867264032363892
+            }
+        ]
+    },
+    "EuroSAT__SVHN": {
+        "error": "401 Client Error. (Request ID: Root=1-698cca9b-72da8780662b0c7e768ca642;614d3ff3-06d2-4792-8bab-97ba97d55fa0)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__GTSRB": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccab1-4ac50080646a89232a721e6d;e4e13831-ad45-4941-a71f-50d738ced2d8)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__MNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccac6-2db9985d15bdcf484345bf1a;e29f663a-bcfe-4975-a1d0-59395e75cb5e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__DTD": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccae1-5c9db5fc3e41f6ce53e49ec2;41ab4bea-f37d-496f-a163-fb72a01e1dc3)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccaf7-1a012e3977cfb547613bc731;06121298-cc12-45bd-9c8e-58f0a7ceed9d)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb09-443e7203743a4ef52a9bff85;59ec5fae-94b5-436a-9496-fc6a7d87522c)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__FER2013": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb1f-3f7042f663474c1a12c0b9cf;311b67c5-6347-44b2-9f4e-5c32263555f2)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb33-68352f6f2dbeac6063c5d2f7;f8c5f406-cfb9-4abf-ae51-4ba42199c1b4)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__STL10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb4e-35f038a14091f25275c80be4;4d25eb00-c996-4e5c-9c74-a82e06bf485f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__CIFAR100": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb6b-372efc9a53d07a744d8e687c;5123e6d9-731b-47b9-818d-c6a06f7a2abc)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__CIFAR10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb85-3d5ea4247b29a04f152699f8;2810a01f-3eed-40ce-a949-ca60ee02b130)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccb9c-6eef80fd09fc89b305d68aae;93ccda46-5040-4c41-bc44-8961495d6441)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccbac-6dd8ea221f0aa86c459b80e4;d2b8c2cb-3b41-4508-bdbb-6753ce1d399e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccbc0-501fafdd2604a30d585b8a03;ab6b439e-4f86-47f9-b631-6ee2a2e3e833)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccbd7-0277c0250ca709a002164a1e;77c093aa-6ff9-4b9e-8e79-af2afb96c678)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EuroSAT__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccbe9-7734de3700d2dee12f76c062;ba797d85-39e8-4bc1-ac0c-4400a4c7fcc4)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EuroSAT_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__GTSRB": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9674631357192993,
+                "loss/test/SVHN_epoch": 0.1467539221048355,
+                "acc/test/SVHN": 0.9674631357192993,
+                "normalized_acc/test/SVHN": 0.9923950433731079
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9518606662750244,
+                "loss/test/GTSRB_epoch": 0.2053111046552658,
+                "acc/test/GTSRB": 0.9518606662750244,
+                "normalized_acc/test/GTSRB": 0.9622989296913147
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9596619009971619,
+                "normalized_acc/test/avg": 0.9773469865322113
+            }
+        ]
+    },
+    "SVHN__MNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9567839503288269,
+                "loss/test/SVHN_epoch": 0.17325685918331146,
+                "acc/test/SVHN": 0.9567839503288269,
+                "normalized_acc/test/SVHN": 0.9814406037330627
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9929999709129333,
+                "loss/test/MNIST_epoch": 0.033462025225162506,
+                "acc/test/MNIST": 0.9929999709129333,
+                "normalized_acc/test/MNIST": 0.9964876770973206
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9748919606208801,
+                "normalized_acc/test/avg": 0.9889641404151917
+            }
+        ]
+    },
+    "SVHN__DTD": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9709203839302063,
+                "loss/test/SVHN_epoch": 0.13156192004680634,
+                "acc/test/SVHN": 0.9709203839302063,
+                "normalized_acc/test/SVHN": 0.9959413409233093
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.6728723645210266,
+                "loss/test/DTD_epoch": 1.2105822563171387,
+                "acc/test/DTD": 0.6728723645210266,
+                "normalized_acc/test/DTD": 0.8119384050369263
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8218963742256165,
+                "normalized_acc/test/avg": 0.9039398729801178
+            }
+        ]
+    },
+    "SVHN__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccdc4-0c6bb4123c00f8232a44c4a6;34076149-c876-4328-a412-953efc6185df)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698ccdeb-11c305733cf11621644a5c1a;2a82ea49-0c9a-4245-8be7-846be8e7a5a2)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__FER2013": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9665027856826782,
+                "loss/test/SVHN_epoch": 0.1514250636100769,
+                "acc/test/SVHN": 0.9665027856826782,
+                "normalized_acc/test/SVHN": 0.9914098978042603
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6776260733604431,
+                "loss/test/FER2013_epoch": 1.0418453216552734,
+                "acc/test/FER2013": 0.6776260733604431,
+                "normalized_acc/test/FER2013": 0.9191231727600098
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8220644295215607,
+                "normalized_acc/test/avg": 0.955266535282135
+            }
+        ]
+    },
+    "SVHN__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cce9f-6fd7282201731059062b5da0;471df2e0-21a4-4e68-8bd7-c0357cc943a1)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__STL10": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9690381288528442,
+                "loss/test/SVHN_epoch": 0.14317713677883148,
+                "acc/test/SVHN": 0.9690381288528442,
+                "normalized_acc/test/SVHN": 0.9940106272697449
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9816250205039978,
+                "loss/test/STL10_epoch": 0.06398461759090424,
+                "acc/test/STL10": 0.9816250205039978,
+                "normalized_acc/test/STL10": 0.9936733245849609
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.975331574678421,
+                "normalized_acc/test/avg": 0.9938419759273529
+            }
+        ]
+    },
+    "SVHN__CIFAR100": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9664643406867981,
+                "loss/test/SVHN_epoch": 0.15194331109523773,
+                "acc/test/SVHN": 0.9664643406867981,
+                "normalized_acc/test/SVHN": 0.9913704991340637
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.808899998664856,
+                "loss/test/CIFAR100_epoch": 0.7938435673713684,
+                "acc/test/CIFAR100": 0.808899998664856,
+                "normalized_acc/test/CIFAR100": 0.9061274528503418
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.887682169675827,
+                "normalized_acc/test/avg": 0.9487489759922028
+            }
+        ]
+    },
+    "SVHN__CIFAR10": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.960779070854187,
+                "loss/test/SVHN_epoch": 0.18297924101352692,
+                "acc/test/SVHN": 0.960779070854187,
+                "normalized_acc/test/SVHN": 0.9855387210845947
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9695000052452087,
+                "loss/test/CIFAR10_epoch": 0.1088881567120552,
+                "acc/test/CIFAR10": 0.9695000052452087,
+                "normalized_acc/test/CIFAR10": 0.9876732230186462
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9651395380496979,
+                "normalized_acc/test/avg": 0.9866059720516205
+            }
+        ]
+    },
+    "SVHN__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd0ef-72b7aae61ed6f46a624d97a3;c652dbc5-9cde-4ee9-aaf5-f519610ab994)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd12c-248ffcbe3da514a67832e5aa;73ba3490-0ca1-48c4-819f-96a93f6ab26d)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd160-7a02de2a45479c771e490719;c4db4481-3cd9-4551-813d-2ae34ae6d000)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "SVHN__KMNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9527504444122314,
+                "loss/test/SVHN_epoch": 0.20017224550247192,
+                "acc/test/SVHN": 0.9527504444122314,
+                "normalized_acc/test/SVHN": 0.977303147315979
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.8593999743461609,
+                "loss/test/KMNIST_epoch": 0.6253894567489624,
+                "acc/test/KMNIST": 0.8593999743461609,
+                "normalized_acc/test/KMNIST": 0.8738179802894592
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9060752093791962,
+                "normalized_acc/test/avg": 0.9255605638027191
+            }
+        ]
+    },
+    "SVHN__RenderedSST2": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.970881998538971,
+                "loss/test/SVHN_epoch": 0.13596776127815247,
+                "acc/test/SVHN": 0.970881998538971,
+                "normalized_acc/test/SVHN": 0.9959020018577576
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7671608924865723,
+                "loss/test/RenderedSST2_epoch": 0.5250502228736877,
+                "acc/test/RenderedSST2": 0.7671608924865723,
+                "normalized_acc/test/RenderedSST2": 0.9943060278892517
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8690214455127716,
+                "normalized_acc/test/avg": 0.9951040148735046
+            }
+        ]
+    },
+    "GTSRB__MNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9284243583679199,
+                "loss/test/GTSRB_epoch": 0.2769056260585785,
+                "acc/test/GTSRB": 0.9284243583679199,
+                "normalized_acc/test/GTSRB": 0.9386056065559387
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9944000244140625,
+                "loss/test/MNIST_epoch": 0.04366758465766907,
+                "acc/test/MNIST": 0.9944000244140625,
+                "normalized_acc/test/MNIST": 0.9978926181793213
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9614121913909912,
+                "normalized_acc/test/avg": 0.96824911236763
+            }
+        ]
+    },
+    "GTSRB__DTD": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9747426509857178,
+                "loss/test/GTSRB_epoch": 0.11017685383558273,
+                "acc/test/GTSRB": 0.9747426509857178,
+                "normalized_acc/test/GTSRB": 0.9854318499565125
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7202127575874329,
+                "loss/test/DTD_epoch": 1.0690555572509766,
+                "acc/test/DTD": 0.7202127575874329,
+                "normalized_acc/test/DTD": 0.8690628409385681
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8474777042865753,
+                "normalized_acc/test/avg": 0.9272473454475403
+            }
+        ]
+    },
+    "GTSRB__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd43b-518df98a02a647746163b8f4;c45a2aa4-6041-4b6c-a0a5-e35fa3aa03f0)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd477-1eccf7627eedaec80034a70a;5c7992da-9183-4bb9-9ac4-0ff9dd26682f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__FER2013": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9647664427757263,
+                "loss/test/GTSRB_epoch": 0.14313142001628876,
+                "acc/test/GTSRB": 0.9647664427757263,
+                "normalized_acc/test/GTSRB": 0.9753462076187134
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6947617530822754,
+                "loss/test/FER2013_epoch": 1.0397891998291016,
+                "acc/test/FER2013": 0.6947617530822754,
+                "normalized_acc/test/FER2013": 0.942365825176239
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8297640979290009,
+                "normalized_acc/test/avg": 0.9588560163974762
+            }
+        ]
+    },
+    "GTSRB__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd541-24d66ce74a8785de668aa481;dc93b816-b371-4b63-844e-e1b1e01267e6)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__STL10": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9697545766830444,
+                "loss/test/GTSRB_epoch": 0.13797201216220856,
+                "acc/test/GTSRB": 0.9697545766830444,
+                "normalized_acc/test/GTSRB": 0.9803890585899353
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9833750128746033,
+                "loss/test/STL10_epoch": 0.05855653062462807,
+                "acc/test/STL10": 0.9833750128746033,
+                "normalized_acc/test/STL10": 0.9954447746276855
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9765647947788239,
+                "normalized_acc/test/avg": 0.9879169166088104
+            }
+        ]
+    },
+    "GTSRB__CIFAR100": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9563736915588379,
+                "loss/test/GTSRB_epoch": 0.17351454496383667,
+                "acc/test/GTSRB": 0.9563736915588379,
+                "normalized_acc/test/GTSRB": 0.9668614268302917
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8345000147819519,
+                "loss/test/CIFAR100_epoch": 0.7031564712524414,
+                "acc/test/CIFAR100": 0.8345000147819519,
+                "normalized_acc/test/CIFAR100": 0.9348044991493225
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8954368531703949,
+                "normalized_acc/test/avg": 0.9508329629898071
+            }
+        ]
+    },
+    "GTSRB__CIFAR10": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9492478370666504,
+                "loss/test/GTSRB_epoch": 0.2190866619348526,
+                "acc/test/GTSRB": 0.9492478370666504,
+                "normalized_acc/test/GTSRB": 0.9596574306488037
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.974399983882904,
+                "loss/test/CIFAR10_epoch": 0.0924275666475296,
+                "acc/test/CIFAR10": 0.974399983882904,
+                "normalized_acc/test/CIFAR10": 0.9926650524139404
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9618239104747772,
+                "normalized_acc/test/avg": 0.9761612415313721
+            }
+        ]
+    },
+    "GTSRB__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd787-7635b6290e1298551cbd63b5;563454a2-1090-49d6-9b97-0e2c1bf190e0)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd7ba-1f044a6b228991456280c67e;d7e6e7b2-31ad-4a8e-bc68-05d845742fd5)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd7f2-140b14ca02e6524562d47e43;1c33eb0f-4b4e-4d82-856d-155215685a72)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "GTSRB__KMNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9366587400436401,
+                "loss/test/GTSRB_epoch": 0.2426782101392746,
+                "acc/test/GTSRB": 0.9366587400436401,
+                "normalized_acc/test/GTSRB": 0.9469302892684937
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.911300003528595,
+                "loss/test/KMNIST_epoch": 0.3944272994995117,
+                "acc/test/KMNIST": 0.911300003528595,
+                "normalized_acc/test/KMNIST": 0.9265887141227722
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9239793717861176,
+                "normalized_acc/test/avg": 0.9367595016956329
+            }
+        ]
+    },
+    "GTSRB__RenderedSST2": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9719715118408203,
+                "loss/test/GTSRB_epoch": 0.1223440170288086,
+                "acc/test/GTSRB": 0.9719715118408203,
+                "normalized_acc/test/GTSRB": 0.9826303124427795
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.776496410369873,
+                "loss/test/RenderedSST2_epoch": 0.5304684042930603,
+                "acc/test/RenderedSST2": 0.776496410369873,
+                "normalized_acc/test/RenderedSST2": 1.0064055919647217
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8742339611053467,
+                "normalized_acc/test/avg": 0.9945179522037506
+            }
+        ]
+    },
+    "MNIST__DTD": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9951000213623047,
+                "loss/test/MNIST_epoch": 0.040093157440423965,
+                "acc/test/MNIST": 0.9951000213623047,
+                "normalized_acc/test/MNIST": 0.998595118522644
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.686170220375061,
+                "loss/test/DTD_epoch": 1.1960668563842773,
+                "acc/test/DTD": 0.686170220375061,
+                "normalized_acc/test/DTD": 0.8279845714569092
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8406351208686829,
+                "normalized_acc/test/avg": 0.9132898449897766
+            }
+        ]
+    },
+    "MNIST__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cd9d2-32bd7464195b41a45ee2813c;090d6c38-2b01-40ce-a14e-a6a632e46767)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cda01-1fc913591e61845b0f45a147;84d51ffc-f600-4412-a018-476f3c58e598)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__FER2013": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9944000244140625,
+                "loss/test/MNIST_epoch": 0.04317627474665642,
+                "acc/test/MNIST": 0.9944000244140625,
+                "normalized_acc/test/MNIST": 0.9978926181793213
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.684452474117279,
+                "loss/test/FER2013_epoch": 1.056899070739746,
+                "acc/test/FER2013": 0.684452474117279,
+                "normalized_acc/test/FER2013": 0.9283824563026428
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8394262492656708,
+                "normalized_acc/test/avg": 0.9631375372409821
+            }
+        ]
+    },
+    "MNIST__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdab4-1018401614fe209236162f9e;6811857d-6ab7-43bd-abd5-5fedf8a09afb)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__STL10": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9943000078201294,
+                "loss/test/MNIST_epoch": 0.04356655478477478,
+                "acc/test/MNIST": 0.9943000078201294,
+                "normalized_acc/test/MNIST": 0.9977922439575195
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9776250123977661,
+                "loss/test/STL10_epoch": 0.07155805826187134,
+                "acc/test/STL10": 0.9776250123977661,
+                "normalized_acc/test/STL10": 0.9896242022514343
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9859625101089478,
+                "normalized_acc/test/avg": 0.9937082231044769
+            }
+        ]
+    },
+    "MNIST__CIFAR100": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9937999844551086,
+                "loss/test/MNIST_epoch": 0.04482758045196533,
+                "acc/test/MNIST": 0.9937999844551086,
+                "normalized_acc/test/MNIST": 0.9972904920578003
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8209999799728394,
+                "loss/test/CIFAR100_epoch": 0.7249203324317932,
+                "acc/test/CIFAR100": 0.8209999799728394,
+                "normalized_acc/test/CIFAR100": 0.9196818470954895
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.907399982213974,
+                "normalized_acc/test/avg": 0.9584861695766449
+            }
+        ]
+    },
+    "MNIST__CIFAR10": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9944000244140625,
+                "loss/test/MNIST_epoch": 0.05216449126601219,
+                "acc/test/MNIST": 0.9944000244140625,
+                "normalized_acc/test/MNIST": 0.9978926181793213
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9717000126838684,
+                "loss/test/CIFAR10_epoch": 0.10060401260852814,
+                "acc/test/CIFAR10": 0.9717000126838684,
+                "normalized_acc/test/CIFAR10": 0.9899144768714905
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9830500185489655,
+                "normalized_acc/test/avg": 0.9939035475254059
+            }
+        ]
+    },
+    "MNIST__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdcb8-19a945e24104917d33b107a5;7705fdb6-c0f2-47c0-bc66-7c8f857fca0c)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdd01-6da68f042cc893c74c44e814;e58dd68f-61a9-4055-bf5c-ac04fa78f8ad)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdd36-4eaa931d64248e35430f876c;9191ab77-8b9f-446e-806c-cdc33202b5e7)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "MNIST__KMNIST": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9925000071525574,
+                "loss/test/MNIST_epoch": 0.04849044233560562,
+                "acc/test/MNIST": 0.9925000071525574,
+                "normalized_acc/test/MNIST": 0.9959859251976013
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.7583000063896179,
+                "loss/test/KMNIST_epoch": 0.932273268699646,
+                "acc/test/KMNIST": 0.7583000063896179,
+                "normalized_acc/test/KMNIST": 0.771021842956543
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8754000067710876,
+                "normalized_acc/test/avg": 0.8835038840770721
+            }
+        ]
+    },
+    "MNIST__RenderedSST2": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9951000213623047,
+                "loss/test/MNIST_epoch": 0.04181366041302681,
+                "acc/test/MNIST": 0.9951000213623047,
+                "normalized_acc/test/MNIST": 0.998595118522644
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7759472727775574,
+                "loss/test/RenderedSST2_epoch": 0.5034631490707397,
+                "acc/test/RenderedSST2": 0.7759472727775574,
+                "normalized_acc/test/RenderedSST2": 1.0056939125061035
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.885523647069931,
+                "normalized_acc/test/avg": 1.0021445155143738
+            }
+        ]
+    },
+    "DTD__Flowers102": {
+        "error": "401 Client Error. (Request ID: Root=1-698cde88-13fc73345863f28a23f8b223;4465842e-9755-413c-a5c2-4aa97706ed44)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdeaf-1c2be80b14d932b373185bfb;7e21b431-dfa3-4075-9384-1be08662775f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__FER2013": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7180851101875305,
+                "loss/test/DTD_epoch": 1.0252817869186401,
+                "acc/test/DTD": 0.7180851101875305,
+                "normalized_acc/test/DTD": 0.8664954900741577
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7162162065505981,
+                "loss/test/FER2013_epoch": 0.9868839383125305,
+                "acc/test/FER2013": 0.7162162065505981,
+                "normalized_acc/test/FER2013": 0.9714663624763489
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7171506583690643,
+                "normalized_acc/test/avg": 0.9189809262752533
+            }
+        ]
+    },
+    "DTD__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698cdf75-632f5c7731f3c15d4a16eca3;4b0caa33-291a-47fb-a221-932e7afc382e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__STL10": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7281914949417114,
+                "loss/test/DTD_epoch": 0.9799741506576538,
+                "acc/test/DTD": 0.7281914949417114,
+                "normalized_acc/test/DTD": 0.8786906003952026
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9918749928474426,
+                "loss/test/STL10_epoch": 0.026432069018483162,
+                "acc/test/STL10": 0.9918749928474426,
+                "normalized_acc/test/STL10": 1.0040490627288818
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.860033243894577,
+                "normalized_acc/test/avg": 0.9413698315620422
+            }
+        ]
+    },
+    "DTD__CIFAR100": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.6755319237709045,
+                "loss/test/DTD_epoch": 1.2557001113891602,
+                "acc/test/DTD": 0.6755319237709045,
+                "normalized_acc/test/DTD": 0.8151476383209229
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.875,
+                "loss/test/CIFAR100_epoch": 0.52931147813797,
+                "acc/test/CIFAR100": 0.875,
+                "normalized_acc/test/CIFAR100": 0.9801725149154663
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7752659618854523,
+                "normalized_acc/test/avg": 0.8976600766181946
+            }
+        ]
+    },
+    "DTD__CIFAR10": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.664893627166748,
+                "loss/test/DTD_epoch": 1.1516435146331787,
+                "acc/test/DTD": 0.664893627166748,
+                "normalized_acc/test/DTD": 0.8023106455802917
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9833999872207642,
+                "loss/test/CIFAR10_epoch": 0.062312670052051544,
+                "acc/test/CIFAR10": 0.9833999872207642,
+                "normalized_acc/test/CIFAR10": 1.0018337965011597
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8241468071937561,
+                "normalized_acc/test/avg": 0.9020722210407257
+            }
+        ]
+    },
+    "DTD__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce14f-29f8e944769e4521607abfe0;46d7694a-e10b-4b9d-880e-c04f9f1662b0)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce17d-7d82a1e276d30d64659bf0ed;5e187d0b-6d96-4a07-be3a-d5b45162ea7e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce1ad-2ae163436217542a3c47e4e4;8bbeb21a-a9c1-45bc-bb0f-75be69d227e6)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "DTD__KMNIST": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7085106372833252,
+                "loss/test/DTD_epoch": 1.0846952199935913,
+                "acc/test/DTD": 0.7085106372833252,
+                "normalized_acc/test/DTD": 0.8549422025680542
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9343000054359436,
+                "loss/test/KMNIST_epoch": 0.3099360764026642,
+                "acc/test/KMNIST": 0.9343000054359436,
+                "normalized_acc/test/KMNIST": 0.9499745965003967
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8214053213596344,
+                "normalized_acc/test/avg": 0.9024583995342255
+            }
+        ]
+    },
+    "DTD__RenderedSST2": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.75,
+                "loss/test/DTD_epoch": 0.9102871417999268,
+                "acc/test/DTD": 0.75,
+                "normalized_acc/test/DTD": 0.9050064086914062
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7792421579360962,
+                "loss/test/RenderedSST2_epoch": 0.550848662853241,
+                "acc/test/RenderedSST2": 0.7792421579360962,
+                "normalized_acc/test/RenderedSST2": 1.0099643468856812
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7646210789680481,
+                "normalized_acc/test/avg": 0.9574853777885437
+            }
+        ]
+    },
+    "Flowers102__PCAM": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce2c0-7f191fb75d07911b0d749f69;d1532ddb-1369-4782-84e9-936d4bf6960f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__FER2013": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce2d8-69b3080c12fb49c65a549e17;75efc848-fefb-4226-aca2-1ed36e9fe726)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce2f9-2593b8514b9f84735ee29b02;127562c6-97c7-49a3-adae-77fc7835f703)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__STL10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce324-2b33f04e6d9855173d9852cc;1fb9ca31-650c-4db1-bdff-86b75b4070bb)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__CIFAR100": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce33a-662d348371af5d5a6c9f9d9a;6bbcb72f-77ca-4feb-84ea-c94d55dce167)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__CIFAR10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce34d-6227c6a300f560c06aabef60;3ad58cc3-5abf-4e91-99da-6e47266fdfeb)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce363-19cbe789733b4e4e3501e8ee;38ca37a0-a1f9-403b-b819-20518c629736)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce37c-3dca147853b8a343749c8f7e;7c2a4ff1-39bf-4aac-b67d-912bec067b79)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce399-60128a2829f54af2400e8a58;239c4db6-8e57-4ad4-8a7f-36ebaaeece82)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce3b1-2c37c9e0352c741c43d8b0bd;7c7cecf9-b60d-46a7-a10c-93bfcf5672a7)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Flowers102__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce3d0-5047fc2a3d5d22b04e717fad;b552e47c-e10b-4ebf-b1c5-72fdf2ada865)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Flowers102_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__FER2013": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce3f0-6ef39f602d25085b7aeeb833;2734d110-80a5-4ced-89db-1d3459035da3)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce410-09ae1ed1435ef27c022347d3;49f21372-67df-446c-bce9-a05cd16258b8)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__STL10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce42d-3c2115417c41864c7dc4d24f;702d6411-d9f3-4041-a37f-a9176f1a6abb)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__CIFAR100": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce445-7effd27556276f933578537b;faba9023-57ff-48b2-876c-083810d4b57c)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__CIFAR10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce458-76eba3175b4f7cde452a6bdf;9862b2d6-4834-47db-b7a3-cbcccaf9fa94)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce473-20d3dca449de2ea30ff6b42f;7a58a40f-30ce-4335-bdb3-9d9cb8810a34)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce488-38f37e453a1085ee3ec3440f;f914eec3-0229-478b-9ab7-55f1f5314142)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce4a5-5b5152cd22d05c5f10ba2b57;247cb0f3-674a-4ced-8f62-c9f25921d37a)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce4c1-590794c93bead2da6f151b45;318a4601-4119-4bfb-84de-2fe81d693239)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "PCAM__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce4d9-0752d409453c0cd66c9215da;f1c5d14a-78de-4a85-ad2d-2196af7f19de)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-PCAM_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FER2013__OxfordIIITPet": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce4fd-4f911b3b5fd2ddf96490f02d;7a466906-53e3-4a86-bbb7-a249c995f541)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FER2013__STL10": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7138478755950928,
+                "loss/test/FER2013_epoch": 0.8890900611877441,
+                "acc/test/FER2013": 0.7138478755950928,
+                "normalized_acc/test/FER2013": 0.9682539701461792
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9894999861717224,
+                "loss/test/STL10_epoch": 0.036123815923929214,
+                "acc/test/STL10": 0.9894999861717224,
+                "normalized_acc/test/STL10": 1.0016449689865112
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8516739308834076,
+                "normalized_acc/test/avg": 0.9849494695663452
+            }
+        ]
+    },
+    "FER2013__CIFAR100": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6894678473472595,
+                "loss/test/FER2013_epoch": 0.988261878490448,
+                "acc/test/FER2013": 0.6894678473472595,
+                "normalized_acc/test/FER2013": 0.9351852536201477
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8675000071525574,
+                "loss/test/CIFAR100_epoch": 0.5216095447540283,
+                "acc/test/CIFAR100": 0.8675000071525574,
+                "normalized_acc/test/CIFAR100": 0.9717710018157959
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7784839272499084,
+                "normalized_acc/test/avg": 0.9534781277179718
+            }
+        ]
+    },
+    "FER2013__CIFAR10": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.69169682264328,
+                "loss/test/FER2013_epoch": 0.9228363633155823,
+                "acc/test/FER2013": 0.69169682264328,
+                "normalized_acc/test/FER2013": 0.9382085800170898
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9811999797821045,
+                "loss/test/CIFAR10_epoch": 0.06957607716321945,
+                "acc/test/CIFAR10": 0.9811999797821045,
+                "normalized_acc/test/CIFAR10": 0.9995924830436707
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8364484012126923,
+                "normalized_acc/test/avg": 0.9689005315303802
+            }
+        ]
+    },
+    "FER2013__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce69c-79a58e1e49590d635cc87e5d;8685997a-7bc1-44c0-bfab-758f7fcb6fda)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FER2013__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce6dd-156d93691926eae46ada8021;7741b396-b9fc-4d62-894f-0fc1581b2cd8)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FER2013__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce718-0609c8da6806a7c733e85ac9;1157b51d-dd54-4430-bacc-38d10ab2ad15)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FER2013__KMNIST": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6834772825241089,
+                "loss/test/FER2013_epoch": 1.028188705444336,
+                "acc/test/FER2013": 0.6834772825241089,
+                "normalized_acc/test/FER2013": 0.9270597100257874
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9419999718666077,
+                "loss/test/KMNIST_epoch": 0.32972246408462524,
+                "acc/test/KMNIST": 0.9419999718666077,
+                "normalized_acc/test/KMNIST": 0.9578037261962891
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8127386271953583,
+                "normalized_acc/test/avg": 0.9424317181110382
+            }
+        ]
+    },
+    "FER2013__RenderedSST2": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7167734503746033,
+                "loss/test/FER2013_epoch": 0.9552146792411804,
+                "acc/test/FER2013": 0.7167734503746033,
+                "normalized_acc/test/FER2013": 0.9722222089767456
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7490389943122864,
+                "loss/test/RenderedSST2_epoch": 0.6345850229263306,
+                "acc/test/RenderedSST2": 0.7490389943122864,
+                "normalized_acc/test/RenderedSST2": 0.9708184599876404
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7329062223434448,
+                "normalized_acc/test/avg": 0.971520334482193
+            }
+        ]
+    },
+    "OxfordIIITPet__STL10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce877-5a5c8e8c34fd84e2277d2628;034b6666-d0b3-4f97-9cd5-f8ad9bc10c1a)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__CIFAR100": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce894-57a5370c66e8bf1513c27796;33fc4508-ff6b-4f2b-9670-1c160dc5b8f7)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__CIFAR10": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce8b5-00312a00200325b74de6d11a;f126a943-cfaa-44e4-a12e-ecbc1a3abdac)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce8d0-50f8bd1731e62cdf68489ed2;02267fa5-ed22-4b0e-8289-52d0d5451ecd)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce8e6-01d6c8d64f852d875e7251bc;722478eb-4727-4432-b293-12d0e1590f64)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce906-3ee55f852149f9227ee1bc86;80e61433-8876-494f-bfb6-1ada0f0cf882)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce920-74f4e83130992e5f4215da62;5c1d8996-0b9a-4092-b4cc-905104bb3b2b)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "OxfordIIITPet__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698ce933-62db18ee5789ef236618098d;c5441678-0eb4-4d41-a3c9-cf061d169626)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-OxfordIIITPet_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "STL10__CIFAR100": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9848750233650208,
+                "loss/test/STL10_epoch": 0.05096028745174408,
+                "acc/test/STL10": 0.9848750233650208,
+                "normalized_acc/test/STL10": 0.9969632029533386
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8720999956130981,
+                "loss/test/CIFAR100_epoch": 0.4886598587036133,
+                "acc/test/CIFAR100": 0.8720999956130981,
+                "normalized_acc/test/CIFAR100": 0.976923942565918
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9284875094890594,
+                "normalized_acc/test/avg": 0.9869435727596283
+            }
+        ]
+    },
+    "STL10__CIFAR10": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.971750020980835,
+                "loss/test/STL10_epoch": 0.10350069403648376,
+                "acc/test/STL10": 0.971750020980835,
+                "normalized_acc/test/STL10": 0.9836771488189697
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9832000136375427,
+                "loss/test/CIFAR10_epoch": 0.06459496915340424,
+                "acc/test/CIFAR10": 0.9832000136375427,
+                "normalized_acc/test/CIFAR10": 1.0016300678253174
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9774750173091888,
+                "normalized_acc/test/avg": 0.9926536083221436
+            }
+        ]
+    },
+    "STL10__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cea43-52312ab9714fbb3a774bdfea;d5c34de4-0671-4357-bc1d-6299c454925f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "STL10__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cea6c-727066d378b6db7f274fdc4f;e7b806f0-ef7e-46b0-8745-f364d190d187)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "STL10__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cea9d-0be9538d21838df6040b8e45;525fcef3-acab-433f-9a70-4fbb8cd2da64)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "STL10__KMNIST": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.981374979019165,
+                "loss/test/STL10_epoch": 0.056457459926605225,
+                "acc/test/STL10": 0.981374979019165,
+                "normalized_acc/test/STL10": 0.9934202432632446
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9225999712944031,
+                "loss/test/KMNIST_epoch": 0.4416559040546417,
+                "acc/test/KMNIST": 0.9225999712944031,
+                "normalized_acc/test/KMNIST": 0.9380782842636108
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9519874751567841,
+                "normalized_acc/test/avg": 0.9657492637634277
+            }
+        ]
+    },
+    "STL10__RenderedSST2": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9892500042915344,
+                "loss/test/STL10_epoch": 0.03302253782749176,
+                "acc/test/STL10": 0.9892500042915344,
+                "normalized_acc/test/STL10": 1.001391887664795
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7732015252113342,
+                "loss/test/RenderedSST2_epoch": 0.5129693746566772,
+                "acc/test/RenderedSST2": 0.7732015252113342,
+                "normalized_acc/test/RenderedSST2": 1.002135157585144
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8812257647514343,
+                "normalized_acc/test/avg": 1.0017635226249695
+            }
+        ]
+    },
+    "CIFAR100__CIFAR10": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8621000051498413,
+                "loss/test/CIFAR100_epoch": 0.5013380646705627,
+                "acc/test/CIFAR100": 0.8621000051498413,
+                "normalized_acc/test/CIFAR100": 0.9657219648361206
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.982699990272522,
+                "loss/test/CIFAR10_epoch": 0.06492991000413895,
+                "acc/test/CIFAR10": 0.982699990272522,
+                "normalized_acc/test/CIFAR10": 1.0011205673217773
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9223999977111816,
+                "normalized_acc/test/avg": 0.983421266078949
+            }
+        ]
+    },
+    "CIFAR100__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698cec3f-0fc00fac0954c42f29db5bbe;14ef7088-e5fe-4823-9a07-083255180480)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR100__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cec61-1c8dc35a553f00f02a1c227f;a3afa10f-fdef-4fe5-8fe1-6c37939c9039)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR100__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cec85-6739689977d60aa922d90cd6;a47a0a05-48cd-41c9-aee1-bb482d02e315)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR100__KMNIST": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8095999956130981,
+                "loss/test/CIFAR100_epoch": 0.7780588865280151,
+                "acc/test/CIFAR100": 0.8095999956130981,
+                "normalized_acc/test/CIFAR100": 0.9069116115570068
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9036999940872192,
+                "loss/test/KMNIST_epoch": 0.46672534942626953,
+                "acc/test/KMNIST": 0.9036999940872192,
+                "normalized_acc/test/KMNIST": 0.9188612103462219
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8566499948501587,
+                "normalized_acc/test/avg": 0.9128864109516144
+            }
+        ]
+    },
+    "CIFAR100__RenderedSST2": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8833000063896179,
+                "loss/test/CIFAR100_epoch": 0.45185258984565735,
+                "acc/test/CIFAR100": 0.8833000063896179,
+                "normalized_acc/test/CIFAR100": 0.9894701242446899
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7611202597618103,
+                "loss/test/RenderedSST2_epoch": 0.5470936298370361,
+                "acc/test/RenderedSST2": 0.7611202597618103,
+                "normalized_acc/test/RenderedSST2": 0.9864768385887146
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8222101330757141,
+                "normalized_acc/test/avg": 0.9879734814167023
+            }
+        ]
+    },
+    "CIFAR10__Food101": {
+        "error": "401 Client Error. (Request ID: Root=1-698ced8b-1ef7f2bf18aeebc87681cd2e;fa9d623c-6828-4aae-89fa-20be405bbeed)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR10__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cedb2-61eccbc44d13ca1d5753345c;91963aa2-546e-4d60-9aab-68d1c7bc07a5)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR10__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cedcf-4cf315c7452f77680afede1b;8b0d2660-2ffd-475a-841b-4b77a4f0b4a3)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "CIFAR10__KMNIST": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9672999978065491,
+                "loss/test/CIFAR10_epoch": 0.11296454817056656,
+                "acc/test/CIFAR10": 0.9672999978065491,
+                "normalized_acc/test/CIFAR10": 0.985431969165802
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.8560000061988831,
+                "loss/test/KMNIST_epoch": 0.7456515431404114,
+                "acc/test/KMNIST": 0.8560000061988831,
+                "normalized_acc/test/KMNIST": 0.8703609704971313
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9116500020027161,
+                "normalized_acc/test/avg": 0.9278964698314667
+            }
+        ]
+    },
+    "CIFAR10__RenderedSST2": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9840999841690063,
+                "loss/test/CIFAR10_epoch": 0.0555652417242527,
+                "acc/test/CIFAR10": 0.9840999841690063,
+                "normalized_acc/test/CIFAR10": 1.0025469064712524
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7786930203437805,
+                "loss/test/RenderedSST2_epoch": 0.48697182536125183,
+                "acc/test/RenderedSST2": 0.7786930203437805,
+                "normalized_acc/test/RenderedSST2": 1.009252667427063
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8813965022563934,
+                "normalized_acc/test/avg": 1.0058997869491577
+            }
+        ]
+    },
+    "Food101__FashionMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ceebb-3e459684687bd237683d8ecd;9e7bb671-382c-4828-ae15-1cee8cfb4951)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Food101__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ceecb-4161a79111d43e643b1997ad;154f8a22-33b6-4608-9bad-f1d3a6367f1f)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Food101__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698ceedc-65ee3dff55d539562235701c;da66fce4-0b4a-49b9-8e61-cb12099f37de)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "Food101__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698ceeef-3ec646546837568a7bcb1cda;a2579467-5fe1-48ed-aaea-b305a1c914c2)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-Food101_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FashionMNIST__EMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cef02-52127357471672425a8bc298;537de3f6-544c-4964-9f0b-033585d2175e)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FashionMNIST__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cef15-628aeb0a646cc83f29243129;b78615c5-3ad4-4a76-b09c-e25d8a84baeb)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "FashionMNIST__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698cef2b-3dc2580021dfeb4d3f363988;6508e980-d076-4bbf-a5a7-18c3888efe7b)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-FashionMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EMNIST__KMNIST": {
+        "error": "401 Client Error. (Request ID: Root=1-698cef44-552b773303fa1877716f53b0;9585723c-116b-48e5-a876-070b5ebfe077)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "EMNIST__RenderedSST2": {
+        "error": "401 Client Error. (Request ID: Root=1-698cef5b-017cd8b978b3d1d63325c858;2a55a206-3953-4973-9581-e9b4f6949032)\n\nRepository Not Found for url: https://huggingface.co/crisostomi/ViT-B-16-EMNIST_tv_subspace/resolve/main/pytorch_model.bin.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated.\nInvalid username or password."
+    },
+    "KMNIST__RenderedSST2": {
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9068999886512756,
+                "loss/test/KMNIST_epoch": 0.4293082654476166,
+                "acc/test/KMNIST": 0.9068999886512756,
+                "normalized_acc/test/KMNIST": 0.922114908695221
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.774848997592926,
+                "loss/test/RenderedSST2_epoch": 0.5162220001220703,
+                "acc/test/RenderedSST2": 0.774848997592926,
+                "normalized_acc/test/RenderedSST2": 1.0042704343795776
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8408744931221008,
+                "normalized_acc/test/avg": 0.9631926715373993
+            }
+        ]
+    }
+}

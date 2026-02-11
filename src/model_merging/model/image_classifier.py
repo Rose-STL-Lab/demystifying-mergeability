@@ -160,27 +160,38 @@ class ImageClassifier(pl.LightningModule):
                         pretrained_param = self.pretrained_state_dict[name].to(param.device)
                         task_vector = param - pretrained_param  # shape: (out_features, in_features)
 
-                        # Get the truncated singular vectors (Vk or Uk)
-                        Sk = self.subspace_projectors[name].to(param.device)  # shape: (k, dim)
+                        projector_data = self.subspace_projectors[name]
 
                         if self.tv_penalty_singular_vectors == "V":
                             # V case: penalty = ||task_vector @ (I - Vk^T @ Vk)||_F^2
                             # Vk shape: (k, in_features), task_vector shape: (out, in)
-                            # task_vector @ Vk^T gives (out, k), then @ Vk gives (out, in)
-                            # projection onto subspace: task_vector @ Vk^T @ Vk
-                            # orthogonal component: task_vector - projection
-                            projection = task_vector @ Sk.T @ Sk  # (out, in)
+                            Vk = projector_data.to(param.device)
+                            projection = task_vector @ Vk.T @ Vk  # (out, in)
                             orthogonal_component = task_vector - projection
-                        else:
+                            tv_subspace_loss += torch.sum(orthogonal_component ** 2)
+
+                        elif self.tv_penalty_singular_vectors == "U":
                             # U case: penalty = ||(I - Uk @ Uk^T) @ task_vector||_F^2
                             # Uk shape: (k, out_features), task_vector shape: (out, in)
-                            # Uk^T @ task_vector gives (k, in), then Uk @ that gives (out, in)
-                            # projection onto subspace: Uk^T @ Uk @ task_vector
-                            projection = Sk.T @ Sk @ task_vector  # (out, in)
+                            Uk = projector_data.to(param.device)
+                            projection = Uk.T @ Uk @ task_vector  # (out, in)
                             orthogonal_component = task_vector - projection
+                            tv_subspace_loss += torch.sum(orthogonal_component ** 2)
 
-                        # Frobenius norm squared
-                        tv_subspace_loss += torch.sum(orthogonal_component ** 2)
+                        elif self.tv_penalty_singular_vectors == "UV":
+                            # UV case: combine both penalties
+                            Uk = projector_data["U"].to(param.device)
+                            Vk = projector_data["V"].to(param.device)
+
+                            # V penalty: orthogonal to right singular vectors
+                            projection_v = task_vector @ Vk.T @ Vk
+                            orthogonal_v = task_vector - projection_v
+                            tv_subspace_loss += torch.sum(orthogonal_v ** 2)
+
+                            # U penalty: orthogonal to left singular vectors
+                            projection_u = Uk.T @ Uk @ task_vector
+                            orthogonal_u = task_vector - projection_u
+                            tv_subspace_loss += torch.sum(orthogonal_u ** 2)
 
                 if tv_subspace_loss > 0:
                     reg_loss += self.lambda_tv_subspace * tv_subspace_loss

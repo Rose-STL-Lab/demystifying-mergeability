@@ -3408,147 +3408,1155 @@
         ]
     },
     "PCAM__EMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/thesis/MM/Mergeability-Bench/storage/model_merging/ftw4bh9x'"
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.807891845703125,
+                "loss/test/PCAM_epoch": 0.43023428320884705,
+                "acc/test/PCAM": 0.807891845703125,
+                "normalized_acc/test/PCAM": 0.910569965839386
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.934499979019165,
+                "loss/test/EMNIST_epoch": 0.6680780649185181,
+                "acc/test/EMNIST": 0.934499979019165,
+                "normalized_acc/test/EMNIST": 0.9398571848869324
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.871195912361145,
+                "normalized_acc/test/avg": 0.9252135753631592
+            }
+        ]
     },
     "PCAM__KMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpaaguupnb'"
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.79241943359375,
+                "loss/test/PCAM_epoch": 0.4436158835887909,
+                "acc/test/PCAM": 0.79241943359375,
+                "normalized_acc/test/PCAM": 0.8931310772895813
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.15150000154972076,
+                "loss/test/KMNIST_epoch": 2.240455389022827,
+                "acc/test/KMNIST": 0.15150000154972076,
+                "normalized_acc/test/KMNIST": 0.15404169261455536
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.4719597175717354,
+                "normalized_acc/test/avg": 0.5235863849520683
+            }
+        ]
     },
     "PCAM__RenderedSST2": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpheowr4my'"
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.798919677734375,
+                "loss/test/PCAM_epoch": 0.43908268213272095,
+                "acc/test/PCAM": 0.798919677734375,
+                "normalized_acc/test/PCAM": 0.9004574418067932
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6880834698677063,
+                "loss/test/RenderedSST2_epoch": 0.5945358872413635,
+                "acc/test/RenderedSST2": 0.6880834698677063,
+                "normalized_acc/test/RenderedSST2": 0.8918149471282959
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7435015738010406,
+                "normalized_acc/test/avg": 0.8961361944675446
+            }
+        ]
     },
     "FER2013__OxfordIIITPet": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmphbmqho1f'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6284480094909668,
+                "loss/test/FER2013_epoch": 1.041722297668457,
+                "acc/test/FER2013": 0.6284480094909668,
+                "normalized_acc/test/FER2013": 0.8524187207221985
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9114199876785278,
+                "loss/test/OxfordIIITPet_epoch": 0.25477880239486694,
+                "acc/test/OxfordIIITPet": 0.9114199876785278,
+                "normalized_acc/test/OxfordIIITPet": 0.9589905142784119
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7699339985847473,
+                "normalized_acc/test/avg": 0.9057046175003052
+            }
+        ]
     },
     "FER2013__STL10": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpnfd3c42y'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6245472431182861,
+                "loss/test/FER2013_epoch": 1.0495409965515137,
+                "acc/test/FER2013": 0.6245472431182861,
+                "normalized_acc/test/FER2013": 0.8471277952194214
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9858750104904175,
+                "loss/test/STL10_epoch": 0.05380925536155701,
+                "acc/test/STL10": 0.9858750104904175,
+                "normalized_acc/test/STL10": 0.9979754686355591
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8052111268043518,
+                "normalized_acc/test/avg": 0.9225516319274902
+            }
+        ]
     },
     "FER2013__CIFAR100": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp_jaoymq0'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.5957090854644775,
+                "loss/test/FER2013_epoch": 1.0936391353607178,
+                "acc/test/FER2013": 0.5957090854644775,
+                "normalized_acc/test/FER2013": 0.808012068271637
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7986999750137329,
+                "loss/test/CIFAR100_epoch": 0.7324144244194031,
+                "acc/test/CIFAR100": 0.7986999750137329,
+                "normalized_acc/test/CIFAR100": 0.8947014212608337
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.6972045302391052,
+                "normalized_acc/test/avg": 0.8513567447662354
+            }
+        ]
     },
     "FER2013__CIFAR10": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpjumemhij'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6033714413642883,
+                "loss/test/FER2013_epoch": 1.0885311365127563,
+                "acc/test/FER2013": 0.6033714413642883,
+                "normalized_acc/test/FER2013": 0.8184052109718323
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9643999934196472,
+                "loss/test/CIFAR10_epoch": 0.12054018676280975,
+                "acc/test/CIFAR10": 0.9643999934196472,
+                "normalized_acc/test/CIFAR10": 0.982477605342865
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7838857173919678,
+                "normalized_acc/test/avg": 0.9004414081573486
+            }
+        ]
     },
     "FER2013__Food101": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpuu1wuxgv'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6124268770217896,
+                "loss/test/FER2013_epoch": 1.080049991607666,
+                "acc/test/FER2013": 0.6124268770217896,
+                "normalized_acc/test/FER2013": 0.8306878805160522
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9060198068618774,
+                "loss/test/Food101_epoch": 0.3222915828227997,
+                "acc/test/Food101": 0.9060198068618774,
+                "normalized_acc/test/Food101": 0.9967323541641235
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7592233419418335,
+                "normalized_acc/test/avg": 0.9137101173400879
+            }
+        ]
     },
     "FER2013__FashionMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmppv7ej2wf'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6023961901664734,
+                "loss/test/FER2013_epoch": 1.1003247499465942,
+                "acc/test/FER2013": 0.6023961901664734,
+                "normalized_acc/test/FER2013": 0.8170823454856873
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8478999733924866,
+                "loss/test/FashionMNIST_epoch": 0.4448569416999817,
+                "acc/test/FashionMNIST": 0.8478999733924866,
+                "normalized_acc/test/FashionMNIST": 0.8906512260437012
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.72514808177948,
+                "normalized_acc/test/avg": 0.8538667857646942
+            }
+        ]
     },
     "FER2013__EMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpwau5asle'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6005851030349731,
+                "loss/test/FER2013_epoch": 1.0947902202606201,
+                "acc/test/FER2013": 0.6005851030349731,
+                "normalized_acc/test/FER2013": 0.8146258592605591
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9377999901771545,
+                "loss/test/EMNIST_epoch": 0.5298946499824524,
+                "acc/test/EMNIST": 0.9377999901771545,
+                "normalized_acc/test/EMNIST": 0.9431760907173157
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7691925466060638,
+                "normalized_acc/test/avg": 0.8789009749889374
+            }
+        ]
     },
     "FER2013__KMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpr00gx_1l'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6101978421211243,
+                "loss/test/FER2013_epoch": 1.0759623050689697,
+                "acc/test/FER2013": 0.6101978421211243,
+                "normalized_acc/test/FER2013": 0.8276644349098206
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.16429999470710754,
+                "loss/test/KMNIST_epoch": 2.2051682472229004,
+                "acc/test/KMNIST": 0.16429999470710754,
+                "normalized_acc/test/KMNIST": 0.16705642640590668
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.3872489184141159,
+                "normalized_acc/test/avg": 0.4973604306578636
+            }
+        ]
     },
     "FER2013__RenderedSST2": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmprx33ik0o'"
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6246865391731262,
+                "loss/test/FER2013_epoch": 1.0444577932357788,
+                "acc/test/FER2013": 0.6246865391731262,
+                "normalized_acc/test/FER2013": 0.8473166823387146
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6814936995506287,
+                "loss/test/RenderedSST2_epoch": 0.5933576226234436,
+                "acc/test/RenderedSST2": 0.6814936995506287,
+                "normalized_acc/test/RenderedSST2": 0.8832740187644958
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.6530901193618774,
+                "normalized_acc/test/avg": 0.8652953505516052
+            }
+        ]
     },
     "OxfordIIITPet__STL10": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp9kx2u527'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.921777069568634,
+                "loss/test/OxfordIIITPet_epoch": 0.23129193484783173,
+                "acc/test/OxfordIIITPet": 0.921777069568634,
+                "normalized_acc/test/OxfordIIITPet": 0.9698881506919861
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9866250157356262,
+                "loss/test/STL10_epoch": 0.04994268715381622,
+                "acc/test/STL10": 0.9866250157356262,
+                "normalized_acc/test/STL10": 0.998734712600708
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9542010426521301,
+                "normalized_acc/test/avg": 0.984311431646347
+            }
+        ]
     },
     "OxfordIIITPet__CIFAR100": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp1y1crp9w'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9103298187255859,
+                "loss/test/OxfordIIITPet_epoch": 0.2567673325538635,
+                "acc/test/OxfordIIITPet": 0.9103298187255859,
+                "normalized_acc/test/OxfordIIITPet": 0.9578434228897095
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7991999983787537,
+                "loss/test/CIFAR100_epoch": 0.7414702773094177,
+                "acc/test/CIFAR100": 0.7991999983787537,
+                "normalized_acc/test/CIFAR100": 0.8952615261077881
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8547649085521698,
+                "normalized_acc/test/avg": 0.9265524744987488
+            }
+        ]
     },
     "OxfordIIITPet__CIFAR10": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpzwaulfh3'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9108749032020569,
+                "loss/test/OxfordIIITPet_epoch": 0.2566527724266052,
+                "acc/test/OxfordIIITPet": 0.9108749032020569,
+                "normalized_acc/test/OxfordIIITPet": 0.9584169387817383
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9664000272750854,
+                "loss/test/CIFAR10_epoch": 0.1121644377708435,
+                "acc/test/CIFAR10": 0.9664000272750854,
+                "normalized_acc/test/CIFAR10": 0.9845151305198669
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9386374652385712,
+                "normalized_acc/test/avg": 0.9714660346508026
+            }
+        ]
     },
     "OxfordIIITPet__Food101": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp9pdp7u_2'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9084219336509705,
+                "loss/test/OxfordIIITPet_epoch": 0.26076453924179077,
+                "acc/test/OxfordIIITPet": 0.9084219336509705,
+                "normalized_acc/test/OxfordIIITPet": 0.9558359384536743
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9058218002319336,
+                "loss/test/Food101_epoch": 0.3205980956554413,
+                "acc/test/Food101": 0.9058218002319336,
+                "normalized_acc/test/Food101": 0.9965144991874695
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.907121866941452,
+                "normalized_acc/test/avg": 0.9761752188205719
+            }
+        ]
     },
     "OxfordIIITPet__FashionMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp4ttp15fr'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9086944460868835,
+                "loss/test/OxfordIIITPet_epoch": 0.26467087864875793,
+                "acc/test/OxfordIIITPet": 0.9086944460868835,
+                "normalized_acc/test/OxfordIIITPet": 0.9561226963996887
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8489000201225281,
+                "loss/test/FashionMNIST_epoch": 0.44282788038253784,
+                "acc/test/FashionMNIST": 0.8489000201225281,
+                "normalized_acc/test/FashionMNIST": 0.8917016983032227
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8787972331047058,
+                "normalized_acc/test/avg": 0.9239121973514557
+            }
+        ]
     },
     "OxfordIIITPet__EMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp0n1wfkn4'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9108749032020569,
+                "loss/test/OxfordIIITPet_epoch": 0.2550453841686249,
+                "acc/test/OxfordIIITPet": 0.9108749032020569,
+                "normalized_acc/test/OxfordIIITPet": 0.9584169387817383
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9557999968528748,
+                "loss/test/EMNIST_epoch": 0.5100651383399963,
+                "acc/test/EMNIST": 0.9557999968528748,
+                "normalized_acc/test/EMNIST": 0.9612792730331421
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9333374500274658,
+                "normalized_acc/test/avg": 0.9598481059074402
+            }
+        ]
     },
     "OxfordIIITPet__KMNIST": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpr2pi5o9t'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.906514048576355,
+                "loss/test/OxfordIIITPet_epoch": 0.2634584605693817,
+                "acc/test/OxfordIIITPet": 0.906514048576355,
+                "normalized_acc/test/OxfordIIITPet": 0.9538285136222839
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.15620000660419464,
+                "loss/test/KMNIST_epoch": 2.214430093765259,
+                "acc/test/KMNIST": 0.15620000660419464,
+                "normalized_acc/test/KMNIST": 0.15882053971290588
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5313570275902748,
+                "normalized_acc/test/avg": 0.5563245266675949
+            }
+        ]
     },
     "OxfordIIITPet__RenderedSST2": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmprpmk7ckm'"
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9146906733512878,
+                "loss/test/OxfordIIITPet_epoch": 0.24547648429870605,
+                "acc/test/OxfordIIITPet": 0.9146906733512878,
+                "normalized_acc/test/OxfordIIITPet": 0.9624319076538086
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6974189877510071,
+                "loss/test/RenderedSST2_epoch": 0.5760842561721802,
+                "acc/test/RenderedSST2": 0.6974189877510071,
+                "normalized_acc/test/RenderedSST2": 0.9039145708084106
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8060548305511475,
+                "normalized_acc/test/avg": 0.9331732392311096
+            }
+        ]
     },
     "STL10__CIFAR100": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmp716cepxl'"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9863749742507935,
+                "loss/test/STL10_epoch": 0.05236228182911873,
+                "acc/test/STL10": 0.9863749742507935,
+                "normalized_acc/test/STL10": 0.9984815716743469
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7962999939918518,
+                "loss/test/CIFAR100_epoch": 0.7393016815185547,
+                "acc/test/CIFAR100": 0.7962999939918518,
+                "normalized_acc/test/CIFAR100": 0.8920129537582397
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8913374841213226,
+                "normalized_acc/test/avg": 0.9452472627162933
+            }
+        ]
     },
     "STL10__CIFAR10": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpsg9uobkd'"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9857500195503235,
+                "loss/test/STL10_epoch": 0.05027615278959274,
+                "acc/test/STL10": 0.9857500195503235,
+                "normalized_acc/test/STL10": 0.9978489279747009
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9666000008583069,
+                "loss/test/CIFAR10_epoch": 0.11385467648506165,
+                "acc/test/CIFAR10": 0.9666000008583069,
+                "normalized_acc/test/CIFAR10": 0.9847188591957092
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9761750102043152,
+                "normalized_acc/test/avg": 0.9912838935852051
+            }
+        ]
     },
     "STL10__Food101": {
-        "error": "[Errno 28] No space left on device: '/home/ubuntu/.local/share/wandb/artifacts/staging/tmpbrjxybyg'"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9858750104904175,
+                "loss/test/STL10_epoch": 0.05527021363377571,
+                "acc/test/STL10": 0.9858750104904175,
+                "normalized_acc/test/STL10": 0.9979754686355591
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9042376279830933,
+                "loss/test/Food101_epoch": 0.321513295173645,
+                "acc/test/Food101": 0.9042376279830933,
+                "normalized_acc/test/Food101": 0.9947717189788818
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9450563192367554,
+                "normalized_acc/test/avg": 0.9963735938072205
+            }
+        ]
     },
     "STL10__FashionMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9854999780654907,
+                "loss/test/STL10_epoch": 0.05572515353560448,
+                "acc/test/STL10": 0.9854999780654907,
+                "normalized_acc/test/STL10": 0.9975958466529846
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8483999967575073,
+                "loss/test/FashionMNIST_epoch": 0.4412485957145691,
+                "acc/test/FashionMNIST": 0.8483999967575073,
+                "normalized_acc/test/FashionMNIST": 0.8911764621734619
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.916949987411499,
+                "normalized_acc/test/avg": 0.9443861544132233
+            }
+        ]
     },
     "STL10__EMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9863749742507935,
+                "loss/test/STL10_epoch": 0.053428228944540024,
+                "acc/test/STL10": 0.9863749742507935,
+                "normalized_acc/test/STL10": 0.9984815716743469
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9531999826431274,
+                "loss/test/EMNIST_epoch": 0.5039774775505066,
+                "acc/test/EMNIST": 0.9531999826431274,
+                "normalized_acc/test/EMNIST": 0.9586643576622009
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9697874784469604,
+                "normalized_acc/test/avg": 0.9785729646682739
+            }
+        ]
     },
     "STL10__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9861249923706055,
+                "loss/test/STL10_epoch": 0.05635581910610199,
+                "acc/test/STL10": 0.9861249923706055,
+                "normalized_acc/test/STL10": 0.9982285499572754
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.1525000035762787,
+                "loss/test/KMNIST_epoch": 2.219602346420288,
+                "acc/test/KMNIST": 0.1525000035762787,
+                "normalized_acc/test/KMNIST": 0.15505847334861755
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5693124979734421,
+                "normalized_acc/test/avg": 0.5766435116529465
+            }
+        ]
     },
     "STL10__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9867500066757202,
+                "loss/test/STL10_epoch": 0.05113672837615013,
+                "acc/test/STL10": 0.9867500066757202,
+                "normalized_acc/test/STL10": 0.9988611936569214
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6897309422492981,
+                "loss/test/RenderedSST2_epoch": 0.5857263207435608,
+                "acc/test/RenderedSST2": 0.6897309422492981,
+                "normalized_acc/test/RenderedSST2": 0.8939501643180847
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8382404744625092,
+                "normalized_acc/test/avg": 0.946405678987503
+            }
+        ]
     },
     "CIFAR100__CIFAR10": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8102999925613403,
+                "loss/test/CIFAR100_epoch": 0.6845128536224365,
+                "acc/test/CIFAR100": 0.8102999925613403,
+                "normalized_acc/test/CIFAR100": 0.9076957106590271
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9667999744415283,
+                "loss/test/CIFAR10_epoch": 0.10541754215955734,
+                "acc/test/CIFAR10": 0.9667999744415283,
+                "normalized_acc/test/CIFAR10": 0.9849225878715515
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8885499835014343,
+                "normalized_acc/test/avg": 0.9463091492652893
+            }
+        ]
     },
     "CIFAR100__Food101": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7864999771118164,
+                "loss/test/CIFAR100_epoch": 0.7741044759750366,
+                "acc/test/CIFAR100": 0.7864999771118164,
+                "normalized_acc/test/CIFAR100": 0.8810350298881531
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9030891060829163,
+                "loss/test/Food101_epoch": 0.3311406970024109,
+                "acc/test/Food101": 0.9030891060829163,
+                "normalized_acc/test/Food101": 0.9935082197189331
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8447945415973663,
+                "normalized_acc/test/avg": 0.9372716248035431
+            }
+        ]
     },
     "CIFAR100__FashionMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7975000143051147,
+                "loss/test/CIFAR100_epoch": 0.7324593663215637,
+                "acc/test/CIFAR100": 0.7975000143051147,
+                "normalized_acc/test/CIFAR100": 0.8933572173118591
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8432999849319458,
+                "loss/test/FashionMNIST_epoch": 0.4635416865348816,
+                "acc/test/FashionMNIST": 0.8432999849319458,
+                "normalized_acc/test/FashionMNIST": 0.8858193159103394
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8203999996185303,
+                "normalized_acc/test/avg": 0.8895882666110992
+            }
+        ]
     },
     "CIFAR100__EMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7983999848365784,
+                "loss/test/CIFAR100_epoch": 0.7360799312591553,
+                "acc/test/CIFAR100": 0.7983999848365784,
+                "normalized_acc/test/CIFAR100": 0.8943653702735901
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9329000115394592,
+                "loss/test/EMNIST_epoch": 0.5402308702468872,
+                "acc/test/EMNIST": 0.9329000115394592,
+                "normalized_acc/test/EMNIST": 0.9382480382919312
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8656499981880188,
+                "normalized_acc/test/avg": 0.9163067042827606
+            }
+        ]
     },
     "CIFAR100__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7882999777793884,
+                "loss/test/CIFAR100_epoch": 0.7742066979408264,
+                "acc/test/CIFAR100": 0.7882999777793884,
+                "normalized_acc/test/CIFAR100": 0.8830513954162598
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.16249999403953552,
+                "loss/test/KMNIST_epoch": 2.238341808319092,
+                "acc/test/KMNIST": 0.16249999403953552,
+                "normalized_acc/test/KMNIST": 0.16522622108459473
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.475399985909462,
+                "normalized_acc/test/avg": 0.5241388082504272
+            }
+        ]
     },
     "CIFAR100__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7986000180244446,
+                "loss/test/CIFAR100_epoch": 0.72346431016922,
+                "acc/test/CIFAR100": 0.7986000180244446,
+                "normalized_acc/test/CIFAR100": 0.8945894241333008
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6463481783866882,
+                "loss/test/RenderedSST2_epoch": 0.6206288933753967,
+                "acc/test/RenderedSST2": 0.6463481783866882,
+                "normalized_acc/test/RenderedSST2": 0.8377224206924438
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7224740982055664,
+                "normalized_acc/test/avg": 0.8661559224128723
+            }
+        ]
     },
     "CIFAR10__Food101": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9617000222206116,
+                "loss/test/CIFAR10_epoch": 0.12810266017913818,
+                "acc/test/CIFAR10": 0.9617000222206116,
+                "normalized_acc/test/CIFAR10": 0.979727029800415
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9053861498832703,
+                "loss/test/Food101_epoch": 0.32565563917160034,
+                "acc/test/Food101": 0.9053861498832703,
+                "normalized_acc/test/Food101": 0.9960352182388306
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9335430860519409,
+                "normalized_acc/test/avg": 0.9878811240196228
+            }
+        ]
     },
     "CIFAR10__FashionMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9635000228881836,
+                "loss/test/CIFAR10_epoch": 0.12041766196489334,
+                "acc/test/CIFAR10": 0.9635000228881836,
+                "normalized_acc/test/CIFAR10": 0.9815607666969299
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8446999788284302,
+                "loss/test/FashionMNIST_epoch": 0.46076372265815735,
+                "acc/test/FashionMNIST": 0.8446999788284302,
+                "normalized_acc/test/FashionMNIST": 0.8872898817062378
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9041000008583069,
+                "normalized_acc/test/avg": 0.9344253242015839
+            }
+        ]
     },
     "CIFAR10__EMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9648000001907349,
+                "loss/test/CIFAR10_epoch": 0.1145041361451149,
+                "acc/test/CIFAR10": 0.9648000001907349,
+                "normalized_acc/test/CIFAR10": 0.9828851222991943
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9370999932289124,
+                "loss/test/EMNIST_epoch": 0.5718145966529846,
+                "acc/test/EMNIST": 0.9370999932289124,
+                "normalized_acc/test/EMNIST": 0.9424721002578735
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9509499967098236,
+                "normalized_acc/test/avg": 0.9626786112785339
+            }
+        ]
     },
     "CIFAR10__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9616000056266785,
+                "loss/test/CIFAR10_epoch": 0.12479079514741898,
+                "acc/test/CIFAR10": 0.9616000056266785,
+                "normalized_acc/test/CIFAR10": 0.9796251058578491
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.15960000455379486,
+                "loss/test/KMNIST_epoch": 2.2323598861694336,
+                "acc/test/KMNIST": 0.15960000455379486,
+                "normalized_acc/test/KMNIST": 0.16227757930755615
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5606000050902367,
+                "normalized_acc/test/avg": 0.5709513425827026
+            }
+        ]
     },
     "CIFAR10__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9689000248908997,
+                "loss/test/CIFAR10_epoch": 0.1073109582066536,
+                "acc/test/CIFAR10": 0.9689000248908997,
+                "normalized_acc/test/CIFAR10": 0.9870619773864746
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6891817450523376,
+                "loss/test/RenderedSST2_epoch": 0.5907946825027466,
+                "acc/test/RenderedSST2": 0.6891817450523376,
+                "normalized_acc/test/RenderedSST2": 0.893238365650177
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8290408849716187,
+                "normalized_acc/test/avg": 0.9401501715183258
+            }
+        ]
     },
     "Food101__FashionMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9051485061645508,
+                "loss/test/Food101_epoch": 0.3264942765235901,
+                "acc/test/Food101": 0.9051485061645508,
+                "normalized_acc/test/Food101": 0.9957737922668457
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8410999774932861,
+                "loss/test/FashionMNIST_epoch": 0.4771837294101715,
+                "acc/test/FashionMNIST": 0.8410999774932861,
+                "normalized_acc/test/FashionMNIST": 0.8835083842277527
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8731242418289185,
+                "normalized_acc/test/avg": 0.9396410882472992
+            }
+        ]
     },
     "Food101__EMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9035247564315796,
+                "loss/test/Food101_epoch": 0.3273499011993408,
+                "acc/test/Food101": 0.9035247564315796,
+                "normalized_acc/test/Food101": 0.993987500667572
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9297000169754028,
+                "loss/test/EMNIST_epoch": 0.688505232334137,
+                "acc/test/EMNIST": 0.9297000169754028,
+                "normalized_acc/test/EMNIST": 0.9350296854972839
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9166123867034912,
+                "normalized_acc/test/avg": 0.964508593082428
+            }
+        ]
     },
     "Food101__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9019802212715149,
+                "loss/test/Food101_epoch": 0.3318200409412384,
+                "acc/test/Food101": 0.9019802212715149,
+                "normalized_acc/test/Food101": 0.9922882914543152
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.1459999978542328,
+                "loss/test/KMNIST_epoch": 2.2556347846984863,
+                "acc/test/KMNIST": 0.1459999978542328,
+                "normalized_acc/test/KMNIST": 0.14844940602779388
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5239901095628738,
+                "normalized_acc/test/avg": 0.5703688487410545
+            }
+        ]
     },
     "Food101__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9053069353103638,
+                "loss/test/Food101_epoch": 0.3230259418487549,
+                "acc/test/Food101": 0.9053069353103638,
+                "normalized_acc/test/Food101": 0.995948076248169
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6776496171951294,
+                "loss/test/RenderedSST2_epoch": 0.5995981693267822,
+                "acc/test/RenderedSST2": 0.6776496171951294,
+                "normalized_acc/test/RenderedSST2": 0.8782917857170105
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7914782762527466,
+                "normalized_acc/test/avg": 0.9371199309825897
+            }
+        ]
     },
     "FashionMNIST__EMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8458999991416931,
+                "loss/test/FashionMNIST_epoch": 0.4473918378353119,
+                "acc/test/FashionMNIST": 0.8458999991416931,
+                "normalized_acc/test/FashionMNIST": 0.8885504007339478
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9261000156402588,
+                "loss/test/EMNIST_epoch": 0.6176924109458923,
+                "acc/test/EMNIST": 0.9261000156402588,
+                "normalized_acc/test/EMNIST": 0.9314090609550476
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.886000007390976,
+                "normalized_acc/test/avg": 0.9099797308444977
+            }
+        ]
     },
     "FashionMNIST__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8289999961853027,
+                "loss/test/FashionMNIST_epoch": 0.501151442527771,
+                "acc/test/FashionMNIST": 0.8289999961853027,
+                "normalized_acc/test/FashionMNIST": 0.8707982897758484
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.16760000586509705,
+                "loss/test/KMNIST_epoch": 2.2195026874542236,
+                "acc/test/KMNIST": 0.16760000586509705,
+                "normalized_acc/test/KMNIST": 0.17041179537773132
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.4983000010251999,
+                "normalized_acc/test/avg": 0.5206050425767899
+            }
+        ]
     },
     "FashionMNIST__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8496999740600586,
+                "loss/test/FashionMNIST_epoch": 0.4456120729446411,
+                "acc/test/FashionMNIST": 0.8496999740600586,
+                "normalized_acc/test/FashionMNIST": 0.8925419449806213
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6853377223014832,
+                "loss/test/RenderedSST2_epoch": 0.5949308276176453,
+                "acc/test/RenderedSST2": 0.6853377223014832,
+                "normalized_acc/test/RenderedSST2": 0.8882561922073364
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7675188481807709,
+                "normalized_acc/test/avg": 0.8903990685939789
+            }
+        ]
     },
     "EMNIST__KMNIST": {
-        "error": "[Errno 32] Broken pipe"
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9372000098228455,
+                "loss/test/EMNIST_epoch": 0.6023377180099487,
+                "acc/test/EMNIST": 0.9372000098228455,
+                "normalized_acc/test/EMNIST": 0.9425726532936096
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.18230000138282776,
+                "loss/test/KMNIST_epoch": 2.176252841949463,
+                "acc/test/KMNIST": 0.18230000138282776,
+                "normalized_acc/test/KMNIST": 0.1853584200143814
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5597500056028366,
+                "normalized_acc/test/avg": 0.5639655366539955
+            }
+        ]
     },
     "EMNIST__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9595000147819519,
+                "loss/test/EMNIST_epoch": 0.4858107566833496,
+                "acc/test/EMNIST": 0.9595000147819519,
+                "normalized_acc/test/EMNIST": 0.9650005102157593
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6633718013763428,
+                "loss/test/RenderedSST2_epoch": 0.6030310392379761,
+                "acc/test/RenderedSST2": 0.6633718013763428,
+                "normalized_acc/test/RenderedSST2": 0.8597865104675293
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8114359080791473,
+                "normalized_acc/test/avg": 0.9123935103416443
+            }
+        ]
     },
     "KMNIST__RenderedSST2": {
-        "error": "[Errno 32] Broken pipe"
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.15070000290870667,
+                "loss/test/KMNIST_epoch": 2.2175352573394775,
+                "acc/test/KMNIST": 0.15070000290870667,
+                "normalized_acc/test/KMNIST": 0.1532282680273056
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6600768566131592,
+                "loss/test/RenderedSST2_epoch": 0.6124279499053955,
+                "acc/test/RenderedSST2": 0.6600768566131592,
+                "normalized_acc/test/RenderedSST2": 0.8555159568786621
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.4053884297609329,
+                "normalized_acc/test/avg": 0.5043721124529839
+            }
+        ]
     }
 }

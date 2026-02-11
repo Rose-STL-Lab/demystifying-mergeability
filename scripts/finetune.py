@@ -35,17 +35,19 @@ torch.set_float32_matmul_precision("high")
 def compute_subspace_projectors(
     pretrained_state_dict: Dict[str, torch.Tensor],
     k: int,
-    use_right_singular_vectors: bool = True,
+    singular_vectors: str = "V",
 ) -> Dict[str, torch.Tensor]:
     """Compute truncated singular vectors for each 2D weight matrix.
 
     Args:
         pretrained_state_dict: State dict of pretrained encoder weights
         k: Number of top-k singular vectors to keep
-        use_right_singular_vectors: If True, use V (right); if False, use U (left)
+        singular_vectors: "V" for right, "U" for left, "UV" for both
 
     Returns:
-        Dict mapping parameter names to truncated singular vectors (Vk or Uk)
+        Dict mapping parameter names to truncated singular vectors.
+        For "V" or "U": maps to single tensor (Vk or Uk)
+        For "UV": maps to dict {"U": Uk, "V": Vk}
     """
     subspace_projectors = {}
 
@@ -60,16 +62,21 @@ def compute_subspace_projectors(
             # Truncate to top-k
             actual_k = min(k, S.shape[0])
 
-            if use_right_singular_vectors:
+            if singular_vectors == "V":
                 # V: right singular vectors, Vh[:k] gives top-k rows of V^T
                 # Vk shape: (k, in_features)
                 Vk = Vh[:actual_k, :]
                 subspace_projectors[name] = Vk
-            else:
+            elif singular_vectors == "U":
                 # U: left singular vectors, U[:, :k] gives top-k columns
                 # Uk shape: (out_features, k), we transpose to (k, out_features)
                 Uk = U[:, :actual_k].T
                 subspace_projectors[name] = Uk
+            elif singular_vectors == "UV":
+                # Both U and V
+                Vk = Vh[:actual_k, :]
+                Uk = U[:, :actual_k].T
+                subspace_projectors[name] = {"U": Uk, "V": Vk}
 
             pylogger.debug(f"Computed SVD for {name}: shape={param.shape}, k={actual_k}")
 
@@ -124,12 +131,11 @@ def run(cfg: DictConfig):
         lambda_tv_subspace = cfg.train.regularization.get('lambda_tv_subspace', 0.0)
 
         if enable_tv_subspace:
-            pylogger.info(f"Computing SVD for TV subspace penalty (k={subspace_k}, vectors={tv_singular_vectors})...")
-            use_right = (tv_singular_vectors == "V")
+            pylogger.info(f"Computing SVD for TV subspace penalty (k={subspace_k}, vectors={tv_singular_vectors}, lambda={lambda_tv_subspace})...")
             subspace_projectors = compute_subspace_projectors(
                 pretrained_state_dict=pretrained_state_dict,
                 k=subspace_k,
-                use_right_singular_vectors=use_right,
+                singular_vectors=tv_singular_vectors,
             )
             pylogger.info(f"Computed subspace projectors for {len(subspace_projectors)} 2D matrices")
 

@@ -31,9 +31,24 @@ regularization:
   lambda_grad_magnitude: 1  # Weight for R3 regularization term
 
   enable_tv_subspace_penalty: true
-  tv_penalty_singular_vectors: "V" # can be U or V 
+  tv_penalty_singular_vectors: "UV" # can be U or V , or "UV"
   subspace_top_k: 10 # number of top directions to keep
-  lambda_tv_subspace: 0.01 # strength coefficient
+  lambda_tv_subspace: 0.0001 # strength coefficient
+
+
+#tried:
+## tv_subspace on V, 0.01
+
+#trying:
+# tv_subspace on V, 0.001
+
+# to try:
+# tv_subspace on U, 0.01
+# tv_subspace on U, 0.001
+# tv_subspace on U&V, 0.01
+# tv_subspace on U&V, 0.001
+# Gargiulo regularization
+
 
 restore:
   ckpt_or_run_path: null
