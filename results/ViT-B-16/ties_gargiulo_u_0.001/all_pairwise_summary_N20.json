@@ -120,7 +120,28 @@
         ]
     },
     "SUN397__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.6958690285682678,
+                "loss/test/SUN397_epoch": 1.0402072668075562,
+                "acc/test/SUN397": 0.6958690285682678,
+                "normalized_acc/test/SUN397": 0.8825070858001709
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9686999917030334,
+                "loss/test/MNIST_epoch": 0.43973514437675476,
+                "acc/test/MNIST": 0.9686999917030334,
+                "normalized_acc/test/MNIST": 0.9721023440361023
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8322845101356506,
+                "normalized_acc/test/avg": 0.9273047149181366
+            }
+        ]
     },
     "SUN397__DTD": {
         "SUN397": [
@@ -531,7 +552,28 @@
         ]
     },
     "Cars__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.7262778282165527,
+                "loss/test/Cars_epoch": 0.7776919007301331,
+                "acc/test/Cars": 0.7262778282165527,
+                "normalized_acc/test/Cars": 0.846499502658844
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9657999873161316,
+                "loss/test/MNIST_epoch": 0.4929364323616028,
+                "acc/test/MNIST": 0.9657999873161316,
+                "normalized_acc/test/MNIST": 0.9691921472549438
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8460389077663422,
+                "normalized_acc/test/avg": 0.9078458249568939
+            }
+        ]
     },
     "Cars__DTD": {
         "Cars": [
@@ -918,7 +960,28 @@
         ]
     },
     "RESISC45__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.7930158972740173,
+                "loss/test/RESISC45_epoch": 0.6492926478385925,
+                "acc/test/RESISC45": 0.7930158972740173,
+                "normalized_acc/test/RESISC45": 0.820361316204071
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.968999981880188,
+                "loss/test/MNIST_epoch": 0.4383092224597931,
+                "acc/test/MNIST": 0.968999981880188,
+                "normalized_acc/test/MNIST": 0.9724034070968628
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8810079395771027,
+                "normalized_acc/test/avg": 0.8963823616504669
+            }
+        ]
     },
     "RESISC45__DTD": {
         "RESISC45": [
@@ -1281,7 +1344,28 @@
         ]
     },
     "EuroSAT__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.8855555653572083,
+                "loss/test/EuroSAT_epoch": 0.4662209749221802,
+                "acc/test/EuroSAT": 0.8855555653572083,
+                "normalized_acc/test/EuroSAT": 0.8938317894935608
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9697999954223633,
+                "loss/test/MNIST_epoch": 0.41741743683815,
+                "acc/test/MNIST": 0.9697999954223633,
+                "normalized_acc/test/MNIST": 0.9732062220573425
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9276777803897858,
+                "normalized_acc/test/avg": 0.9335190057754517
+            }
+        ]
     },
     "EuroSAT__DTD": {
         "EuroSAT": [
@@ -1620,7 +1704,28 @@
         ]
     },
     "SVHN__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.8335509896278381,
+                "loss/test/SVHN_epoch": 0.6582716107368469,
+                "acc/test/SVHN": 0.8335509896278381,
+                "normalized_acc/test/SVHN": 0.8550319075584412
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9711999893188477,
+                "loss/test/MNIST_epoch": 0.30745425820350647,
+                "acc/test/MNIST": 0.9711999893188477,
+                "normalized_acc/test/MNIST": 0.9746111035346985
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9023754894733429,
+                "normalized_acc/test/avg": 0.9148215055465698
+            }
+        ]
     },
     "SVHN__DTD": {
         "SVHN": [
@@ -1935,7 +2040,28 @@
         ]
     },
     "GTSRB__MNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.6680918335914612,
+                "loss/test/GTSRB_epoch": 1.1940420866012573,
+                "acc/test/GTSRB": 0.6680918335914612,
+                "normalized_acc/test/GTSRB": 0.6754182577133179
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9689000248908997,
+                "loss/test/MNIST_epoch": 0.3671465516090393,
+                "acc/test/MNIST": 0.9689000248908997,
+                "normalized_acc/test/MNIST": 0.9723030924797058
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8184959292411804,
+                "normalized_acc/test/avg": 0.8238606750965118
+            }
+        ]
     },
     "GTSRB__DTD": {
         "GTSRB": [
@@ -2250,43 +2376,316 @@
         ]
     },
     "MNIST__DTD": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9696999788284302,
+                "loss/test/MNIST_epoch": 0.4174811542034149,
+                "acc/test/MNIST": 0.9696999788284302,
+                "normalized_acc/test/MNIST": 0.9731058478355408
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.5164893865585327,
+                "loss/test/DTD_epoch": 1.6881979703903198,
+                "acc/test/DTD": 0.5164893865585327,
+                "normalized_acc/test/DTD": 0.6232349276542664
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7430946826934814,
+                "normalized_acc/test/avg": 0.7981703877449036
+            }
+        ]
     },
     "MNIST__Flowers102": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9679999947547913,
+                "loss/test/MNIST_epoch": 0.4609641134738922,
+                "acc/test/MNIST": 0.9679999947547913,
+                "normalized_acc/test/MNIST": 0.9713999032974243
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.7432102560997009,
+                "loss/test/Flowers102_epoch": 1.1270129680633545,
+                "acc/test/Flowers102": 0.7432102560997009,
+                "normalized_acc/test/Flowers102": 0.7887469530105591
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8556051254272461,
+                "normalized_acc/test/avg": 0.8800734281539917
+            }
+        ]
     },
     "MNIST__PCAM": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.953000009059906,
+                "loss/test/MNIST_epoch": 0.6087818145751953,
+                "acc/test/MNIST": 0.953000009059906,
+                "normalized_acc/test/MNIST": 0.9563472270965576
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.739288330078125,
+                "loss/test/PCAM_epoch": 0.48706504702568054,
+                "acc/test/PCAM": 0.739288330078125,
+                "normalized_acc/test/PCAM": 0.8332473635673523
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8461441695690155,
+                "normalized_acc/test/avg": 0.894797295331955
+            }
+        ]
     },
     "MNIST__FER2013": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9639000296592712,
+                "loss/test/MNIST_epoch": 0.4284752309322357,
+                "acc/test/MNIST": 0.9639000296592712,
+                "normalized_acc/test/MNIST": 0.9672855138778687
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.5989133715629578,
+                "loss/test/FER2013_epoch": 1.1258047819137573,
+                "acc/test/FER2013": 0.5989133715629578,
+                "normalized_acc/test/FER2013": 0.8123583197593689
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7814067006111145,
+                "normalized_acc/test/avg": 0.8898219168186188
+            }
+        ]
     },
     "MNIST__OxfordIIITPet": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9682999849319458,
+                "loss/test/MNIST_epoch": 0.4578592777252197,
+                "acc/test/MNIST": 0.9682999849319458,
+                "normalized_acc/test/MNIST": 0.97170090675354
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9078767895698547,
+                "loss/test/OxfordIIITPet_epoch": 0.2647225260734558,
+                "acc/test/OxfordIIITPet": 0.9078767895698547,
+                "normalized_acc/test/OxfordIIITPet": 0.9552623629570007
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9380883872509003,
+                "normalized_acc/test/avg": 0.9634816348552704
+            }
+        ]
     },
     "MNIST__STL10": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9689000248908997,
+                "loss/test/MNIST_epoch": 0.43219974637031555,
+                "acc/test/MNIST": 0.9689000248908997,
+                "normalized_acc/test/MNIST": 0.9723030924797058
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9850000143051147,
+                "loss/test/STL10_epoch": 0.05782125145196915,
+                "acc/test/STL10": 0.9850000143051147,
+                "normalized_acc/test/STL10": 0.9970897436141968
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9769500195980072,
+                "normalized_acc/test/avg": 0.9846964180469513
+            }
+        ]
     },
     "MNIST__CIFAR100": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9592999815940857,
+                "loss/test/MNIST_epoch": 0.4583665430545807,
+                "acc/test/MNIST": 0.9592999815940857,
+                "normalized_acc/test/MNIST": 0.962669312953949
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.7937999963760376,
+                "loss/test/CIFAR100_epoch": 0.7569265961647034,
+                "acc/test/CIFAR100": 0.7937999963760376,
+                "normalized_acc/test/CIFAR100": 0.8892124891281128
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8765499889850616,
+                "normalized_acc/test/avg": 0.9259409010410309
+            }
+        ]
     },
     "MNIST__CIFAR10": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9610999822616577,
+                "loss/test/MNIST_epoch": 0.47967374324798584,
+                "acc/test/MNIST": 0.9610999822616577,
+                "normalized_acc/test/MNIST": 0.9644756317138672
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9621000289916992,
+                "loss/test/CIFAR10_epoch": 0.11928311735391617,
+                "acc/test/CIFAR10": 0.9621000289916992,
+                "normalized_acc/test/CIFAR10": 0.9801345467567444
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9616000056266785,
+                "normalized_acc/test/avg": 0.9723050892353058
+            }
+        ]
     },
     "MNIST__Food101": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9581999778747559,
+                "loss/test/MNIST_epoch": 0.5662846565246582,
+                "acc/test/MNIST": 0.9581999778747559,
+                "normalized_acc/test/MNIST": 0.9615654349327087
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9038811922073364,
+                "loss/test/Food101_epoch": 0.33057835698127747,
+                "acc/test/Food101": 0.9038811922073364,
+                "normalized_acc/test/Food101": 0.9943795800209045
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9310405850410461,
+                "normalized_acc/test/avg": 0.9779725074768066
+            }
+        ]
     },
     "MNIST__FashionMNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9544000029563904,
+                "loss/test/MNIST_epoch": 0.5425816178321838,
+                "acc/test/MNIST": 0.9544000029563904,
+                "normalized_acc/test/MNIST": 0.9577521085739136
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.8379999995231628,
+                "loss/test/FashionMNIST_epoch": 0.4760068953037262,
+                "acc/test/FashionMNIST": 0.8379999995231628,
+                "normalized_acc/test/FashionMNIST": 0.8802520632743835
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8962000012397766,
+                "normalized_acc/test/avg": 0.9190020859241486
+            }
+        ]
     },
     "MNIST__EMNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.984000027179718,
+                "loss/test/MNIST_epoch": 0.19169507920742035,
+                "acc/test/MNIST": 0.984000027179718,
+                "normalized_acc/test/MNIST": 0.9874560832977295
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9855999946594238,
+                "loss/test/EMNIST_epoch": 0.17970697581768036,
+                "acc/test/EMNIST": 0.9855999946594238,
+                "normalized_acc/test/EMNIST": 0.9912500977516174
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9848000109195709,
+                "normalized_acc/test/avg": 0.9893530905246735
+            }
+        ]
     },
     "MNIST__KMNIST": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9528999924659729,
+                "loss/test/MNIST_epoch": 0.5028688311576843,
+                "acc/test/MNIST": 0.9528999924659729,
+                "normalized_acc/test/MNIST": 0.9562468528747559
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.17640000581741333,
+                "loss/test/KMNIST_epoch": 2.15019154548645,
+                "acc/test/KMNIST": 0.17640000581741333,
+                "normalized_acc/test/KMNIST": 0.17935943603515625
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.5646499991416931,
+                "normalized_acc/test/avg": 0.567803144454956
+            }
+        ]
     },
     "MNIST__RenderedSST2": {
-        "error": "PytorchStreamReader failed locating file data/102: file not found"
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9681000113487244,
+                "loss/test/MNIST_epoch": 0.42563867568969727,
+                "acc/test/MNIST": 0.9681000113487244,
+                "normalized_acc/test/MNIST": 0.9715002179145813
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.6957715749740601,
+                "loss/test/RenderedSST2_epoch": 0.5855698585510254,
+                "acc/test/RenderedSST2": 0.6957715749740601,
+                "normalized_acc/test/RenderedSST2": 0.9017793536186218
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8319357931613922,
+                "normalized_acc/test/avg": 0.9366397857666016
+            }
+        ]
     },
     "DTD__Flowers102": {
         "DTD": [

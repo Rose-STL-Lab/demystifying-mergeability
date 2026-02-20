@@ -25,7 +25,7 @@ CHECKPOINT_SUFFIX="_gargiulo_u_0.001" # to check if a checkpoint already exists
 
 # List of N20 datasets
 datasets1=(
-    ""Cars"
+    "Cars"
     "CIFAR10"
     "CIFAR100"
     "DTD"
@@ -34,7 +34,7 @@ datasets1=(
     "FashionMNIST"
     "FER2013"
     "Flowers102"
-    "Food101""
+    "Food101"
 )
 
 datasets2=(

@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 
@@ -240,7 +241,7 @@ def run(cfg: DictConfig):
     )
 
     pylogger.info("Starting testing!")
-    trainer.test(model=model, dataloaders=dataset.test_loader)
+    test_results = trainer.test(model=model, dataloaders=dataset.test_loader)
 
     # Generate suffix and folder structure based on enabled regularizations
     reg_suffix = ""
@@ -304,6 +305,51 @@ def run(cfg: DictConfig):
     local_model_path = os.path.join(local_model_dir, "model.pt")
     torch.save(model.encoder.state_dict(), local_model_path)
     pylogger.info(f"Saved model locally to {local_model_path}")
+
+    # Save test accuracy to JSON results file
+    # Extract test accuracy from test_results
+    test_acc_key = f"acc/test/{cfg.dataset.name}"
+    test_accuracy = None
+    if test_results and len(test_results) > 0:
+        test_accuracy = test_results[0].get(test_acc_key)
+
+    if test_accuracy is not None:
+        # Generate filename suffix (replace dots with underscores for filesystem safety)
+        if reg_suffix:
+            # Remove leading underscore and replace dots with underscores
+            file_suffix = reg_suffix[1:].replace(".", "_")  # e.g., "gargiulo_u_0_001"
+        else:
+            file_suffix = "baseline"
+
+        # Results file path
+        results_dir = os.path.join(PROJECT_ROOT, "results", "finetuning")
+        os.makedirs(results_dir, exist_ok=True)
+        results_file = os.path.join(results_dir, f"accs_{file_suffix}.json")
+
+        # Load existing results or create new dict
+        if os.path.exists(results_file):
+            with open(results_file, "r") as f:
+                results_dict = json.load(f)
+        else:
+            results_dict = {}
+
+        # Get model name (e.g., "ViT-B-32", "ViT-L-14")
+        model_name = cfg.nn.encoder.model_name
+
+        # Initialize model entry if not exists
+        if model_name not in results_dict:
+            results_dict[model_name] = {}
+
+        # Add/update dataset accuracy
+        results_dict[model_name][cfg.dataset.name] = test_accuracy
+
+        # Save results
+        with open(results_file, "w") as f:
+            json.dump(results_dict, f, indent=2)
+
+        pylogger.info(f"Saved test accuracy ({test_accuracy:.4f}) to {results_file}")
+    else:
+        pylogger.warning(f"Could not extract test accuracy from results: {test_results}")
 
     # Upload to HuggingFace with regularization suffix in dataset name (optional)
     # Uncomment if you have HuggingFace credentials configured
