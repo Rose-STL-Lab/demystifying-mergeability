@@ -13,17 +13,19 @@
 #   etc.
 #
 # Models will be saved to:
-#   /home/ubuntu/thesis/MM/Mergebaility/checkpoints/ViT-B-16/{dataset}XXX/model.pt
+#   /home/ubuntu/thesis/MM/Mergebaility/checkpoints/ViT-B-16/
 
 set -e  # Exit on error
 
 # Checkpoint directory to check for existing models
-# Adjust this path based on your regularization settings
-CHECKPOINT_BASE="/home/ubuntu/thesis/MM/Mergeability-Bench/checkpoints/ViT-B-16"
+# This should match the save path in finetune.py based on your regularization settings
+# For tv_subspace_penalty: weight_space_subspace_penalty/{dataset}_tv_subspace/model.pt
+CHECKPOINT_DIR="/home/ubuntu/thesis/MM/Mergeability-Bench/checkpoints/ViT-B-16/gargiulo_penalty"
+CHECKPOINT_SUFFIX="_gargiulo_u_0.001" # to check if a checkpoint already exists
 
 # List of N20 datasets
 datasets1=(
-    "Cars"
+    ""Cars"
     "CIFAR10"
     "CIFAR100"
     "DTD"
@@ -32,7 +34,7 @@ datasets1=(
     "FashionMNIST"
     "FER2013"
     "Flowers102"
-    "Food101"
+    "Food101""
 )
 
 datasets2=(
@@ -49,7 +51,7 @@ datasets2=(
 )
 
 
-datasets=("${datasets2[@]}") #choose between the two task partitions
+datasets=("${datasets1[@]}") #choose between the two task partitions
 
 # Log file
 LOG_DIR="/home/ubuntu/thesis/MM/Mergeability-Bench/logs"
@@ -79,11 +81,11 @@ SKIPPED_DATASETS=()
 for dataset in "${datasets[@]}"; do
     CURRENT=$((CURRENT + 1))
 
-    # Check if checkpoint already exists (search in all subdirs for {dataset}*/model.pt)
-    EXISTING_CKPT=$(find "$CHECKPOINT_BASE" -type f -path "*/${dataset}*/model.pt" 2>/dev/null | head -1)
-    if [ -n "$EXISTING_CKPT" ]; then
+    # Check if checkpoint already exists at expected path
+    EXPECTED_CKPT="${CHECKPOINT_DIR}/${dataset}${CHECKPOINT_SUFFIX}/model.pt"
+    if [ -f "$EXPECTED_CKPT" ]; then
         echo "" | tee -a "$LOG_FILE"
-        echo "[$CURRENT/$TOTAL] SKIPPING: $dataset (checkpoint exists: $EXISTING_CKPT)" | tee -a "$LOG_FILE"
+        echo "[$CURRENT/$TOTAL] SKIPPING: $dataset (checkpoint exists: $EXPECTED_CKPT)" | tee -a "$LOG_FILE"
         SKIPPED_COUNT=$((SKIPPED_COUNT + 1))
         SKIPPED_DATASETS+=("$dataset")
         continue

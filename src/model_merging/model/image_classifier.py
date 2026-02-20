@@ -63,6 +63,16 @@ class ImageClassifier(pl.LightningModule):
         self.lambda_tv_subspace = 0.0
         self.subspace_projectors = None  # Dict[name, Vk or Uk tensor]
 
+        # Gargiulo penalty configuration
+        self.enable_gargiulo_penalty = False
+        self.gargiulo_singular_vectors = "U"  # "U", "V", or "UV"
+        self.gargiulo_top_k = 10
+        self.lambda_gargiulo = 0.0
+        self.gargiulo_svd_interval = 50  # Compute SVD every N steps
+        self.gargiulo_pretrained_svd = None  # Dict[name, {"U": Uk, "V": Vk}]
+        self.gargiulo_current_svd = None  # Cached current SVD (updated periodically)
+        self.gargiulo_step_counter = 0  # Counter for SVD interval
+
     def set_encoder(self, encoder: torch.nn.Module):
         """Set the encoder of the model.
 
@@ -197,6 +207,42 @@ class ImageClassifier(pl.LightningModule):
                     reg_loss += self.lambda_tv_subspace * tv_subspace_loss
                     self.log_fn(f"reg/tv_subspace/{self.task_name}", tv_subspace_loss.detach())
 
+            # Gargiulo Penalty Regularization
+            # Penalize rotation of top-k singular vectors from pretrained
+            if self.enable_gargiulo_penalty and self.lambda_gargiulo > 0 and self.gargiulo_pretrained_svd is not None:
+                # Update current SVD periodically
+                self.gargiulo_step_counter += 1
+                if self.gargiulo_current_svd is None or self.gargiulo_step_counter % self.gargiulo_svd_interval == 0:
+                    self._update_gargiulo_current_svd()
+
+                gargiulo_loss = 0.0
+                for name, param in self.encoder.named_parameters():
+                    if name in self.gargiulo_pretrained_svd and name in self.gargiulo_current_svd and param.requires_grad:
+                        pretrained_svd = self.gargiulo_pretrained_svd[name]
+                        current_svd = self.gargiulo_current_svd[name]
+
+                        if self.gargiulo_singular_vectors in ["U", "UV"]:
+                            # U penalty: ||I_k - U_pre^T @ U_current||_F^2
+                            U_pre = pretrained_svd["U"].to(param.device)  # (k, out_features)
+                            U_cur = current_svd["U"].to(param.device)  # (k, out_features)
+                            k = U_pre.shape[0]
+                            alignment_u = U_pre @ U_cur.T  # (k, k)
+                            identity_k = torch.eye(k, device=param.device)
+                            gargiulo_loss += torch.sum((identity_k - alignment_u) ** 2)
+
+                        if self.gargiulo_singular_vectors in ["V", "UV"]:
+                            # V penalty: ||I_k - V_pre^T @ V_current||_F^2
+                            V_pre = pretrained_svd["V"].to(param.device)  # (k, in_features)
+                            V_cur = current_svd["V"].to(param.device)  # (k, in_features)
+                            k = V_pre.shape[0]
+                            alignment_v = V_pre @ V_cur.T  # (k, k)
+                            identity_k = torch.eye(k, device=param.device)
+                            gargiulo_loss += torch.sum((identity_k - alignment_v) ** 2)
+
+                if gargiulo_loss > 0:
+                    reg_loss += self.lambda_gargiulo * gargiulo_loss
+                    self.log_fn(f"reg/gargiulo/{self.task_name}", gargiulo_loss.detach())
+
             if reg_loss > 0:
                 loss = loss + reg_loss
                 self.log_fn(f"reg/total/{self.task_name}", reg_loss.detach())
@@ -267,6 +313,12 @@ class ImageClassifier(pl.LightningModule):
         subspace_k: int = 10,
         lambda_tv_subspace: float = 0.0,
         subspace_projectors: Optional[Dict[str, torch.Tensor]] = None,
+        enable_gargiulo_penalty: bool = False,
+        gargiulo_singular_vectors: str = "U",
+        gargiulo_top_k: int = 10,
+        lambda_gargiulo: float = 0.0,
+        gargiulo_svd_interval: int = 50,
+        gargiulo_pretrained_svd: Optional[Dict[str, Dict[str, torch.Tensor]]] = None,
     ):
         """Configure mergeability regularization.
 
@@ -281,6 +333,12 @@ class ImageClassifier(pl.LightningModule):
             subspace_k: Number of top-k singular vectors to keep
             lambda_tv_subspace: Weight for TV subspace penalty
             subspace_projectors: Dict mapping param names to Vk or Uk tensors
+            enable_gargiulo_penalty: Enable Gargiulo singular vector alignment penalty
+            gargiulo_singular_vectors: "U", "V", or "UV" for which singular vectors to align
+            gargiulo_top_k: Number of top-k singular vectors to keep aligned
+            lambda_gargiulo: Weight for Gargiulo penalty
+            gargiulo_svd_interval: Compute SVD of current weights every N steps
+            gargiulo_pretrained_svd: Dict mapping param names to {"U": Uk, "V": Vk}
         """
         # Store as CPU tensors, will be moved to device during training
         self.pretrained_state_dict = pretrained_state_dict
@@ -295,6 +353,35 @@ class ImageClassifier(pl.LightningModule):
         self.subspace_k = subspace_k
         self.lambda_tv_subspace = lambda_tv_subspace
         self.subspace_projectors = subspace_projectors
+
+        # Gargiulo penalty config
+        self.enable_gargiulo_penalty = enable_gargiulo_penalty
+        self.gargiulo_singular_vectors = gargiulo_singular_vectors
+        self.gargiulo_top_k = gargiulo_top_k
+        self.lambda_gargiulo = lambda_gargiulo
+        self.gargiulo_svd_interval = gargiulo_svd_interval
+        self.gargiulo_pretrained_svd = gargiulo_pretrained_svd
+        self.gargiulo_current_svd = None
+        self.gargiulo_step_counter = 0
+
+    def _update_gargiulo_current_svd(self):
+        """Compute truncated SVD of current weight matrices for Gargiulo penalty."""
+        self.gargiulo_current_svd = {}
+        k = self.gargiulo_top_k
+
+        with torch.no_grad():
+            for name, param in self.encoder.named_parameters():
+                if name in self.gargiulo_pretrained_svd and param.ndim == 2:
+                    # Use truncated SVD for efficiency
+                    # svd_lowrank returns (U, S, V) where A ≈ U @ diag(S) @ V.T
+                    U, S, V = torch.svd_lowrank(param.float(), q=k)
+                    # U shape: (out_features, k) - columns are left singular vectors
+                    # V shape: (in_features, k) - columns are right singular vectors
+                    # Transpose both to match pretrained format (rows are vectors)
+                    self.gargiulo_current_svd[name] = {
+                        "U": U.T.detach(),  # (k, out_features)
+                        "V": V.T.detach(),  # (k, in_features)
+                    }
 
     def on_test_epoch_end(self):
         # Compute and log the test accuracy

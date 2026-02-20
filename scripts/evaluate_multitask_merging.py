@@ -355,7 +355,7 @@ def run(cfg: DictConfig):
 
     # Determine results path for checking existing results
     merger_name = cfg.merger._target_.split(".")[-2].replace("_merger", "")
-    reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
+    reg_suffix = getattr(cfg.misc, 'reg_suffix', '_')
     merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
     results_path = Path(cfg.misc.results_path) / merger_name_with_suffix
 

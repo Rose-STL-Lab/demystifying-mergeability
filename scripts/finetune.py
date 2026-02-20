@@ -83,6 +83,44 @@ def compute_subspace_projectors(
     return subspace_projectors
 
 
+def compute_gargiulo_pretrained_svd(
+    pretrained_state_dict: Dict[str, torch.Tensor],
+    k: int,
+) -> Dict[str, Dict[str, torch.Tensor]]:
+    """Compute truncated SVD for Gargiulo penalty (always stores both U and V).
+
+    Args:
+        pretrained_state_dict: State dict of pretrained encoder weights
+        k: Number of top-k singular vectors to keep
+
+    Returns:
+        Dict mapping parameter names to {"U": Uk, "V": Vk}
+        Uk shape: (k, out_features)
+        Vk shape: (k, in_features)
+    """
+    gargiulo_svd = {}
+
+    for name, param in pretrained_state_dict.items():
+        if param.ndim == 2:  # Only process 2D matrices
+            # Perform full SVD and truncate (faster than svd_lowrank for moderate-sized matrices)
+            U, S, Vh = torch.linalg.svd(param.float(), full_matrices=False)
+            # U shape: (out_features, min(out, in))
+            # Vh shape: (min(out, in), in_features)
+
+            # Truncate to top-k
+            actual_k = min(k, S.shape[0])
+
+            # Store both U and V transposed (rows are singular vectors)
+            Uk = U[:, :actual_k].T  # (k, out_features)
+            Vk = Vh[:actual_k, :]   # (k, in_features)
+
+            gargiulo_svd[name] = {"U": Uk, "V": Vk}
+
+            pylogger.debug(f"Computed Gargiulo SVD for {name}: shape={param.shape}, k={actual_k}")
+
+    return gargiulo_svd
+
+
 def run(cfg: DictConfig):
     seed_index_everything(cfg)
 
@@ -139,6 +177,22 @@ def run(cfg: DictConfig):
             )
             pylogger.info(f"Computed subspace projectors for {len(subspace_projectors)} 2D matrices")
 
+        # Compute Gargiulo pretrained SVD if enabled
+        gargiulo_pretrained_svd = None
+        enable_gargiulo = cfg.train.regularization.get('enable_gargiulo_penalty', False)
+        gargiulo_singular_vectors = cfg.train.regularization.get('gargiulo_singular_vectors', 'U')
+        gargiulo_top_k = cfg.train.regularization.get('gargiulo_top_k', 10)
+        lambda_gargiulo = cfg.train.regularization.get('lambda_gargiulo', 0.0)
+        gargiulo_svd_interval = cfg.train.regularization.get('gargiulo_svd_interval', 50)
+
+        if enable_gargiulo:
+            pylogger.info(f"Computing SVD for Gargiulo penalty (k={gargiulo_top_k}, vectors={gargiulo_singular_vectors}, lambda={lambda_gargiulo}, interval={gargiulo_svd_interval})...")
+            gargiulo_pretrained_svd = compute_gargiulo_pretrained_svd(
+                pretrained_state_dict=pretrained_state_dict,
+                k=gargiulo_top_k,
+            )
+            pylogger.info(f"Computed Gargiulo pretrained SVD for {len(gargiulo_pretrained_svd)} 2D matrices")
+
         model.set_regularization_config(
             pretrained_state_dict=pretrained_state_dict,
             enable_moderate_update=cfg.train.regularization.enable_moderate_update,
@@ -150,11 +204,18 @@ def run(cfg: DictConfig):
             subspace_k=subspace_k,
             lambda_tv_subspace=lambda_tv_subspace,
             subspace_projectors=subspace_projectors,
+            enable_gargiulo_penalty=enable_gargiulo,
+            gargiulo_singular_vectors=gargiulo_singular_vectors,
+            gargiulo_top_k=gargiulo_top_k,
+            lambda_gargiulo=lambda_gargiulo,
+            gargiulo_svd_interval=gargiulo_svd_interval,
+            gargiulo_pretrained_svd=gargiulo_pretrained_svd,
         )
         pylogger.info("Regularization configured:")
         pylogger.info(f"  R2 (Moderate Update): {cfg.train.regularization.enable_moderate_update}, λ={cfg.train.regularization.lambda_moderate_update}")
         pylogger.info(f"  R3 (Grad Magnitude): {cfg.train.regularization.enable_grad_magnitude}, λ={cfg.train.regularization.lambda_grad_magnitude}")
         pylogger.info(f"  TV Subspace Penalty: {enable_tv_subspace}, k={subspace_k}, vectors={tv_singular_vectors}, λ={lambda_tv_subspace}")
+        pylogger.info(f"  Gargiulo Penalty: {enable_gargiulo}, k={gargiulo_top_k}, vectors={gargiulo_singular_vectors}, λ={lambda_gargiulo}, interval={gargiulo_svd_interval}")
 
     dataset = instantiate(
         cfg.dataset,
@@ -189,6 +250,7 @@ def run(cfg: DictConfig):
         moderate_update_enabled = cfg.train.regularization.enable_moderate_update
         grad_magnitude_enabled = cfg.train.regularization.enable_grad_magnitude
         tv_subspace_enabled = cfg.train.regularization.get('enable_tv_subspace_penalty', False)
+        gargiulo_enabled = cfg.train.regularization.get('enable_gargiulo_penalty', False)
 
         if moderate_update_enabled:
             reg_parts.append("moderate_update")
@@ -196,12 +258,21 @@ def run(cfg: DictConfig):
             reg_parts.append("grad_magnitude")
         if tv_subspace_enabled:
             reg_parts.append("tv_subspace")
+        if gargiulo_enabled:
+            # Include singular vectors type and lambda in suffix
+            # e.g., "gargiulo_u_0.0001"
+            g_vectors = cfg.train.regularization.get('gargiulo_singular_vectors', 'U').lower()
+            g_lambda = cfg.train.regularization.get('lambda_gargiulo', 0.0001)
+            reg_parts.append(f"gargiulo_{g_vectors}_{g_lambda}")
 
         if reg_parts:
             reg_suffix = "_" + "_".join(reg_parts)
 
             # Determine parent folder based on which regularizations are enabled
-            if tv_subspace_enabled:
+            if gargiulo_enabled:
+                # Gargiulo penalty gets its own dedicated folder
+                parent_folder = "gargiulo_penalty"
+            elif tv_subspace_enabled:
                 # TV subspace penalty gets its own dedicated folder
                 parent_folder = "weight_space_subspace_penalty"
             elif moderate_update_enabled and grad_magnitude_enabled:

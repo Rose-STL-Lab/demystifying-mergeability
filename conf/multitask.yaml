@@ -10,7 +10,7 @@ defaults:
   - hydra: default
   - nn: default
   - train: default
-  - merger: task_arithmetic # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, dummy, ties (just uses pretrained), see all options in ./conf/merger
+  - merger: weight_avg # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, dummy, ties (just uses pretrained), see all options in ./conf/merger
   - benchmark: N20 # N14, N8, N20, N2
   - override hydra/launcher: basic # basic
   - override hydra/job_logging: none
