@@ -38,7 +38,7 @@ regularization:
   # Gargiulo Penalty: Keep singular vectors aligned with pretrained
   # Penalizes rotation of top-k singular vectors during finetuning
   enable_gargiulo_penalty: true
-  gargiulo_singular_vectors: "U"  # can be "U", "V", or "UV"
+  gargiulo_singular_vectors: "UV"  # can be "U", "V", or "UV"
   gargiulo_top_k: 10  # number of top singular vectors to keep aligned
   lambda_gargiulo: 0.001  # strength coefficient
   gargiulo_svd_interval: 50  # compute SVD of current weights every N steps

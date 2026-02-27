@@ -21,7 +21,7 @@ set -e  # Exit on error
 # This should match the save path in finetune.py based on your regularization settings
 # For tv_subspace_penalty: weight_space_subspace_penalty/{dataset}_tv_subspace/model.pt
 CHECKPOINT_DIR="/home/ubuntu/thesis/MM/Mergeability-Bench/checkpoints/ViT-B-16/gargiulo_penalty"
-CHECKPOINT_SUFFIX="_gargiulo_u_0.001" # to check if a checkpoint already exists
+CHECKPOINT_SUFFIX="_gargiulo_uv_0.001" # to check if a checkpoint already exists
 
 # List of N20 datasets
 datasets1=(

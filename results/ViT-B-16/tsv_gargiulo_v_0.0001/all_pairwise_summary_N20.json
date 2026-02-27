@@ -1,0 +1,4562 @@
+{
+    "SUN397__Cars": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7762720584869385,
+                "loss/test/SUN397_epoch": 0.872649073600769,
+                "acc/test/SUN397": 0.7762720584869385,
+                "normalized_acc/test/SUN397": 0.9844748973846436
+            }
+        ],
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8706628680229187,
+                "loss/test/Cars_epoch": 0.45569056272506714,
+                "acc/test/Cars": 0.8706628680229187,
+                "normalized_acc/test/Cars": 1.014784812927246
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8234674632549286,
+                "normalized_acc/test/avg": 0.9996298551559448
+            }
+        ]
+    },
+    "SUN397__RESISC45": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7686145901679993,
+                "loss/test/SUN397_epoch": 0.9143047332763672,
+                "acc/test/SUN397": 0.7686145901679993,
+                "normalized_acc/test/SUN397": 0.9747635722160339
+            }
+        ],
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.958730161190033,
+                "loss/test/RESISC45_epoch": 0.15520800650119781,
+                "acc/test/RESISC45": 0.958730161190033,
+                "normalized_acc/test/RESISC45": 0.9917898774147034
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8636723756790161,
+                "normalized_acc/test/avg": 0.9832767248153687
+            }
+        ]
+    },
+    "SUN397__EuroSAT": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7767758369445801,
+                "loss/test/SUN397_epoch": 0.8575600981712341,
+                "acc/test/SUN397": 0.7767758369445801,
+                "normalized_acc/test/SUN397": 0.9851137399673462
+            }
+        ],
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9903703927993774,
+                "loss/test/EuroSAT_epoch": 0.03984305262565613,
+                "acc/test/EuroSAT": 0.9903703927993774,
+                "normalized_acc/test/EuroSAT": 0.9996262192726135
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8835731148719788,
+                "normalized_acc/test/avg": 0.9923699796199799
+            }
+        ]
+    },
+    "SUN397__SVHN": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.754105806350708,
+                "loss/test/SUN397_epoch": 0.9610481858253479,
+                "acc/test/SUN397": 0.754105806350708,
+                "normalized_acc/test/SUN397": 0.9563634395599365
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9725722074508667,
+                "loss/test/SVHN_epoch": 0.12118595093488693,
+                "acc/test/SVHN": 0.9725722074508667,
+                "normalized_acc/test/SVHN": 0.9976357221603394
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8633390069007874,
+                "normalized_acc/test/avg": 0.9769995808601379
+            }
+        ]
+    },
+    "SUN397__GTSRB": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7717884182929993,
+                "loss/test/SUN397_epoch": 0.9006655216217041,
+                "acc/test/SUN397": 0.7717884182929993,
+                "normalized_acc/test/SUN397": 0.9787886738777161
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9889152646064758,
+                "loss/test/GTSRB_epoch": 0.04478881508111954,
+                "acc/test/GTSRB": 0.9889152646064758,
+                "normalized_acc/test/GTSRB": 0.9997598528862
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8803518414497375,
+                "normalized_acc/test/avg": 0.989274263381958
+            }
+        ]
+    },
+    "SUN397__MNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7642821073532104,
+                "loss/test/SUN397_epoch": 0.9218120574951172,
+                "acc/test/SUN397": 0.7642821073532104,
+                "normalized_acc/test/SUN397": 0.9692690968513489
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9962000250816345,
+                "loss/test/MNIST_epoch": 0.02784394472837448,
+                "acc/test/MNIST": 0.9962000250816345,
+                "normalized_acc/test/MNIST": 0.9996989369392395
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8802410662174225,
+                "normalized_acc/test/avg": 0.9844840168952942
+            }
+        ]
+    },
+    "SUN397__DTD": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7748614549636841,
+                "loss/test/SUN397_epoch": 0.8719158172607422,
+                "acc/test/SUN397": 0.7748614549636841,
+                "normalized_acc/test/SUN397": 0.982685923576355
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8010638356208801,
+                "loss/test/DTD_epoch": 0.8625728487968445,
+                "acc/test/DTD": 0.8010638356208801,
+                "normalized_acc/test/DTD": 0.966623842716217
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7879626452922821,
+                "normalized_acc/test/avg": 0.974654883146286
+            }
+        ]
+    },
+    "SUN397__Flowers102": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7917380332946777,
+                "loss/test/SUN397_epoch": 0.8185532689094543,
+                "acc/test/SUN397": 0.7917380332946777,
+                "normalized_acc/test/SUN397": 1.0040889978408813
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9186859726905823,
+                "loss/test/Flowers102_epoch": 0.3141479194164276,
+                "acc/test/Flowers102": 0.9186859726905823,
+                "normalized_acc/test/Flowers102": 0.9749740958213806
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.85521200299263,
+                "normalized_acc/test/avg": 0.989531546831131
+            }
+        ]
+    },
+    "SUN397__PCAM": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7206549048423767,
+                "loss/test/SUN397_epoch": 0.9899002313613892,
+                "acc/test/SUN397": 0.7206549048423767,
+                "normalized_acc/test/SUN397": 0.9139407277107239
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.8929443359375,
+                "loss/test/PCAM_epoch": 0.3156750202178955,
+                "acc/test/PCAM": 0.8929443359375,
+                "normalized_acc/test/PCAM": 1.006432056427002
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8067996203899384,
+                "normalized_acc/test/avg": 0.9601863920688629
+            }
+        ]
+    },
+    "SUN397__FER2013": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7798488736152649,
+                "loss/test/SUN397_epoch": 0.8634215593338013,
+                "acc/test/SUN397": 0.7798488736152649,
+                "normalized_acc/test/SUN397": 0.9890109896659851
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7442184686660767,
+                "loss/test/FER2013_epoch": 1.1577754020690918,
+                "acc/test/FER2013": 0.7442184686660767,
+                "normalized_acc/test/FER2013": 1.0094482898712158
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7620336711406708,
+                "normalized_acc/test/avg": 0.9992296397686005
+            }
+        ]
+    },
+    "SUN397__OxfordIIITPet": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7887153625488281,
+                "loss/test/SUN397_epoch": 0.8180571794509888,
+                "acc/test/SUN397": 0.7887153625488281,
+                "normalized_acc/test/SUN397": 1.0002555847167969
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9509403109550476,
+                "loss/test/OxfordIIITPet_epoch": 0.2137945145368576,
+                "acc/test/OxfordIIITPet": 0.9509403109550476,
+                "normalized_acc/test/OxfordIIITPet": 1.0005735158920288
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8698278367519379,
+                "normalized_acc/test/avg": 1.0004145503044128
+            }
+        ]
+    },
+    "SUN397__STL10": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7843828797340393,
+                "loss/test/SUN397_epoch": 0.8110498785972595,
+                "acc/test/SUN397": 0.7843828797340393,
+                "normalized_acc/test/SUN397": 0.9947611093521118
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9907500147819519,
+                "loss/test/STL10_epoch": 0.031575337052345276,
+                "acc/test/STL10": 0.9907500147819519,
+                "normalized_acc/test/STL10": 1.0029103755950928
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8875664472579956,
+                "normalized_acc/test/avg": 0.9988357424736023
+            }
+        ]
+    },
+    "SUN397__CIFAR100": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7582871317863464,
+                "loss/test/SUN397_epoch": 0.9370658993721008,
+                "acc/test/SUN397": 0.7582871317863464,
+                "normalized_acc/test/SUN397": 0.9616662263870239
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.885699987411499,
+                "loss/test/CIFAR100_epoch": 0.509813129901886,
+                "acc/test/CIFAR100": 0.885699987411499,
+                "normalized_acc/test/CIFAR100": 0.9921585917472839
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8219935595989227,
+                "normalized_acc/test/avg": 0.9769124090671539
+            }
+        ]
+    },
+    "SUN397__CIFAR10": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7619143724441528,
+                "loss/test/SUN397_epoch": 0.8849502205848694,
+                "acc/test/SUN397": 0.7619143724441528,
+                "normalized_acc/test/SUN397": 0.9662663340568542
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9832000136375427,
+                "loss/test/CIFAR10_epoch": 0.07966355979442596,
+                "acc/test/CIFAR10": 0.9832000136375427,
+                "normalized_acc/test/CIFAR10": 1.0016300678253174
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8725571930408478,
+                "normalized_acc/test/avg": 0.9839482009410858
+            }
+        ]
+    },
+    "SUN397__Food101": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7753652334213257,
+                "loss/test/SUN397_epoch": 0.8479294776916504,
+                "acc/test/SUN397": 0.7753652334213257,
+                "normalized_acc/test/SUN397": 0.9833248257637024
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9139406085014343,
+                "loss/test/Food101_epoch": 0.3528965711593628,
+                "acc/test/Food101": 0.9139406085014343,
+                "normalized_acc/test/Food101": 1.005446195602417
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.84465292096138,
+                "normalized_acc/test/avg": 0.9943855106830597
+            }
+        ]
+    },
+    "SUN397__FashionMNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7596473693847656,
+                "loss/test/SUN397_epoch": 0.9003686904907227,
+                "acc/test/SUN397": 0.7596473693847656,
+                "normalized_acc/test/SUN397": 0.9633913040161133
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9495000243186951,
+                "loss/test/FashionMNIST_epoch": 0.19083000719547272,
+                "acc/test/FashionMNIST": 0.9495000243186951,
+                "normalized_acc/test/FashionMNIST": 0.9973739385604858
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8545736968517303,
+                "normalized_acc/test/avg": 0.9803826212882996
+            }
+        ]
+    },
+    "SUN397__EMNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7766750454902649,
+                "loss/test/SUN397_epoch": 0.8719673752784729,
+                "acc/test/SUN397": 0.7766750454902649,
+                "normalized_acc/test/SUN397": 0.9849859476089478
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9957000017166138,
+                "loss/test/EMNIST_epoch": 0.03223056718707085,
+                "acc/test/EMNIST": 0.9957000017166138,
+                "normalized_acc/test/EMNIST": 1.0014079809188843
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8861875236034393,
+                "normalized_acc/test/avg": 0.993196964263916
+            }
+        ]
+    },
+    "SUN397__KMNIST": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7690176367759705,
+                "loss/test/SUN397_epoch": 0.8899163603782654,
+                "acc/test/SUN397": 0.7690176367759705,
+                "normalized_acc/test/SUN397": 0.9752747416496277
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.982200026512146,
+                "loss/test/KMNIST_epoch": 0.07401802390813828,
+                "acc/test/KMNIST": 0.982200026512146,
+                "normalized_acc/test/KMNIST": 0.9986782073974609
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8756088316440582,
+                "normalized_acc/test/avg": 0.9869764745235443
+            }
+        ]
+    },
+    "SUN397__RenderedSST2": {
+        "SUN397": [
+            {
+                "acc/test/SUN397_epoch": 0.7852392792701721,
+                "loss/test/SUN397_epoch": 0.8335150480270386,
+                "acc/test/SUN397": 0.7852392792701721,
+                "normalized_acc/test/SUN397": 0.9958471655845642
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.782537043094635,
+                "loss/test/RenderedSST2_epoch": 0.896992027759552,
+                "acc/test/RenderedSST2": 0.782537043094635,
+                "normalized_acc/test/RenderedSST2": 1.0142347812652588
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7838881611824036,
+                "normalized_acc/test/avg": 1.0050409734249115
+            }
+        ]
+    },
+    "Cars__RESISC45": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8707872033119202,
+                "loss/test/Cars_epoch": 0.4459765553474426,
+                "acc/test/Cars": 0.8707872033119202,
+                "normalized_acc/test/Cars": 1.0149296522140503
+            }
+        ],
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.957460343837738,
+                "loss/test/RESISC45_epoch": 0.148873433470726,
+                "acc/test/RESISC45": 0.957460343837738,
+                "normalized_acc/test/RESISC45": 0.9904762506484985
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9141237735748291,
+                "normalized_acc/test/avg": 1.0027029514312744
+            }
+        ]
+    },
+    "Cars__EuroSAT": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8671807050704956,
+                "loss/test/Cars_epoch": 0.4543569087982178,
+                "acc/test/Cars": 0.8671807050704956,
+                "normalized_acc/test/Cars": 1.0107262134552002
+            }
+        ],
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9900000095367432,
+                "loss/test/EuroSAT_epoch": 0.040173351764678955,
+                "acc/test/EuroSAT": 0.9900000095367432,
+                "normalized_acc/test/EuroSAT": 0.9992523789405823
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9285903573036194,
+                "normalized_acc/test/avg": 1.0049892961978912
+            }
+        ]
+    },
+    "Cars__SVHN": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8475313782691956,
+                "loss/test/Cars_epoch": 0.5195723176002502,
+                "acc/test/Cars": 0.8475313782691956,
+                "normalized_acc/test/Cars": 0.9878242611885071
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9735325574874878,
+                "loss/test/SVHN_epoch": 0.11923374980688095,
+                "acc/test/SVHN": 0.9735325574874878,
+                "normalized_acc/test/SVHN": 0.998620867729187
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9105319678783417,
+                "normalized_acc/test/avg": 0.993222564458847
+            }
+        ]
+    },
+    "Cars__GTSRB": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8668076395988464,
+                "loss/test/Cars_epoch": 0.459646075963974,
+                "acc/test/Cars": 0.8668076395988464,
+                "normalized_acc/test/Cars": 1.010291337966919
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9874109029769897,
+                "loss/test/GTSRB_epoch": 0.05088208615779877,
+                "acc/test/GTSRB": 0.9874109029769897,
+                "normalized_acc/test/GTSRB": 0.9982390403747559
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9271092712879181,
+                "normalized_acc/test/avg": 1.0042651891708374
+            }
+        ]
+    },
+    "Cars__MNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8442979454994202,
+                "loss/test/Cars_epoch": 0.5533865094184875,
+                "acc/test/Cars": 0.8442979454994202,
+                "normalized_acc/test/Cars": 0.9840556383132935
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9961000084877014,
+                "loss/test/MNIST_epoch": 0.0280713252723217,
+                "acc/test/MNIST": 0.9961000084877014,
+                "normalized_acc/test/MNIST": 0.9995985627174377
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9201989769935608,
+                "normalized_acc/test/avg": 0.9918271005153656
+            }
+        ]
+    },
+    "Cars__DTD": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8767566084861755,
+                "loss/test/Cars_epoch": 0.43343910574913025,
+                "acc/test/Cars": 0.8767566084861755,
+                "normalized_acc/test/Cars": 1.021887183189392
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8159574270248413,
+                "loss/test/DTD_epoch": 0.8411140441894531,
+                "acc/test/DTD": 0.8159574270248413,
+                "normalized_acc/test/DTD": 0.9845955967903137
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8463570177555084,
+                "normalized_acc/test/avg": 1.003241389989853
+            }
+        ]
+    },
+    "Cars__Flowers102": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8763835430145264,
+                "loss/test/Cars_epoch": 0.437395304441452,
+                "acc/test/Cars": 0.8763835430145264,
+                "normalized_acc/test/Cars": 1.0214524269104004
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.892665445804596,
+                "loss/test/Flowers102_epoch": 0.41747918725013733,
+                "acc/test/Flowers102": 0.892665445804596,
+                "normalized_acc/test/Flowers102": 0.9473592638969421
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8845244944095612,
+                "normalized_acc/test/avg": 0.9844058454036713
+            }
+        ]
+    },
+    "Cars__PCAM": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8367118239402771,
+                "loss/test/Cars_epoch": 0.5210118889808655,
+                "acc/test/Cars": 0.8367118239402771,
+                "normalized_acc/test/Cars": 0.9752137660980225
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.865203857421875,
+                "loss/test/PCAM_epoch": 0.40650564432144165,
+                "acc/test/PCAM": 0.865203857421875,
+                "normalized_acc/test/PCAM": 0.9751659631729126
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.850957840681076,
+                "normalized_acc/test/avg": 0.9751898646354675
+            }
+        ]
+    },
+    "Cars__FER2013": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8669319748878479,
+                "loss/test/Cars_epoch": 0.4633934199810028,
+                "acc/test/Cars": 0.8669319748878479,
+                "normalized_acc/test/Cars": 1.0104362964630127
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7339091897010803,
+                "loss/test/FER2013_epoch": 1.1664830446243286,
+                "acc/test/FER2013": 0.7339091897010803,
+                "normalized_acc/test/FER2013": 0.9954648613929749
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8004205822944641,
+                "normalized_acc/test/avg": 1.0029505789279938
+            }
+        ]
+    },
+    "Cars__OxfordIIITPet": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8777515292167664,
+                "loss/test/Cars_epoch": 0.4306800961494446,
+                "acc/test/Cars": 0.8777515292167664,
+                "normalized_acc/test/Cars": 1.023046851158142
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9495775699615479,
+                "loss/test/OxfordIIITPet_epoch": 0.22157643735408783,
+                "acc/test/OxfordIIITPet": 0.9495775699615479,
+                "normalized_acc/test/OxfordIIITPet": 0.999139666557312
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9136645495891571,
+                "normalized_acc/test/avg": 1.011093258857727
+            }
+        ]
+    },
+    "Cars__STL10": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8561124205589294,
+                "loss/test/Cars_epoch": 0.4901638329029083,
+                "acc/test/Cars": 0.8561124205589294,
+                "normalized_acc/test/Cars": 0.9978257417678833
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.987625002861023,
+                "loss/test/STL10_epoch": 0.0410049669444561,
+                "acc/test/STL10": 0.987625002861023,
+                "normalized_acc/test/STL10": 0.9997469782829285
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9218687117099762,
+                "normalized_acc/test/avg": 0.9987863600254059
+            }
+        ]
+    },
+    "Cars__CIFAR100": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8588483929634094,
+                "loss/test/Cars_epoch": 0.48900675773620605,
+                "acc/test/Cars": 0.8588483929634094,
+                "normalized_acc/test/Cars": 1.0010145902633667
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8859999775886536,
+                "loss/test/CIFAR100_epoch": 0.508247435092926,
+                "acc/test/CIFAR100": 0.8859999775886536,
+                "normalized_acc/test/CIFAR100": 0.9924946427345276
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8724241852760315,
+                "normalized_acc/test/avg": 0.9967546164989471
+            }
+        ]
+    },
+    "Cars__CIFAR10": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.740828275680542,
+                "loss/test/Cars_epoch": 0.9211373329162598,
+                "acc/test/Cars": 0.740828275680542,
+                "normalized_acc/test/Cars": 0.863458514213562
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9815000295639038,
+                "loss/test/CIFAR10_epoch": 0.08484263718128204,
+                "acc/test/CIFAR10": 0.9815000295639038,
+                "normalized_acc/test/CIFAR10": 0.9998981952667236
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8611641526222229,
+                "normalized_acc/test/avg": 0.9316783547401428
+            }
+        ]
+    },
+    "Cars__Food101": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8673050403594971,
+                "loss/test/Cars_epoch": 0.46659547090530396,
+                "acc/test/Cars": 0.8673050403594971,
+                "normalized_acc/test/Cars": 1.0108710527420044
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9111683368682861,
+                "loss/test/Food101_epoch": 0.3719978630542755,
+                "acc/test/Food101": 0.9111683368682861,
+                "normalized_acc/test/Food101": 1.0023963451385498
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8892366886138916,
+                "normalized_acc/test/avg": 1.006633698940277
+            }
+        ]
+    },
+    "Cars__FashionMNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8465365171432495,
+                "loss/test/Cars_epoch": 0.5184708833694458,
+                "acc/test/Cars": 0.8465365171432495,
+                "normalized_acc/test/Cars": 0.9866647720336914
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9459999799728394,
+                "loss/test/FashionMNIST_epoch": 0.18898943066596985,
+                "acc/test/FashionMNIST": 0.9459999799728394,
+                "normalized_acc/test/FashionMNIST": 0.993697464466095
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8962682485580444,
+                "normalized_acc/test/avg": 0.9901811182498932
+            }
+        ]
+    },
+    "Cars__EMNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8625792860984802,
+                "loss/test/Cars_epoch": 0.49219846725463867,
+                "acc/test/Cars": 0.8625792860984802,
+                "normalized_acc/test/Cars": 1.0053631067276
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9957000017166138,
+                "loss/test/EMNIST_epoch": 0.03388221934437752,
+                "acc/test/EMNIST": 0.9957000017166138,
+                "normalized_acc/test/EMNIST": 1.0014079809188843
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.929139643907547,
+                "normalized_acc/test/avg": 1.0033855438232422
+            }
+        ]
+    },
+    "Cars__KMNIST": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8464121222496033,
+                "loss/test/Cars_epoch": 0.5260763764381409,
+                "acc/test/Cars": 0.8464121222496033,
+                "normalized_acc/test/Cars": 0.9865197539329529
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9775999784469604,
+                "loss/test/KMNIST_epoch": 0.08515536785125732,
+                "acc/test/KMNIST": 0.9775999784469604,
+                "normalized_acc/test/KMNIST": 0.9940009713172913
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9120060503482819,
+                "normalized_acc/test/avg": 0.9902603626251221
+            }
+        ]
+    },
+    "Cars__RenderedSST2": {
+        "Cars": [
+            {
+                "acc/test/Cars_epoch": 0.8767566084861755,
+                "loss/test/Cars_epoch": 0.4406924545764923,
+                "acc/test/Cars": 0.8767566084861755,
+                "normalized_acc/test/Cars": 1.021887183189392
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7935200333595276,
+                "loss/test/RenderedSST2_epoch": 0.8924059867858887,
+                "acc/test/RenderedSST2": 0.7935200333595276,
+                "normalized_acc/test/RenderedSST2": 1.0284696817398071
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8351383209228516,
+                "normalized_acc/test/avg": 1.0251784324645996
+            }
+        ]
+    },
+    "RESISC45__EuroSAT": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9301587343215942,
+                "loss/test/RESISC45_epoch": 0.2630922496318817,
+                "acc/test/RESISC45": 0.9301587343215942,
+                "normalized_acc/test/RESISC45": 0.9622331857681274
+            }
+        ],
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9859259128570557,
+                "loss/test/EuroSAT_epoch": 0.05309261754155159,
+                "acc/test/EuroSAT": 0.9859259128570557,
+                "normalized_acc/test/EuroSAT": 0.9951401948928833
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.958042323589325,
+                "normalized_acc/test/avg": 0.9786866903305054
+            }
+        ]
+    },
+    "RESISC45__SVHN": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9353968501091003,
+                "loss/test/RESISC45_epoch": 0.2458878457546234,
+                "acc/test/RESISC45": 0.9353968501091003,
+                "normalized_acc/test/RESISC45": 0.9676519632339478
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9721880555152893,
+                "loss/test/SVHN_epoch": 0.11916792392730713,
+                "acc/test/SVHN": 0.9721880555152893,
+                "normalized_acc/test/SVHN": 0.9972416758537292
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9537924528121948,
+                "normalized_acc/test/avg": 0.9824468195438385
+            }
+        ]
+    },
+    "RESISC45__GTSRB": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9558730125427246,
+                "loss/test/RESISC45_epoch": 0.16395606100559235,
+                "acc/test/RESISC45": 0.9558730125427246,
+                "normalized_acc/test/RESISC45": 0.9888342022895813
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9859066009521484,
+                "loss/test/GTSRB_epoch": 0.05193976312875748,
+                "acc/test/GTSRB": 0.9859066009521484,
+                "normalized_acc/test/GTSRB": 0.9967182278633118
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9708898067474365,
+                "normalized_acc/test/avg": 0.9927762150764465
+            }
+        ]
+    },
+    "RESISC45__MNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9465079307556152,
+                "loss/test/RESISC45_epoch": 0.2082493007183075,
+                "acc/test/RESISC45": 0.9465079307556152,
+                "normalized_acc/test/RESISC45": 0.9791461825370789
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958999752998352,
+                "loss/test/MNIST_epoch": 0.026503024622797966,
+                "acc/test/MNIST": 0.9958999752998352,
+                "normalized_acc/test/MNIST": 0.999397873878479
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9712039530277252,
+                "normalized_acc/test/avg": 0.9892720282077789
+            }
+        ]
+    },
+    "RESISC45__DTD": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9580952525138855,
+                "loss/test/RESISC45_epoch": 0.14813648164272308,
+                "acc/test/RESISC45": 0.9580952525138855,
+                "normalized_acc/test/RESISC45": 0.9911330342292786
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7888298034667969,
+                "loss/test/DTD_epoch": 0.8765934705734253,
+                "acc/test/DTD": 0.7888298034667969,
+                "normalized_acc/test/DTD": 0.9518613219261169
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8734625279903412,
+                "normalized_acc/test/avg": 0.9714971780776978
+            }
+        ]
+    },
+    "RESISC45__Flowers102": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9614285826683044,
+                "loss/test/RESISC45_epoch": 0.1374279260635376,
+                "acc/test/RESISC45": 0.9614285826683044,
+                "normalized_acc/test/RESISC45": 0.9945813417434692
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8980321884155273,
+                "loss/test/Flowers102_epoch": 0.3980600833892822,
+                "acc/test/Flowers102": 0.8980321884155273,
+                "normalized_acc/test/Flowers102": 0.9530548453330994
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9297303855419159,
+                "normalized_acc/test/avg": 0.9738180935382843
+            }
+        ]
+    },
+    "RESISC45__PCAM": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.8926984071731567,
+                "loss/test/RESISC45_epoch": 0.3765355348587036,
+                "acc/test/RESISC45": 0.8926984071731567,
+                "normalized_acc/test/RESISC45": 0.9234811663627625
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.870025634765625,
+                "loss/test/PCAM_epoch": 0.41454628109931946,
+                "acc/test/PCAM": 0.870025634765625,
+                "normalized_acc/test/PCAM": 0.9806005358695984
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8813620209693909,
+                "normalized_acc/test/avg": 0.9520408511161804
+            }
+        ]
+    },
+    "RESISC45__FER2013": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9609524011611938,
+                "loss/test/RESISC45_epoch": 0.1440298855304718,
+                "acc/test/RESISC45": 0.9609524011611938,
+                "normalized_acc/test/RESISC45": 0.9940887093544006
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7400389909744263,
+                "loss/test/FER2013_epoch": 1.167098879814148,
+                "acc/test/FER2013": 0.7400389909744263,
+                "normalized_acc/test/FER2013": 1.0037792921066284
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8504956960678101,
+                "normalized_acc/test/avg": 0.9989340007305145
+            }
+        ]
+    },
+    "RESISC45__OxfordIIITPet": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9623809456825256,
+                "loss/test/RESISC45_epoch": 0.1399676650762558,
+                "acc/test/RESISC45": 0.9623809456825256,
+                "normalized_acc/test/RESISC45": 0.9955665469169617
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.953120768070221,
+                "loss/test/OxfordIIITPet_epoch": 0.2103653997182846,
+                "acc/test/OxfordIIITPet": 0.953120768070221,
+                "normalized_acc/test/OxfordIIITPet": 1.0028678178787231
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9577508568763733,
+                "normalized_acc/test/avg": 0.9992171823978424
+            }
+        ]
+    },
+    "RESISC45__STL10": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9588888883590698,
+                "loss/test/RESISC45_epoch": 0.13968299329280853,
+                "acc/test/RESISC45": 0.9588888883590698,
+                "normalized_acc/test/RESISC45": 0.9919540286064148
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9879999756813049,
+                "loss/test/STL10_epoch": 0.03913482278585434,
+                "acc/test/STL10": 0.9879999756813049,
+                "normalized_acc/test/STL10": 1.0001264810562134
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9734444320201874,
+                "normalized_acc/test/avg": 0.9960402548313141
+            }
+        ]
+    },
+    "RESISC45__CIFAR100": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9477777481079102,
+                "loss/test/RESISC45_epoch": 0.1936393678188324,
+                "acc/test/RESISC45": 0.9477777481079102,
+                "normalized_acc/test/RESISC45": 0.9804597496986389
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8823999762535095,
+                "loss/test/CIFAR100_epoch": 0.5147395730018616,
+                "acc/test/CIFAR100": 0.8823999762535095,
+                "normalized_acc/test/CIFAR100": 0.9884619116783142
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9150888621807098,
+                "normalized_acc/test/avg": 0.9844608306884766
+            }
+        ]
+    },
+    "RESISC45__CIFAR10": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.94349205493927,
+                "loss/test/RESISC45_epoch": 0.19888028502464294,
+                "acc/test/RESISC45": 0.94349205493927,
+                "normalized_acc/test/RESISC45": 0.9760262966156006
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9817000031471252,
+                "loss/test/CIFAR10_epoch": 0.08034810423851013,
+                "acc/test/CIFAR10": 0.9817000031471252,
+                "normalized_acc/test/CIFAR10": 1.000101923942566
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9625960290431976,
+                "normalized_acc/test/avg": 0.9880641102790833
+            }
+        ]
+    },
+    "RESISC45__Food101": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9577777981758118,
+                "loss/test/RESISC45_epoch": 0.15336620807647705,
+                "acc/test/RESISC45": 0.9577777981758118,
+                "normalized_acc/test/RESISC45": 0.9908046722412109
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9118415713310242,
+                "loss/test/Food101_epoch": 0.36007654666900635,
+                "acc/test/Food101": 0.9118415713310242,
+                "normalized_acc/test/Food101": 1.0031369924545288
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.934809684753418,
+                "normalized_acc/test/avg": 0.9969708323478699
+            }
+        ]
+    },
+    "RESISC45__FashionMNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9493650794029236,
+                "loss/test/RESISC45_epoch": 0.17396576702594757,
+                "acc/test/RESISC45": 0.9493650794029236,
+                "normalized_acc/test/RESISC45": 0.9821018576622009
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9455999732017517,
+                "loss/test/FashionMNIST_epoch": 0.1919316053390503,
+                "acc/test/FashionMNIST": 0.9455999732017517,
+                "normalized_acc/test/FashionMNIST": 0.9932772517204285
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9474825263023376,
+                "normalized_acc/test/avg": 0.9876895546913147
+            }
+        ]
+    },
+    "RESISC45__EMNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9566666483879089,
+                "loss/test/RESISC45_epoch": 0.170107901096344,
+                "acc/test/RESISC45": 0.9566666483879089,
+                "normalized_acc/test/RESISC45": 0.9896551966667175
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.996399998664856,
+                "loss/test/EMNIST_epoch": 0.03078536130487919,
+                "acc/test/EMNIST": 0.996399998664856,
+                "normalized_acc/test/EMNIST": 1.0021120309829712
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9765333235263824,
+                "normalized_acc/test/avg": 0.9958836138248444
+            }
+        ]
+    },
+    "RESISC45__KMNIST": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9485714435577393,
+                "loss/test/RESISC45_epoch": 0.19577127695083618,
+                "acc/test/RESISC45": 0.9485714435577393,
+                "normalized_acc/test/RESISC45": 0.9812808036804199
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9817000031471252,
+                "loss/test/KMNIST_epoch": 0.0762379840016365,
+                "acc/test/KMNIST": 0.9817000031471252,
+                "normalized_acc/test/KMNIST": 0.9981697797775269
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9651357233524323,
+                "normalized_acc/test/avg": 0.9897252917289734
+            }
+        ]
+    },
+    "RESISC45__RenderedSST2": {
+        "RESISC45": [
+            {
+                "acc/test/RESISC45_epoch": 0.9615873098373413,
+                "loss/test/RESISC45_epoch": 0.1376384049654007,
+                "acc/test/RESISC45": 0.9615873098373413,
+                "normalized_acc/test/RESISC45": 0.9947454929351807
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.788577675819397,
+                "loss/test/RenderedSST2_epoch": 0.9088824987411499,
+                "acc/test/RenderedSST2": 0.788577675819397,
+                "normalized_acc/test/RenderedSST2": 1.022063970565796
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8750824928283691,
+                "normalized_acc/test/avg": 1.0084047317504883
+            }
+        ]
+    },
+    "EuroSAT__SVHN": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9700000286102295,
+                "loss/test/EuroSAT_epoch": 0.10496438294649124,
+                "acc/test/EuroSAT": 0.9700000286102295,
+                "normalized_acc/test/EuroSAT": 0.979065477848053
+            }
+        ],
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9714581966400146,
+                "loss/test/SVHN_epoch": 0.1213349848985672,
+                "acc/test/SVHN": 0.9714581966400146,
+                "normalized_acc/test/SVHN": 0.9964930415153503
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9707291126251221,
+                "normalized_acc/test/avg": 0.9877792596817017
+            }
+        ]
+    },
+    "EuroSAT__GTSRB": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9855555295944214,
+                "loss/test/EuroSAT_epoch": 0.05043386295437813,
+                "acc/test/EuroSAT": 0.9855555295944214,
+                "normalized_acc/test/EuroSAT": 0.994766354560852
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9835312962532043,
+                "loss/test/GTSRB_epoch": 0.06976499408483505,
+                "acc/test/GTSRB": 0.9835312962532043,
+                "normalized_acc/test/GTSRB": 0.9943168759346008
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9845434129238129,
+                "normalized_acc/test/avg": 0.9945416152477264
+            }
+        ]
+    },
+    "EuroSAT__MNIST": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9825925827026367,
+                "loss/test/EuroSAT_epoch": 0.06058354675769806,
+                "acc/test/EuroSAT": 0.9825925827026367,
+                "normalized_acc/test/EuroSAT": 0.9917756915092468
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958000183105469,
+                "loss/test/MNIST_epoch": 0.028382491320371628,
+                "acc/test/MNIST": 0.9958000183105469,
+                "normalized_acc/test/MNIST": 0.999297559261322
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9891963005065918,
+                "normalized_acc/test/avg": 0.9955366253852844
+            }
+        ]
+    },
+    "EuroSAT__DTD": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9881481528282166,
+                "loss/test/EuroSAT_epoch": 0.03984714299440384,
+                "acc/test/EuroSAT": 0.9881481528282166,
+                "normalized_acc/test/EuroSAT": 0.997383177280426
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7909574508666992,
+                "loss/test/DTD_epoch": 0.8491718769073486,
+                "acc/test/DTD": 0.7909574508666992,
+                "normalized_acc/test/DTD": 0.9544287323951721
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8895528018474579,
+                "normalized_acc/test/avg": 0.9759059548377991
+            }
+        ]
+    },
+    "EuroSAT__Flowers102": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9881481528282166,
+                "loss/test/EuroSAT_epoch": 0.04229190573096275,
+                "acc/test/EuroSAT": 0.9881481528282166,
+                "normalized_acc/test/EuroSAT": 0.997383177280426
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.906488835811615,
+                "loss/test/Flowers102_epoch": 0.37027421593666077,
+                "acc/test/Flowers102": 0.906488835811615,
+                "normalized_acc/test/Flowers102": 0.9620296359062195
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9473184943199158,
+                "normalized_acc/test/avg": 0.9797064065933228
+            }
+        ]
+    },
+    "EuroSAT__PCAM": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9511111378669739,
+                "loss/test/EuroSAT_epoch": 0.15358774363994598,
+                "acc/test/EuroSAT": 0.9511111378669739,
+                "normalized_acc/test/EuroSAT": 0.9600000381469727
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.857421875,
+                "loss/test/PCAM_epoch": 0.4568352699279785,
+                "acc/test/PCAM": 0.857421875,
+                "normalized_acc/test/PCAM": 0.9663949608802795
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9042665064334869,
+                "normalized_acc/test/avg": 0.9631974995136261
+            }
+        ]
+    },
+    "EuroSAT__FER2013": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9851852059364319,
+                "loss/test/EuroSAT_epoch": 0.058692678809165955,
+                "acc/test/EuroSAT": 0.9851852059364319,
+                "normalized_acc/test/EuroSAT": 0.9943925738334656
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7407355904579163,
+                "loss/test/FER2013_epoch": 1.1065974235534668,
+                "acc/test/FER2013": 0.7407355904579163,
+                "normalized_acc/test/FER2013": 1.004724144935608
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8629603981971741,
+                "normalized_acc/test/avg": 0.9995583593845367
+            }
+        ]
+    },
+    "EuroSAT__OxfordIIITPet": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9881481528282166,
+                "loss/test/EuroSAT_epoch": 0.04526364058256149,
+                "acc/test/EuroSAT": 0.9881481528282166,
+                "normalized_acc/test/EuroSAT": 0.997383177280426
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9520305395126343,
+                "loss/test/OxfordIIITPet_epoch": 0.2090969681739807,
+                "acc/test/OxfordIIITPet": 0.9520305395126343,
+                "normalized_acc/test/OxfordIIITPet": 1.001720666885376
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9700893461704254,
+                "normalized_acc/test/avg": 0.999551922082901
+            }
+        ]
+    },
+    "EuroSAT__STL10": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9881481528282166,
+                "loss/test/EuroSAT_epoch": 0.041723888367414474,
+                "acc/test/EuroSAT": 0.9881481528282166,
+                "normalized_acc/test/EuroSAT": 0.997383177280426
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9851250052452087,
+                "loss/test/STL10_epoch": 0.04441351816058159,
+                "acc/test/STL10": 0.9851250052452087,
+                "normalized_acc/test/STL10": 0.9972162842750549
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9866365790367126,
+                "normalized_acc/test/avg": 0.9972997307777405
+            }
+        ]
+    },
+    "EuroSAT__CIFAR100": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9748148322105408,
+                "loss/test/EuroSAT_epoch": 0.10229837894439697,
+                "acc/test/EuroSAT": 0.9748148322105408,
+                "normalized_acc/test/EuroSAT": 0.9839252829551697
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8702999949455261,
+                "loss/test/CIFAR100_epoch": 0.5520732402801514,
+                "acc/test/CIFAR100": 0.8702999949455261,
+                "normalized_acc/test/CIFAR100": 0.9749075770378113
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9225574135780334,
+                "normalized_acc/test/avg": 0.9794164299964905
+            }
+        ]
+    },
+    "EuroSAT__CIFAR10": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9781481623649597,
+                "loss/test/EuroSAT_epoch": 0.07987085729837418,
+                "acc/test/EuroSAT": 0.9781481623649597,
+                "normalized_acc/test/EuroSAT": 0.9872897863388062
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9797999858856201,
+                "loss/test/CIFAR10_epoch": 0.08364835381507874,
+                "acc/test/CIFAR10": 0.9797999858856201,
+                "normalized_acc/test/CIFAR10": 0.9981662631034851
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9789740741252899,
+                "normalized_acc/test/avg": 0.9927280247211456
+            }
+        ]
+    },
+    "EuroSAT__Food101": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9877777695655823,
+                "loss/test/EuroSAT_epoch": 0.05033843591809273,
+                "acc/test/EuroSAT": 0.9877777695655823,
+                "normalized_acc/test/EuroSAT": 0.9970093369483948
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9074851274490356,
+                "loss/test/Food101_epoch": 0.3761811852455139,
+                "acc/test/Food101": 0.9074851274490356,
+                "normalized_acc/test/Food101": 0.998344361782074
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.947631448507309,
+                "normalized_acc/test/avg": 0.9976768493652344
+            }
+        ]
+    },
+    "EuroSAT__FashionMNIST": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9844444394111633,
+                "loss/test/EuroSAT_epoch": 0.059418950229883194,
+                "acc/test/EuroSAT": 0.9844444394111633,
+                "normalized_acc/test/EuroSAT": 0.9936448931694031
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9423999786376953,
+                "loss/test/FashionMNIST_epoch": 0.19427697360515594,
+                "acc/test/FashionMNIST": 0.9423999786376953,
+                "normalized_acc/test/FashionMNIST": 0.9899159073829651
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9634222090244293,
+                "normalized_acc/test/avg": 0.9917804002761841
+            }
+        ]
+    },
+    "EuroSAT__EMNIST": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9851852059364319,
+                "loss/test/EuroSAT_epoch": 0.05423993244767189,
+                "acc/test/EuroSAT": 0.9851852059364319,
+                "normalized_acc/test/EuroSAT": 0.9943925738334656
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9962000250816345,
+                "loss/test/EMNIST_epoch": 0.0319865345954895,
+                "acc/test/EMNIST": 0.9962000250816345,
+                "normalized_acc/test/EMNIST": 1.001910924911499
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9906926155090332,
+                "normalized_acc/test/avg": 0.9981517493724823
+            }
+        ]
+    },
+    "EuroSAT__KMNIST": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9766666889190674,
+                "loss/test/EuroSAT_epoch": 0.0834699347615242,
+                "acc/test/EuroSAT": 0.9766666889190674,
+                "normalized_acc/test/EuroSAT": 0.9857944250106812
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.979200005531311,
+                "loss/test/KMNIST_epoch": 0.08427663892507553,
+                "acc/test/KMNIST": 0.979200005531311,
+                "normalized_acc/test/KMNIST": 0.9956278800964355
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9779333472251892,
+                "normalized_acc/test/avg": 0.9907111525535583
+            }
+        ]
+    },
+    "EuroSAT__RenderedSST2": {
+        "EuroSAT": [
+            {
+                "acc/test/EuroSAT_epoch": 0.9900000095367432,
+                "loss/test/EuroSAT_epoch": 0.032845038920640945,
+                "acc/test/EuroSAT": 0.9900000095367432,
+                "normalized_acc/test/EuroSAT": 0.9992523789405823
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7896760106086731,
+                "loss/test/RenderedSST2_epoch": 0.8848086595535278,
+                "acc/test/RenderedSST2": 0.7896760106086731,
+                "normalized_acc/test/RenderedSST2": 1.0234875679016113
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8898380100727081,
+                "normalized_acc/test/avg": 1.0113699734210968
+            }
+        ]
+    },
+    "SVHN__GTSRB": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9691149592399597,
+                "loss/test/SVHN_epoch": 0.13647201657295227,
+                "acc/test/SVHN": 0.9691149592399597,
+                "normalized_acc/test/SVHN": 0.9940894246101379
+            }
+        ],
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9676167964935303,
+                "loss/test/GTSRB_epoch": 0.143932044506073,
+                "acc/test/GTSRB": 0.9676167964935303,
+                "normalized_acc/test/GTSRB": 0.9782278537750244
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.968365877866745,
+                "normalized_acc/test/avg": 0.9861586391925812
+            }
+        ]
+    },
+    "SVHN__MNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9616241455078125,
+                "loss/test/SVHN_epoch": 0.15905660390853882,
+                "acc/test/SVHN": 0.9616241455078125,
+                "normalized_acc/test/SVHN": 0.9864055514335632
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9943000078201294,
+                "loss/test/MNIST_epoch": 0.031091369688510895,
+                "acc/test/MNIST": 0.9943000078201294,
+                "normalized_acc/test/MNIST": 0.9977922439575195
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.977962076663971,
+                "normalized_acc/test/avg": 0.9920988976955414
+            }
+        ]
+    },
+    "SVHN__DTD": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9734557271003723,
+                "loss/test/SVHN_epoch": 0.11830681562423706,
+                "acc/test/SVHN": 0.9734557271003723,
+                "normalized_acc/test/SVHN": 0.9985420107841492
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7329787015914917,
+                "loss/test/DTD_epoch": 1.1751148700714111,
+                "acc/test/DTD": 0.7329787015914917,
+                "normalized_acc/test/DTD": 0.8844671845436096
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.853217214345932,
+                "normalized_acc/test/avg": 0.9415045976638794
+            }
+        ]
+    },
+    "SVHN__Flowers102": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9734557271003723,
+                "loss/test/SVHN_epoch": 0.11679544299840927,
+                "acc/test/SVHN": 0.9734557271003723,
+                "normalized_acc/test/SVHN": 0.9985420107841492
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8398113250732422,
+                "loss/test/Flowers102_epoch": 0.6209032535552979,
+                "acc/test/Flowers102": 0.8398113250732422,
+                "normalized_acc/test/Flowers102": 0.8912667632102966
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9066335260868073,
+                "normalized_acc/test/avg": 0.9449043869972229
+            }
+        ]
+    },
+    "SVHN__PCAM": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9696143269538879,
+                "loss/test/SVHN_epoch": 0.1314571648836136,
+                "acc/test/SVHN": 0.9696143269538879,
+                "normalized_acc/test/SVHN": 0.9946016669273376
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.782989501953125,
+                "loss/test/PCAM_epoch": 0.7119642496109009,
+                "acc/test/PCAM": 0.782989501953125,
+                "normalized_acc/test/PCAM": 0.8825026750564575
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8763019144535065,
+                "normalized_acc/test/avg": 0.9385521709918976
+            }
+        ]
+    },
+    "SVHN__FER2013": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9696143269538879,
+                "loss/test/SVHN_epoch": 0.1326036900281906,
+                "acc/test/SVHN": 0.9696143269538879,
+                "normalized_acc/test/SVHN": 0.9946016669273376
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6875174045562744,
+                "loss/test/FER2013_epoch": 1.3243098258972168,
+                "acc/test/FER2013": 0.6875174045562744,
+                "normalized_acc/test/FER2013": 0.932539701461792
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8285658657550812,
+                "normalized_acc/test/avg": 0.9635706841945648
+            }
+        ]
+    },
+    "SVHN__OxfordIIITPet": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9737630486488342,
+                "loss/test/SVHN_epoch": 0.11712739616632462,
+                "acc/test/SVHN": 0.9737630486488342,
+                "normalized_acc/test/SVHN": 0.9988572597503662
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9394930601119995,
+                "loss/test/OxfordIIITPet_epoch": 0.24682773649692535,
+                "acc/test/OxfordIIITPet": 0.9394930601119995,
+                "normalized_acc/test/OxfordIIITPet": 0.9885287880897522
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9566280543804169,
+                "normalized_acc/test/avg": 0.9936930239200592
+            }
+        ]
+    },
+    "SVHN__STL10": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9723801612854004,
+                "loss/test/SVHN_epoch": 0.12072047591209412,
+                "acc/test/SVHN": 0.9723801612854004,
+                "normalized_acc/test/SVHN": 0.9974387288093567
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9775000214576721,
+                "loss/test/STL10_epoch": 0.07383322715759277,
+                "acc/test/STL10": 0.9775000214576721,
+                "normalized_acc/test/STL10": 0.989497721195221
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9749400913715363,
+                "normalized_acc/test/avg": 0.9934682250022888
+            }
+        ]
+    },
+    "SVHN__CIFAR100": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9724569916725159,
+                "loss/test/SVHN_epoch": 0.11902032047510147,
+                "acc/test/SVHN": 0.9724569916725159,
+                "normalized_acc/test/SVHN": 0.9975175857543945
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8065000176429749,
+                "loss/test/CIFAR100_epoch": 0.8765289783477783,
+                "acc/test/CIFAR100": 0.8065000176429749,
+                "normalized_acc/test/CIFAR100": 0.9034389853477478
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8894785046577454,
+                "normalized_acc/test/avg": 0.9504782855510712
+            }
+        ]
+    },
+    "SVHN__CIFAR10": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9695758819580078,
+                "loss/test/SVHN_epoch": 0.13079822063446045,
+                "acc/test/SVHN": 0.9695758819580078,
+                "normalized_acc/test/SVHN": 0.9945622086524963
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9696999788284302,
+                "loss/test/CIFAR10_epoch": 0.13178616762161255,
+                "acc/test/CIFAR10": 0.9696999788284302,
+                "normalized_acc/test/CIFAR10": 0.9878769516944885
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.969637930393219,
+                "normalized_acc/test/avg": 0.9912195801734924
+            }
+        ]
+    },
+    "SVHN__Food101": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9721880555152893,
+                "loss/test/SVHN_epoch": 0.12360237538814545,
+                "acc/test/SVHN": 0.9721880555152893,
+                "normalized_acc/test/SVHN": 0.9972416758537292
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8903762102127075,
+                "loss/test/Food101_epoch": 0.4634127616882324,
+                "acc/test/Food101": 0.8903762102127075,
+                "normalized_acc/test/Food101": 0.9795224666595459
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9312821328639984,
+                "normalized_acc/test/avg": 0.9883820712566376
+            }
+        ]
+    },
+    "SVHN__FashionMNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9680777788162231,
+                "loss/test/SVHN_epoch": 0.13482436537742615,
+                "acc/test/SVHN": 0.9680777788162231,
+                "normalized_acc/test/SVHN": 0.9930254817008972
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9409999847412109,
+                "loss/test/FashionMNIST_epoch": 0.20659789443016052,
+                "acc/test/FashionMNIST": 0.9409999847412109,
+                "normalized_acc/test/FashionMNIST": 0.9884453415870667
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.954538881778717,
+                "normalized_acc/test/avg": 0.9907354116439819
+            }
+        ]
+    },
+    "SVHN__EMNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9655424356460571,
+                "loss/test/SVHN_epoch": 0.14747926592826843,
+                "acc/test/SVHN": 0.9655424356460571,
+                "normalized_acc/test/SVHN": 0.9904248118400574
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9943000078201294,
+                "loss/test/EMNIST_epoch": 0.04219549894332886,
+                "acc/test/EMNIST": 0.9943000078201294,
+                "normalized_acc/test/EMNIST": 1.0
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9799212217330933,
+                "normalized_acc/test/avg": 0.9952124059200287
+            }
+        ]
+    },
+    "SVHN__KMNIST": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9625076651573181,
+                "loss/test/SVHN_epoch": 0.1584395170211792,
+                "acc/test/SVHN": 0.9625076651573181,
+                "normalized_acc/test/SVHN": 0.987311840057373
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9664000272750854,
+                "loss/test/KMNIST_epoch": 0.13847896456718445,
+                "acc/test/KMNIST": 0.9664000272750854,
+                "normalized_acc/test/KMNIST": 0.9826131463050842
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9644538462162018,
+                "normalized_acc/test/avg": 0.9849624931812286
+            }
+        ]
+    },
+    "SVHN__RenderedSST2": {
+        "SVHN": [
+            {
+                "acc/test/SVHN_epoch": 0.9736093878746033,
+                "loss/test/SVHN_epoch": 0.11962096393108368,
+                "acc/test/SVHN": 0.9736093878746033,
+                "normalized_acc/test/SVHN": 0.9986996650695801
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7797912955284119,
+                "loss/test/RenderedSST2_epoch": 0.7345914840698242,
+                "acc/test/RenderedSST2": 0.7797912955284119,
+                "normalized_acc/test/RenderedSST2": 1.0106761455535889
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8767003417015076,
+                "normalized_acc/test/avg": 1.0046879053115845
+            }
+        ]
+    },
+    "GTSRB__MNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9601742029190063,
+                "loss/test/GTSRB_epoch": 0.16219110786914825,
+                "acc/test/GTSRB": 0.9601742029190063,
+                "normalized_acc/test/GTSRB": 0.9707036018371582
+            }
+        ],
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9955000281333923,
+                "loss/test/MNIST_epoch": 0.03250974789261818,
+                "acc/test/MNIST": 0.9955000281333923,
+                "normalized_acc/test/MNIST": 0.9989964962005615
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9778371155261993,
+                "normalized_acc/test/avg": 0.9848500490188599
+            }
+        ]
+    },
+    "GTSRB__DTD": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9880443215370178,
+                "loss/test/GTSRB_epoch": 0.04615335911512375,
+                "acc/test/GTSRB": 0.9880443215370178,
+                "normalized_acc/test/GTSRB": 0.9988793730735779
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7888298034667969,
+                "loss/test/DTD_epoch": 0.9183095097541809,
+                "acc/test/DTD": 0.7888298034667969,
+                "normalized_acc/test/DTD": 0.9518613219261169
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8884370625019073,
+                "normalized_acc/test/avg": 0.9753703474998474
+            }
+        ]
+    },
+    "GTSRB__Flowers102": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9896278977394104,
+                "loss/test/GTSRB_epoch": 0.04164601117372513,
+                "acc/test/GTSRB": 0.9896278977394104,
+                "normalized_acc/test/GTSRB": 1.0004802942276
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8964059352874756,
+                "loss/test/Flowers102_epoch": 0.4149017333984375,
+                "acc/test/Flowers102": 0.8964059352874756,
+                "normalized_acc/test/Flowers102": 0.9513289332389832
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.943016916513443,
+                "normalized_acc/test/avg": 0.9759046137332916
+            }
+        ]
+    },
+    "GTSRB__PCAM": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9727632403373718,
+                "loss/test/GTSRB_epoch": 0.10939151793718338,
+                "acc/test/GTSRB": 0.9727632403373718,
+                "normalized_acc/test/GTSRB": 0.9834307432174683
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.871673583984375,
+                "loss/test/PCAM_epoch": 0.4136405289173126,
+                "acc/test/PCAM": 0.871673583984375,
+                "normalized_acc/test/PCAM": 0.9824579358100891
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9222184121608734,
+                "normalized_acc/test/avg": 0.9829443395137787
+            }
+        ]
+    },
+    "GTSRB__FER2013": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9848772883415222,
+                "loss/test/GTSRB_epoch": 0.0581662543118,
+                "acc/test/GTSRB": 0.9848772883415222,
+                "normalized_acc/test/GTSRB": 0.9956775903701782
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7128726840019226,
+                "loss/test/FER2013_epoch": 1.2997214794158936,
+                "acc/test/FER2013": 0.7128726840019226,
+                "normalized_acc/test/FER2013": 0.9669312238693237
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8488749861717224,
+                "normalized_acc/test/avg": 0.981304407119751
+            }
+        ]
+    },
+    "GTSRB__OxfordIIITPet": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9885985851287842,
+                "loss/test/GTSRB_epoch": 0.04540134593844414,
+                "acc/test/GTSRB": 0.9885985851287842,
+                "normalized_acc/test/GTSRB": 0.9994397163391113
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9490324258804321,
+                "loss/test/OxfordIIITPet_epoch": 0.21499736607074738,
+                "acc/test/OxfordIIITPet": 0.9490324258804321,
+                "normalized_acc/test/OxfordIIITPet": 0.9985660910606384
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9688155055046082,
+                "normalized_acc/test/avg": 0.9990029036998749
+            }
+        ]
+    },
+    "GTSRB__STL10": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9869358539581299,
+                "loss/test/GTSRB_epoch": 0.04882911592721939,
+                "acc/test/GTSRB": 0.9869358539581299,
+                "normalized_acc/test/GTSRB": 0.9977587461471558
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9863749742507935,
+                "loss/test/STL10_epoch": 0.04600423946976662,
+                "acc/test/STL10": 0.9863749742507935,
+                "normalized_acc/test/STL10": 0.9984815716743469
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9866554141044617,
+                "normalized_acc/test/avg": 0.9981201589107513
+            }
+        ]
+    },
+    "GTSRB__CIFAR100": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9768804311752319,
+                "loss/test/GTSRB_epoch": 0.08768489956855774,
+                "acc/test/GTSRB": 0.9768804311752319,
+                "normalized_acc/test/GTSRB": 0.9875930547714233
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8615000247955322,
+                "loss/test/CIFAR100_epoch": 0.6395057439804077,
+                "acc/test/CIFAR100": 0.8615000247955322,
+                "normalized_acc/test/CIFAR100": 0.9650498628616333
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9191902279853821,
+                "normalized_acc/test/avg": 0.9763214588165283
+            }
+        ]
+    },
+    "GTSRB__CIFAR10": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9753760695457458,
+                "loss/test/GTSRB_epoch": 0.09451877325773239,
+                "acc/test/GTSRB": 0.9753760695457458,
+                "normalized_acc/test/GTSRB": 0.9860721826553345
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9799000024795532,
+                "loss/test/CIFAR10_epoch": 0.08605526387691498,
+                "acc/test/CIFAR10": 0.9799000024795532,
+                "normalized_acc/test/CIFAR10": 0.9982681274414062
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9776380360126495,
+                "normalized_acc/test/avg": 0.9921701550483704
+            }
+        ]
+    },
+    "GTSRB__Food101": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.987331748008728,
+                "loss/test/GTSRB_epoch": 0.047384921461343765,
+                "acc/test/GTSRB": 0.987331748008728,
+                "normalized_acc/test/GTSRB": 0.9981589913368225
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9075247645378113,
+                "loss/test/Food101_epoch": 0.3924822509288788,
+                "acc/test/Food101": 0.9075247645378113,
+                "normalized_acc/test/Food101": 0.9983879923820496
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9474282562732697,
+                "normalized_acc/test/avg": 0.998273491859436
+            }
+        ]
+    },
+    "GTSRB__FashionMNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9811559915542603,
+                "loss/test/GTSRB_epoch": 0.07323308289051056,
+                "acc/test/GTSRB": 0.9811559915542603,
+                "normalized_acc/test/GTSRB": 0.9919155240058899
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9473000168800354,
+                "loss/test/FashionMNIST_epoch": 0.18660743534564972,
+                "acc/test/FashionMNIST": 0.9473000168800354,
+                "normalized_acc/test/FashionMNIST": 0.9950630068778992
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9642280042171478,
+                "normalized_acc/test/avg": 0.9934892654418945
+            }
+        ]
+    },
+    "GTSRB__EMNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9765637516975403,
+                "loss/test/GTSRB_epoch": 0.1038946807384491,
+                "acc/test/GTSRB": 0.9765637516975403,
+                "normalized_acc/test/GTSRB": 0.9872729182243347
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9948999881744385,
+                "loss/test/EMNIST_epoch": 0.04001593962311745,
+                "acc/test/EMNIST": 0.9948999881744385,
+                "normalized_acc/test/EMNIST": 1.000603437423706
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9857318699359894,
+                "normalized_acc/test/avg": 0.9939381778240204
+            }
+        ]
+    },
+    "GTSRB__KMNIST": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9687252640724182,
+                "loss/test/GTSRB_epoch": 0.13467957079410553,
+                "acc/test/GTSRB": 0.9687252640724182,
+                "normalized_acc/test/GTSRB": 0.9793484807014465
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9778000116348267,
+                "loss/test/KMNIST_epoch": 0.0883355364203453,
+                "acc/test/KMNIST": 0.9778000116348267,
+                "normalized_acc/test/KMNIST": 0.9942044019699097
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9732626378536224,
+                "normalized_acc/test/avg": 0.9867764413356781
+            }
+        ]
+    },
+    "GTSRB__RenderedSST2": {
+        "GTSRB": [
+            {
+                "acc/test/GTSRB_epoch": 0.9902612566947937,
+                "loss/test/GTSRB_epoch": 0.03737615793943405,
+                "acc/test/GTSRB": 0.9902612566947937,
+                "normalized_acc/test/GTSRB": 1.0011205673217773
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7863811254501343,
+                "loss/test/RenderedSST2_epoch": 0.8215896487236023,
+                "acc/test/RenderedSST2": 0.7863811254501343,
+                "normalized_acc/test/RenderedSST2": 1.0192171335220337
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.888321191072464,
+                "normalized_acc/test/avg": 1.0101688504219055
+            }
+        ]
+    },
+    "MNIST__DTD": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9965000152587891,
+                "loss/test/MNIST_epoch": 0.027388231828808784,
+                "acc/test/MNIST": 0.9965000152587891,
+                "normalized_acc/test/MNIST": 1.0
+            }
+        ],
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7744680643081665,
+                "loss/test/DTD_epoch": 0.9822266101837158,
+                "acc/test/DTD": 0.7744680643081665,
+                "normalized_acc/test/DTD": 0.9345313906669617
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8854840397834778,
+                "normalized_acc/test/avg": 0.9672656953334808
+            }
+        ]
+    },
+    "MNIST__Flowers102": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958999752998352,
+                "loss/test/MNIST_epoch": 0.027999160811305046,
+                "acc/test/MNIST": 0.9958999752998352,
+                "normalized_acc/test/MNIST": 0.999397873878479
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8520084619522095,
+                "loss/test/Flowers102_epoch": 0.5743439197540283,
+                "acc/test/Flowers102": 0.8520084619522095,
+                "normalized_acc/test/Flowers102": 0.9042112231254578
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9239542186260223,
+                "normalized_acc/test/avg": 0.9518045485019684
+            }
+        ]
+    },
+    "MNIST__PCAM": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9955999851226807,
+                "loss/test/MNIST_epoch": 0.032182276248931885,
+                "acc/test/MNIST": 0.9955999851226807,
+                "normalized_acc/test/MNIST": 0.9990968108177185
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.868255615234375,
+                "loss/test/PCAM_epoch": 0.4185429811477661,
+                "acc/test/PCAM": 0.868255615234375,
+                "normalized_acc/test/PCAM": 0.9786055684089661
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9319278001785278,
+                "normalized_acc/test/avg": 0.9888511896133423
+            }
+        ]
+    },
+    "MNIST__FER2013": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958000183105469,
+                "loss/test/MNIST_epoch": 0.02778898924589157,
+                "acc/test/MNIST": 0.9958000183105469,
+                "normalized_acc/test/MNIST": 0.999297559261322
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7038172483444214,
+                "loss/test/FER2013_epoch": 1.2453629970550537,
+                "acc/test/FER2013": 0.7038172483444214,
+                "normalized_acc/test/FER2013": 0.9546485543251038
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8498086333274841,
+                "normalized_acc/test/avg": 0.9769730567932129
+            }
+        ]
+    },
+    "MNIST__OxfordIIITPet": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9959999918937683,
+                "loss/test/MNIST_epoch": 0.02774699777364731,
+                "acc/test/MNIST": 0.9959999918937683,
+                "normalized_acc/test/MNIST": 0.9994982481002808
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.937585175037384,
+                "loss/test/OxfordIIITPet_epoch": 0.25259506702423096,
+                "acc/test/OxfordIIITPet": 0.937585175037384,
+                "normalized_acc/test/OxfordIIITPet": 0.9865213632583618
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9667925834655762,
+                "normalized_acc/test/avg": 0.9930098056793213
+            }
+        ]
+    },
+    "MNIST__STL10": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958000183105469,
+                "loss/test/MNIST_epoch": 0.027074793353676796,
+                "acc/test/MNIST": 0.9958000183105469,
+                "normalized_acc/test/MNIST": 0.999297559261322
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9764999747276306,
+                "loss/test/STL10_epoch": 0.07638290524482727,
+                "acc/test/STL10": 0.9764999747276306,
+                "normalized_acc/test/STL10": 0.9884853959083557
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9861499965190887,
+                "normalized_acc/test/avg": 0.9938914775848389
+            }
+        ]
+    },
+    "MNIST__CIFAR100": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9955999851226807,
+                "loss/test/MNIST_epoch": 0.0284624882042408,
+                "acc/test/MNIST": 0.9955999851226807,
+                "normalized_acc/test/MNIST": 0.9990968108177185
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8410999774932861,
+                "loss/test/CIFAR100_epoch": 0.7074815630912781,
+                "acc/test/CIFAR100": 0.8410999774932861,
+                "normalized_acc/test/CIFAR100": 0.9421977996826172
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9183499813079834,
+                "normalized_acc/test/avg": 0.9706473052501678
+            }
+        ]
+    },
+    "MNIST__CIFAR10": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9955999851226807,
+                "loss/test/MNIST_epoch": 0.029698805883526802,
+                "acc/test/MNIST": 0.9955999851226807,
+                "normalized_acc/test/MNIST": 0.9990968108177185
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9749000072479248,
+                "loss/test/CIFAR10_epoch": 0.11229648441076279,
+                "acc/test/CIFAR10": 0.9749000072479248,
+                "normalized_acc/test/CIFAR10": 0.9931744337081909
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9852499961853027,
+                "normalized_acc/test/avg": 0.9961356222629547
+            }
+        ]
+    },
+    "MNIST__Food101": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958000183105469,
+                "loss/test/MNIST_epoch": 0.027872152626514435,
+                "acc/test/MNIST": 0.9958000183105469,
+                "normalized_acc/test/MNIST": 0.999297559261322
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8937029838562012,
+                "loss/test/Food101_epoch": 0.44150447845458984,
+                "acc/test/Food101": 0.8937029838562012,
+                "normalized_acc/test/Food101": 0.9831823110580444
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.944751501083374,
+                "normalized_acc/test/avg": 0.9912399351596832
+            }
+        ]
+    },
+    "MNIST__FashionMNIST": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.995199978351593,
+                "loss/test/MNIST_epoch": 0.03157759830355644,
+                "acc/test/MNIST": 0.995199978351593,
+                "normalized_acc/test/MNIST": 0.9986953735351562
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9347000122070312,
+                "loss/test/FashionMNIST_epoch": 0.23224690556526184,
+                "acc/test/FashionMNIST": 0.9347000122070312,
+                "normalized_acc/test/FashionMNIST": 0.9818277359008789
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9649499952793121,
+                "normalized_acc/test/avg": 0.9902615547180176
+            }
+        ]
+    },
+    "MNIST__EMNIST": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9968000054359436,
+                "loss/test/MNIST_epoch": 0.024949198588728905,
+                "acc/test/MNIST": 0.9968000054359436,
+                "normalized_acc/test/MNIST": 1.0003010034561157
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9973999857902527,
+                "loss/test/EMNIST_epoch": 0.031855396926403046,
+                "acc/test/EMNIST": 0.9973999857902527,
+                "normalized_acc/test/EMNIST": 1.0031177997589111
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9970999956130981,
+                "normalized_acc/test/avg": 1.0017094016075134
+            }
+        ]
+    },
+    "MNIST__KMNIST": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9932000041007996,
+                "loss/test/MNIST_epoch": 0.0378250777721405,
+                "acc/test/MNIST": 0.9932000041007996,
+                "normalized_acc/test/MNIST": 0.9966884255409241
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.930400013923645,
+                "loss/test/KMNIST_epoch": 0.30334198474884033,
+                "acc/test/KMNIST": 0.930400013923645,
+                "normalized_acc/test/KMNIST": 0.9460091590881348
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9618000090122223,
+                "normalized_acc/test/avg": 0.9713487923145294
+            }
+        ]
+    },
+    "MNIST__RenderedSST2": {
+        "MNIST": [
+            {
+                "acc/test/MNIST_epoch": 0.9958999752998352,
+                "loss/test/MNIST_epoch": 0.028804665431380272,
+                "acc/test/MNIST": 0.9958999752998352,
+                "normalized_acc/test/MNIST": 0.999397873878479
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7896760106086731,
+                "loss/test/RenderedSST2_epoch": 0.6561211347579956,
+                "acc/test/RenderedSST2": 0.7896760106086731,
+                "normalized_acc/test/RenderedSST2": 1.0234875679016113
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8927879929542542,
+                "normalized_acc/test/avg": 1.0114427208900452
+            }
+        ]
+    },
+    "DTD__Flowers102": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8132978677749634,
+                "loss/test/DTD_epoch": 0.8346771597862244,
+                "acc/test/DTD": 0.8132978677749634,
+                "normalized_acc/test/DTD": 0.9813863635063171
+            }
+        ],
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9131566286087036,
+                "loss/test/Flowers102_epoch": 0.34373459219932556,
+                "acc/test/Flowers102": 0.9131566286087036,
+                "normalized_acc/test/Flowers102": 0.9691059589385986
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8632272481918335,
+                "normalized_acc/test/avg": 0.9752461612224579
+            }
+        ]
+    },
+    "DTD__PCAM": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.6781914830207825,
+                "loss/test/DTD_epoch": 1.1985403299331665,
+                "acc/test/DTD": 0.6781914830207825,
+                "normalized_acc/test/DTD": 0.8183568120002747
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.876861572265625,
+                "loss/test/PCAM_epoch": 0.39080068469047546,
+                "acc/test/PCAM": 0.876861572265625,
+                "normalized_acc/test/PCAM": 0.9883052706718445
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7775265276432037,
+                "normalized_acc/test/avg": 0.9033310413360596
+            }
+        ]
+    },
+    "DTD__FER2013": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8031914830207825,
+                "loss/test/DTD_epoch": 0.8884721398353577,
+                "acc/test/DTD": 0.8031914830207825,
+                "normalized_acc/test/DTD": 0.9691912531852722
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7405962944030762,
+                "loss/test/FER2013_epoch": 1.1477415561676025,
+                "acc/test/FER2013": 0.7405962944030762,
+                "normalized_acc/test/FER2013": 1.00453519821167
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7718938887119293,
+                "normalized_acc/test/avg": 0.9868632256984711
+            }
+        ]
+    },
+    "DTD__OxfordIIITPet": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8154255151748657,
+                "loss/test/DTD_epoch": 0.8240482807159424,
+                "acc/test/DTD": 0.8154255151748657,
+                "normalized_acc/test/DTD": 0.9839537143707275
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9525756239891052,
+                "loss/test/OxfordIIITPet_epoch": 0.21502313017845154,
+                "acc/test/OxfordIIITPet": 0.9525756239891052,
+                "normalized_acc/test/OxfordIIITPet": 1.0022941827774048
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8840005695819855,
+                "normalized_acc/test/avg": 0.9931239485740662
+            }
+        ]
+    },
+    "DTD__STL10": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8127659559249878,
+                "loss/test/DTD_epoch": 0.8022667169570923,
+                "acc/test/DTD": 0.8127659559249878,
+                "normalized_acc/test/DTD": 0.9807445406913757
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9913750290870667,
+                "loss/test/STL10_epoch": 0.030100710690021515,
+                "acc/test/STL10": 0.9913750290870667,
+                "normalized_acc/test/STL10": 1.0035430192947388
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9020704925060272,
+                "normalized_acc/test/avg": 0.9921437799930573
+            }
+        ]
+    },
+    "DTD__CIFAR100": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7739361524581909,
+                "loss/test/DTD_epoch": 1.0093213319778442,
+                "acc/test/DTD": 0.7739361524581909,
+                "normalized_acc/test/DTD": 0.9338895678520203
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8895999789237976,
+                "loss/test/CIFAR100_epoch": 0.5155190229415894,
+                "acc/test/CIFAR100": 0.8895999789237976,
+                "normalized_acc/test/CIFAR100": 0.996527373790741
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8317680656909943,
+                "normalized_acc/test/avg": 0.9652084708213806
+            }
+        ]
+    },
+    "DTD__CIFAR10": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7675532102584839,
+                "loss/test/DTD_epoch": 0.91655433177948,
+                "acc/test/DTD": 0.7675532102584839,
+                "normalized_acc/test/DTD": 0.9261873960494995
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9833999872207642,
+                "loss/test/CIFAR10_epoch": 0.0803186222910881,
+                "acc/test/CIFAR10": 0.9833999872207642,
+                "normalized_acc/test/CIFAR10": 1.0018337965011597
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.875476598739624,
+                "normalized_acc/test/avg": 0.9640105962753296
+            }
+        ]
+    },
+    "DTD__Food101": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7930850982666016,
+                "loss/test/DTD_epoch": 0.8590737581253052,
+                "acc/test/DTD": 0.7930850982666016,
+                "normalized_acc/test/DTD": 0.9569960832595825
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9068911075592041,
+                "loss/test/Food101_epoch": 0.38681912422180176,
+                "acc/test/Food101": 0.9068911075592041,
+                "normalized_acc/test/Food101": 0.9976908564567566
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8499881029129028,
+                "normalized_acc/test/avg": 0.9773434698581696
+            }
+        ]
+    },
+    "DTD__FashionMNIST": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7484042644500732,
+                "loss/test/DTD_epoch": 1.0276408195495605,
+                "acc/test/DTD": 0.7484042644500732,
+                "normalized_acc/test/DTD": 0.9030808806419373
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9487000107765198,
+                "loss/test/FashionMNIST_epoch": 0.1889778971672058,
+                "acc/test/FashionMNIST": 0.9487000107765198,
+                "normalized_acc/test/FashionMNIST": 0.9965335726737976
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8485521376132965,
+                "normalized_acc/test/avg": 0.9498072266578674
+            }
+        ]
+    },
+    "DTD__EMNIST": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7819148898124695,
+                "loss/test/DTD_epoch": 0.9037168025970459,
+                "acc/test/DTD": 0.7819148898124695,
+                "normalized_acc/test/DTD": 0.94351726770401
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9961000084877014,
+                "loss/test/EMNIST_epoch": 0.03238904848694801,
+                "acc/test/EMNIST": 0.9961000084877014,
+                "normalized_acc/test/EMNIST": 1.0018103122711182
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8890074491500854,
+                "normalized_acc/test/avg": 0.9726637899875641
+            }
+        ]
+    },
+    "DTD__KMNIST": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.7797872424125671,
+                "loss/test/DTD_epoch": 0.9418545365333557,
+                "acc/test/DTD": 0.7797872424125671,
+                "normalized_acc/test/DTD": 0.9409499168395996
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9815000295639038,
+                "loss/test/KMNIST_epoch": 0.0749821811914444,
+                "acc/test/KMNIST": 0.9815000295639038,
+                "normalized_acc/test/KMNIST": 0.997966468334198
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8806436359882355,
+                "normalized_acc/test/avg": 0.9694581925868988
+            }
+        ]
+    },
+    "DTD__RenderedSST2": {
+        "DTD": [
+            {
+                "acc/test/DTD_epoch": 0.8239361643791199,
+                "loss/test/DTD_epoch": 0.8217998147010803,
+                "acc/test/DTD": 0.8239361643791199,
+                "normalized_acc/test/DTD": 0.9942232966423035
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7852827906608582,
+                "loss/test/RenderedSST2_epoch": 0.9200672507286072,
+                "acc/test/RenderedSST2": 0.7852827906608582,
+                "normalized_acc/test/RenderedSST2": 1.0177935361862183
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.804609477519989,
+                "normalized_acc/test/avg": 1.0060084164142609
+            }
+        ]
+    },
+    "Flowers102__PCAM": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.5953813791275024,
+                "loss/test/Flowers102_epoch": 1.4961684942245483,
+                "acc/test/Flowers102": 0.5953813791275024,
+                "normalized_acc/test/Flowers102": 0.6318605542182922
+            }
+        ],
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.877899169921875,
+                "loss/test/PCAM_epoch": 0.3692106008529663,
+                "acc/test/PCAM": 0.877899169921875,
+                "normalized_acc/test/PCAM": 0.9894747734069824
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7366402745246887,
+                "normalized_acc/test/avg": 0.8106676638126373
+            }
+        ]
+    },
+    "Flowers102__FER2013": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9115303158760071,
+                "loss/test/Flowers102_epoch": 0.3333853483200073,
+                "acc/test/Flowers102": 0.9115303158760071,
+                "normalized_acc/test/Flowers102": 0.9673799872398376
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7478406429290771,
+                "loss/test/FER2013_epoch": 1.1413888931274414,
+                "acc/test/FER2013": 0.7478406429290771,
+                "normalized_acc/test/FER2013": 1.0143613815307617
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8296854794025421,
+                "normalized_acc/test/avg": 0.9908706843852997
+            }
+        ]
+    },
+    "Flowers102__OxfordIIITPet": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9209627509117126,
+                "loss/test/Flowers102_epoch": 0.30524471402168274,
+                "acc/test/Flowers102": 0.9209627509117126,
+                "normalized_acc/test/Flowers102": 0.9773903489112854
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9523030519485474,
+                "loss/test/OxfordIIITPet_epoch": 0.21225197613239288,
+                "acc/test/OxfordIIITPet": 0.9523030519485474,
+                "normalized_acc/test/OxfordIIITPet": 1.0020073652267456
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.93663290143013,
+                "normalized_acc/test/avg": 0.9896988570690155
+            }
+        ]
+    },
+    "Flowers102__STL10": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9061636328697205,
+                "loss/test/Flowers102_epoch": 0.3875229060649872,
+                "acc/test/Flowers102": 0.9061636328697205,
+                "normalized_acc/test/Flowers102": 0.96168452501297
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9912499785423279,
+                "loss/test/STL10_epoch": 0.029126564040780067,
+                "acc/test/STL10": 0.9912499785423279,
+                "normalized_acc/test/STL10": 1.0034164190292358
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9487068057060242,
+                "normalized_acc/test/avg": 0.9825504720211029
+            }
+        ]
+    },
+    "Flowers102__CIFAR100": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8305415511131287,
+                "loss/test/Flowers102_epoch": 0.6932910680770874,
+                "acc/test/Flowers102": 0.8305415511131287,
+                "normalized_acc/test/Flowers102": 0.8814290165901184
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8945000171661377,
+                "loss/test/CIFAR100_epoch": 0.4693061113357544,
+                "acc/test/CIFAR100": 0.8945000171661377,
+                "normalized_acc/test/CIFAR100": 1.002016305923462
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8625207841396332,
+                "normalized_acc/test/avg": 0.9417226612567902
+            }
+        ]
+    },
+    "Flowers102__CIFAR10": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8503821492195129,
+                "loss/test/Flowers102_epoch": 0.5944551229476929,
+                "acc/test/Flowers102": 0.8503821492195129,
+                "normalized_acc/test/Flowers102": 0.9024852514266968
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9836999773979187,
+                "loss/test/CIFAR10_epoch": 0.07114511728286743,
+                "acc/test/CIFAR10": 0.9836999773979187,
+                "normalized_acc/test/CIFAR10": 1.0021393299102783
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9170410633087158,
+                "normalized_acc/test/avg": 0.9523122906684875
+            }
+        ]
+    },
+    "Flowers102__Food101": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8793299794197083,
+                "loss/test/Flowers102_epoch": 0.4796257019042969,
+                "acc/test/Flowers102": 0.8793299794197083,
+                "normalized_acc/test/Flowers102": 0.9332067370414734
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9149307012557983,
+                "loss/test/Food101_epoch": 0.3507060110569,
+                "acc/test/Food101": 0.9149307012557983,
+                "normalized_acc/test/Food101": 1.0065354108810425
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8971303403377533,
+                "normalized_acc/test/avg": 0.9698710739612579
+            }
+        ]
+    },
+    "Flowers102__FashionMNIST": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8666449785232544,
+                "loss/test/Flowers102_epoch": 0.48862504959106445,
+                "acc/test/Flowers102": 0.8666449785232544,
+                "normalized_acc/test/Flowers102": 0.9197445511817932
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9495000243186951,
+                "loss/test/FashionMNIST_epoch": 0.18427599966526031,
+                "acc/test/FashionMNIST": 0.9495000243186951,
+                "normalized_acc/test/FashionMNIST": 0.9973739385604858
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9080725014209747,
+                "normalized_acc/test/avg": 0.9585592448711395
+            }
+        ]
+    },
+    "Flowers102__EMNIST": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8907139301300049,
+                "loss/test/Flowers102_epoch": 0.41443854570388794,
+                "acc/test/Flowers102": 0.8907139301300049,
+                "normalized_acc/test/Flowers102": 0.9452881813049316
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9958999752998352,
+                "loss/test/EMNIST_epoch": 0.03271858021616936,
+                "acc/test/EMNIST": 0.9958999752998352,
+                "normalized_acc/test/EMNIST": 1.0016090869903564
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.94330695271492,
+                "normalized_acc/test/avg": 0.973448634147644
+            }
+        ]
+    },
+    "Flowers102__KMNIST": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.8682712912559509,
+                "loss/test/Flowers102_epoch": 0.5062261819839478,
+                "acc/test/Flowers102": 0.8682712912559509,
+                "normalized_acc/test/Flowers102": 0.9214704632759094
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9801999926567078,
+                "loss/test/KMNIST_epoch": 0.08070947229862213,
+                "acc/test/KMNIST": 0.9801999926567078,
+                "normalized_acc/test/KMNIST": 0.9966446161270142
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9242356419563293,
+                "normalized_acc/test/avg": 0.9590575397014618
+            }
+        ]
+    },
+    "Flowers102__RenderedSST2": {
+        "Flowers102": [
+            {
+                "acc/test/Flowers102_epoch": 0.9300699234008789,
+                "loss/test/Flowers102_epoch": 0.2674560248851776,
+                "acc/test/Flowers102": 0.9300699234008789,
+                "normalized_acc/test/Flowers102": 0.9870555400848389
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7891268730163574,
+                "loss/test/RenderedSST2_epoch": 0.9647409319877625,
+                "acc/test/RenderedSST2": 0.7891268730163574,
+                "normalized_acc/test/RenderedSST2": 1.0227757692337036
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8595983982086182,
+                "normalized_acc/test/avg": 1.0049156546592712
+            }
+        ]
+    },
+    "PCAM__FER2013": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.86932373046875,
+                "loss/test/PCAM_epoch": 0.4347342252731323,
+                "acc/test/PCAM": 0.86932373046875,
+                "normalized_acc/test/PCAM": 0.9798094630241394
+            }
+        ],
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.700752317905426,
+                "loss/test/FER2013_epoch": 1.00713312625885,
+                "acc/test/FER2013": 0.700752317905426,
+                "normalized_acc/test/FER2013": 0.9504913687705994
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.785038024187088,
+                "normalized_acc/test/avg": 0.9651504158973694
+            }
+        ]
+    },
+    "PCAM__OxfordIIITPet": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.85968017578125,
+                "loss/test/PCAM_epoch": 0.43570125102996826,
+                "acc/test/PCAM": 0.85968017578125,
+                "normalized_acc/test/PCAM": 0.968940258026123
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9149631857872009,
+                "loss/test/OxfordIIITPet_epoch": 0.25968319177627563,
+                "acc/test/OxfordIIITPet": 0.9149631857872009,
+                "normalized_acc/test/OxfordIIITPet": 0.9627186059951782
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8873216807842255,
+                "normalized_acc/test/avg": 0.9658294320106506
+            }
+        ]
+    },
+    "PCAM__STL10": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.869171142578125,
+                "loss/test/PCAM_epoch": 0.39025700092315674,
+                "acc/test/PCAM": 0.869171142578125,
+                "normalized_acc/test/PCAM": 0.9796374440193176
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9695000052452087,
+                "loss/test/STL10_epoch": 0.09298305213451385,
+                "acc/test/STL10": 0.9695000052452087,
+                "normalized_acc/test/STL10": 0.9813994765281677
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9193355739116669,
+                "normalized_acc/test/avg": 0.9805184602737427
+            }
+        ]
+    },
+    "PCAM__CIFAR100": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.81976318359375,
+                "loss/test/PCAM_epoch": 0.6090661287307739,
+                "acc/test/PCAM": 0.81976318359375,
+                "normalized_acc/test/PCAM": 0.9239500761032104
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8120999932289124,
+                "loss/test/CIFAR100_epoch": 0.694474458694458,
+                "acc/test/CIFAR100": 0.8120999932289124,
+                "normalized_acc/test/CIFAR100": 0.9097120761871338
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8159315884113312,
+                "normalized_acc/test/avg": 0.9168310761451721
+            }
+        ]
+    },
+    "PCAM__CIFAR10": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.844940185546875,
+                "loss/test/PCAM_epoch": 0.46416759490966797,
+                "acc/test/PCAM": 0.844940185546875,
+                "normalized_acc/test/PCAM": 0.9523268938064575
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9656999707221985,
+                "loss/test/CIFAR10_epoch": 0.12083905935287476,
+                "acc/test/CIFAR10": 0.9656999707221985,
+                "normalized_acc/test/CIFAR10": 0.9838019609451294
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9053200781345367,
+                "normalized_acc/test/avg": 0.9680644273757935
+            }
+        ]
+    },
+    "PCAM__Food101": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.869049072265625,
+                "loss/test/PCAM_epoch": 0.37798377871513367,
+                "acc/test/PCAM": 0.869049072265625,
+                "normalized_acc/test/PCAM": 0.979499876499176
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8556039333343506,
+                "loss/test/Food101_epoch": 0.544165313243866,
+                "acc/test/Food101": 0.8556039333343506,
+                "normalized_acc/test/Food101": 0.9412687420845032
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8623265027999878,
+                "normalized_acc/test/avg": 0.9603843092918396
+            }
+        ]
+    },
+    "PCAM__FashionMNIST": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.8433837890625,
+                "loss/test/PCAM_epoch": 0.48071086406707764,
+                "acc/test/PCAM": 0.8433837890625,
+                "normalized_acc/test/PCAM": 0.950572669506073
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9359999895095825,
+                "loss/test/FashionMNIST_epoch": 0.19102366268634796,
+                "acc/test/FashionMNIST": 0.9359999895095825,
+                "normalized_acc/test/FashionMNIST": 0.9831932187080383
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8896918892860413,
+                "normalized_acc/test/avg": 0.9668829441070557
+            }
+        ]
+    },
+    "PCAM__EMNIST": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.878387451171875,
+                "loss/test/PCAM_epoch": 0.39045295119285583,
+                "acc/test/PCAM": 0.878387451171875,
+                "normalized_acc/test/PCAM": 0.9900251030921936
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9948999881744385,
+                "loss/test/EMNIST_epoch": 0.04181675240397453,
+                "acc/test/EMNIST": 0.9948999881744385,
+                "normalized_acc/test/EMNIST": 1.000603437423706
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9366437196731567,
+                "normalized_acc/test/avg": 0.9953142702579498
+            }
+        ]
+    },
+    "PCAM__KMNIST": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.86456298828125,
+                "loss/test/PCAM_epoch": 0.4331798553466797,
+                "acc/test/PCAM": 0.86456298828125,
+                "normalized_acc/test/PCAM": 0.9744436144828796
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9731000065803528,
+                "loss/test/KMNIST_epoch": 0.11675970256328583,
+                "acc/test/KMNIST": 0.9731000065803528,
+                "normalized_acc/test/KMNIST": 0.989425539970398
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9188314974308014,
+                "normalized_acc/test/avg": 0.9819345772266388
+            }
+        ]
+    },
+    "PCAM__RenderedSST2": {
+        "PCAM": [
+            {
+                "acc/test/PCAM_epoch": 0.902191162109375,
+                "loss/test/PCAM_epoch": 0.29879072308540344,
+                "acc/test/PCAM": 0.902191162109375,
+                "normalized_acc/test/PCAM": 1.016854166984558
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7946183681488037,
+                "loss/test/RenderedSST2_epoch": 0.5472403168678284,
+                "acc/test/RenderedSST2": 0.7946183681488037,
+                "normalized_acc/test/RenderedSST2": 1.0298932790756226
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8484047651290894,
+                "normalized_acc/test/avg": 1.0233737230300903
+            }
+        ]
+    },
+    "FER2013__OxfordIIITPet": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.745472252368927,
+                "loss/test/FER2013_epoch": 1.1267262697219849,
+                "acc/test/FER2013": 0.745472252368927,
+                "normalized_acc/test/FER2013": 1.0111489295959473
+            }
+        ],
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9463068842887878,
+                "loss/test/OxfordIIITPet_epoch": 0.2256150096654892,
+                "acc/test/OxfordIIITPet": 0.9463068842887878,
+                "normalized_acc/test/OxfordIIITPet": 0.9956982731819153
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8458895683288574,
+                "normalized_acc/test/avg": 1.0034236013889313
+            }
+        ]
+    },
+    "FER2013__STL10": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7418500781059265,
+                "loss/test/FER2013_epoch": 1.0606993436813354,
+                "acc/test/FER2013": 0.7418500781059265,
+                "normalized_acc/test/FER2013": 1.0062358379364014
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9890000224113464,
+                "loss/test/STL10_epoch": 0.036963481456041336,
+                "acc/test/STL10": 0.9890000224113464,
+                "normalized_acc/test/STL10": 1.0011388063430786
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8654250502586365,
+                "normalized_acc/test/avg": 1.00368732213974
+            }
+        ]
+    },
+    "FER2013__CIFAR100": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7227640151977539,
+                "loss/test/FER2013_epoch": 1.089308500289917,
+                "acc/test/FER2013": 0.7227640151977539,
+                "normalized_acc/test/FER2013": 0.9803476929664612
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8840000033378601,
+                "loss/test/CIFAR100_epoch": 0.5105710625648499,
+                "acc/test/CIFAR100": 0.8840000033378601,
+                "normalized_acc/test/CIFAR100": 0.990254282951355
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.803382009267807,
+                "normalized_acc/test/avg": 0.9853009879589081
+            }
+        ]
+    },
+    "FER2013__CIFAR10": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7167734503746033,
+                "loss/test/FER2013_epoch": 1.0589293241500854,
+                "acc/test/FER2013": 0.7167734503746033,
+                "normalized_acc/test/FER2013": 0.9722222089767456
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9825000166893005,
+                "loss/test/CIFAR10_epoch": 0.08382187783718109,
+                "acc/test/CIFAR10": 0.9825000166893005,
+                "normalized_acc/test/CIFAR10": 1.0009169578552246
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8496367335319519,
+                "normalized_acc/test/avg": 0.9865695834159851
+            }
+        ]
+    },
+    "FER2013__Food101": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7326553463935852,
+                "loss/test/FER2013_epoch": 1.1131186485290527,
+                "acc/test/FER2013": 0.7326553463935852,
+                "normalized_acc/test/FER2013": 0.9937642216682434
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9096237421035767,
+                "loss/test/Food101_epoch": 0.3755579888820648,
+                "acc/test/Food101": 0.9096237421035767,
+                "normalized_acc/test/Food101": 1.000697135925293
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8211395442485809,
+                "normalized_acc/test/avg": 0.9972306787967682
+            }
+        ]
+    },
+    "FER2013__FashionMNIST": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7086932063102722,
+                "loss/test/FER2013_epoch": 1.076072096824646,
+                "acc/test/FER2013": 0.7086932063102722,
+                "normalized_acc/test/FER2013": 0.9612622857093811
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9452999830245972,
+                "loss/test/FashionMNIST_epoch": 0.20013192296028137,
+                "acc/test/FashionMNIST": 0.9452999830245972,
+                "normalized_acc/test/FashionMNIST": 0.992962121963501
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8269965946674347,
+                "normalized_acc/test/avg": 0.977112203836441
+            }
+        ]
+    },
+    "FER2013__EMNIST": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.715658962726593,
+                "loss/test/FER2013_epoch": 1.2055083513259888,
+                "acc/test/FER2013": 0.715658962726593,
+                "normalized_acc/test/FER2013": 0.9707105159759521
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9954000115394592,
+                "loss/test/EMNIST_epoch": 0.032745156437158585,
+                "acc/test/EMNIST": 0.9954000115394592,
+                "normalized_acc/test/EMNIST": 1.0011062622070312
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8555294871330261,
+                "normalized_acc/test/avg": 0.9859083890914917
+            }
+        ]
+    },
+    "FER2013__KMNIST": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.6994984745979309,
+                "loss/test/FER2013_epoch": 1.2794301509857178,
+                "acc/test/FER2013": 0.6994984745979309,
+                "normalized_acc/test/FER2013": 0.9487906694412231
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9781000018119812,
+                "loss/test/KMNIST_epoch": 0.08387268334627151,
+                "acc/test/KMNIST": 0.9781000018119812,
+                "normalized_acc/test/KMNIST": 0.9945093989372253
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.838799238204956,
+                "normalized_acc/test/avg": 0.9716500341892242
+            }
+        ]
+    },
+    "FER2013__RenderedSST2": {
+        "FER2013": [
+            {
+                "acc/test/FER2013_epoch": 0.7394817471504211,
+                "loss/test/FER2013_epoch": 1.1962984800338745,
+                "acc/test/FER2013": 0.7394817471504211,
+                "normalized_acc/test/FER2013": 1.003023386001587
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7742998600006104,
+                "loss/test/RenderedSST2_epoch": 0.9037930369377136,
+                "acc/test/RenderedSST2": 0.7742998600006104,
+                "normalized_acc/test/RenderedSST2": 1.0035587549209595
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.7568908035755157,
+                "normalized_acc/test/avg": 1.0032910704612732
+            }
+        ]
+    },
+    "OxfordIIITPet__STL10": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9509403109550476,
+                "loss/test/OxfordIIITPet_epoch": 0.18635119497776031,
+                "acc/test/OxfordIIITPet": 0.9509403109550476,
+                "normalized_acc/test/OxfordIIITPet": 1.0005735158920288
+            }
+        ],
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9886249899864197,
+                "loss/test/STL10_epoch": 0.038731012493371964,
+                "acc/test/STL10": 0.9886249899864197,
+                "normalized_acc/test/STL10": 1.000759243965149
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9697826504707336,
+                "normalized_acc/test/avg": 1.0006663799285889
+            }
+        ]
+    },
+    "OxfordIIITPet__CIFAR100": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.937585175037384,
+                "loss/test/OxfordIIITPet_epoch": 0.24428634345531464,
+                "acc/test/OxfordIIITPet": 0.937585175037384,
+                "normalized_acc/test/OxfordIIITPet": 0.9865213632583618
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.892799973487854,
+                "loss/test/CIFAR100_epoch": 0.4745456576347351,
+                "acc/test/CIFAR100": 0.892799973487854,
+                "normalized_acc/test/CIFAR100": 1.0001119375228882
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.915192574262619,
+                "normalized_acc/test/avg": 0.993316650390625
+            }
+        ]
+    },
+    "OxfordIIITPet__CIFAR10": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9321340918540955,
+                "loss/test/OxfordIIITPet_epoch": 0.2281687706708908,
+                "acc/test/OxfordIIITPet": 0.9321340918540955,
+                "normalized_acc/test/OxfordIIITPet": 0.9807857275009155
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9842000007629395,
+                "loss/test/CIFAR10_epoch": 0.06934098899364471,
+                "acc/test/CIFAR10": 0.9842000007629395,
+                "normalized_acc/test/CIFAR10": 1.0026487112045288
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9581670463085175,
+                "normalized_acc/test/avg": 0.9917172193527222
+            }
+        ]
+    },
+    "OxfordIIITPet__Food101": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9471245408058167,
+                "loss/test/OxfordIIITPet_epoch": 0.21661168336868286,
+                "acc/test/OxfordIIITPet": 0.9471245408058167,
+                "normalized_acc/test/OxfordIIITPet": 0.9965586066246033
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9160792231559753,
+                "loss/test/Food101_epoch": 0.3480583131313324,
+                "acc/test/Food101": 0.9160792231559753,
+                "normalized_acc/test/Food101": 1.0077989101409912
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.931601881980896,
+                "normalized_acc/test/avg": 1.0021787583827972
+            }
+        ]
+    },
+    "OxfordIIITPet__FashionMNIST": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9389479160308838,
+                "loss/test/OxfordIIITPet_epoch": 0.22238369286060333,
+                "acc/test/OxfordIIITPet": 0.9389479160308838,
+                "normalized_acc/test/OxfordIIITPet": 0.9879552125930786
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9470000267028809,
+                "loss/test/FashionMNIST_epoch": 0.1868603676557541,
+                "acc/test/FashionMNIST": 0.9470000267028809,
+                "normalized_acc/test/FashionMNIST": 0.9947478771209717
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9429739713668823,
+                "normalized_acc/test/avg": 0.9913515448570251
+            }
+        ]
+    },
+    "OxfordIIITPet__EMNIST": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9479421973228455,
+                "loss/test/OxfordIIITPet_epoch": 0.22143986821174622,
+                "acc/test/OxfordIIITPet": 0.9479421973228455,
+                "normalized_acc/test/OxfordIIITPet": 0.9974189400672913
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9959999918937683,
+                "loss/test/EMNIST_epoch": 0.03225918859243393,
+                "acc/test/EMNIST": 0.9959999918937683,
+                "normalized_acc/test/EMNIST": 1.0017096996307373
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9719710946083069,
+                "normalized_acc/test/avg": 0.9995643198490143
+            }
+        ]
+    },
+    "OxfordIIITPet__KMNIST": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9400381445884705,
+                "loss/test/OxfordIIITPet_epoch": 0.23825784027576447,
+                "acc/test/OxfordIIITPet": 0.9400381445884705,
+                "normalized_acc/test/OxfordIIITPet": 0.9891023635864258
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9793000221252441,
+                "loss/test/KMNIST_epoch": 0.08146177977323532,
+                "acc/test/KMNIST": 0.9793000221252441,
+                "normalized_acc/test/KMNIST": 0.9957295656204224
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9596690833568573,
+                "normalized_acc/test/avg": 0.9924159646034241
+            }
+        ]
+    },
+    "OxfordIIITPet__RenderedSST2": {
+        "OxfordIIITPet": [
+            {
+                "acc/test/OxfordIIITPet_epoch": 0.9520305395126343,
+                "loss/test/OxfordIIITPet_epoch": 0.21880356967449188,
+                "acc/test/OxfordIIITPet": 0.9520305395126343,
+                "normalized_acc/test/OxfordIIITPet": 1.001720666885376
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.78693026304245,
+                "loss/test/RenderedSST2_epoch": 0.9542962908744812,
+                "acc/test/RenderedSST2": 0.78693026304245,
+                "normalized_acc/test/RenderedSST2": 1.0199288129806519
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8694804012775421,
+                "normalized_acc/test/avg": 1.010824739933014
+            }
+        ]
+    },
+    "STL10__CIFAR100": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9832500219345093,
+                "loss/test/STL10_epoch": 0.051931850612163544,
+                "acc/test/STL10": 0.9832500219345093,
+                "normalized_acc/test/STL10": 0.9953182935714722
+            }
+        ],
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8851000070571899,
+                "loss/test/CIFAR100_epoch": 0.4750748574733734,
+                "acc/test/CIFAR100": 0.8851000070571899,
+                "normalized_acc/test/CIFAR100": 0.9914864897727966
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9341750144958496,
+                "normalized_acc/test/avg": 0.9934023916721344
+            }
+        ]
+    },
+    "STL10__CIFAR10": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9723749756813049,
+                "loss/test/STL10_epoch": 0.09993185102939606,
+                "acc/test/STL10": 0.9723749756813049,
+                "normalized_acc/test/STL10": 0.984309732913971
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9814000129699707,
+                "loss/test/CIFAR10_epoch": 0.07854888588190079,
+                "acc/test/CIFAR10": 0.9814000129699707,
+                "normalized_acc/test/CIFAR10": 0.9997962713241577
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9768874943256378,
+                "normalized_acc/test/avg": 0.9920530021190643
+            }
+        ]
+    },
+    "STL10__Food101": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9894999861717224,
+                "loss/test/STL10_epoch": 0.03441813215613365,
+                "acc/test/STL10": 0.9894999861717224,
+                "normalized_acc/test/STL10": 1.0016449689865112
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9159603714942932,
+                "loss/test/Food101_epoch": 0.3415417969226837,
+                "acc/test/Food101": 0.9159603714942932,
+                "normalized_acc/test/Food101": 1.007668137550354
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9527301788330078,
+                "normalized_acc/test/avg": 1.0046565532684326
+            }
+        ]
+    },
+    "STL10__FashionMNIST": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9801250100135803,
+                "loss/test/STL10_epoch": 0.06272003054618835,
+                "acc/test/STL10": 0.9801250100135803,
+                "normalized_acc/test/STL10": 0.9921548962593079
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9466000199317932,
+                "loss/test/FashionMNIST_epoch": 0.1808546781539917,
+                "acc/test/FashionMNIST": 0.9466000199317932,
+                "normalized_acc/test/FashionMNIST": 0.99432772397995
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9633625149726868,
+                "normalized_acc/test/avg": 0.9932413101196289
+            }
+        ]
+    },
+    "STL10__EMNIST": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9832500219345093,
+                "loss/test/STL10_epoch": 0.053974080830812454,
+                "acc/test/STL10": 0.9832500219345093,
+                "normalized_acc/test/STL10": 0.9953182935714722
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9958999752998352,
+                "loss/test/EMNIST_epoch": 0.03249264135956764,
+                "acc/test/EMNIST": 0.9958999752998352,
+                "normalized_acc/test/EMNIST": 1.0016090869903564
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9895749986171722,
+                "normalized_acc/test/avg": 0.9984636902809143
+            }
+        ]
+    },
+    "STL10__KMNIST": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9815000295639038,
+                "loss/test/STL10_epoch": 0.06082883104681969,
+                "acc/test/STL10": 0.9815000295639038,
+                "normalized_acc/test/STL10": 0.9935467839241028
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9811000227928162,
+                "loss/test/KMNIST_epoch": 0.07610154151916504,
+                "acc/test/KMNIST": 0.9811000227928162,
+                "normalized_acc/test/KMNIST": 0.9975597262382507
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.98130002617836,
+                "normalized_acc/test/avg": 0.9955532550811768
+            }
+        ]
+    },
+    "STL10__RenderedSST2": {
+        "STL10": [
+            {
+                "acc/test/STL10_epoch": 0.9901250004768372,
+                "loss/test/STL10_epoch": 0.031011998653411865,
+                "acc/test/STL10": 0.9901250004768372,
+                "normalized_acc/test/STL10": 1.0022776126861572
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7918726205825806,
+                "loss/test/RenderedSST2_epoch": 0.8935061693191528,
+                "acc/test/RenderedSST2": 0.7918726205825806,
+                "normalized_acc/test/RenderedSST2": 1.026334524154663
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8909988105297089,
+                "normalized_acc/test/avg": 1.0143060684204102
+            }
+        ]
+    },
+    "CIFAR100__CIFAR10": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8708999752998352,
+                "loss/test/CIFAR100_epoch": 0.5008107423782349,
+                "acc/test/CIFAR100": 0.8708999752998352,
+                "normalized_acc/test/CIFAR100": 0.9755796790122986
+            }
+        ],
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9850999712944031,
+                "loss/test/CIFAR10_epoch": 0.06917908042669296,
+                "acc/test/CIFAR10": 0.9850999712944031,
+                "normalized_acc/test/CIFAR10": 1.0035655498504639
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9279999732971191,
+                "normalized_acc/test/avg": 0.9895726144313812
+            }
+        ]
+    },
+    "CIFAR100__Food101": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8844000101089478,
+                "loss/test/CIFAR100_epoch": 0.4895824193954468,
+                "acc/test/CIFAR100": 0.8844000101089478,
+                "normalized_acc/test/CIFAR100": 0.9907023310661316
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8899801969528198,
+                "loss/test/Food101_epoch": 0.44812315702438354,
+                "acc/test/Food101": 0.8899801969528198,
+                "normalized_acc/test/Food101": 0.9790868163108826
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8871901035308838,
+                "normalized_acc/test/avg": 0.9848945736885071
+            }
+        ]
+    },
+    "CIFAR100__FashionMNIST": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8600999712944031,
+                "loss/test/CIFAR100_epoch": 0.5741746425628662,
+                "acc/test/CIFAR100": 0.8600999712944031,
+                "normalized_acc/test/CIFAR100": 0.9634815454483032
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9466999769210815,
+                "loss/test/FashionMNIST_epoch": 0.19284586608409882,
+                "acc/test/FashionMNIST": 0.9466999769210815,
+                "normalized_acc/test/FashionMNIST": 0.9944327473640442
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9033999741077423,
+                "normalized_acc/test/avg": 0.9789571464061737
+            }
+        ]
+    },
+    "CIFAR100__EMNIST": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8629000186920166,
+                "loss/test/CIFAR100_epoch": 0.6023823022842407,
+                "acc/test/CIFAR100": 0.8629000186920166,
+                "normalized_acc/test/CIFAR100": 0.9666181206703186
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9958999752998352,
+                "loss/test/EMNIST_epoch": 0.03391602635383606,
+                "acc/test/EMNIST": 0.9958999752998352,
+                "normalized_acc/test/EMNIST": 1.0016090869903564
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9293999969959259,
+                "normalized_acc/test/avg": 0.9841136038303375
+            }
+        ]
+    },
+    "CIFAR100__KMNIST": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8306000232696533,
+                "loss/test/CIFAR100_epoch": 0.7379904985427856,
+                "acc/test/CIFAR100": 0.8306000232696533,
+                "normalized_acc/test/CIFAR100": 0.9304357767105103
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9764999747276306,
+                "loss/test/KMNIST_epoch": 0.09217116236686707,
+                "acc/test/KMNIST": 0.9764999747276306,
+                "normalized_acc/test/KMNIST": 0.9928825497627258
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.903549998998642,
+                "normalized_acc/test/avg": 0.961659163236618
+            }
+        ]
+    },
+    "CIFAR100__RenderedSST2": {
+        "CIFAR100": [
+            {
+                "acc/test/CIFAR100_epoch": 0.8927000164985657,
+                "loss/test/CIFAR100_epoch": 0.4700367748737335,
+                "acc/test/CIFAR100": 0.8927000164985657,
+                "normalized_acc/test/CIFAR100": 1.0
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7814387679100037,
+                "loss/test/RenderedSST2_epoch": 0.8457837104797363,
+                "acc/test/RenderedSST2": 0.7814387679100037,
+                "normalized_acc/test/RenderedSST2": 1.012811303138733
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8370693922042847,
+                "normalized_acc/test/avg": 1.0064056515693665
+            }
+        ]
+    },
+    "CIFAR10__Food101": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.982200026512146,
+                "loss/test/CIFAR10_epoch": 0.07415222376585007,
+                "acc/test/CIFAR10": 0.982200026512146,
+                "normalized_acc/test/CIFAR10": 1.0006113052368164
+            }
+        ],
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8940197825431824,
+                "loss/test/Food101_epoch": 0.42217639088630676,
+                "acc/test/Food101": 0.8940197825431824,
+                "normalized_acc/test/Food101": 0.9835308194160461
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9381099045276642,
+                "normalized_acc/test/avg": 0.9920710623264313
+            }
+        ]
+    },
+    "CIFAR10__FashionMNIST": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.977400004863739,
+                "loss/test/CIFAR10_epoch": 0.0909753292798996,
+                "acc/test/CIFAR10": 0.977400004863739,
+                "normalized_acc/test/CIFAR10": 0.9957212805747986
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9426000118255615,
+                "loss/test/FashionMNIST_epoch": 0.18838058412075043,
+                "acc/test/FashionMNIST": 0.9426000118255615,
+                "normalized_acc/test/FashionMNIST": 0.9901260137557983
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9600000083446503,
+                "normalized_acc/test/avg": 0.9929236471652985
+            }
+        ]
+    },
+    "CIFAR10__EMNIST": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9782999753952026,
+                "loss/test/CIFAR10_epoch": 0.0900990217924118,
+                "acc/test/CIFAR10": 0.9782999753952026,
+                "normalized_acc/test/CIFAR10": 0.9966381192207336
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9958000183105469,
+                "loss/test/EMNIST_epoch": 0.035102009773254395,
+                "acc/test/EMNIST": 0.9958000183105469,
+                "normalized_acc/test/EMNIST": 1.0015085935592651
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9870499968528748,
+                "normalized_acc/test/avg": 0.9990733563899994
+            }
+        ]
+    },
+    "CIFAR10__KMNIST": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9721999764442444,
+                "loss/test/CIFAR10_epoch": 0.11396628618240356,
+                "acc/test/CIFAR10": 0.9721999764442444,
+                "normalized_acc/test/CIFAR10": 0.9904237985610962
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9763000011444092,
+                "loss/test/KMNIST_epoch": 0.09890980273485184,
+                "acc/test/KMNIST": 0.9763000011444092,
+                "normalized_acc/test/KMNIST": 0.9926791787147522
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9742499887943268,
+                "normalized_acc/test/avg": 0.9915514886379242
+            }
+        ]
+    },
+    "CIFAR10__RenderedSST2": {
+        "CIFAR10": [
+            {
+                "acc/test/CIFAR10_epoch": 0.9825000166893005,
+                "loss/test/CIFAR10_epoch": 0.0753692090511322,
+                "acc/test/CIFAR10": 0.9825000166893005,
+                "normalized_acc/test/CIFAR10": 1.0009169578552246
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7924217581748962,
+                "loss/test/RenderedSST2_epoch": 0.7132536172866821,
+                "acc/test/RenderedSST2": 0.7924217581748962,
+                "normalized_acc/test/RenderedSST2": 1.0270462036132812
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8874608874320984,
+                "normalized_acc/test/avg": 1.013981580734253
+            }
+        ]
+    },
+    "Food101__FashionMNIST": {
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8947722911834717,
+                "loss/test/Food101_epoch": 0.4195231795310974,
+                "acc/test/Food101": 0.8947722911834717,
+                "normalized_acc/test/Food101": 0.9843586683273315
+            }
+        ],
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9474999904632568,
+                "loss/test/FashionMNIST_epoch": 0.18411856889724731,
+                "acc/test/FashionMNIST": 0.9474999904632568,
+                "normalized_acc/test/FashionMNIST": 0.9952730536460876
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9211361408233643,
+                "normalized_acc/test/avg": 0.9898158609867096
+            }
+        ]
+    },
+    "Food101__EMNIST": {
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9032475352287292,
+                "loss/test/Food101_epoch": 0.39878520369529724,
+                "acc/test/Food101": 0.9032475352287292,
+                "normalized_acc/test/Food101": 0.9936825037002563
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9962000250816345,
+                "loss/test/EMNIST_epoch": 0.03236791118979454,
+                "acc/test/EMNIST": 0.9962000250816345,
+                "normalized_acc/test/EMNIST": 1.001910924911499
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9497237801551819,
+                "normalized_acc/test/avg": 0.9977967143058777
+            }
+        ]
+    },
+    "Food101__KMNIST": {
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.8976633548736572,
+                "loss/test/Food101_epoch": 0.4300363063812256,
+                "acc/test/Food101": 0.8976633548736572,
+                "normalized_acc/test/Food101": 0.9875392317771912
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9793000221252441,
+                "loss/test/KMNIST_epoch": 0.08442183583974838,
+                "acc/test/KMNIST": 0.9793000221252441,
+                "normalized_acc/test/KMNIST": 0.9957295656204224
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9384816884994507,
+                "normalized_acc/test/avg": 0.9916343986988068
+            }
+        ]
+    },
+    "Food101__RenderedSST2": {
+        "Food101": [
+            {
+                "acc/test/Food101_epoch": 0.9121584296226501,
+                "loss/test/Food101_epoch": 0.3591879904270172,
+                "acc/test/Food101": 0.9121584296226501,
+                "normalized_acc/test/Food101": 1.0034855604171753
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7847336530685425,
+                "loss/test/RenderedSST2_epoch": 0.8732593655586243,
+                "acc/test/RenderedSST2": 0.7847336530685425,
+                "normalized_acc/test/RenderedSST2": 1.0170818567276
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8484460413455963,
+                "normalized_acc/test/avg": 1.0102837085723877
+            }
+        ]
+    },
+    "FashionMNIST__EMNIST": {
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.935699999332428,
+                "loss/test/FashionMNIST_epoch": 0.2266777604818344,
+                "acc/test/FashionMNIST": 0.935699999332428,
+                "normalized_acc/test/FashionMNIST": 0.9828781485557556
+            }
+        ],
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9947999715805054,
+                "loss/test/EMNIST_epoch": 0.03907283395528793,
+                "acc/test/EMNIST": 0.9947999715805054,
+                "normalized_acc/test/EMNIST": 1.0005028247833252
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9652499854564667,
+                "normalized_acc/test/avg": 0.9916904866695404
+            }
+        ]
+    },
+    "FashionMNIST__KMNIST": {
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9307000041007996,
+                "loss/test/FashionMNIST_epoch": 0.24070636928081512,
+                "acc/test/FashionMNIST": 0.9307000041007996,
+                "normalized_acc/test/FashionMNIST": 0.9776260256767273
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.972000002861023,
+                "loss/test/KMNIST_epoch": 0.12272466719150543,
+                "acc/test/KMNIST": 0.972000002861023,
+                "normalized_acc/test/KMNIST": 0.9883070588111877
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.9513500034809113,
+                "normalized_acc/test/avg": 0.9829665422439575
+            }
+        ]
+    },
+    "FashionMNIST__RenderedSST2": {
+        "FashionMNIST": [
+            {
+                "acc/test/FashionMNIST_epoch": 0.9503999948501587,
+                "loss/test/FashionMNIST_epoch": 0.17801451683044434,
+                "acc/test/FashionMNIST": 0.9503999948501587,
+                "normalized_acc/test/FashionMNIST": 0.9983193278312683
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7924217581748962,
+                "loss/test/RenderedSST2_epoch": 0.7098265886306763,
+                "acc/test/RenderedSST2": 0.7924217581748962,
+                "normalized_acc/test/RenderedSST2": 1.0270462036132812
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8714108765125275,
+                "normalized_acc/test/avg": 1.0126827657222748
+            }
+        ]
+    },
+    "EMNIST__KMNIST": {
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9940000176429749,
+                "loss/test/EMNIST_epoch": 0.04214095324277878,
+                "acc/test/EMNIST": 0.9940000176429749,
+                "normalized_acc/test/EMNIST": 0.999698281288147
+            }
+        ],
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9466000199317932,
+                "loss/test/KMNIST_epoch": 0.22935110330581665,
+                "acc/test/KMNIST": 0.9466000199317932,
+                "normalized_acc/test/KMNIST": 0.9624809622764587
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.970300018787384,
+                "normalized_acc/test/avg": 0.9810896217823029
+            }
+        ]
+    },
+    "EMNIST__RenderedSST2": {
+        "EMNIST": [
+            {
+                "acc/test/EMNIST_epoch": 0.9961000084877014,
+                "loss/test/EMNIST_epoch": 0.0327162891626358,
+                "acc/test/EMNIST": 0.9961000084877014,
+                "normalized_acc/test/EMNIST": 1.0018103122711182
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7880285382270813,
+                "loss/test/RenderedSST2_epoch": 0.7631714344024658,
+                "acc/test/RenderedSST2": 0.7880285382270813,
+                "normalized_acc/test/RenderedSST2": 1.0213522911071777
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8920642733573914,
+                "normalized_acc/test/avg": 1.011581301689148
+            }
+        ]
+    },
+    "KMNIST__RenderedSST2": {
+        "KMNIST": [
+            {
+                "acc/test/KMNIST_epoch": 0.9829000234603882,
+                "loss/test/KMNIST_epoch": 0.07304035872220993,
+                "acc/test/KMNIST": 0.9829000234603882,
+                "normalized_acc/test/KMNIST": 0.9993899464607239
+            }
+        ],
+        "RenderedSST2": [
+            {
+                "acc/test/RenderedSST2_epoch": 0.7880285382270813,
+                "loss/test/RenderedSST2_epoch": 0.8039262294769287,
+                "acc/test/RenderedSST2": 0.7880285382270813,
+                "normalized_acc/test/RenderedSST2": 1.0213522911071777
+            }
+        ],
+        "avg": [
+            {
+                "acc/test/avg": 0.8854642808437347,
+                "normalized_acc/test/avg": 1.0103711187839508
+            }
+        ]
+    }
+}

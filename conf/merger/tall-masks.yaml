@@ -1,0 +1,5 @@
+_target_: model_merging.merger.tall_masks_merger.TALLMasksMerger
+scaling_coefficient: 1.0
+tall_mask_lambda: 0.4  # Default lambda for TALL mask generation (0.2-0.6 typical range)
+min_task_count: null  # Auto: 1 for 2 tasks, 2 for >2 tasks (filters selfish weights)
+device: ${device}

@@ -1,0 +1,8 @@
+_target_: model_merging.merger.dare_merger.DAReMerger
+scaling_coefficient: 1.0
+drop_rate: 0.9  # Drop 90% of delta parameters (paper default)
+use_rescale: true  # Rescale by 1/(1-drop_rate)
+mask_strategy: "random"  # "random" or "magnitude"
+merge_func: "mean"  # "mean" or "sum"
+seed: 0  # Random seed for reproducibility (null to skip)
+device: ${device}

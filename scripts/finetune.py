@@ -254,14 +254,16 @@ def run(cfg: DictConfig):
         gargiulo_enabled = cfg.train.regularization.get('enable_gargiulo_penalty', False)
 
         if moderate_update_enabled:
-            reg_parts.append("moderate_update")
+            mu_lambda = cfg.train.regularization.get('lambda_moderate_update', 0.01)
+            reg_parts.append(f"moderate_update_{mu_lambda}")
         if grad_magnitude_enabled:
-            reg_parts.append("grad_magnitude")
+            gm_lambda = cfg.train.regularization.get('lambda_grad_magnitude', 1)
+            reg_parts.append(f"grad_magnitude_{gm_lambda}")
         if tv_subspace_enabled:
-            reg_parts.append("tv_subspace")
+            tv_vectors = cfg.train.regularization.get('tv_penalty_singular_vectors', 'V').lower()
+            tv_lambda = cfg.train.regularization.get('lambda_tv_subspace', 0.001)
+            reg_parts.append(f"tv_subspace_{tv_vectors}_{tv_lambda}")
         if gargiulo_enabled:
-            # Include singular vectors type and lambda in suffix
-            # e.g., "gargiulo_u_0.0001"
             g_vectors = cfg.train.regularization.get('gargiulo_singular_vectors', 'U').lower()
             g_lambda = cfg.train.regularization.get('lambda_gargiulo', 0.0001)
             reg_parts.append(f"gargiulo_{g_vectors}_{g_lambda}")
