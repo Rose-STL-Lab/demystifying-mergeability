@@ -48,6 +48,42 @@ import os
 
 pylogger = logging.getLogger(__name__)
 
+
+def generate_reg_suffix(cfg: DictConfig) -> str:
+    """Generate regularization suffix based on enabled regularizations in config.
+
+    This mirrors the logic in finetune.py to ensure consistent naming.
+    """
+    if not hasattr(cfg, 'train') or not hasattr(cfg.train, 'regularization'):
+        return ""
+
+    reg_parts = []
+    reg_cfg = cfg.train.regularization
+
+    moderate_update_enabled = getattr(reg_cfg, 'enable_moderate_update', False)
+    grad_magnitude_enabled = getattr(reg_cfg, 'enable_grad_magnitude', False)
+    tv_subspace_enabled = getattr(reg_cfg, 'enable_tv_subspace_penalty', False)
+    gargiulo_enabled = getattr(reg_cfg, 'enable_gargiulo_penalty', False)
+
+    if moderate_update_enabled:
+        mu_lambda = getattr(reg_cfg, 'lambda_moderate_update', 0.01)
+        reg_parts.append(f"moderate_update_{mu_lambda}")
+    if grad_magnitude_enabled:
+        gm_lambda = getattr(reg_cfg, 'lambda_grad_magnitude', 1)
+        reg_parts.append(f"grad_magnitude_{gm_lambda}")
+    if tv_subspace_enabled:
+        tv_vectors = getattr(reg_cfg, 'tv_penalty_singular_vectors', 'V').lower()
+        tv_lambda = getattr(reg_cfg, 'lambda_tv_subspace', 0.001)
+        reg_parts.append(f"tv_subspace_{tv_vectors}_{tv_lambda}")
+    if gargiulo_enabled:
+        g_vectors = getattr(reg_cfg, 'gargiulo_singular_vectors', 'U').lower()
+        g_lambda = getattr(reg_cfg, 'lambda_gargiulo', 0.0001)
+        reg_parts.append(f"gargiulo_{g_vectors}_{g_lambda}")
+
+    if reg_parts:
+        return "_" + "_".join(reg_parts)
+    return ""
+
 torch.set_float32_matmul_precision("high")
 
 
@@ -76,13 +112,14 @@ def load_config(
     return cfg
 
 
-def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_name: Optional[str] = None) -> Dict:
+def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_name: Optional[str] = None, file_prefix: str = "pair") -> Dict:
     """Run merging evaluation for a single set of datasets.
 
     Args:
         cfg: run configuration, defined by Hydra in /conf
         datasets_to_use: Optional list of dataset configs to use (for pairwise mode)
-        pair_name: Optional name for the pair (for logging/saving)
+        pair_name: Optional name for the pair/subset (for logging/saving)
+        file_prefix: Prefix for the result filename (e.g., "pair", "subset_5")
 
     Returns:
         Dictionary containing evaluation results
@@ -111,7 +148,12 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
     )
 
     # Load finetuned models - either from local checkpoints or HuggingFace
+    # Use explicit reg_suffix if set, otherwise generate from regularization config
     reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
+    if not reg_suffix:
+        reg_suffix = generate_reg_suffix(cfg)
+        if reg_suffix:
+            pylogger.info(f"Auto-generated regularization suffix: {reg_suffix}")
     finetuned_models = {}
 
     for dataset in datasets:
@@ -292,10 +334,9 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
 
     # Add regularization suffix to merger name if specified
     reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
-    if reg_suffix:
-        merger_name_with_suffix = f"{merger_name}{reg_suffix}"
-    else:
-        merger_name_with_suffix = merger_name
+    if not reg_suffix:
+        reg_suffix = generate_reg_suffix(cfg)
+    merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
 
     # Create merger-specific folder with regularization suffix
     results_path = Path(cfg.misc.results_path) / merger_name_with_suffix
@@ -306,7 +347,7 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
     alignment_suffix = "_rot_aligned" if cfg.alignment else ""
 
     if pair_name:
-        filename = f"pair_{pair_name}{alignment_suffix}.json"
+        filename = f"{file_prefix}_{pair_name}{alignment_suffix}.json"
     else:
         filename = f"{num_tasks}{alignment_suffix}.json"
 
@@ -332,15 +373,124 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
     return results
 
 
+def run_random_subsets(cfg: DictConfig):
+    """Run merging evaluation on random subsets of specified cardinality.
+
+    Args:
+        cfg: run configuration with subset_cardinality and num_random_subsets
+    """
+    import random
+    from itertools import combinations
+
+    datasets = list(cfg.benchmark.datasets)
+    n_datasets = len(datasets)
+    subset_size = cfg.get("subset_cardinality", 5)
+    num_subsets = cfg.get("num_random_subsets", 200)
+    random_seed = cfg.get("subset_random_seed", 42)
+
+    # Validate
+    if subset_size > n_datasets:
+        raise ValueError(f"subset_cardinality ({subset_size}) > number of datasets ({n_datasets})")
+
+    # Calculate total possible combinations
+    from math import comb
+    total_combinations = comb(n_datasets, subset_size)
+
+    pylogger.info(f"Running RANDOM SUBSETS merging evaluation")
+    pylogger.info(f"Benchmark has {n_datasets} datasets")
+    pylogger.info(f"Subset cardinality: {subset_size}")
+    pylogger.info(f"Total possible combinations: {total_combinations}")
+    pylogger.info(f"Evaluating {num_subsets} random subsets (seed={random_seed})")
+
+    # Generate random subsets
+    random.seed(random_seed)
+    if num_subsets >= total_combinations:
+        # If requesting more than possible, use all combinations
+        pylogger.info(f"Requested {num_subsets} subsets but only {total_combinations} exist. Using all.")
+        all_subsets = list(combinations(range(n_datasets), subset_size))
+        num_subsets = len(all_subsets)
+    else:
+        # Random sample without replacement
+        all_indices = list(combinations(range(n_datasets), subset_size))
+        all_subsets = random.sample(all_indices, num_subsets)
+
+    # Determine results path
+    merger_name = cfg.merger._target_.split(".")[-2].replace("_merger", "")
+    reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
+    if not reg_suffix:
+        reg_suffix = generate_reg_suffix(cfg)
+    merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
+    results_path = Path(cfg.misc.results_path) / merger_name_with_suffix
+
+    all_results = {}
+    skipped = 0
+
+    for idx, subset_indices in enumerate(all_subsets):
+        subset_datasets = [datasets[i] for i in subset_indices]
+        subset_name = "__".join(d.name for d in subset_datasets)
+
+        # Check if result already exists
+        alignment_suffix = "_rot_aligned" if cfg.alignment else ""
+        subset_file = results_path / f"subset_{subset_size}_{subset_name}{alignment_suffix}.json"
+        if subset_file.exists():
+            pylogger.info(f"[{idx+1}/{num_subsets}] Skipping {subset_name} (already exists)")
+            with open(subset_file, 'r') as f:
+                all_results[subset_name] = json.load(f)
+            skipped += 1
+            continue
+
+        pylogger.info(f"\n{'='*60}")
+        pylogger.info(f"[{idx+1}/{num_subsets}] Evaluating subset: {[d.name for d in subset_datasets]}")
+        pylogger.info(f"{'='*60}\n")
+
+        try:
+            subset_results = run_single(
+                cfg,
+                datasets_to_use=subset_datasets,
+                pair_name=subset_name,
+                file_prefix=f"subset_{subset_size}"
+            )
+            all_results[subset_name] = subset_results
+        except Exception as e:
+            pylogger.error(f"Failed to evaluate subset {subset_name}: {e}")
+            all_results[subset_name] = {"error": str(e)}
+
+    pylogger.info(f"\nSkipped {skipped} existing subsets, evaluated {num_subsets - skipped} new subsets")
+
+    # Save summary
+    results_path.mkdir(parents=True, exist_ok=True)
+    benchmark_name = cfg.benchmark.get("name", f"N{n_datasets}")
+    alignment_suffix = "_rot_aligned" if cfg.alignment else ""
+    summary_file = results_path / f"random_subsets_k{subset_size}_n{num_subsets}_{benchmark_name}{alignment_suffix}.json"
+    with open(summary_file, "w+") as f:
+        json.dump(all_results, f, indent=4)
+
+    pylogger.info(f"\n{'='*60}")
+    pylogger.info(f"RANDOM SUBSETS EVALUATION COMPLETE")
+    pylogger.info(f"Summary saved to: {summary_file}")
+    pylogger.info(f"{'='*60}")
+
+    return all_results
+
+
 def run(cfg: DictConfig):
-    """Main entry point - handles both single run and all_pairwise mode.
+    """Main entry point - handles single run, all_pairwise, and random_subsets modes.
 
     Args:
         cfg: run configuration, defined by Hydra in /conf
+
+    Mode priority: random_subsets > all_pairwise > single run
     """
     all_pairwise = cfg.get("all_pairwise", False)
+    random_subsets = cfg.get("random_subsets", False)
 
-    if not all_pairwise:
+    if random_subsets and all_pairwise:
+        pylogger.warning("Both random_subsets and all_pairwise are True. Using random_subsets mode (ignoring all_pairwise).")
+
+    if random_subsets:
+        # Random subsets mode
+        return run_random_subsets(cfg)
+    elif not all_pairwise:
         # Standard single run with all datasets in benchmark
         return run_single(cfg)
 
@@ -355,7 +505,9 @@ def run(cfg: DictConfig):
 
     # Determine results path for checking existing results
     merger_name = cfg.merger._target_.split(".")[-2].replace("_merger", "")
-    reg_suffix = getattr(cfg.misc, 'reg_suffix', '_')
+    reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
+    if not reg_suffix:
+        reg_suffix = generate_reg_suffix(cfg)
     merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
     results_path = Path(cfg.misc.results_path) / merger_name_with_suffix
 
@@ -403,10 +555,9 @@ def run(cfg: DictConfig):
 
     # Add regularization suffix to merger name if specified
     reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
-    if reg_suffix:
-        merger_name_with_suffix = f"{merger_name}{reg_suffix}"
-    else:
-        merger_name_with_suffix = merger_name
+    if not reg_suffix:
+        reg_suffix = generate_reg_suffix(cfg)
+    merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
 
     # Create merger-specific folder with regularization suffix
     results_path = Path(cfg.misc.results_path) / merger_name_with_suffix

@@ -10,7 +10,7 @@ defaults:
   - hydra: default
   - nn: default
   - train: default
-  - merger: ties # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, ties, dare, tall-masks, dummy (just uses pretrained), see all options in ./conf/merger
+  - merger: dare # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, ties, dare, tall-masks, dummy (just uses pretrained), see all options in ./conf/merger
   - benchmark: N20 # N14, N8, N20, N2
   - override hydra/launcher: basic # basic
   - override hydra/job_logging: none
@@ -19,6 +19,12 @@ defaults:
 
 # If true, run pairwise merging evaluation for all pairs in the benchmark, instead of merging all of them and evaluate on all tasks
 all_pairwise: true
+
+# Random subsets mode: evaluate merging on random subsets of specified size
+random_subsets: false # this takes the priority over all_pairwise if both are set to True
+subset_cardinality: 5  # Number of tasks per subset (e.g., 5 means merge 5 models)
+num_random_subsets: 200  # Number of random subsets to evaluate
+subset_random_seed: 42  # Random seed for reproducibility
 
 # Whether to apply rotation alignment before merging
 alignment: false

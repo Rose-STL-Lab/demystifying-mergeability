@@ -30,17 +30,17 @@ regularization:
   enable_grad_magnitude: false  # Enable/disable R3 regularization
   lambda_grad_magnitude: 1  # Weight for R3 regularization term
 
-  enable_tv_subspace_penalty: false
-  tv_penalty_singular_vectors: "UV" # can be U or V , or "UV"
+  enable_tv_subspace_penalty: true
+  tv_penalty_singular_vectors: "U" # can be U or V , or "UV"
   subspace_top_k: 10 # number of top directions to keep
-  lambda_tv_subspace: 0.001 # strength coefficient
+  lambda_tv_subspace: 0.0001 # strength coefficient
 
   # Gargiulo Penalty: Keep singular vectors aligned with pretrained
   # Penalizes rotation of top-k singular vectors during finetuning
   enable_gargiulo_penalty: true
-  gargiulo_singular_vectors: "UV"  # can be "U", "V", or "UV"
+  gargiulo_singular_vectors: "U"  # can be "U", "V", or "UV"
   gargiulo_top_k: 10  # number of top singular vectors to keep aligned
-  lambda_gargiulo: 0.001  # strength coefficient
+  lambda_gargiulo: 0.0001  # strength coefficient
   gargiulo_svd_interval: 50  # compute SVD of current weights every N steps
 
 
