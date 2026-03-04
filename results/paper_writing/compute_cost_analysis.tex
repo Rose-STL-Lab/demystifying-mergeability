@@ -1,0 +1,91 @@
+\section{Compute Cost Analysis}
+\label{appendix:compute_cost}
+
+In this appendix, we analyze the computational cost of each metric category and relate it to predictive value, providing guidance for practitioners on which metrics offer the best cost-benefit trade-off.
+
+\subsection{Metric Categories and Computational Requirements}
+
+Table~\ref{tab:compute_cost} summarizes the computational requirements for each metric category. We categorize costs based on the primary computational operation required.
+
+\begin{table}[h]
+\centering
+\caption{Computational cost analysis of mergeability metric categories. Performance impact shows the change in validation correlation ($\Delta r$) when the category is excluded from L1-regularized LOTO.}
+\label{tab:compute_cost}
+\begin{tabular}{@{}lcccr@{}}
+\toprule
+\textbf{Category} & \textbf{Primary Operation} & \textbf{Cost} & \textbf{Data Required} & \textbf{$\Delta r$} \\
+\midrule
+Gradient-based & Forward + Backward & High & Train data & $-0.167$ \\
+Activation & Forward only & Medium & Train data & $-0.051$ \\
+Subspace & SVD decomposition & Medium & Weights only & $-0.045$ \\
+Task Vector & Weight arithmetic & Low & Weights only & $-0.032$ \\
+Effective Rank & SVD decomposition & Medium & Weights only & $+0.010$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Detailed Cost Breakdown}
+
+\paragraph{Gradient-based Metrics (High Cost)}
+These metrics require computing gradients with respect to either the encoder parameters or input images. For each model pair:
+\begin{itemize}
+    \item Forward pass through both models on shared validation data
+    \item Backward pass to compute gradients
+    \item Similarity computation between gradient vectors
+\end{itemize}
+The backward pass roughly doubles the compute compared to forward-only approaches. However, gradient-based metrics show the largest predictive impact ($-0.167$ when excluded), making them essential despite their cost.
+
+\paragraph{Activation Metrics (Medium Cost)}
+Activation-based metrics require:
+\begin{itemize}
+    \item Forward pass through both models on shared data
+    \item Storage and comparison of intermediate activations
+\end{itemize}
+Memory requirements scale with batch size and model depth. These metrics provide moderate predictive value ($-0.051$ when excluded) at lower cost than gradient-based approaches.
+
+\paragraph{Subspace Metrics (Medium Cost)}
+Subspace overlap metrics require:
+\begin{itemize}
+    \item SVD decomposition of weight matrices (or task vectors)
+    \item Computation of subspace overlap/similarity measures
+\end{itemize}
+SVD complexity is $O(\min(m,n) \cdot mn)$ for an $m \times n$ matrix. These metrics are data-free (require only model weights) but computationally non-trivial. Predictive value is moderate ($-0.045$ when excluded).
+
+\paragraph{Task Vector Metrics (Low Cost)}
+Task vector metrics involve:
+\begin{itemize}
+    \item Subtraction of pretrained weights from fine-tuned weights
+    \item Vector similarity computations (cosine similarity, L2 distance)
+\end{itemize}
+These are the cheapest metrics to compute, requiring only weight arithmetic. Despite low cost, they provide meaningful signal ($-0.032$ when excluded).
+
+\paragraph{Effective Rank Metrics (Medium Cost -- Not Recommended)}
+Effective rank metrics require SVD decomposition similar to subspace metrics. However, our ablation study shows that excluding these metrics \emph{improves} performance ($+0.010$), indicating they introduce noise rather than signal. We recommend \textbf{not computing these metrics} for mergeability prediction.
+
+\subsection{Practical Recommendations}
+
+Based on our cost-benefit analysis, we provide the following recommendations:
+
+\begin{enumerate}
+    \item \textbf{If compute budget is limited:} Use only task vector metrics. They are nearly free to compute and provide meaningful predictive signal.
+
+    \item \textbf{If moderate compute is available:} Add gradient-based metrics. Despite higher cost, they provide the most predictive value and are essential for accurate mergeability prediction.
+
+    \item \textbf{If maximizing prediction accuracy:} Include gradient-based, activation, subspace, and task vector metrics. Exclude effective rank metrics as they add noise.
+
+    \item \textbf{Skip effective rank metrics entirely:} Our experiments show they decrease prediction quality while adding computational overhead.
+\end{enumerate}
+
+\subsection{Cost-Effectiveness Ranking}
+
+We define cost-effectiveness as the ratio of predictive impact to computational cost. Ranking metrics by this criterion:
+
+\begin{enumerate}
+    \item \textbf{Task Vector} (Best): Low cost, meaningful impact
+    \item \textbf{Gradient-based}: High cost but highest impact -- essential
+    \item \textbf{Activation}: Medium cost, moderate impact
+    \item \textbf{Subspace}: Medium cost, moderate impact
+    \item \textbf{Effective Rank} (Worst): Medium cost, negative impact
+\end{enumerate}
+
+This analysis suggests a practical two-stage approach: first compute cheap task vector metrics for initial screening, then invest in gradient-based metrics for pairs that warrant deeper analysis.

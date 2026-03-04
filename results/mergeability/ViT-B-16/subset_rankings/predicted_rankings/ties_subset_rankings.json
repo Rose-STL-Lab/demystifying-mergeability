@@ -1,0 +1,4008 @@
+{
+  "summary": {
+    "method": "ties",
+    "n_subsets": 200,
+    "subset_size": 5,
+    "seed": 42,
+    "score_mean": -0.1951429100343999,
+    "score_std": 0.009572099947660714,
+    "score_min": -0.22054340570577277,
+    "score_max": -0.169573749849305,
+    "top_5_subsets": [
+      {
+        "subset_id": 74,
+        "tasks": [
+          "EuroSAT",
+          "GTSRB",
+          "DTD",
+          "Flowers102",
+          "STL10"
+        ],
+        "task_indices": [
+          3,
+          5,
+          7,
+          8,
+          12
+        ],
+        "subset_mergeability": -0.169573749849305,
+        "rank": 1
+      },
+      {
+        "subset_id": 199,
+        "tasks": [
+          "EuroSAT",
+          "DTD",
+          "PCAM",
+          "OxfordIIITPet",
+          "STL10"
+        ],
+        "task_indices": [
+          3,
+          7,
+          9,
+          11,
+          12
+        ],
+        "subset_mergeability": -0.1696540379912433,
+        "rank": 2
+      },
+      {
+        "subset_id": 11,
+        "tasks": [
+          "GTSRB",
+          "Flowers102",
+          "OxfordIIITPet",
+          "STL10",
+          "CIFAR10"
+        ],
+        "task_indices": [
+          5,
+          8,
+          11,
+          12,
+          14
+        ],
+        "subset_mergeability": -0.17228714244184923,
+        "rank": 3
+      },
+      {
+        "subset_id": 137,
+        "tasks": [
+          "EuroSAT",
+          "DTD",
+          "Flowers102",
+          "PCAM",
+          "RenderedSST2"
+        ],
+        "task_indices": [
+          3,
+          7,
+          8,
+          9,
+          19
+        ],
+        "subset_mergeability": -0.17411827000587737,
+        "rank": 4
+      },
+      {
+        "subset_id": 53,
+        "tasks": [
+          "RESISC45",
+          "EuroSAT",
+          "DTD",
+          "STL10",
+          "RenderedSST2"
+        ],
+        "task_indices": [
+          2,
+          3,
+          7,
+          12,
+          19
+        ],
+        "subset_mergeability": -0.17649175815815524,
+        "rank": 5
+      }
+    ],
+    "bottom_5_subsets": [
+      {
+        "subset_id": 30,
+        "tasks": [
+          "RESISC45",
+          "SVHN",
+          "Food101",
+          "FashionMNIST",
+          "EMNIST"
+        ],
+        "task_indices": [
+          2,
+          4,
+          15,
+          16,
+          17
+        ],
+        "subset_mergeability": -0.21181429651119582,
+        "rank": 196
+      },
+      {
+        "subset_id": 132,
+        "tasks": [
+          "RESISC45",
+          "DTD",
+          "CIFAR100",
+          "Food101",
+          "KMNIST"
+        ],
+        "task_indices": [
+          2,
+          7,
+          13,
+          15,
+          18
+        ],
+        "subset_mergeability": -0.2119353191994348,
+        "rank": 197
+      },
+      {
+        "subset_id": 165,
+        "tasks": [
+          "EuroSAT",
+          "GTSRB",
+          "FER2013",
+          "CIFAR100",
+          "Food101"
+        ],
+        "task_indices": [
+          3,
+          5,
+          10,
+          13,
+          15
+        ],
+        "subset_mergeability": -0.21241586165580767,
+        "rank": 198
+      },
+      {
+        "subset_id": 38,
+        "tasks": [
+          "SVHN",
+          "MNIST",
+          "Food101",
+          "EMNIST",
+          "RenderedSST2"
+        ],
+        "task_indices": [
+          4,
+          6,
+          15,
+          17,
+          19
+        ],
+        "subset_mergeability": -0.21400075497466192,
+        "rank": 199
+      },
+      {
+        "subset_id": 49,
+        "tasks": [
+          "SVHN",
+          "MNIST",
+          "CIFAR100",
+          "Food101",
+          "EMNIST"
+        ],
+        "task_indices": [
+          4,
+          6,
+          13,
+          15,
+          17
+        ],
+        "subset_mergeability": -0.22054340570577277,
+        "rank": 200
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "subset_id": 74,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "STL10"
+      ],
+      "task_indices": [
+        3,
+        5,
+        7,
+        8,
+        12
+      ],
+      "subset_mergeability": -0.169573749849305,
+      "rank": 1
+    },
+    {
+      "subset_id": 199,
+      "tasks": [
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "STL10"
+      ],
+      "task_indices": [
+        3,
+        7,
+        9,
+        11,
+        12
+      ],
+      "subset_mergeability": -0.1696540379912433,
+      "rank": 2
+    },
+    {
+      "subset_id": 11,
+      "tasks": [
+        "GTSRB",
+        "Flowers102",
+        "OxfordIIITPet",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        5,
+        8,
+        11,
+        12,
+        14
+      ],
+      "subset_mergeability": -0.17228714244184923,
+      "rank": 3
+    },
+    {
+      "subset_id": 137,
+      "tasks": [
+        "EuroSAT",
+        "DTD",
+        "Flowers102",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        7,
+        8,
+        9,
+        19
+      ],
+      "subset_mergeability": -0.17411827000587737,
+      "rank": 4
+    },
+    {
+      "subset_id": 53,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "STL10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        3,
+        7,
+        12,
+        19
+      ],
+      "subset_mergeability": -0.17649175815815524,
+      "rank": 5
+    },
+    {
+      "subset_id": 48,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "PCAM",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        0,
+        8,
+        9,
+        12,
+        14
+      ],
+      "subset_mergeability": -0.1777398829533291,
+      "rank": 6
+    },
+    {
+      "subset_id": 76,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        7,
+        9,
+        11,
+        17
+      ],
+      "subset_mergeability": -0.17830630517843632,
+      "rank": 7
+    },
+    {
+      "subset_id": 60,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        5,
+        7,
+        9,
+        11,
+        14
+      ],
+      "subset_mergeability": -0.17882882143685577,
+      "rank": 8
+    },
+    {
+      "subset_id": 10,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        3,
+        7,
+        9,
+        19
+      ],
+      "subset_mergeability": -0.1793110210292354,
+      "rank": 9
+    },
+    {
+      "subset_id": 7,
+      "tasks": [
+        "Cars",
+        "Flowers102",
+        "OxfordIIITPet",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        8,
+        11,
+        14,
+        19
+      ],
+      "subset_mergeability": -0.1793550873182217,
+      "rank": 10
+    },
+    {
+      "subset_id": 172,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        5,
+        7,
+        9,
+        19
+      ],
+      "subset_mergeability": -0.17969923928882137,
+      "rank": 11
+    },
+    {
+      "subset_id": 161,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        2,
+        7,
+        8,
+        19
+      ],
+      "subset_mergeability": -0.17981622793779875,
+      "rank": 12
+    },
+    {
+      "subset_id": 8,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        9,
+        12,
+        17
+      ],
+      "subset_mergeability": -0.17988066341586884,
+      "rank": 13
+    },
+    {
+      "subset_id": 151,
+      "tasks": [
+        "RESISC45",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        5,
+        7,
+        8,
+        17
+      ],
+      "subset_mergeability": -0.1805511363483462,
+      "rank": 14
+    },
+    {
+      "subset_id": 115,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "OxfordIIITPet",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        7,
+        11,
+        17
+      ],
+      "subset_mergeability": -0.18085114496507657,
+      "rank": 15
+    },
+    {
+      "subset_id": 14,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        7,
+        8,
+        10,
+        12,
+        14
+      ],
+      "subset_mergeability": -0.1810170458687676,
+      "rank": 16
+    },
+    {
+      "subset_id": 4,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        0,
+        5,
+        7,
+        8,
+        14
+      ],
+      "subset_mergeability": -0.18123780745772028,
+      "rank": 17
+    },
+    {
+      "subset_id": 140,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet"
+      ],
+      "task_indices": [
+        3,
+        6,
+        7,
+        9,
+        11
+      ],
+      "subset_mergeability": -0.18132553000715437,
+      "rank": 18
+    },
+    {
+      "subset_id": 78,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "OxfordIIITPet",
+        "STL10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        8,
+        10,
+        11,
+        12,
+        16
+      ],
+      "subset_mergeability": -0.1813871019126433,
+      "rank": 19
+    },
+    {
+      "subset_id": 70,
+      "tasks": [
+        "Cars",
+        "PCAM",
+        "OxfordIIITPet",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        9,
+        11,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.18168336687602432,
+      "rank": 20
+    },
+    {
+      "subset_id": 158,
+      "tasks": [
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        9,
+        12,
+        14,
+        19
+      ],
+      "subset_mergeability": -0.18176113916218523,
+      "rank": 21
+    },
+    {
+      "subset_id": 101,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "PCAM",
+        "FER2013"
+      ],
+      "task_indices": [
+        2,
+        7,
+        8,
+        9,
+        10
+      ],
+      "subset_mergeability": -0.18202101828344042,
+      "rank": 22
+    },
+    {
+      "subset_id": 79,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "GTSRB",
+        "Flowers102",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        3,
+        5,
+        8,
+        17
+      ],
+      "subset_mergeability": -0.18222012753523925,
+      "rank": 23
+    },
+    {
+      "subset_id": 134,
+      "tasks": [
+        "DTD",
+        "PCAM",
+        "STL10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        7,
+        9,
+        12,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.18222310007466558,
+      "rank": 24
+    },
+    {
+      "subset_id": 0,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "DTD",
+        "Flowers102",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        3,
+        7,
+        8,
+        16
+      ],
+      "subset_mergeability": -0.18251141700775672,
+      "rank": 25
+    },
+    {
+      "subset_id": 128,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        7,
+        8,
+        12,
+        14,
+        18
+      ],
+      "subset_mergeability": -0.18311611428194727,
+      "rank": 26
+    },
+    {
+      "subset_id": 15,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "FER2013",
+        "STL10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        7,
+        10,
+        12,
+        19
+      ],
+      "subset_mergeability": -0.18315831091070217,
+      "rank": 27
+    },
+    {
+      "subset_id": 121,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [
+        2,
+        3,
+        6,
+        7,
+        12
+      ],
+      "subset_mergeability": -0.18370864593538208,
+      "rank": 28
+    },
+    {
+      "subset_id": 154,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "PCAM",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        7,
+        9,
+        14,
+        19
+      ],
+      "subset_mergeability": -0.18390906769214474,
+      "rank": 29
+    },
+    {
+      "subset_id": 22,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        8,
+        12,
+        14,
+        16
+      ],
+      "subset_mergeability": -0.18404799851443443,
+      "rank": 30
+    },
+    {
+      "subset_id": 190,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "PCAM",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        5,
+        9,
+        14,
+        19
+      ],
+      "subset_mergeability": -0.18478656060862983,
+      "rank": 31
+    },
+    {
+      "subset_id": 119,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "PCAM",
+        "OxfordIIITPet",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        5,
+        9,
+        11,
+        18
+      ],
+      "subset_mergeability": -0.1848662497446451,
+      "rank": 32
+    },
+    {
+      "subset_id": 166,
+      "tasks": [
+        "Cars",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        9,
+        12,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.18510797535745047,
+      "rank": 33
+    },
+    {
+      "subset_id": 12,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "OxfordIIITPet",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        6,
+        8,
+        11,
+        19
+      ],
+      "subset_mergeability": -0.18513638243571284,
+      "rank": 34
+    },
+    {
+      "subset_id": 196,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "GTSRB",
+        "PCAM",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        0,
+        2,
+        5,
+        9,
+        14
+      ],
+      "subset_mergeability": -0.18526600788589273,
+      "rank": 35
+    },
+    {
+      "subset_id": 120,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        3,
+        9,
+        12,
+        18
+      ],
+      "subset_mergeability": -0.18527210488750026,
+      "rank": 36
+    },
+    {
+      "subset_id": 32,
+      "tasks": [
+        "MNIST",
+        "PCAM",
+        "STL10",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        6,
+        9,
+        12,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.18574985959961263,
+      "rank": 37
+    },
+    {
+      "subset_id": 197,
+      "tasks": [
+        "Flowers102",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        8,
+        9,
+        11,
+        13,
+        14
+      ],
+      "subset_mergeability": -0.18590897414661373,
+      "rank": 38
+    },
+    {
+      "subset_id": 94,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "SVHN",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [
+        0,
+        3,
+        4,
+        7,
+        12
+      ],
+      "subset_mergeability": -0.18599039818928487,
+      "rank": 39
+    },
+    {
+      "subset_id": 147,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        7,
+        9,
+        18
+      ],
+      "subset_mergeability": -0.186293496019154,
+      "rank": 40
+    },
+    {
+      "subset_id": 56,
+      "tasks": [
+        "MNIST",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "subset_mergeability": -0.18634607770728492,
+      "rank": 41
+    },
+    {
+      "subset_id": 96,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "DTD",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        3,
+        7,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.1870914260395958,
+      "rank": 42
+    },
+    {
+      "subset_id": 23,
+      "tasks": [
+        "EuroSAT",
+        "Flowers102",
+        "FER2013",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        8,
+        10,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.18748794277225464,
+      "rank": 43
+    },
+    {
+      "subset_id": 122,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        1,
+        3,
+        9,
+        11,
+        13
+      ],
+      "subset_mergeability": -0.18760283297922012,
+      "rank": 44
+    },
+    {
+      "subset_id": 141,
+      "tasks": [
+        "SUN397",
+        "SVHN",
+        "GTSRB",
+        "Flowers102",
+        "PCAM"
+      ],
+      "task_indices": [
+        0,
+        4,
+        5,
+        8,
+        9
+      ],
+      "subset_mergeability": -0.18766146542505832,
+      "rank": 45
+    },
+    {
+      "subset_id": 145,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "Flowers102",
+        "STL10",
+        "Food101"
+      ],
+      "task_indices": [
+        2,
+        3,
+        8,
+        12,
+        15
+      ],
+      "subset_mergeability": -0.18811215112643173,
+      "rank": 46
+    },
+    {
+      "subset_id": 45,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        1,
+        2,
+        3,
+        17
+      ],
+      "subset_mergeability": -0.18816625346140584,
+      "rank": 47
+    },
+    {
+      "subset_id": 29,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        2,
+        7,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.18847969016245983,
+      "rank": 48
+    },
+    {
+      "subset_id": 157,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "GTSRB",
+        "PCAM",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        5,
+        9,
+        16
+      ],
+      "subset_mergeability": -0.1888136711226507,
+      "rank": 49
+    },
+    {
+      "subset_id": 9,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "MNIST",
+        "OxfordIIITPet",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        2,
+        6,
+        11,
+        19
+      ],
+      "subset_mergeability": -0.1888389792621763,
+      "rank": 50
+    },
+    {
+      "subset_id": 189,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "PCAM",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        7,
+        9,
+        13,
+        19
+      ],
+      "subset_mergeability": -0.18928186309190148,
+      "rank": 51
+    },
+    {
+      "subset_id": 156,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Flowers102",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        7,
+        8,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.18950664995496,
+      "rank": 52
+    },
+    {
+      "subset_id": 44,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        7,
+        8,
+        14,
+        18
+      ],
+      "subset_mergeability": -0.189532081165843,
+      "rank": 53
+    },
+    {
+      "subset_id": 37,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        2,
+        7,
+        8,
+        10,
+        16
+      ],
+      "subset_mergeability": -0.18962340085128476,
+      "rank": 54
+    },
+    {
+      "subset_id": 112,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [
+        1,
+        6,
+        8,
+        10,
+        12
+      ],
+      "subset_mergeability": -0.18963852593175934,
+      "rank": 55
+    },
+    {
+      "subset_id": 19,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "OxfordIIITPet",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        4,
+        7,
+        11,
+        12,
+        18
+      ],
+      "subset_mergeability": -0.1899553334767896,
+      "rank": 56
+    },
+    {
+      "subset_id": 68,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "SVHN",
+        "OxfordIIITPet"
+      ],
+      "task_indices": [
+        1,
+        2,
+        3,
+        4,
+        11
+      ],
+      "subset_mergeability": -0.19001644912039523,
+      "rank": 57
+    },
+    {
+      "subset_id": 109,
+      "tasks": [
+        "GTSRB",
+        "FER2013",
+        "STL10",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        5,
+        10,
+        12,
+        14,
+        19
+      ],
+      "subset_mergeability": -0.19008528613686193,
+      "rank": 58
+    },
+    {
+      "subset_id": 77,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [
+        2,
+        6,
+        8,
+        10,
+        12
+      ],
+      "subset_mergeability": -0.1902010674538021,
+      "rank": 59
+    },
+    {
+      "subset_id": 87,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "PCAM",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        6,
+        9,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.1904651062787775,
+      "rank": 60
+    },
+    {
+      "subset_id": 195,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        7,
+        8,
+        14,
+        17,
+        18
+      ],
+      "subset_mergeability": -0.19060870963183557,
+      "rank": 61
+    },
+    {
+      "subset_id": 34,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "DTD",
+        "FER2013",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        2,
+        7,
+        10,
+        19
+      ],
+      "subset_mergeability": -0.1907950088473325,
+      "rank": 62
+    },
+    {
+      "subset_id": 28,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "OxfordIIITPet",
+        "Food101"
+      ],
+      "task_indices": [
+        0,
+        3,
+        9,
+        11,
+        15
+      ],
+      "subset_mergeability": -0.19101640138988538,
+      "rank": 63
+    },
+    {
+      "subset_id": 2,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "MNIST",
+        "DTD"
+      ],
+      "task_indices": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "subset_mergeability": -0.19109521441336946,
+      "rank": 64
+    },
+    {
+      "subset_id": 59,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Flowers102",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        2,
+        4,
+        8,
+        11,
+        16
+      ],
+      "subset_mergeability": -0.19112346980266723,
+      "rank": 65
+    },
+    {
+      "subset_id": 131,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "Flowers102",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        6,
+        8,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.19117621597101414,
+      "rank": 66
+    },
+    {
+      "subset_id": 36,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        2,
+        7,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.19122810906153126,
+      "rank": 67
+    },
+    {
+      "subset_id": 176,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "STL10",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        4,
+        7,
+        12,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.1912900909489243,
+      "rank": 68
+    },
+    {
+      "subset_id": 25,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "Flowers102",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        5,
+        8,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.19129999887568047,
+      "rank": 69
+    },
+    {
+      "subset_id": 65,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "Flowers102",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        2,
+        8,
+        13,
+        19
+      ],
+      "subset_mergeability": -0.19131097303143071,
+      "rank": 70
+    },
+    {
+      "subset_id": 41,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        1,
+        3,
+        12,
+        14,
+        18
+      ],
+      "subset_mergeability": -0.19133007406375233,
+      "rank": 71
+    },
+    {
+      "subset_id": 113,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        8,
+        10,
+        12,
+        14,
+        18
+      ],
+      "subset_mergeability": -0.19136106988940926,
+      "rank": 72
+    },
+    {
+      "subset_id": 24,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "PCAM",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        0,
+        5,
+        9,
+        13,
+        14
+      ],
+      "subset_mergeability": -0.1922339433159959,
+      "rank": 73
+    },
+    {
+      "subset_id": 13,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        5,
+        7,
+        17,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.19228561083527057,
+      "rank": 74
+    },
+    {
+      "subset_id": 52,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "GTSRB",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        5,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.19239461674065178,
+      "rank": 75
+    },
+    {
+      "subset_id": 181,
+      "tasks": [
+        "MNIST",
+        "DTD",
+        "FER2013",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        6,
+        7,
+        10,
+        12,
+        14
+      ],
+      "subset_mergeability": -0.19262801197662902,
+      "rank": 76
+    },
+    {
+      "subset_id": 86,
+      "tasks": [
+        "GTSRB",
+        "PCAM",
+        "STL10",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [
+        5,
+        9,
+        12,
+        13,
+        18
+      ],
+      "subset_mergeability": -0.19276923307293142,
+      "rank": 77
+    },
+    {
+      "subset_id": 148,
+      "tasks": [
+        "DTD",
+        "STL10",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        7,
+        12,
+        13,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.1929824459681984,
+      "rank": 78
+    },
+    {
+      "subset_id": 123,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "FER2013",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        2,
+        10,
+        11,
+        16
+      ],
+      "subset_mergeability": -0.1930634432234079,
+      "rank": 79
+    },
+    {
+      "subset_id": 127,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        7,
+        8,
+        10,
+        18
+      ],
+      "subset_mergeability": -0.19307732639145844,
+      "rank": 80
+    },
+    {
+      "subset_id": 35,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        7,
+        17,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.19343974860252677,
+      "rank": 81
+    },
+    {
+      "subset_id": 6,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "FER2013",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        10,
+        12,
+        18
+      ],
+      "subset_mergeability": -0.19366429254327291,
+      "rank": 82
+    },
+    {
+      "subset_id": 62,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "Flowers102",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        4,
+        8,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.19369009641838325,
+      "rank": 83
+    },
+    {
+      "subset_id": 103,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "MNIST",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [
+        2,
+        4,
+        6,
+        7,
+        12
+      ],
+      "subset_mergeability": -0.19375750608029652,
+      "rank": 84
+    },
+    {
+      "subset_id": 173,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        7,
+        13,
+        17
+      ],
+      "subset_mergeability": -0.19386302691375018,
+      "rank": 85
+    },
+    {
+      "subset_id": 90,
+      "tasks": [
+        "RESISC45",
+        "PCAM",
+        "FER2013",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        9,
+        10,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.19389147725187011,
+      "rank": 86
+    },
+    {
+      "subset_id": 58,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "EuroSAT",
+        "MNIST",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        0,
+        2,
+        3,
+        6,
+        14
+      ],
+      "subset_mergeability": -0.19399242779123238,
+      "rank": 87
+    },
+    {
+      "subset_id": 71,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        3,
+        6,
+        7,
+        11,
+        13
+      ],
+      "subset_mergeability": -0.19402995800568643,
+      "rank": 88
+    },
+    {
+      "subset_id": 167,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "Flowers102",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        8,
+        10,
+        18
+      ],
+      "subset_mergeability": -0.19415736973660064,
+      "rank": 89
+    },
+    {
+      "subset_id": 142,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "PCAM",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        4,
+        9,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.19454014090658472,
+      "rank": 90
+    },
+    {
+      "subset_id": 187,
+      "tasks": [
+        "RESISC45",
+        "FER2013",
+        "STL10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        2,
+        10,
+        12,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.19462690963923163,
+      "rank": 91
+    },
+    {
+      "subset_id": 91,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        6,
+        7,
+        9,
+        19
+      ],
+      "subset_mergeability": -0.19467006110190815,
+      "rank": 92
+    },
+    {
+      "subset_id": 33,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        11,
+        14,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.1946738001336772,
+      "rank": 93
+    },
+    {
+      "subset_id": 149,
+      "tasks": [
+        "PCAM",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        9,
+        13,
+        14,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.19498122944614188,
+      "rank": 94
+    },
+    {
+      "subset_id": 47,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "MNIST",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        1,
+        5,
+        6,
+        12,
+        18
+      ],
+      "subset_mergeability": -0.19499249316316372,
+      "rank": 95
+    },
+    {
+      "subset_id": 143,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        3,
+        9,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.19500326032411083,
+      "rank": 96
+    },
+    {
+      "subset_id": 63,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "PCAM",
+        "EMNIST"
+      ],
+      "task_indices": [
+        4,
+        6,
+        8,
+        9,
+        17
+      ],
+      "subset_mergeability": -0.19532954450839068,
+      "rank": 97
+    },
+    {
+      "subset_id": 80,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        1,
+        3,
+        10,
+        11,
+        13
+      ],
+      "subset_mergeability": -0.19547621927919134,
+      "rank": 98
+    },
+    {
+      "subset_id": 72,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "DTD",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        5,
+        7,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.19555938971360282,
+      "rank": 99
+    },
+    {
+      "subset_id": 61,
+      "tasks": [
+        "SUN397",
+        "PCAM",
+        "FashionMNIST",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        9,
+        16,
+        17,
+        18
+      ],
+      "subset_mergeability": -0.19562076383870108,
+      "rank": 100
+    },
+    {
+      "subset_id": 168,
+      "tasks": [
+        "SUN397",
+        "STL10",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        12,
+        13,
+        14,
+        16
+      ],
+      "subset_mergeability": -0.19567960699681916,
+      "rank": 101
+    },
+    {
+      "subset_id": 99,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [
+        7,
+        8,
+        14,
+        15,
+        17
+      ],
+      "subset_mergeability": -0.19568298565787956,
+      "rank": 102
+    },
+    {
+      "subset_id": 107,
+      "tasks": [
+        "DTD",
+        "PCAM",
+        "STL10",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        7,
+        9,
+        12,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.195707264577672,
+      "rank": 103
+    },
+    {
+      "subset_id": 50,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "PCAM",
+        "FER2013",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        6,
+        9,
+        10,
+        17
+      ],
+      "subset_mergeability": -0.19575307586151358,
+      "rank": 104
+    },
+    {
+      "subset_id": 191,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "PCAM",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        1,
+        9,
+        10,
+        18
+      ],
+      "subset_mergeability": -0.19605075694657229,
+      "rank": 105
+    },
+    {
+      "subset_id": 92,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "Food101"
+      ],
+      "task_indices": [
+        0,
+        1,
+        2,
+        7,
+        15
+      ],
+      "subset_mergeability": -0.19618958327005762,
+      "rank": 106
+    },
+    {
+      "subset_id": 153,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        1,
+        7,
+        9,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.19627469005108222,
+      "rank": 107
+    },
+    {
+      "subset_id": 171,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        0,
+        3,
+        9,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.19667690263684262,
+      "rank": 108
+    },
+    {
+      "subset_id": 160,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        1,
+        2,
+        8,
+        10,
+        13
+      ],
+      "subset_mergeability": -0.19673130354455898,
+      "rank": 109
+    },
+    {
+      "subset_id": 180,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "STL10",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [
+        10,
+        11,
+        12,
+        15,
+        17
+      ],
+      "subset_mergeability": -0.19689992422171554,
+      "rank": 110
+    },
+    {
+      "subset_id": 192,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        7,
+        11,
+        13,
+        19
+      ],
+      "subset_mergeability": -0.1969553275207073,
+      "rank": 111
+    },
+    {
+      "subset_id": 152,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "GTSRB",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        2,
+        5,
+        13,
+        17
+      ],
+      "subset_mergeability": -0.19696536752395402,
+      "rank": 112
+    },
+    {
+      "subset_id": 21,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "GTSRB",
+        "STL10",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        2,
+        4,
+        5,
+        12,
+        13
+      ],
+      "subset_mergeability": -0.19708675081714874,
+      "rank": 113
+    },
+    {
+      "subset_id": 105,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "STL10",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        0,
+        1,
+        6,
+        12,
+        13
+      ],
+      "subset_mergeability": -0.19709134157575703,
+      "rank": 114
+    },
+    {
+      "subset_id": 16,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        6,
+        8,
+        10,
+        17
+      ],
+      "subset_mergeability": -0.1971662267086635,
+      "rank": 115
+    },
+    {
+      "subset_id": 66,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "SVHN",
+        "Flowers102",
+        "FER2013"
+      ],
+      "task_indices": [
+        0,
+        1,
+        4,
+        8,
+        10
+      ],
+      "subset_mergeability": -0.19719682235308722,
+      "rank": 116
+    },
+    {
+      "subset_id": 95,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        5,
+        7,
+        13,
+        14,
+        16
+      ],
+      "subset_mergeability": -0.19727492800275992,
+      "rank": 117
+    },
+    {
+      "subset_id": 106,
+      "tasks": [
+        "SUN397",
+        "OxfordIIITPet",
+        "STL10",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        11,
+        12,
+        15,
+        18
+      ],
+      "subset_mergeability": -0.19737852225378547,
+      "rank": 118
+    },
+    {
+      "subset_id": 67,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        5,
+        13,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.19738871055656215,
+      "rank": 119
+    },
+    {
+      "subset_id": 118,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "Flowers102",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        6,
+        8,
+        14,
+        18
+      ],
+      "subset_mergeability": -0.19747587075868925,
+      "rank": 120
+    },
+    {
+      "subset_id": 42,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "FER2013",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        3,
+        6,
+        7,
+        10,
+        16
+      ],
+      "subset_mergeability": -0.19797913545428045,
+      "rank": 121
+    },
+    {
+      "subset_id": 26,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "PCAM",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        4,
+        6,
+        9,
+        11,
+        16
+      ],
+      "subset_mergeability": -0.1980138848567063,
+      "rank": 122
+    },
+    {
+      "subset_id": 116,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "DTD",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        1,
+        6,
+        7,
+        18
+      ],
+      "subset_mergeability": -0.1980393061365549,
+      "rank": 123
+    },
+    {
+      "subset_id": 85,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "PCAM",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [
+        4,
+        6,
+        9,
+        10,
+        12
+      ],
+      "subset_mergeability": -0.1980540049278842,
+      "rank": 124
+    },
+    {
+      "subset_id": 55,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "FashionMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        8,
+        10,
+        16,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.19807276682524738,
+      "rank": 125
+    },
+    {
+      "subset_id": 100,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        7,
+        8,
+        14,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.19819854934275677,
+      "rank": 126
+    },
+    {
+      "subset_id": 81,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "STL10",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        3,
+        6,
+        12,
+        13,
+        16
+      ],
+      "subset_mergeability": -0.19856786232210769,
+      "rank": 127
+    },
+    {
+      "subset_id": 18,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Flowers102",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [
+        4,
+        7,
+        8,
+        13,
+        17
+      ],
+      "subset_mergeability": -0.19871311823164833,
+      "rank": 128
+    },
+    {
+      "subset_id": 138,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "MNIST",
+        "FER2013",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        5,
+        6,
+        10,
+        19
+      ],
+      "subset_mergeability": -0.1989629629172482,
+      "rank": 129
+    },
+    {
+      "subset_id": 57,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "PCAM",
+        "FER2013",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        2,
+        4,
+        9,
+        10,
+        14
+      ],
+      "subset_mergeability": -0.19904485358933552,
+      "rank": 130
+    },
+    {
+      "subset_id": 110,
+      "tasks": [
+        "SUN397",
+        "SVHN",
+        "STL10",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        0,
+        4,
+        12,
+        17,
+        18
+      ],
+      "subset_mergeability": -0.19905643610168727,
+      "rank": 131
+    },
+    {
+      "subset_id": 136,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        10,
+        11,
+        13,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.1990754014912144,
+      "rank": 132
+    },
+    {
+      "subset_id": 194,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "DTD",
+        "STL10",
+        "Food101"
+      ],
+      "task_indices": [
+        2,
+        4,
+        7,
+        12,
+        15
+      ],
+      "subset_mergeability": -0.19920864646747471,
+      "rank": 133
+    },
+    {
+      "subset_id": 27,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        5,
+        10,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.19936742728862514,
+      "rank": 134
+    },
+    {
+      "subset_id": 98,
+      "tasks": [
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        5,
+        13,
+        14,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.1993756922474335,
+      "rank": 135
+    },
+    {
+      "subset_id": 125,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        4,
+        5,
+        8,
+        13,
+        14
+      ],
+      "subset_mergeability": -0.1994300599838921,
+      "rank": 136
+    },
+    {
+      "subset_id": 82,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "Flowers102",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        0,
+        1,
+        6,
+        8,
+        13
+      ],
+      "subset_mergeability": -0.19946894403023058,
+      "rank": 137
+    },
+    {
+      "subset_id": 185,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "SVHN",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        3,
+        4,
+        14,
+        16
+      ],
+      "subset_mergeability": -0.19951638688379725,
+      "rank": 138
+    },
+    {
+      "subset_id": 193,
+      "tasks": [
+        "GTSRB",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        5,
+        13,
+        16,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.19961544137456644,
+      "rank": 139
+    },
+    {
+      "subset_id": 198,
+      "tasks": [
+        "MNIST",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        6,
+        9,
+        12,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.19975214654314863,
+      "rank": 140
+    },
+    {
+      "subset_id": 84,
+      "tasks": [
+        "EuroSAT",
+        "PCAM",
+        "CIFAR100",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        9,
+        13,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.19986978460137128,
+      "rank": 141
+    },
+    {
+      "subset_id": 54,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        7,
+        13,
+        18
+      ],
+      "subset_mergeability": -0.20022606896448814,
+      "rank": 142
+    },
+    {
+      "subset_id": 40,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        11,
+        13,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.20025836144460207,
+      "rank": 143
+    },
+    {
+      "subset_id": 17,
+      "tasks": [
+        "SVHN",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        4,
+        8,
+        12,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.20032735743742594,
+      "rank": 144
+    },
+    {
+      "subset_id": 178,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        0,
+        8,
+        10,
+        13,
+        16
+      ],
+      "subset_mergeability": -0.2003947823113202,
+      "rank": 145
+    },
+    {
+      "subset_id": 83,
+      "tasks": [
+        "RESISC45",
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        2,
+        10,
+        11,
+        13,
+        16
+      ],
+      "subset_mergeability": -0.20067465889977595,
+      "rank": 146
+    },
+    {
+      "subset_id": 170,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        1,
+        4,
+        6,
+        8,
+        14
+      ],
+      "subset_mergeability": -0.20075753328168872,
+      "rank": 147
+    },
+    {
+      "subset_id": 108,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        0,
+        7,
+        8,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.20137796650315773,
+      "rank": 148
+    },
+    {
+      "subset_id": 133,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "CIFAR10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        2,
+        14,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.20151426479119577,
+      "rank": 149
+    },
+    {
+      "subset_id": 159,
+      "tasks": [
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        8,
+        14,
+        15,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.20195191886012553,
+      "rank": 150
+    },
+    {
+      "subset_id": 177,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        2,
+        4,
+        6,
+        8,
+        16
+      ],
+      "subset_mergeability": -0.20232949043269058,
+      "rank": 151
+    },
+    {
+      "subset_id": 139,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "PCAM",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        6,
+        8,
+        9,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.20238038124455096,
+      "rank": 152
+    },
+    {
+      "subset_id": 20,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        3,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.20240814699031096,
+      "rank": 153
+    },
+    {
+      "subset_id": 163,
+      "tasks": [
+        "RESISC45",
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        2,
+        5,
+        8,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.20255092894234838,
+      "rank": 154
+    },
+    {
+      "subset_id": 124,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        3,
+        11,
+        13,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.20264703683838475,
+      "rank": 155
+    },
+    {
+      "subset_id": 73,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        5,
+        10,
+        13,
+        19
+      ],
+      "subset_mergeability": -0.2026904070487813,
+      "rank": 156
+    },
+    {
+      "subset_id": 111,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [
+        2,
+        4,
+        5,
+        13,
+        14
+      ],
+      "subset_mergeability": -0.2028549939473288,
+      "rank": 157
+    },
+    {
+      "subset_id": 150,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "MNIST",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        1,
+        3,
+        6,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.20286638607135682,
+      "rank": 158
+    },
+    {
+      "subset_id": 1,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "SVHN",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        3,
+        4,
+        13,
+        17
+      ],
+      "subset_mergeability": -0.203382097369139,
+      "rank": 159
+    },
+    {
+      "subset_id": 51,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "Food101",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        5,
+        15,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.20338601353787142,
+      "rank": 160
+    },
+    {
+      "subset_id": 130,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "OxfordIIITPet",
+        "Food101"
+      ],
+      "task_indices": [
+        6,
+        8,
+        10,
+        11,
+        15
+      ],
+      "subset_mergeability": -0.2034489705809459,
+      "rank": 161
+    },
+    {
+      "subset_id": 183,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "STL10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        1,
+        4,
+        12,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.2035941978590982,
+      "rank": 162
+    },
+    {
+      "subset_id": 31,
+      "tasks": [
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [
+        5,
+        8,
+        13,
+        15,
+        17
+      ],
+      "subset_mergeability": -0.20373686746431385,
+      "rank": 163
+    },
+    {
+      "subset_id": 155,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "Flowers102",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [
+        3,
+        6,
+        8,
+        13,
+        18
+      ],
+      "subset_mergeability": -0.20385995377111552,
+      "rank": 164
+    },
+    {
+      "subset_id": 184,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "FER2013",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        3,
+        4,
+        10,
+        14,
+        16
+      ],
+      "subset_mergeability": -0.20386787760728325,
+      "rank": 165
+    },
+    {
+      "subset_id": 114,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        0,
+        2,
+        8,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.2039893111830072,
+      "rank": 166
+    },
+    {
+      "subset_id": 43,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [
+        4,
+        5,
+        13,
+        14,
+        17
+      ],
+      "subset_mergeability": -0.20446979108594404,
+      "rank": 167
+    },
+    {
+      "subset_id": 174,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        3,
+        4,
+        9,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.20452400958848713,
+      "rank": 168
+    },
+    {
+      "subset_id": 75,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "DTD",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        1,
+        6,
+        7,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.20481391147998057,
+      "rank": 169
+    },
+    {
+      "subset_id": 3,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        0,
+        6,
+        13,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.20526641030819737,
+      "rank": 170
+    },
+    {
+      "subset_id": 169,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "OxfordIIITPet",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        1,
+        6,
+        11,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.20551662858484035,
+      "rank": 171
+    },
+    {
+      "subset_id": 102,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "FER2013",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        4,
+        10,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.20562583001081727,
+      "rank": 172
+    },
+    {
+      "subset_id": 135,
+      "tasks": [
+        "OxfordIIITPet",
+        "Food101",
+        "FashionMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        11,
+        15,
+        16,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.20597903724049763,
+      "rank": 173
+    },
+    {
+      "subset_id": 188,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "FER2013",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        10,
+        15,
+        17
+      ],
+      "subset_mergeability": -0.20616736853333045,
+      "rank": 174
+    },
+    {
+      "subset_id": 179,
+      "tasks": [
+        "SVHN",
+        "PCAM",
+        "CIFAR10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        9,
+        14,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.20635417682847423,
+      "rank": 175
+    },
+    {
+      "subset_id": 129,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        0,
+        5,
+        10,
+        15,
+        19
+      ],
+      "subset_mergeability": -0.2065330527433884,
+      "rank": 176
+    },
+    {
+      "subset_id": 175,
+      "tasks": [
+        "Flowers102",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        8,
+        13,
+        15,
+        16,
+        19
+      ],
+      "subset_mergeability": -0.20699050119027135,
+      "rank": 177
+    },
+    {
+      "subset_id": 46,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        5,
+        7,
+        13,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.2072752316607766,
+      "rank": 178
+    },
+    {
+      "subset_id": 162,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "CIFAR10",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [
+        1,
+        5,
+        14,
+        15,
+        18
+      ],
+      "subset_mergeability": -0.20776884643177182,
+      "rank": 179
+    },
+    {
+      "subset_id": 144,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "FER2013",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        1,
+        5,
+        10,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.20791693050998425,
+      "rank": 180
+    },
+    {
+      "subset_id": 104,
+      "tasks": [
+        "FER2013",
+        "CIFAR100",
+        "CIFAR10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        10,
+        13,
+        14,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.2079803001945834,
+      "rank": 181
+    },
+    {
+      "subset_id": 89,
+      "tasks": [
+        "GTSRB",
+        "MNIST",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        5,
+        6,
+        14,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.20915175491051857,
+      "rank": 182
+    },
+    {
+      "subset_id": 93,
+      "tasks": [
+        "MNIST",
+        "STL10",
+        "CIFAR100",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [
+        6,
+        12,
+        13,
+        14,
+        15
+      ],
+      "subset_mergeability": -0.20954582485482698,
+      "rank": 183
+    },
+    {
+      "subset_id": 39,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        3,
+        6,
+        7,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.20982661624123003,
+      "rank": 184
+    },
+    {
+      "subset_id": 88,
+      "tasks": [
+        "FER2013",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        10,
+        13,
+        14,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.2101413683372737,
+      "rank": 185
+    },
+    {
+      "subset_id": 126,
+      "tasks": [
+        "CIFAR100",
+        "CIFAR10",
+        "Food101",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        13,
+        14,
+        15,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.21019983109466459,
+      "rank": 186
+    },
+    {
+      "subset_id": 182,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "FER2013",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        1,
+        7,
+        10,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.21029579636810128,
+      "rank": 187
+    },
+    {
+      "subset_id": 64,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        6,
+        8,
+        10,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.21036106690785025,
+      "rank": 188
+    },
+    {
+      "subset_id": 97,
+      "tasks": [
+        "SVHN",
+        "FER2013",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [
+        4,
+        10,
+        14,
+        16,
+        18
+      ],
+      "subset_mergeability": -0.21091858973745875,
+      "rank": 189
+    },
+    {
+      "subset_id": 69,
+      "tasks": [
+        "SVHN",
+        "CIFAR100",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        13,
+        17,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.21100395206378106,
+      "rank": 190
+    },
+    {
+      "subset_id": 146,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "SVHN",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        1,
+        2,
+        4,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.2110527339253943,
+      "rank": 191
+    },
+    {
+      "subset_id": 186,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        2,
+        4,
+        8,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.21106170277443118,
+      "rank": 192
+    },
+    {
+      "subset_id": 5,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100"
+      ],
+      "task_indices": [
+        4,
+        6,
+        8,
+        10,
+        13
+      ],
+      "subset_mergeability": -0.21138522907484822,
+      "rank": 193
+    },
+    {
+      "subset_id": 117,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Food101",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        7,
+        15,
+        18,
+        19
+      ],
+      "subset_mergeability": -0.21144030051501436,
+      "rank": 194
+    },
+    {
+      "subset_id": 164,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [
+        10,
+        11,
+        13,
+        15,
+        16
+      ],
+      "subset_mergeability": -0.21171460371728495,
+      "rank": 195
+    },
+    {
+      "subset_id": 30,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Food101",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [
+        2,
+        4,
+        15,
+        16,
+        17
+      ],
+      "subset_mergeability": -0.21181429651119582,
+      "rank": 196
+    },
+    {
+      "subset_id": 132,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "CIFAR100",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [
+        2,
+        7,
+        13,
+        15,
+        18
+      ],
+      "subset_mergeability": -0.2119353191994348,
+      "rank": 197
+    },
+    {
+      "subset_id": 165,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "FER2013",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [
+        3,
+        5,
+        10,
+        13,
+        15
+      ],
+      "subset_mergeability": -0.21241586165580767,
+      "rank": 198
+    },
+    {
+      "subset_id": 38,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Food101",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [
+        4,
+        6,
+        15,
+        17,
+        19
+      ],
+      "subset_mergeability": -0.21400075497466192,
+      "rank": 199
+    },
+    {
+      "subset_id": 49,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "CIFAR100",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [
+        4,
+        6,
+        13,
+        15,
+        17
+      ],
+      "subset_mergeability": -0.22054340570577277,
+      "rank": 200
+    }
+  ]
+}

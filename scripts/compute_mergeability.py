@@ -31,6 +31,9 @@ from model_merging.metrics import (
     compute_metric,
     compute_all_metrics,
     compute_metric_per_layer,
+    # Efficient batched SVD computation
+    compute_all_svd_metrics,
+    ALL_SVD_METRICS,
 )
 from model_merging.metrics.mergeability import TUPLE_METRICS
 from model_merging.metrics.mergeability import build_calibration_loader
@@ -316,7 +319,64 @@ def run(cfg: DictConfig) -> Dict:
 
             pylogger.info(f"[{pair_idx}/{n_pairs}] Computing metrics for {name_i} vs {name_j}")
 
+            # Separate SVD metrics from non-SVD metrics for efficient batch computation
+            # Note: We need to handle the mapping from tuple metrics to their output names
+            svd_metrics_requested = []
+            non_svd_metrics = []
+
             for metric_name in metrics_to_compute:
+                # Check if this metric (or its outputs if tuple metric) is SVD-based
+                if metric_name in TUPLE_METRICS:
+                    # For tuple metrics, check if any of the outputs are SVD-based
+                    output_names = TUPLE_METRICS[metric_name]
+                    if any(out_name in ALL_SVD_METRICS for out_name in output_names):
+                        svd_metrics_requested.extend(output_names)
+                    else:
+                        non_svd_metrics.append(metric_name)
+                elif metric_name in ALL_SVD_METRICS:
+                    svd_metrics_requested.append(metric_name)
+                else:
+                    non_svd_metrics.append(metric_name)
+
+            # =====================================================================
+            # EFFICIENT SVD COMPUTATION: Compute all SVD metrics with shared SVD
+            # =====================================================================
+            if svd_metrics_requested and not layer_wise:
+                try:
+                    pylogger.info(f"    Computing {len(svd_metrics_requested)} SVD metrics efficiently (batched)...")
+
+                    # Compute all SVD metrics at once
+                    svd_results = compute_all_svd_metrics(
+                        task_dicts[name_i],
+                        task_dicts[name_j],
+                    )
+
+                    # Store results for requested SVD metrics
+                    for metric_name in svd_metrics_requested:
+                        if metric_name in svd_results:
+                            val = svd_results[metric_name]
+                            results["metrics"][metric_name]["matrix"][i][j] = val
+                            results["metrics"][metric_name]["pairs"][pair_key] = val
+                            pylogger.info(f"      ✓ {metric_name} = {val}")
+
+                except Exception as e:
+                    pylogger.error(f"Failed to compute SVD metrics batch for {pair_key}: {e}")
+                    import traceback
+                    pylogger.error(traceback.format_exc())
+                    for metric_name in svd_metrics_requested:
+                        if metric_name in results["metrics"]:
+                            results["metrics"][metric_name]["matrix"][i][j] = None
+                            results["metrics"][metric_name]["pairs"][pair_key] = None
+            elif svd_metrics_requested and layer_wise:
+                # For layer-wise mode, compute SVD metrics individually (batching not supported)
+                pylogger.info(f"    Computing {len(svd_metrics_requested)} SVD metrics (layer-wise mode)...")
+                non_svd_metrics.extend(svd_metrics_requested)
+                svd_metrics_requested = []  # Reset so we process them in the regular loop
+
+            # =====================================================================
+            # REGULAR COMPUTATION: Non-SVD metrics (and SVD metrics in layer-wise mode)
+            # =====================================================================
+            for metric_name in non_svd_metrics:
                 try:
                     pylogger.info(f"    Computing {metric_name}...")
                     metric_fn = METRIC_REGISTRY[metric_name]

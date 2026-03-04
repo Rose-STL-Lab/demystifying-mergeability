@@ -2164,6 +2164,344 @@ def input_gradient_dot_product(
 
 
 # =============================================================================
+# Efficient Batched SVD Computation
+# =============================================================================
+
+
+# Define which metrics belong to each SVD group for efficient batch computation
+GLOBAL_SVD_METRICS = [
+    "effective_rank",
+    "effective_rank_mergeability_score",
+    "stable_rank",
+    "spectral_gap",
+    "singular_value_ratio",
+]
+
+LAYERWISE_STACKED_SVD_METRICS = [
+    "layerwise_effective_rank",
+    "layerwise_effective_rank_mergeability_score",
+]
+
+PERLAYER_TENSOR_SVD_METRICS = [
+    "singular_value_overlap",
+    "subspace_overlap",
+    "right_subspace_overlap_top_k",
+    "right_subspace_overlap_bottom_k",
+    "interaction_matrix_overlap_top_k",
+    "interaction_matrix_overlap_bottom_k",
+]
+
+# All SVD-based metrics combined
+ALL_SVD_METRICS = GLOBAL_SVD_METRICS + LAYERWISE_STACKED_SVD_METRICS + PERLAYER_TENSOR_SVD_METRICS
+
+
+def compute_global_svd_metrics(
+    task_dict_1: Dict[str, torch.Tensor],
+    task_dict_2: Dict[str, torch.Tensor],
+) -> Dict[str, float]:
+    """Compute all global SVD-based metrics with a single SVD computation.
+
+    This is more efficient than calling individual metric functions when
+    multiple SVD-based metrics are needed. Computes SVD once on the stacked
+    task vectors and derives all metrics from the singular values.
+
+    Args:
+        task_dict_1: First task vector.
+        task_dict_2: Second task vector.
+
+    Returns:
+        Dictionary with keys: 'effective_rank', 'effective_rank_mergeability_score',
+        'stable_rank', 'spectral_gap', 'singular_value_ratio'
+    """
+    vec1 = flatten_task_dict(task_dict_1)
+    vec2 = flatten_task_dict(task_dict_2)
+
+    # Stack as matrix (2 × D)
+    task_matrix = torch.stack([vec1, vec2], dim=0)
+
+    # Compute SVD once
+    try:
+        _, S, _ = torch.linalg.svd(task_matrix, full_matrices=False)
+    except Exception:
+        # Return worst-case values on failure
+        return {
+            "effective_rank": 2.0,
+            "effective_rank_mergeability_score": 0.0,
+            "stable_rank": 2.0,
+            "spectral_gap": 0.0,
+            "singular_value_ratio": 1.0,
+        }
+
+    # Compute effective_rank from singular values
+    S_normalized = S / (S.sum() + 1e-10)
+    entropy = -(S_normalized * torch.log(S_normalized + 1e-10)).sum()
+    eff_rank = torch.exp(entropy).item()
+
+    # Compute effective_rank_mergeability_score (mapped from [1,2] to [1,0])
+    eff_rank_score = max(0.0, min(1.0, 2.0 - eff_rank))
+
+    # Compute stable_rank = (sum of singular values)^2 / sum of squared singular values
+    s_rank = ((S.sum() ** 2) / ((S ** 2).sum() + 1e-10)).item()
+
+    # Compute spectral_gap = (σ_1 - σ_2) / σ_1
+    if len(S) < 2:
+        spec_gap = 1.0
+    else:
+        spec_gap = ((S[0] - S[1]) / (S[0] + 1e-10)).item()
+
+    # Compute singular_value_ratio = σ_2 / σ_1
+    if len(S) < 2:
+        sv_ratio = 0.0
+    else:
+        sv_ratio = (S[1] / (S[0] + 1e-10)).item()
+
+    return {
+        "effective_rank": eff_rank,
+        "effective_rank_mergeability_score": eff_rank_score,
+        "stable_rank": s_rank,
+        "spectral_gap": spec_gap,
+        "singular_value_ratio": sv_ratio,
+    }
+
+
+def compute_layerwise_stacked_svd_metrics(
+    task_dict_1: Dict[str, torch.Tensor],
+    task_dict_2: Dict[str, torch.Tensor],
+) -> Dict[str, float]:
+    """Compute layerwise effective rank metrics with shared SVD per layer.
+
+    For each layer, stacks the two layer vectors and computes SVD once,
+    then derives both layerwise_effective_rank and its mergeability score.
+
+    Args:
+        task_dict_1: First task vector.
+        task_dict_2: Second task vector.
+
+    Returns:
+        Dictionary with keys: 'layerwise_effective_rank',
+        'layerwise_effective_rank_mergeability_score'
+    """
+    layers_1 = get_layer_vectors(task_dict_1)
+    layers_2 = get_layer_vectors(task_dict_2)
+
+    common_keys = set(layers_1.keys()) & set(layers_2.keys())
+
+    layer_ranks = []
+    layer_weights = []
+
+    for key in sorted(common_keys):
+        delta_A = layers_1[key]
+        delta_B = layers_2[key]
+
+        # Skip if no updates
+        if delta_A.norm() < 1e-10 or delta_B.norm() < 1e-10:
+            continue
+
+        # Stack and compute SVD once per layer
+        layer_matrix = torch.stack([delta_A, delta_B])
+
+        try:
+            _, S, _ = torch.linalg.svd(layer_matrix, full_matrices=False)
+        except Exception:
+            continue
+
+        # Effective rank for this layer
+        S_norm = S / (S.sum() + 1e-10)
+        entropy = -(S_norm * torch.log(S_norm + 1e-10)).sum()
+        eff_rank = torch.exp(entropy).item()
+
+        # Weight by total update magnitude
+        weight = (delta_A.norm() + delta_B.norm()).item()
+
+        layer_ranks.append(eff_rank)
+        layer_weights.append(weight)
+
+    if not layer_ranks:
+        return {
+            "layerwise_effective_rank": 2.0,
+            "layerwise_effective_rank_mergeability_score": 0.0,
+        }
+
+    # Weighted average
+    total_weight = sum(layer_weights)
+    weighted_avg = sum(r * w for r, w in zip(layer_ranks, layer_weights)) / total_weight
+
+    # Map to mergeability score
+    score = max(0.0, min(1.0, 2.0 - weighted_avg))
+
+    return {
+        "layerwise_effective_rank": weighted_avg,
+        "layerwise_effective_rank_mergeability_score": score,
+    }
+
+
+def compute_perlayer_tensor_svd_metrics(
+    task_dict_1: Dict[str, torch.Tensor],
+    task_dict_2: Dict[str, torch.Tensor],
+    sv_overlap_top_k: int = 100,
+    subspace_top_k: int = 10,
+) -> Dict[str, float]:
+    """Compute all per-layer tensor SVD metrics with shared SVD computations.
+
+    For each 2D layer, computes SVD once per tensor (not stacked) and reuses
+    U, S, V matrices across all metrics that need them.
+
+    Args:
+        task_dict_1: First task vector.
+        task_dict_2: Second task vector.
+        sv_overlap_top_k: Number of singular values for singular_value_overlap (default 100).
+        subspace_top_k: Number of vectors for subspace overlap metrics (default 10).
+
+    Returns:
+        Dictionary with keys: 'singular_value_overlap', 'subspace_overlap',
+        'right_subspace_overlap_top_k', 'right_subspace_overlap_bottom_k',
+        'interaction_matrix_overlap_top_k', 'interaction_matrix_overlap_bottom_k'
+    """
+    # Storage for per-layer results
+    sv_overlaps = []
+    left_subspace_overlaps = []
+    right_top_overlaps = []
+    right_bottom_overlaps = []
+    interaction_top_overlaps = []
+    interaction_bottom_overlaps = []
+
+    for key in sorted(task_dict_1.keys()):
+        if key not in task_dict_2:
+            continue
+
+        tensor1 = task_dict_1[key]
+        tensor2 = task_dict_2[key]
+
+        # Only process 2D matrices
+        if tensor1.dim() != 2:
+            continue
+
+        # Compute SVD for both tensors ONCE per layer
+        try:
+            u1, s1, v1 = torch.linalg.svd(tensor1.float(), full_matrices=False)
+            u2, s2, v2 = torch.linalg.svd(tensor2.float(), full_matrices=False)
+        except Exception:
+            continue
+
+        # --- singular_value_overlap ---
+        # Normalize singular values and compute cosine similarity
+        k_sv = min(sv_overlap_top_k, len(s1), len(s2))
+        s1_norm = s1[:k_sv] / (s1.sum() + 1e-8)
+        s2_norm = s2[:k_sv] / (s2.sum() + 1e-8)
+
+        # Pad to same length if needed
+        max_len_sv = max(len(s1_norm), len(s2_norm))
+        if len(s1_norm) < max_len_sv:
+            s1_norm = F.pad(s1_norm, (0, max_len_sv - len(s1_norm)))
+        if len(s2_norm) < max_len_sv:
+            s2_norm = F.pad(s2_norm, (0, max_len_sv - len(s2_norm)))
+
+        overlap_sv = F.cosine_similarity(s1_norm.unsqueeze(0), s2_norm.unsqueeze(0)).item()
+        sv_overlaps.append(overlap_sv)
+
+        # --- subspace_overlap (left subspace using U matrices) ---
+        k_left = min(subspace_top_k, u1.shape[1], u2.shape[1])
+        u1_k = u1[:, :k_left]
+        u2_k = u2[:, :k_left]
+        product_left = u1_k.T @ u2_k
+        overlap_left = torch.norm(product_left, p='fro').item() / k_left
+        left_subspace_overlaps.append(overlap_left)
+
+        # --- right_subspace_overlap (V matrices, top-k and bottom-k) ---
+        k_right = min(subspace_top_k, v1.shape[0], v2.shape[0])
+
+        # Top-k (strongest singular vectors)
+        v1_top_k = v1[:k_right, :]
+        v2_top_k = v2[:k_right, :]
+        product_top = v1_top_k @ v2_top_k.T
+        overlap_top = torch.norm(product_top, p='fro').item() / (k_right ** 0.5)
+        right_top_overlaps.append(overlap_top)
+
+        # Bottom-k (weakest singular vectors)
+        v1_bottom_k = v1[-k_right:, :]
+        v2_bottom_k = v2[-k_right:, :]
+        product_bottom = v1_bottom_k @ v2_bottom_k.T
+        overlap_bottom = torch.norm(product_bottom, p='fro').item() / (k_right ** 0.5)
+        right_bottom_overlaps.append(overlap_bottom)
+
+        # --- interaction_matrix_overlap (SVD on V1 @ V2^T) ---
+        # Top-k interaction matrix
+        interaction_matrix_top = v1_top_k @ v2_top_k.T
+        try:
+            _, sigma_top, _ = torch.linalg.svd(interaction_matrix_top, full_matrices=False)
+            overlap_int_top = torch.mean(sigma_top ** 2).item()
+            interaction_top_overlaps.append(overlap_int_top)
+        except Exception:
+            pass
+
+        # Bottom-k interaction matrix
+        interaction_matrix_bottom = v1_bottom_k @ v2_bottom_k.T
+        try:
+            _, sigma_bottom, _ = torch.linalg.svd(interaction_matrix_bottom, full_matrices=False)
+            overlap_int_bottom = torch.mean(sigma_bottom ** 2).item()
+            interaction_bottom_overlaps.append(overlap_int_bottom)
+        except Exception:
+            pass
+
+    # Compute averages
+    def safe_avg(lst):
+        return sum(lst) / len(lst) if lst else 0.0
+
+    return {
+        "singular_value_overlap": safe_avg(sv_overlaps),
+        "subspace_overlap": safe_avg(left_subspace_overlaps),
+        "right_subspace_overlap_top_k": safe_avg(right_top_overlaps),
+        "right_subspace_overlap_bottom_k": safe_avg(right_bottom_overlaps),
+        "interaction_matrix_overlap_top_k": safe_avg(interaction_top_overlaps),
+        "interaction_matrix_overlap_bottom_k": safe_avg(interaction_bottom_overlaps),
+    }
+
+
+def compute_all_svd_metrics(
+    task_dict_1: Dict[str, torch.Tensor],
+    task_dict_2: Dict[str, torch.Tensor],
+    sv_overlap_top_k: int = 100,
+    subspace_top_k: int = 10,
+) -> Dict[str, float]:
+    """Compute all SVD-based metrics efficiently with minimal SVD computations.
+
+    This function computes all SVD-based metrics by:
+    1. Computing global SVD once for effective_rank, stable_rank, spectral_gap, singular_value_ratio
+    2. Computing per-layer stacked SVD for layerwise_effective_rank metrics
+    3. Computing per-layer tensor SVD (once per tensor) for subspace overlap metrics
+
+    This is significantly more efficient than calling each metric individually
+    when multiple SVD metrics are needed.
+
+    Args:
+        task_dict_1: First task vector.
+        task_dict_2: Second task vector.
+        sv_overlap_top_k: Number of singular values for singular_value_overlap.
+        subspace_top_k: Number of vectors for subspace overlap metrics.
+
+    Returns:
+        Dictionary containing all SVD-based metric values.
+    """
+    results = {}
+
+    # Compute global SVD metrics (1 SVD total)
+    global_metrics = compute_global_svd_metrics(task_dict_1, task_dict_2)
+    results.update(global_metrics)
+
+    # Compute layerwise stacked SVD metrics (1 SVD per layer)
+    layerwise_metrics = compute_layerwise_stacked_svd_metrics(task_dict_1, task_dict_2)
+    results.update(layerwise_metrics)
+
+    # Compute per-layer tensor SVD metrics (2 SVDs per 2D layer, shared across metrics)
+    perlayer_metrics = compute_perlayer_tensor_svd_metrics(
+        task_dict_1, task_dict_2, sv_overlap_top_k, subspace_top_k
+    )
+    results.update(perlayer_metrics)
+
+    return results
+
+
+# =============================================================================
 # Metric Registry
 # =============================================================================
 

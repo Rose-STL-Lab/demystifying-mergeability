@@ -327,9 +327,12 @@ def main():
                         help='Zero-mean normalize the target variable per method before optimization. '
                              'This subtracts the training mean from both train and val targets, '
                              'making the model predict deviation from mean rather than absolute performance.')
+    parser.add_argument('--exclude_metrics', type=str, nargs='+', default=[],
+                        help='List of metric names to exclude')
     args = parser.parse_args()
 
     lambda_l1 = args.lambda_l1
+    exclude_metrics = set(args.exclude_metrics)
 
     # Configuration
     metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
@@ -337,12 +340,12 @@ def main():
 
     # Output directory
     if args.zero_mean:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_l1_lambda{lambda_l1}_zero_mean')
+        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda{lambda_l1}_zero_mean')
     else:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_l1_lambda{lambda_l1}')
+        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda{lambda_l1}')
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'isotropic', 'ties']
+    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print(f"L1-Regularized Linear Optimization with LOTO CV (lambda={lambda_l1})")
@@ -374,6 +377,14 @@ def main():
     print("Extracting pairwise data...")
     metrics_array, performance_matrix, pair_names, metric_names, merge_methods = \
         extract_all_mergers_data(metrics_data, performance_data_dict)
+
+    # Filter out excluded metrics
+    if exclude_metrics:
+        keep_indices = [i for i, name in enumerate(metric_names) if name not in exclude_metrics]
+        excluded_count = len(metric_names) - len(keep_indices)
+        metric_names = [metric_names[i] for i in keep_indices]
+        metrics_array = metrics_array[:, keep_indices]
+        print(f"Excluded {excluded_count} metrics: {sorted(exclude_metrics)}")
 
     print(f"Number of pairs: {len(pair_names)}")
     print(f"Number of metrics: {len(metric_names)}")

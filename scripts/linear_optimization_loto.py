@@ -382,14 +382,14 @@ def main():
 
     # Output directory with optional suffix
     if args.output_suffix:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_{args.output_suffix}')
+        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_{args.output_suffix}')
     elif args.zero_mean:
-        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_no_leakage_zero_mean')
+        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_no_leakage_zero_mean')
     else:
-        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_no_leakage')
+        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_no_leakage')
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'isotropic', 'ties']
+    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print("Linear Optimization with LOTO Cross-Validation")

@@ -15,6 +15,15 @@ from model_merging.metrics.mergeability import (
     singular_value_overlap,
     subspace_overlap,
     right_subspace_overlap,
+    # Efficient batched SVD computation
+    compute_global_svd_metrics,
+    compute_layerwise_stacked_svd_metrics,
+    compute_perlayer_tensor_svd_metrics,
+    compute_all_svd_metrics,
+    GLOBAL_SVD_METRICS,
+    LAYERWISE_STACKED_SVD_METRICS,
+    PERLAYER_TENSOR_SVD_METRICS,
+    ALL_SVD_METRICS,
 )
 
 __all__ = [
@@ -32,4 +41,13 @@ __all__ = [
     "singular_value_overlap",
     "subspace_overlap",
     "right_subspace_overlap",
+    # Efficient batched SVD computation
+    "compute_global_svd_metrics",
+    "compute_layerwise_stacked_svd_metrics",
+    "compute_perlayer_tensor_svd_metrics",
+    "compute_all_svd_metrics",
+    "GLOBAL_SVD_METRICS",
+    "LAYERWISE_STACKED_SVD_METRICS",
+    "PERLAYER_TENSOR_SVD_METRICS",
+    "ALL_SVD_METRICS",
 ]

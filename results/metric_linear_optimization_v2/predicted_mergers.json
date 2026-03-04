@@ -1,0 +1,4581 @@
+{
+  "pairs": {
+    "SUN397_Cars": {
+      "task1": "SUN397",
+      "task2": "Cars",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.03393751197772169,
+        "arithmetic": -0.5005792218337527,
+        "tsv": 0.23757080673410194,
+        "ties": 0.20516240057616128,
+        "dare": -0.06456919867895719
+      },
+      "actual_performances": {
+        "weight_avg": 0.9511925280094147,
+        "arithmetic": 0.9081486761569977,
+        "tsv": 0.9852249920368195,
+        "ties": 0.857282429933548,
+        "dare": 0.948030412197113
+      },
+      "performance_with_predicted": 0.9852249920368195,
+      "performance_with_oracle": 0.9852249920368195,
+      "fold_used": "SUN397"
+    },
+    "SUN397_RESISC45": {
+      "task1": "SUN397",
+      "task2": "RESISC45",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.021316178367419673,
+        "arithmetic": -0.5019480860673331,
+        "tsv": 0.24808039268085716,
+        "ties": 0.2081189214323017,
+        "dare": -0.04837436189406909
+      },
+      "actual_performances": {
+        "weight_avg": 0.9654290974140167,
+        "arithmetic": 0.9229066967964172,
+        "tsv": 0.9845724105834961,
+        "ties": 0.8602354228496552,
+        "dare": 0.961724042892456
+      },
+      "performance_with_predicted": 0.9845724105834961,
+      "performance_with_oracle": 0.9845724105834961,
+      "fold_used": "SUN397"
+    },
+    "SUN397_EuroSAT": {
+      "task1": "SUN397",
+      "task2": "EuroSAT",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.021837769410743838,
+        "arithmetic": -0.49981647049616423,
+        "tsv": 0.2478433455505096,
+        "ties": 0.21241932705809127,
+        "dare": -0.049472335662609196
+      },
+      "actual_performances": {
+        "weight_avg": 0.9748254120349884,
+        "arithmetic": 0.9540087878704071,
+        "tsv": 0.9868530333042145,
+        "ties": 0.9051732420921326,
+        "dare": 0.9726721942424774
+      },
+      "performance_with_predicted": 0.9868530333042145,
+      "performance_with_oracle": 0.9868530333042145,
+      "fold_used": "SUN397"
+    },
+    "SUN397_SVHN": {
+      "task1": "SUN397",
+      "task2": "SVHN",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.027883454669224934,
+        "arithmetic": -0.5393235353858307,
+        "tsv": 0.24311527118093176,
+        "ties": 0.17786329293556138,
+        "dare": -0.06593531754877907
+      },
+      "actual_performances": {
+        "weight_avg": 0.9668404161930084,
+        "arithmetic": 0.9386266469955444,
+        "tsv": 0.9760159850120544,
+        "ties": 0.863302618265152,
+        "dare": 0.962539553642273
+      },
+      "performance_with_predicted": 0.9760159850120544,
+      "performance_with_oracle": 0.9760159850120544,
+      "fold_used": "SUN397"
+    },
+    "SUN397_GTSRB": {
+      "task1": "SUN397",
+      "task2": "GTSRB",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.022654318535695706,
+        "arithmetic": -0.5030651593871386,
+        "tsv": 0.24559505626736144,
+        "ties": 0.21154844973457954,
+        "dare": -0.05106961605095116
+      },
+      "actual_performances": {
+        "weight_avg": 0.9719279408454895,
+        "arithmetic": 0.9198799431324005,
+        "tsv": 0.9888975620269775,
+        "ties": 0.7887086868286133,
+        "dare": 0.9696018397808075
+      },
+      "performance_with_predicted": 0.9888975620269775,
+      "performance_with_oracle": 0.9888975620269775,
+      "fold_used": "SUN397"
+    },
+    "SUN397_MNIST": {
+      "task1": "SUN397",
+      "task2": "MNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.023811441678686054,
+        "arithmetic": -0.5506403540219111,
+        "tsv": 0.24374604212000228,
+        "ties": 0.19428116090865122,
+        "dare": -0.05807628443539071
+      },
+      "actual_performances": {
+        "weight_avg": 0.9716425240039825,
+        "arithmetic": 0.9567575752735138,
+        "tsv": 0.9820697605609894,
+        "ties": 0.9262143969535828,
+        "dare": 0.9682336449623108
+      },
+      "performance_with_predicted": 0.9820697605609894,
+      "performance_with_oracle": 0.9820697605609894,
+      "fold_used": "SUN397"
+    },
+    "SUN397_DTD": {
+      "task1": "SUN397",
+      "task2": "DTD",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.026506321918203003,
+        "arithmetic": -0.485398907662972,
+        "tsv": 0.24118206420480937,
+        "ties": 0.21111567133555026,
+        "dare": -0.05272100356313368
+      },
+      "actual_performances": {
+        "weight_avg": 0.9123194813728333,
+        "arithmetic": 0.8420061767101288,
+        "tsv": 0.9709679484367371,
+        "ties": 0.7586922943592072,
+        "dare": 0.9129323065280914
+      },
+      "performance_with_predicted": 0.9709679484367371,
+      "performance_with_oracle": 0.9709679484367371,
+      "fold_used": "SUN397"
+    },
+    "SUN397_Flowers102": {
+      "task1": "SUN397",
+      "task2": "Flowers102",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.03265915164037967,
+        "arithmetic": -0.4804595665271968,
+        "tsv": 0.23641752433242189,
+        "ties": 0.2118940874712615,
+        "dare": -0.05917810424970028
+      },
+      "actual_performances": {
+        "weight_avg": 0.9383593797683716,
+        "arithmetic": 0.8917893767356873,
+        "tsv": 0.9853034317493439,
+        "ties": 0.8461271524429321,
+        "dare": 0.9387950599193573
+      },
+      "performance_with_predicted": 0.9853034317493439,
+      "performance_with_oracle": 0.9853034317493439,
+      "fold_used": "SUN397"
+    },
+    "SUN397_PCAM": {
+      "task1": "SUN397",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.030969817117023082,
+        "arithmetic": -0.4538108669878428,
+        "tsv": 0.23530465150410673,
+        "ties": 0.188067199366808,
+        "dare": -0.0742315947114203
+      },
+      "actual_performances": {
+        "weight_avg": 0.9375695288181305,
+        "arithmetic": 0.9166781008243561,
+        "tsv": 0.9465779662132263,
+        "ties": 0.8982216715812683,
+        "dare": 0.9301809668540955
+      },
+      "performance_with_predicted": 0.9465779662132263,
+      "performance_with_oracle": 0.9465779662132263,
+      "fold_used": "SUN397"
+    },
+    "SUN397_FER2013": {
+      "task1": "SUN397",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.030274615054699618,
+        "arithmetic": -0.5222446498541364,
+        "tsv": 0.24434841032098434,
+        "ties": 0.1877289763966468,
+        "dare": -0.06284116295680336
+      },
+      "actual_performances": {
+        "weight_avg": 0.9670149087905884,
+        "arithmetic": 0.9263011813163757,
+        "tsv": 0.9916053116321564,
+        "ties": 0.8662868738174438,
+        "dare": 0.9619015157222748
+      },
+      "performance_with_predicted": 0.9916053116321564,
+      "performance_with_oracle": 0.9916053116321564,
+      "fold_used": "SUN397"
+    },
+    "SUN397_OxfordIIITPet": {
+      "task1": "SUN397",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.022537171629767132,
+        "arithmetic": -0.48079111049536777,
+        "tsv": 0.24185915177397505,
+        "ties": 0.21615547214330336,
+        "dare": -0.04707973877490233
+      },
+      "actual_performances": {
+        "weight_avg": 0.9838700294494629,
+        "arithmetic": 0.9595091938972473,
+        "tsv": 0.9996307790279388,
+        "ties": 0.92668616771698,
+        "dare": 0.9822905957698822
+      },
+      "performance_with_predicted": 0.9996307790279388,
+      "performance_with_oracle": 0.9996307790279388,
+      "fold_used": "SUN397"
+    },
+    "SUN397_STL10": {
+      "task1": "SUN397",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.019492589958933534,
+        "arithmetic": -0.47221917003981895,
+        "tsv": 0.24968741543386405,
+        "ties": 0.22667032073579388,
+        "dare": -0.04456256524153586
+      },
+      "actual_performances": {
+        "weight_avg": 0.9839186668395996,
+        "arithmetic": 0.9641479849815369,
+        "tsv": 0.9975265860557556,
+        "ties": 0.9455077946186066,
+        "dare": 0.9830906689167023
+      },
+      "performance_with_predicted": 0.9975265860557556,
+      "performance_with_oracle": 0.9975265860557556,
+      "fold_used": "SUN397"
+    },
+    "SUN397_CIFAR100": {
+      "task1": "SUN397",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02581120367673174,
+        "arithmetic": -0.5376433297303711,
+        "tsv": 0.2465001894104456,
+        "ties": 0.17745669128756897,
+        "dare": -0.05964389899584856
+      },
+      "actual_performances": {
+        "weight_avg": 0.9593958258628845,
+        "arithmetic": 0.9314901530742645,
+        "tsv": 0.9774900376796722,
+        "ties": 0.8885920643806458,
+        "dare": 0.9550072252750397
+      },
+      "performance_with_predicted": 0.9774900376796722,
+      "performance_with_oracle": 0.9774900376796722,
+      "fold_used": "SUN397"
+    },
+    "SUN397_CIFAR10": {
+      "task1": "SUN397",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.022900079913712346,
+        "arithmetic": -0.5008753549237326,
+        "tsv": 0.24517324250135256,
+        "ties": 0.19611724063667774,
+        "dare": -0.05624198040559976
+      },
+      "actual_performances": {
+        "weight_avg": 0.9743863046169281,
+        "arithmetic": 0.9592540562152863,
+        "tsv": 0.9838152527809143,
+        "ties": 0.9367254078388214,
+        "dare": 0.9713645577430725
+      },
+      "performance_with_predicted": 0.9838152527809143,
+      "performance_with_oracle": 0.9838152527809143,
+      "fold_used": "SUN397"
+    },
+    "SUN397_Food101": {
+      "task1": "SUN397",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02865424995420051,
+        "arithmetic": -0.5486690140756109,
+        "tsv": 0.2450875046180389,
+        "ties": 0.1682728950587555,
+        "dare": -0.06561621866609367
+      },
+      "actual_performances": {
+        "weight_avg": 0.9844512641429901,
+        "arithmetic": 0.9669510126113892,
+        "tsv": 0.9933823347091675,
+        "ties": 0.9410108029842377,
+        "dare": 0.9810909032821655
+      },
+      "performance_with_predicted": 0.9933823347091675,
+      "performance_with_oracle": 0.9933823347091675,
+      "fold_used": "SUN397"
+    },
+    "SUN397_FashionMNIST": {
+      "task1": "SUN397",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02582640972737278,
+        "arithmetic": -0.5023117642936148,
+        "tsv": 0.2459026216347389,
+        "ties": 0.1832855280460456,
+        "dare": -0.06114200440601383
+      },
+      "actual_performances": {
+        "weight_avg": 0.9645545184612274,
+        "arithmetic": 0.9360722601413727,
+        "tsv": 0.9757629930973053,
+        "ties": 0.8923320174217224,
+        "dare": 0.9611656367778778
+      },
+      "performance_with_predicted": 0.9757629930973053,
+      "performance_with_oracle": 0.9757629930973053,
+      "fold_used": "SUN397"
+    },
+    "SUN397_EMNIST": {
+      "task1": "SUN397",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.024111159680652826,
+        "arithmetic": -0.5232778442144097,
+        "tsv": 0.24515183366658844,
+        "ties": 0.2069596356417441,
+        "dare": -0.055031505897851773
+      },
+      "actual_performances": {
+        "weight_avg": 0.9785065054893494,
+        "arithmetic": 0.9611106514930725,
+        "tsv": 0.9894180595874786,
+        "ties": 0.9183918535709381,
+        "dare": 0.9773109555244446
+      },
+      "performance_with_predicted": 0.9894180595874786,
+      "performance_with_oracle": 0.9894180595874786,
+      "fold_used": "SUN397"
+    },
+    "SUN397_KMNIST": {
+      "task1": "SUN397",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.023805170235153838,
+        "arithmetic": -0.5376488324485332,
+        "tsv": 0.24650239110512204,
+        "ties": 0.186924071123983,
+        "dare": -0.058219155916602254
+      },
+      "actual_performances": {
+        "weight_avg": 0.9508208632469177,
+        "arithmetic": 0.7224313318729401,
+        "tsv": 0.9826364815235138,
+        "ties": 0.5213724449276924,
+        "dare": 0.948025107383728
+      },
+      "performance_with_predicted": 0.9826364815235138,
+      "performance_with_oracle": 0.9826364815235138,
+      "fold_used": "SUN397"
+    },
+    "SUN397_RenderedSST2": {
+      "task1": "SUN397",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.024784489729277624,
+        "arithmetic": -0.516803779168423,
+        "tsv": 0.24434504664798812,
+        "ties": 0.21644454941790459,
+        "dare": -0.05230856852171286
+      },
+      "actual_performances": {
+        "weight_avg": 0.9877236485481262,
+        "arithmetic": 0.948563426733017,
+        "tsv": 1.0049361884593964,
+        "ties": 0.8925456404685974,
+        "dare": 0.987777978181839
+      },
+      "performance_with_predicted": 1.0049361884593964,
+      "performance_with_oracle": 1.0049361884593964,
+      "fold_used": "SUN397"
+    },
+    "Cars_RESISC45": {
+      "task1": "Cars",
+      "task2": "RESISC45",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.023077818228616324,
+        "arithmetic": 0.2378776318470104,
+        "tsv": 0.4172537391408718,
+        "ties": -0.2166993238210153,
+        "dare": -0.0585564660838831
+      },
+      "actual_performances": {
+        "weight_avg": 0.9580336809158325,
+        "arithmetic": 0.9029264748096466,
+        "tsv": 0.9883910715579987,
+        "ties": 0.8342476189136505,
+        "dare": 0.9540237784385681
+      },
+      "performance_with_predicted": 0.9883910715579987,
+      "performance_with_oracle": 0.9883910715579987,
+      "fold_used": "Cars"
+    },
+    "Cars_EuroSAT": {
+      "task1": "Cars",
+      "task2": "EuroSAT",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.026154555642551824,
+        "arithmetic": 0.23770288153925595,
+        "tsv": 0.4173346038126756,
+        "ties": -0.21966716392585772,
+        "dare": -0.06272734888548043
+      },
+      "actual_performances": {
+        "weight_avg": 0.9678061008453369,
+        "arithmetic": 0.9348109364509583,
+        "tsv": 0.99144047498703,
+        "ties": 0.8794775307178497,
+        "dare": 0.9635796844959259
+      },
+      "performance_with_predicted": 0.99144047498703,
+      "performance_with_oracle": 0.99144047498703,
+      "fold_used": "Cars"
+    },
+    "Cars_SVHN": {
+      "task1": "Cars",
+      "task2": "SVHN",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.028572697469783113,
+        "arithmetic": 0.23442022046093833,
+        "tsv": 0.42500824545097937,
+        "ties": -0.24764551192833434,
+        "dare": -0.07467950760216355
+      },
+      "actual_performances": {
+        "weight_avg": 0.953809916973114,
+        "arithmetic": 0.9217400252819061,
+        "tsv": 0.9759033620357513,
+        "ties": 0.8333331048488617,
+        "dare": 0.9493566453456879
+      },
+      "performance_with_predicted": 0.9759033620357513,
+      "performance_with_oracle": 0.9759033620357513,
+      "fold_used": "Cars"
+    },
+    "Cars_GTSRB": {
+      "task1": "Cars",
+      "task2": "GTSRB",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.025434946281184683,
+        "arithmetic": 0.24102119996123184,
+        "tsv": 0.41956952233975386,
+        "ties": -0.2174279556378258,
+        "dare": -0.06183504360955749
+      },
+      "actual_performances": {
+        "weight_avg": 0.9647895097732544,
+        "arithmetic": 0.9045305252075195,
+        "tsv": 0.9881845712661743,
+        "ties": 0.7701942324638367,
+        "dare": 0.9622074961662292
+      },
+      "performance_with_predicted": 0.9881845712661743,
+      "performance_with_oracle": 0.9881845712661743,
+      "fold_used": "Cars"
+    },
+    "Cars_MNIST": {
+      "task1": "Cars",
+      "task2": "MNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02776162137666449,
+        "arithmetic": 0.25324702732106624,
+        "tsv": 0.4413298054693215,
+        "ties": -0.23557172470862991,
+        "dare": -0.07103013774503852
+      },
+      "actual_performances": {
+        "weight_avg": 0.9532540440559387,
+        "arithmetic": 0.9379006326198578,
+        "tsv": 0.9663719236850739,
+        "ties": 0.8969969749450684,
+        "dare": 0.9495300054550171
+      },
+      "performance_with_predicted": 0.9663719236850739,
+      "performance_with_oracle": 0.9663719236850739,
+      "fold_used": "Cars"
+    },
+    "Cars_DTD": {
+      "task1": "Cars",
+      "task2": "DTD",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.030191473182285454,
+        "arithmetic": 0.22584684297438068,
+        "tsv": 0.398935853555255,
+        "ties": -0.20584417494808013,
+        "dare": -0.06747369442190988
+      },
+      "actual_performances": {
+        "weight_avg": 0.9227996170520782,
+        "arithmetic": 0.8330310881137848,
+        "tsv": 0.9887048900127411,
+        "ties": 0.7427136301994324,
+        "dare": 0.9244144260883331
+      },
+      "performance_with_predicted": 0.9887048900127411,
+      "performance_with_oracle": 0.9887048900127411,
+      "fold_used": "Cars"
+    },
+    "Cars_Flowers102": {
+      "task1": "Cars",
+      "task2": "Flowers102",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.03103680051390656,
+        "arithmetic": 0.2274310196555826,
+        "tsv": 0.3977664452021702,
+        "ties": -0.20594836399781713,
+        "dare": -0.06555511212546614
+      },
+      "actual_performances": {
+        "weight_avg": 0.9239875376224518,
+        "arithmetic": 0.8656443655490875,
+        "tsv": 0.9819472432136536,
+        "ties": 0.8169130384922028,
+        "dare": 0.9265035688877106
+      },
+      "performance_with_predicted": 0.9819472432136536,
+      "performance_with_oracle": 0.9819472432136536,
+      "fold_used": "Cars"
+    },
+    "Cars_PCAM": {
+      "task1": "Cars",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.035792658731651855,
+        "arithmetic": 0.18253962304479873,
+        "tsv": 0.3680735440755761,
+        "ties": -0.21700502922341608,
+        "dare": -0.08749255825747174
+      },
+      "actual_performances": {
+        "weight_avg": 0.8993915319442749,
+        "arithmetic": 0.8704180121421814,
+        "tsv": 0.924565315246582,
+        "ties": 0.8561042249202728,
+        "dare": 0.8952606022357941
+      },
+      "performance_with_predicted": 0.924565315246582,
+      "performance_with_oracle": 0.924565315246582,
+      "fold_used": "Cars"
+    },
+    "Cars_FER2013": {
+      "task1": "Cars",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02714254676452836,
+        "arithmetic": 0.22892117263395342,
+        "tsv": 0.413333976303476,
+        "ties": -0.23560260882004833,
+        "dare": -0.06875372478018478
+      },
+      "actual_performances": {
+        "weight_avg": 0.9570037722587585,
+        "arithmetic": 0.9049782156944275,
+        "tsv": 0.9905900657176971,
+        "ties": 0.8359193503856659,
+        "dare": 0.9523976743221283
+      },
+      "performance_with_predicted": 0.9905900657176971,
+      "performance_with_oracle": 0.9905900657176971,
+      "fold_used": "Cars"
+    },
+    "Cars_OxfordIIITPet": {
+      "task1": "Cars",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.021232512757382953,
+        "arithmetic": 0.24132106359574937,
+        "tsv": 0.41071375610996075,
+        "ties": -0.20298067750408144,
+        "dare": -0.050535225697006005
+      },
+      "actual_performances": {
+        "weight_avg": 0.9705356657505035,
+        "arithmetic": 0.9331475496292114,
+        "tsv": 0.9981078207492828,
+        "ties": 0.8968083560466766,
+        "dare": 0.9691727161407471
+      },
+      "performance_with_predicted": 0.9981078207492828,
+      "performance_with_oracle": 0.9981078207492828,
+      "fold_used": "Cars"
+    },
+    "Cars_STL10": {
+      "task1": "Cars",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.025310926966833857,
+        "arithmetic": 0.23477525420432377,
+        "tsv": 0.41063537499991004,
+        "ties": -0.20548850793368326,
+        "dare": -0.05833468389231826
+      },
+      "actual_performances": {
+        "weight_avg": 0.9567040503025055,
+        "arithmetic": 0.9411048293113708,
+        "tsv": 0.9761179387569427,
+        "ties": 0.9163658916950226,
+        "dare": 0.9565590918064117
+      },
+      "performance_with_predicted": 0.9761179387569427,
+      "performance_with_oracle": 0.9761179387569427,
+      "fold_used": "Cars"
+    },
+    "Cars_CIFAR100": {
+      "task1": "Cars",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02719430260248046,
+        "arithmetic": 0.23391445991954216,
+        "tsv": 0.4212677670909515,
+        "ties": -0.2479847791890471,
+        "dare": -0.0712486717696688
+      },
+      "actual_performances": {
+        "weight_avg": 0.9424343109130859,
+        "arithmetic": 0.9040632545948029,
+        "tsv": 0.9775297045707703,
+        "ties": 0.8495100140571594,
+        "dare": 0.9362309277057648
+      },
+      "performance_with_predicted": 0.9775297045707703,
+      "performance_with_oracle": 0.9775297045707703,
+      "fold_used": "Cars"
+    },
+    "Cars_CIFAR10": {
+      "task1": "Cars",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "arithmetic",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.02554709496018795,
+        "arithmetic": 0.22904028086948047,
+        "tsv": 0.41173399616340317,
+        "ties": -0.23112949517382744,
+        "dare": -0.06595037423993834
+      },
+      "actual_performances": {
+        "weight_avg": 0.8659540414810181,
+        "arithmetic": 0.9037849307060242,
+        "tsv": 0.8741788566112518,
+        "ties": 0.8935671150684357,
+        "dare": 0.8651332557201385
+      },
+      "performance_with_predicted": 0.8741788566112518,
+      "performance_with_oracle": 0.9037849307060242,
+      "fold_used": "Cars"
+    },
+    "Cars_Food101": {
+      "task1": "Cars",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02597276463135856,
+        "arithmetic": 0.237703905274758,
+        "tsv": 0.4272410651282376,
+        "ties": -0.26178120194716403,
+        "dare": -0.07035783068300284
+      },
+      "actual_performances": {
+        "weight_avg": 0.9696295857429504,
+        "arithmetic": 0.9435061812400818,
+        "tsv": 0.9898888766765594,
+        "ties": 0.9040260314941406,
+        "dare": 0.9642283618450165
+      },
+      "performance_with_predicted": 0.9898888766765594,
+      "performance_with_oracle": 0.9898888766765594,
+      "fold_used": "Cars"
+    },
+    "Cars_FashionMNIST": {
+      "task1": "Cars",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.027180647316521256,
+        "arithmetic": 0.2167915997358295,
+        "tsv": 0.40162010542640325,
+        "ties": -0.2392218537069764,
+        "dare": -0.07022037376662427
+      },
+      "actual_performances": {
+        "weight_avg": 0.9439913332462311,
+        "arithmetic": 0.9141119420528412,
+        "tsv": 0.960939347743988,
+        "ties": 0.8601096570491791,
+        "dare": 0.9390074014663696
+      },
+      "performance_with_predicted": 0.960939347743988,
+      "performance_with_oracle": 0.960939347743988,
+      "fold_used": "Cars"
+    },
+    "Cars_EMNIST": {
+      "task1": "Cars",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.024839448751715548,
+        "arithmetic": 0.246408843923546,
+        "tsv": 0.43085364601599224,
+        "ties": -0.22149549387734616,
+        "dare": -0.06335940750881668
+      },
+      "actual_performances": {
+        "weight_avg": 0.9637584090232849,
+        "arithmetic": 0.9397132992744446,
+        "tsv": 0.9833101630210876,
+        "ties": 0.8924813866615295,
+        "dare": 0.9614451825618744
+      },
+      "performance_with_predicted": 0.9833101630210876,
+      "performance_with_oracle": 0.9833101630210876,
+      "fold_used": "Cars"
+    },
+    "Cars_KMNIST": {
+      "task1": "Cars",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.02643031992331251,
+        "arithmetic": 0.24205094964589371,
+        "tsv": 0.4303830181100772,
+        "ties": -0.2420202418940424,
+        "dare": -0.0692461625399469
+      },
+      "actual_performances": {
+        "weight_avg": 0.9283778667449951,
+        "arithmetic": 0.696457028388977,
+        "tsv": 0.974067211151123,
+        "ties": 0.48756811022758484,
+        "dare": 0.9248698949813843
+      },
+      "performance_with_predicted": 0.974067211151123,
+      "performance_with_oracle": 0.974067211151123,
+      "fold_used": "Cars"
+    },
+    "Cars_RenderedSST2": {
+      "task1": "Cars",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.028283216382020006,
+        "arithmetic": 0.25203358752481764,
+        "tsv": 0.43054136329780057,
+        "ties": -0.21827342520559068,
+        "dare": -0.06426767306646675
+      },
+      "actual_performances": {
+        "weight_avg": 0.9821593165397644,
+        "arithmetic": 0.9306511580944061,
+        "tsv": 1.0083439648151398,
+        "ties": 0.8633462488651276,
+        "dare": 0.9827855825424194
+      },
+      "performance_with_predicted": 1.0083439648151398,
+      "performance_with_oracle": 1.0083439648151398,
+      "fold_used": "Cars"
+    },
+    "RESISC45_EuroSAT": {
+      "task1": "RESISC45",
+      "task2": "EuroSAT",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8133013169526279,
+        "arithmetic": 0.14696826846006433,
+        "tsv": -0.373585229950065,
+        "ties": -0.10005760175742183,
+        "dare": 0.0041408270937553174
+      },
+      "actual_performances": {
+        "weight_avg": 0.9496243596076965,
+        "arithmetic": 0.9370032250881195,
+        "tsv": 0.9744628369808197,
+        "ties": 0.8852035999298096,
+        "dare": 0.9485028386116028
+      },
+      "performance_with_predicted": 0.9496243596076965,
+      "performance_with_oracle": 0.9744628369808197,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_SVHN": {
+      "task1": "RESISC45",
+      "task2": "SVHN",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7852027761322351,
+        "arithmetic": 0.11813749676909897,
+        "tsv": -0.3904181307718196,
+        "ties": -0.13250037267413567,
+        "dare": 0.0063375065855979336
+      },
+      "actual_performances": {
+        "weight_avg": 0.9559217393398285,
+        "arithmetic": 0.9171033501625061,
+        "tsv": 0.982019692659378,
+        "ties": 0.8247843682765961,
+        "dare": 0.9521681368350983
+      },
+      "performance_with_predicted": 0.9559217393398285,
+      "performance_with_oracle": 0.982019692659378,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_GTSRB": {
+      "task1": "RESISC45",
+      "task2": "GTSRB",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7835331967263335,
+        "arithmetic": 0.1383499897873811,
+        "tsv": -0.3838259611120059,
+        "ties": -0.10274067594796694,
+        "dare": 0.0036550851974039705
+      },
+      "actual_performances": {
+        "weight_avg": 0.9669658839702606,
+        "arithmetic": 0.9048263132572174,
+        "tsv": 0.991305410861969,
+        "ties": 0.7585770487785339,
+        "dare": 0.9658955931663513
+      },
+      "performance_with_predicted": 0.9669658839702606,
+      "performance_with_oracle": 0.991305410861969,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_MNIST": {
+      "task1": "RESISC45",
+      "task2": "MNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8530966055591488,
+        "arithmetic": 0.13033595864292766,
+        "tsv": -0.39995254557298826,
+        "ties": -0.12043881756412449,
+        "dare": 0.004265020887450996
+      },
+      "actual_performances": {
+        "weight_avg": 0.9713008403778076,
+        "arithmetic": 0.9470258951187134,
+        "tsv": 0.9899698793888092,
+        "ties": 0.8950504660606384,
+        "dare": 0.9685413241386414
+      },
+      "performance_with_predicted": 0.9713008403778076,
+      "performance_with_oracle": 0.9899698793888092,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_DTD": {
+      "task1": "RESISC45",
+      "task2": "DTD",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7242243387324485,
+        "arithmetic": 0.13053468171276364,
+        "tsv": -0.3895910837621394,
+        "ties": -0.10220238174675339,
+        "dare": -0.00489380245661823
+      },
+      "actual_performances": {
+        "weight_avg": 0.9114315509796143,
+        "arithmetic": 0.8344232141971588,
+        "tsv": 0.9671087861061096,
+        "ties": 0.7420394122600555,
+        "dare": 0.907513290643692
+      },
+      "performance_with_predicted": 0.9114315509796143,
+      "performance_with_oracle": 0.9671087861061096,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_Flowers102": {
+      "task1": "RESISC45",
+      "task2": "Flowers102",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7286575805933055,
+        "arithmetic": 0.1380697849696126,
+        "tsv": -0.3896125314621622,
+        "ties": -0.09550171276906187,
+        "dare": -0.006558074679487358
+      },
+      "actual_performances": {
+        "weight_avg": 0.9312218725681305,
+        "arithmetic": 0.8849962949752808,
+        "tsv": 0.9712651669979095,
+        "ties": 0.8217756748199463,
+        "dare": 0.9300706684589386
+      },
+      "performance_with_predicted": 0.9312218725681305,
+      "performance_with_oracle": 0.9712651669979095,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_PCAM": {
+      "task1": "RESISC45",
+      "task2": "PCAM",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.523502314405544,
+        "arithmetic": 0.08344258845652207,
+        "tsv": -0.37179496559970626,
+        "ties": -0.12569391823809514,
+        "dare": 0.008388843242388169
+      },
+      "actual_performances": {
+        "weight_avg": 0.8891734182834625,
+        "arithmetic": 0.8799096345901489,
+        "tsv": 0.9034475386142731,
+        "ties": 0.8585844337940216,
+        "dare": 0.8854718208312988
+      },
+      "performance_with_predicted": 0.8891734182834625,
+      "performance_with_oracle": 0.9034475386142731,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_FER2013": {
+      "task1": "RESISC45",
+      "task2": "FER2013",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7555683631060546,
+        "arithmetic": 0.12073103505904681,
+        "tsv": -0.3964565151836931,
+        "ties": -0.12947318937487406,
+        "dare": -0.0037437379332285066
+      },
+      "actual_performances": {
+        "weight_avg": 0.9744618237018585,
+        "arithmetic": 0.9193552136421204,
+        "tsv": 1.000980019569397,
+        "ties": 0.837205171585083,
+        "dare": 0.9712709188461304
+      },
+      "performance_with_predicted": 0.9744618237018585,
+      "performance_with_oracle": 1.000980019569397,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_OxfordIIITPet": {
+      "task1": "RESISC45",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.771043426183341,
+        "arithmetic": 0.1446308531979582,
+        "tsv": -0.3815312206968833,
+        "ties": -0.0929679371977084,
+        "dare": -0.0020761840834616296
+      },
+      "actual_performances": {
+        "weight_avg": 0.9857975244522095,
+        "arithmetic": 0.9520871937274933,
+        "tsv": 0.9986239373683929,
+        "ties": 0.9012499451637268,
+        "dare": 0.9852239787578583
+      },
+      "performance_with_predicted": 0.9857975244522095,
+      "performance_with_oracle": 0.9986239373683929,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_STL10": {
+      "task1": "RESISC45",
+      "task2": "STL10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7585681657097375,
+        "arithmetic": 0.14939131756019217,
+        "tsv": -0.38149514421244274,
+        "ties": -0.08891169555123467,
+        "dare": 0.0011546609712677325
+      },
+      "actual_performances": {
+        "weight_avg": 0.9827277660369873,
+        "arithmetic": 0.9562020897865295,
+        "tsv": 0.9963122010231018,
+        "ties": 0.9207191169261932,
+        "dare": 0.9829928576946259
+      },
+      "performance_with_predicted": 0.9827277660369873,
+      "performance_with_oracle": 0.9963122010231018,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_CIFAR100": {
+      "task1": "RESISC45",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8099438094011128,
+        "arithmetic": 0.12644026527380162,
+        "tsv": -0.386821141010738,
+        "ties": -0.1319233015049849,
+        "dare": 0.0026674200000506186
+      },
+      "actual_performances": {
+        "weight_avg": 0.9535530805587769,
+        "arithmetic": 0.9166372418403625,
+        "tsv": 0.9816203415393829,
+        "ties": 0.8521533608436584,
+        "dare": 0.9470541775226593
+      },
+      "performance_with_predicted": 0.9535530805587769,
+      "performance_with_oracle": 0.9816203415393829,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_CIFAR10": {
+      "task1": "RESISC45",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7526835908218721,
+        "arithmetic": 0.12704154980264448,
+        "tsv": -0.3771536311883213,
+        "ties": -0.116182617249372,
+        "dare": 0.006034013007696372
+      },
+      "actual_performances": {
+        "weight_avg": 0.9752766191959381,
+        "arithmetic": 0.9502392709255219,
+        "tsv": 0.9898193776607513,
+        "ties": 0.9067386388778687,
+        "dare": 0.9743849039077759
+      },
+      "performance_with_predicted": 0.9752766191959381,
+      "performance_with_oracle": 0.9898193776607513,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_Food101": {
+      "task1": "RESISC45",
+      "task2": "Food101",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7987615337040113,
+        "arithmetic": 0.11680361954726788,
+        "tsv": -0.39540415021151953,
+        "ties": -0.14353710195605443,
+        "dare": 0.0007354818660997948
+      },
+      "actual_performances": {
+        "weight_avg": 0.9838263690471649,
+        "arithmetic": 0.9573861360549927,
+        "tsv": 0.997766762971878,
+        "ties": 0.9035670459270477,
+        "dare": 0.982091873884201
+      },
+      "performance_with_predicted": 0.9838263690471649,
+      "performance_with_oracle": 0.997766762971878,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_FashionMNIST": {
+      "task1": "RESISC45",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7068791443716438,
+        "arithmetic": 0.11304446547421228,
+        "tsv": -0.38283312393523666,
+        "ties": -0.13137395067139435,
+        "dare": 0.0021117431408045114
+      },
+      "actual_performances": {
+        "weight_avg": 0.9512967467308044,
+        "arithmetic": 0.9147077202796936,
+        "tsv": 0.9833876490592957,
+        "ties": 0.8529677391052246,
+        "dare": 0.9482166767120361
+      },
+      "performance_with_predicted": 0.9512967467308044,
+      "performance_with_oracle": 0.9833876490592957,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_EMNIST": {
+      "task1": "RESISC45",
+      "task2": "EMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8077353809645234,
+        "arithmetic": 0.13446423961236917,
+        "tsv": -0.39432700961279826,
+        "ties": -0.11087456015852898,
+        "dare": 0.002696177340475224
+      },
+      "actual_performances": {
+        "weight_avg": 0.9783907830715179,
+        "arithmetic": 0.9520885050296783,
+        "tsv": 0.9950574338436127,
+        "ties": 0.8921513855457306,
+        "dare": 0.979312390089035
+      },
+      "performance_with_predicted": 0.9783907830715179,
+      "performance_with_oracle": 0.9950574338436127,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_KMNIST": {
+      "task1": "RESISC45",
+      "task2": "KMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8025480332960191,
+        "arithmetic": 0.12243899715014216,
+        "tsv": -0.39580595779671984,
+        "ties": -0.12877885754144452,
+        "dare": 0.0027666336185191392
+      },
+      "actual_performances": {
+        "weight_avg": 0.9466727077960968,
+        "arithmetic": 0.7094841003417969,
+        "tsv": 0.9895573258399963,
+        "ties": 0.4876476302742958,
+        "dare": 0.9449403882026672
+      },
+      "performance_with_predicted": 0.9466727077960968,
+      "performance_with_oracle": 0.9895573258399963,
+      "fold_used": "RESISC45"
+    },
+    "RESISC45_RenderedSST2": {
+      "task1": "RESISC45",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.8386790241129797,
+        "arithmetic": 0.14802933532047588,
+        "tsv": -0.3967793151570555,
+        "ties": -0.09981613945423572,
+        "dare": -0.0009774565722547347
+      },
+      "actual_performances": {
+        "weight_avg": 0.9863982796669006,
+        "arithmetic": 0.9420033991336823,
+        "tsv": 1.0087054669857025,
+        "ties": 0.8613957762718201,
+        "dare": 0.9843451678752899
+      },
+      "performance_with_predicted": 0.9863982796669006,
+      "performance_with_oracle": 1.0087054669857025,
+      "fold_used": "RESISC45"
+    },
+    "EuroSAT_SVHN": {
+      "task1": "EuroSAT",
+      "task2": "SVHN",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.002309233434391143,
+        "arithmetic": 0.47262169890288397,
+        "tsv": 0.7840870841733721,
+        "ties": -0.05874231705547482,
+        "dare": -0.11586166187929466
+      },
+      "actual_performances": {
+        "weight_avg": 0.9743834137916565,
+        "arithmetic": 0.9480584263801575,
+        "tsv": 0.9873058795928955,
+        "ties": 0.8583171367645264,
+        "dare": 0.9739206433296204
+      },
+      "performance_with_predicted": 0.9873058795928955,
+      "performance_with_oracle": 0.9873058795928955,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_GTSRB": {
+      "task1": "EuroSAT",
+      "task2": "GTSRB",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.004862627788902409,
+        "arithmetic": 0.47014296203031325,
+        "tsv": 0.7524128932226,
+        "ties": -0.044063473241398,
+        "dare": -0.10117533448408257
+      },
+      "actual_performances": {
+        "weight_avg": 0.9758872389793396,
+        "arithmetic": 0.9223039448261261,
+        "tsv": 0.994474321603775,
+        "ties": 0.7955598533153534,
+        "dare": 0.9748735129833221
+      },
+      "performance_with_predicted": 0.994474321603775,
+      "performance_with_oracle": 0.994474321603775,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_MNIST": {
+      "task1": "EuroSAT",
+      "task2": "MNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.0007187200898511413,
+        "arithmetic": 0.4938352851997468,
+        "tsv": 0.8687188210412554,
+        "ties": -0.0514297599652213,
+        "dare": -0.12040504098600881
+      },
+      "actual_performances": {
+        "weight_avg": 0.9859349727630615,
+        "arithmetic": 0.979272723197937,
+        "tsv": 0.9957235455513,
+        "ties": 0.9377993047237396,
+        "dare": 0.984863668680191
+      },
+      "performance_with_predicted": 0.9957235455513,
+      "performance_with_oracle": 0.9957235455513,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_DTD": {
+      "task1": "EuroSAT",
+      "task2": "DTD",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.0101774866231149,
+        "arithmetic": 0.4528262507857011,
+        "tsv": 0.6797463750351013,
+        "ties": -0.042742824748354204,
+        "dare": -0.10129924508172614
+      },
+      "actual_performances": {
+        "weight_avg": 0.9275028109550476,
+        "arithmetic": 0.8639949262142181,
+        "tsv": 0.9710109829902649,
+        "ties": 0.7910740971565247,
+        "dare": 0.9253092408180237
+      },
+      "performance_with_predicted": 0.9710109829902649,
+      "performance_with_oracle": 0.9710109829902649,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_Flowers102": {
+      "task1": "EuroSAT",
+      "task2": "Flowers102",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.010212155947874927,
+        "arithmetic": 0.4581049315585417,
+        "tsv": 0.6924347313064306,
+        "ties": -0.039890370333486774,
+        "dare": -0.09424540293285753
+      },
+      "actual_performances": {
+        "weight_avg": 0.9461372196674347,
+        "arithmetic": 0.9152596294879913,
+        "tsv": 0.97493115067482,
+        "ties": 0.869357168674469,
+        "dare": 0.9458206593990326
+      },
+      "performance_with_predicted": 0.97493115067482,
+      "performance_with_oracle": 0.97493115067482,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_PCAM": {
+      "task1": "EuroSAT",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.0019244837144488632,
+        "arithmetic": 0.4046154211917395,
+        "tsv": 0.4936467100178521,
+        "ties": -0.05419530826191694,
+        "dare": -0.0927048991723073
+      },
+      "actual_performances": {
+        "weight_avg": 0.9186412990093231,
+        "arithmetic": 0.9145802855491638,
+        "tsv": 0.9437989592552185,
+        "ties": 0.8951062262058258,
+        "dare": 0.9143590033054352
+      },
+      "performance_with_predicted": 0.9437989592552185,
+      "performance_with_oracle": 0.9437989592552185,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_FER2013": {
+      "task1": "EuroSAT",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.009976061695219892,
+        "arithmetic": 0.46355583656892324,
+        "tsv": 0.7329157855331017,
+        "ties": -0.055848589048282805,
+        "dare": -0.11049379001034206
+      },
+      "actual_performances": {
+        "weight_avg": 0.9771988093852997,
+        "arithmetic": 0.9396440386772156,
+        "tsv": 1.002384603023529,
+        "ties": 0.8717062473297119,
+        "dare": 0.9772049784660339
+      },
+      "performance_with_predicted": 1.002384603023529,
+      "performance_with_oracle": 1.002384603023529,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_OxfordIIITPet": {
+      "task1": "EuroSAT",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.006940456373648982,
+        "arithmetic": 0.46610920820991725,
+        "tsv": 0.7470984669565797,
+        "ties": -0.03929762711004657,
+        "dare": -0.09368452494042258
+      },
+      "actual_performances": {
+        "weight_avg": 0.9938547611236572,
+        "arithmetic": 0.9826678931713104,
+        "tsv": 1.0003559291362762,
+        "ties": 0.9492712318897247,
+        "dare": 0.9931071102619171
+      },
+      "performance_with_predicted": 1.0003559291362762,
+      "performance_with_oracle": 1.0003559291362762,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_STL10": {
+      "task1": "EuroSAT",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.009078482894682438,
+        "arithmetic": 0.46597598420718456,
+        "tsv": 0.7133379881071272,
+        "ties": -0.039992654534334926,
+        "dare": -0.09352644423373775
+      },
+      "actual_performances": {
+        "weight_avg": 0.9939468204975128,
+        "arithmetic": 0.9890323877334595,
+        "tsv": 0.9989331364631653,
+        "ties": 0.9668986201286316,
+        "dare": 0.994570791721344
+      },
+      "performance_with_predicted": 0.9989331364631653,
+      "performance_with_oracle": 0.9989331364631653,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_CIFAR100": {
+      "task1": "EuroSAT",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.006205582121408575,
+        "arithmetic": 0.47217926544671607,
+        "tsv": 0.7946560606762321,
+        "ties": -0.058082759634305745,
+        "dare": -0.1135688391628043
+      },
+      "actual_performances": {
+        "weight_avg": 0.9630615413188934,
+        "arithmetic": 0.9478568136692047,
+        "tsv": 0.9786524176597595,
+        "ties": 0.8977437913417816,
+        "dare": 0.9601281881332397
+      },
+      "performance_with_predicted": 0.9786524176597595,
+      "performance_with_oracle": 0.9786524176597595,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_CIFAR10": {
+      "task1": "EuroSAT",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.002828268529028731,
+        "arithmetic": 0.4622261758121669,
+        "tsv": 0.745254186963595,
+        "ties": -0.05074464708219786,
+        "dare": -0.09863931673385717
+      },
+      "actual_performances": {
+        "weight_avg": 0.9860517382621765,
+        "arithmetic": 0.9803259968757629,
+        "tsv": 0.9948518574237823,
+        "ties": 0.9432178437709808,
+        "dare": 0.9857119917869568
+      },
+      "performance_with_predicted": 0.9948518574237823,
+      "performance_with_oracle": 0.9948518574237823,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_Food101": {
+      "task1": "EuroSAT",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.00829291611329781,
+        "arithmetic": 0.476325927625744,
+        "tsv": 0.7963671540798611,
+        "ties": -0.06436280312104958,
+        "dare": -0.11875439057097577
+      },
+      "actual_performances": {
+        "weight_avg": 0.9955210387706757,
+        "arithmetic": 0.9909248054027557,
+        "tsv": 0.9959031641483307,
+        "ties": 0.9453579187393188,
+        "dare": 0.9940087497234344
+      },
+      "performance_with_predicted": 0.9959031641483307,
+      "performance_with_oracle": 0.9959031641483307,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_FashionMNIST": {
+      "task1": "EuroSAT",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.003498134785450201,
+        "arithmetic": 0.4517929480978985,
+        "tsv": 0.6906805802946545,
+        "ties": -0.05650686221592271,
+        "dare": -0.09628069867114752
+      },
+      "actual_performances": {
+        "weight_avg": 0.9692873656749725,
+        "arithmetic": 0.9451492130756378,
+        "tsv": 0.9916985332965851,
+        "ties": 0.8906010091304779,
+        "dare": 0.9672205150127411
+      },
+      "performance_with_predicted": 0.9916985332965851,
+      "performance_with_oracle": 0.9916985332965851,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_EMNIST": {
+      "task1": "EuroSAT",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.0016226818387381997,
+        "arithmetic": 0.48359717577657324,
+        "tsv": 0.804182463912698,
+        "ties": -0.046362742262535915,
+        "dare": -0.10524962658965127
+      },
+      "actual_performances": {
+        "weight_avg": 0.992710292339325,
+        "arithmetic": 0.9842867255210876,
+        "tsv": 0.9980511367321014,
+        "ties": 0.9347921311855316,
+        "dare": 0.9927605986595154
+      },
+      "performance_with_predicted": 0.9980511367321014,
+      "performance_with_oracle": 0.9980511367321014,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_KMNIST": {
+      "task1": "EuroSAT",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.003856929339298718,
+        "arithmetic": 0.47946456316163044,
+        "tsv": 0.807477347945242,
+        "ties": -0.05600531872615833,
+        "dare": -0.11570882951694392
+      },
+      "actual_performances": {
+        "weight_avg": 0.9478208422660828,
+        "arithmetic": 0.7323685884475708,
+        "tsv": 0.9932052791118622,
+        "ties": 0.5288532078266144,
+        "dare": 0.9426261484622955
+      },
+      "performance_with_predicted": 0.9932052791118622,
+      "performance_with_oracle": 0.9932052791118622,
+      "fold_used": "EuroSAT"
+    },
+    "EuroSAT_RenderedSST2": {
+      "task1": "EuroSAT",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.007131752681598327,
+        "arithmetic": 0.49147547114182877,
+        "tsv": 0.8333560309756257,
+        "ties": -0.042655762690718906,
+        "dare": -0.10751630321389069
+      },
+      "actual_performances": {
+        "weight_avg": 1.0032460987567902,
+        "arithmetic": 0.9739282131195068,
+        "tsv": 1.0088609158992767,
+        "ties": 0.9074852764606476,
+        "dare": 1.0033970773220062
+      },
+      "performance_with_predicted": 1.0088609158992767,
+      "performance_with_oracle": 1.0088609158992767,
+      "fold_used": "EuroSAT"
+    },
+    "SVHN_GTSRB": {
+      "task1": "SVHN",
+      "task2": "GTSRB",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13980447720314257,
+        "arithmetic": -0.06823024926848664,
+        "tsv": 0.7783858831497555,
+        "ties": -0.10493646255158443,
+        "dare": -0.018743166674861075
+      },
+      "actual_performances": {
+        "weight_avg": 0.9719821810722351,
+        "arithmetic": 0.9301324486732483,
+        "tsv": 0.9840737283229828,
+        "ties": 0.7625859975814819,
+        "dare": 0.9705056548118591
+      },
+      "performance_with_predicted": 0.9840737283229828,
+      "performance_with_oracle": 0.9840737283229828,
+      "fold_used": "SVHN"
+    },
+    "SVHN_MNIST": {
+      "task1": "SVHN",
+      "task2": "MNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13038460710990674,
+        "arithmetic": -0.07147467099231151,
+        "tsv": 0.8579698047172155,
+        "ties": -0.11436113894678668,
+        "dare": -0.01959797326991222
+      },
+      "actual_performances": {
+        "weight_avg": 0.9865927994251251,
+        "arithmetic": 0.9734596014022827,
+        "tsv": 0.9931772649288177,
+        "ties": 0.9160404205322266,
+        "dare": 0.986227422952652
+      },
+      "performance_with_predicted": 0.9931772649288177,
+      "performance_with_oracle": 0.9931772649288177,
+      "fold_used": "SVHN"
+    },
+    "SVHN_DTD": {
+      "task1": "SVHN",
+      "task2": "DTD",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.15644489276807674,
+        "arithmetic": -0.07368961776660972,
+        "tsv": 0.7079338630204777,
+        "ties": -0.10667802054871722,
+        "dare": -0.028022432236181557
+      },
+      "actual_performances": {
+        "weight_avg": 0.9065269827842712,
+        "arithmetic": 0.8550306260585785,
+        "tsv": 0.9441674947738647,
+        "ties": 0.7388549745082855,
+        "dare": 0.9039652645587921
+      },
+      "performance_with_predicted": 0.9441674947738647,
+      "performance_with_oracle": 0.9441674947738647,
+      "fold_used": "SVHN"
+    },
+    "SVHN_Flowers102": {
+      "task1": "SVHN",
+      "task2": "Flowers102",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.15340394979880967,
+        "arithmetic": -0.07049797337661295,
+        "tsv": 0.7131765491124686,
+        "ties": -0.10113500603788383,
+        "dare": -0.024536162002874378
+      },
+      "actual_performances": {
+        "weight_avg": 0.9177648723125458,
+        "arithmetic": 0.8923609256744385,
+        "tsv": 0.9467796981334686,
+        "ties": 0.8163787722587585,
+        "dare": 0.9135268926620483
+      },
+      "performance_with_predicted": 0.9467796981334686,
+      "performance_with_oracle": 0.9467796981334686,
+      "fold_used": "SVHN"
+    },
+    "SVHN_PCAM": {
+      "task1": "SVHN",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.15597787405245078,
+        "arithmetic": -0.08323304305642747,
+        "tsv": 0.6191645736149927,
+        "ties": -0.1271676522506257,
+        "dare": -0.023843696170141603
+      },
+      "actual_performances": {
+        "weight_avg": 0.9321187734603882,
+        "arithmetic": 0.8953781723976135,
+        "tsv": 0.9599759578704834,
+        "ties": 0.8533700406551361,
+        "dare": 0.9272627830505371
+      },
+      "performance_with_predicted": 0.9599759578704834,
+      "performance_with_oracle": 0.9599759578704834,
+      "fold_used": "SVHN"
+    },
+    "SVHN_FER2013": {
+      "task1": "SVHN",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1532783092292901,
+        "arithmetic": -0.08025396857015096,
+        "tsv": 0.7424889183497426,
+        "ties": -0.12247436109781429,
+        "dare": -0.02824769036385778
+      },
+      "actual_performances": {
+        "weight_avg": 0.9452814757823944,
+        "arithmetic": 0.9084378480911255,
+        "tsv": 0.958737701177597,
+        "ties": 0.8140730261802673,
+        "dare": 0.9399864077568054
+      },
+      "performance_with_predicted": 0.958737701177597,
+      "performance_with_oracle": 0.958737701177597,
+      "fold_used": "SVHN"
+    },
+    "SVHN_OxfordIIITPet": {
+      "task1": "SVHN",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1453851168964565,
+        "arithmetic": -0.06739840292500311,
+        "tsv": 0.7409662844678377,
+        "ties": -0.09942604192659506,
+        "dare": -0.020106913091508992
+      },
+      "actual_performances": {
+        "weight_avg": 0.9882672727108002,
+        "arithmetic": 0.9663355052471161,
+        "tsv": 0.9951871335506439,
+        "ties": 0.8970659971237183,
+        "dare": 0.985947847366333
+      },
+      "performance_with_predicted": 0.9951871335506439,
+      "performance_with_oracle": 0.9951871335506439,
+      "fold_used": "SVHN"
+    },
+    "SVHN_STL10": {
+      "task1": "SVHN",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14793450077489018,
+        "arithmetic": -0.0666935125445213,
+        "tsv": 0.7354967927118865,
+        "ties": -0.09855795540932143,
+        "dare": -0.017818391124759823
+      },
+      "actual_performances": {
+        "weight_avg": 0.9944923520088196,
+        "arithmetic": 0.9739724099636078,
+        "tsv": 0.9959975481033325,
+        "ties": 0.9187482595443726,
+        "dare": 0.9939748644828796
+      },
+      "performance_with_predicted": 0.9959975481033325,
+      "performance_with_oracle": 0.9959975481033325,
+      "fold_used": "SVHN"
+    },
+    "SVHN_CIFAR100": {
+      "task1": "SVHN",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14915681850515455,
+        "arithmetic": -0.08201871558618848,
+        "tsv": 0.7607931894521454,
+        "ties": -0.1276051581161154,
+        "dare": -0.025738843313582966
+      },
+      "actual_performances": {
+        "weight_avg": 0.943605899810791,
+        "arithmetic": 0.923754870891571,
+        "tsv": 0.9594398736953735,
+        "ties": 0.8458019495010376,
+        "dare": 0.9416497647762299
+      },
+      "performance_with_predicted": 0.9594398736953735,
+      "performance_with_oracle": 0.9594398736953735,
+      "fold_used": "SVHN"
+    },
+    "SVHN_CIFAR10": {
+      "task1": "SVHN",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14631933223058344,
+        "arithmetic": -0.07613107270626217,
+        "tsv": 0.7357465159319693,
+        "ties": -0.11808520897086286,
+        "dare": -0.022659093666219078
+      },
+      "actual_performances": {
+        "weight_avg": 0.9808846414089203,
+        "arithmetic": 0.9574271142482758,
+        "tsv": 0.9898601472377777,
+        "ties": 0.8975816965103149,
+        "dare": 0.979697197675705
+      },
+      "performance_with_predicted": 0.9898601472377777,
+      "performance_with_oracle": 0.9898601472377777,
+      "fold_used": "SVHN"
+    },
+    "SVHN_Food101": {
+      "task1": "SVHN",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.15406386490224538,
+        "arithmetic": -0.08803475935706509,
+        "tsv": 0.7688655948977732,
+        "ties": -0.13657848837368922,
+        "dare": -0.02926701124439977
+      },
+      "actual_performances": {
+        "weight_avg": 0.9883002936840057,
+        "arithmetic": 0.9745144546031952,
+        "tsv": 0.9897497296333313,
+        "ties": 0.9109222888946533,
+        "dare": 0.9832465648651123
+      },
+      "performance_with_predicted": 0.9897497296333313,
+      "performance_with_oracle": 0.9897497296333313,
+      "fold_used": "SVHN"
+    },
+    "SVHN_FashionMNIST": {
+      "task1": "SVHN",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14601349790609314,
+        "arithmetic": -0.0798148250552397,
+        "tsv": 0.7191232262557604,
+        "ties": -0.12520421794290765,
+        "dare": -0.023612441347113648
+      },
+      "actual_performances": {
+        "weight_avg": 0.9755686521530151,
+        "arithmetic": 0.945172518491745,
+        "tsv": 0.989665687084198,
+        "ties": 0.8582103252410889,
+        "dare": 0.9737040996551514
+      },
+      "performance_with_predicted": 0.989665687084198,
+      "performance_with_oracle": 0.989665687084198,
+      "fold_used": "SVHN"
+    },
+    "SVHN_EMNIST": {
+      "task1": "SVHN",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1315849908242558,
+        "arithmetic": -0.06775923847194958,
+        "tsv": 0.8182907004232185,
+        "ties": -0.10688331514034793,
+        "dare": -0.017711053515432406
+      },
+      "actual_performances": {
+        "weight_avg": 0.9875996708869934,
+        "arithmetic": 0.9743439555168152,
+        "tsv": 0.994315505027771,
+        "ties": 0.9110230803489685,
+        "dare": 0.9863190650939941
+      },
+      "performance_with_predicted": 0.994315505027771,
+      "performance_with_oracle": 0.994315505027771,
+      "fold_used": "SVHN"
+    },
+    "SVHN_KMNIST": {
+      "task1": "SVHN",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14594907712614827,
+        "arithmetic": -0.07942347364633155,
+        "tsv": 0.7934371440408624,
+        "ties": -0.12413606336658509,
+        "dare": -0.023472789473925233
+      },
+      "actual_performances": {
+        "weight_avg": 0.9197095632553101,
+        "arithmetic": 0.7407863438129425,
+        "tsv": 0.9798397421836853,
+        "ties": 0.5005100443959236,
+        "dare": 0.9167042970657349
+      },
+      "performance_with_predicted": 0.9798397421836853,
+      "performance_with_oracle": 0.9798397421836853,
+      "fold_used": "SVHN"
+    },
+    "SVHN_RenderedSST2": {
+      "task1": "SVHN",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1481209142965232,
+        "arithmetic": -0.06890902080365975,
+        "tsv": 0.7890831391811609,
+        "ties": -0.1031506299180996,
+        "dare": -0.019536615450931532
+      },
+      "actual_performances": {
+        "weight_avg": 0.9947099685668945,
+        "arithmetic": 0.9602139294147491,
+        "tsv": 1.004467487335205,
+        "ties": 0.8729788959026337,
+        "dare": 0.9896095097064972
+      },
+      "performance_with_predicted": 1.004467487335205,
+      "performance_with_oracle": 1.004467487335205,
+      "fold_used": "SVHN"
+    },
+    "GTSRB_MNIST": {
+      "task1": "GTSRB",
+      "task2": "MNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.0937216092208044,
+        "arithmetic": -0.14856679278773963,
+        "tsv": 0.0035403102149601877,
+        "ties": -0.1801433444118034,
+        "dare": 0.05172096769177856
+      },
+      "actual_performances": {
+        "weight_avg": 0.9656267464160919,
+        "arithmetic": 0.9366440773010254,
+        "tsv": 0.982388973236084,
+        "ties": 0.8210877776145935,
+        "dare": 0.9650563299655914
+      },
+      "performance_with_predicted": 0.9656267464160919,
+      "performance_with_oracle": 0.982388973236084,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_DTD": {
+      "task1": "GTSRB",
+      "task2": "DTD",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.04891976333110648,
+        "arithmetic": -0.16630053241118367,
+        "tsv": -0.004817860296352512,
+        "ties": -0.17523311643398273,
+        "dare": 0.049157610232583054
+      },
+      "actual_performances": {
+        "weight_avg": 0.9277676343917847,
+        "arithmetic": 0.836631566286087,
+        "tsv": 0.9774974882602692,
+        "ties": 0.6750818490982056,
+        "dare": 0.9278891980648041
+      },
+      "performance_with_predicted": 0.9278891980648041,
+      "performance_with_oracle": 0.9774974882602692,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_Flowers102": {
+      "task1": "GTSRB",
+      "task2": "Flowers102",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.05123339583426526,
+        "arithmetic": -0.16191278220691827,
+        "tsv": -0.003945394793853768,
+        "ties": -0.17210577161794294,
+        "dare": 0.05597045620734691
+      },
+      "actual_performances": {
+        "weight_avg": 0.9334717988967896,
+        "arithmetic": 0.8791017830371857,
+        "tsv": 0.9695899486541748,
+        "ties": 0.7574729919433594,
+        "dare": 0.9351701736450195
+      },
+      "performance_with_predicted": 0.9351701736450195,
+      "performance_with_oracle": 0.9695899486541748,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_PCAM": {
+      "task1": "GTSRB",
+      "task2": "PCAM",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.019248073280143156,
+        "arithmetic": -0.20882198668939544,
+        "tsv": 0.0020429817603582023,
+        "ties": -0.19145081372547945,
+        "dare": 0.04207495860727766
+      },
+      "actual_performances": {
+        "weight_avg": 0.9229168593883514,
+        "arithmetic": 0.8655397891998291,
+        "tsv": 0.9686347544193268,
+        "ties": 0.7744294106960297,
+        "dare": 0.9200493693351746
+      },
+      "performance_with_predicted": 0.9200493693351746,
+      "performance_with_oracle": 0.9686347544193268,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_FER2013": {
+      "task1": "GTSRB",
+      "task2": "FER2013",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.004771180950648812,
+        "arithmetic": -0.2024831026760274,
+        "tsv": -0.026818382579932274,
+        "ties": -0.20413615657827086,
+        "dare": 0.001953973549450917
+      },
+      "actual_performances": {
+        "weight_avg": 0.9608781635761261,
+        "arithmetic": 0.8960882127285004,
+        "tsv": 0.9863198399543762,
+        "ties": 0.7467367947101593,
+        "dare": 0.9593618810176849
+      },
+      "performance_with_predicted": 0.9593618810176849,
+      "performance_with_oracle": 0.9863198399543762,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_OxfordIIITPet": {
+      "task1": "GTSRB",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.0706768290161292,
+        "arithmetic": -0.14926029165140786,
+        "tsv": 0.0009292455520641155,
+        "ties": -0.16692073337840396,
+        "dare": 0.06261261685414958
+      },
+      "actual_performances": {
+        "weight_avg": 0.988774448633194,
+        "arithmetic": 0.9450740218162537,
+        "tsv": 0.9986061453819275,
+        "ties": 0.8369886875152588,
+        "dare": 0.9886077344417572
+      },
+      "performance_with_predicted": 0.988774448633194,
+      "performance_with_oracle": 0.9986061453819275,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_STL10": {
+      "task1": "GTSRB",
+      "task2": "STL10",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.06445268446884574,
+        "arithmetic": -0.16205111109900094,
+        "tsv": 0.002112171413173745,
+        "ties": -0.1725419461183045,
+        "dare": 0.06804928841951473
+      },
+      "actual_performances": {
+        "weight_avg": 0.9915267825126648,
+        "arithmetic": 0.9524869620800018,
+        "tsv": 0.9977017939090729,
+        "ties": 0.8545868694782257,
+        "dare": 0.9912233948707581
+      },
+      "performance_with_predicted": 0.9912233948707581,
+      "performance_with_oracle": 0.9977017939090729,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_CIFAR100": {
+      "task1": "GTSRB",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.06699852250869512,
+        "arithmetic": -0.17403920724739222,
+        "tsv": 0.0016824725858621545,
+        "ties": -0.18995943614766372,
+        "dare": 0.04971761123807342
+      },
+      "actual_performances": {
+        "weight_avg": 0.9557223916053772,
+        "arithmetic": 0.905833512544632,
+        "tsv": 0.9779140949249268,
+        "ties": 0.7728052735328674,
+        "dare": 0.95318603515625
+      },
+      "performance_with_predicted": 0.9557223916053772,
+      "performance_with_oracle": 0.9779140949249268,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_CIFAR10": {
+      "task1": "GTSRB",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.06368361431371537,
+        "arithmetic": -0.17167553989220774,
+        "tsv": 0.0034949556899124905,
+        "ties": -0.1823767727615172,
+        "dare": 0.055037697639114536
+      },
+      "actual_performances": {
+        "weight_avg": 0.9761830866336823,
+        "arithmetic": 0.930684894323349,
+        "tsv": 0.9906711876392365,
+        "ties": 0.8197281956672668,
+        "dare": 0.9750770032405853
+      },
+      "performance_with_predicted": 0.9761830866336823,
+      "performance_with_oracle": 0.9906711876392365,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_Food101": {
+      "task1": "GTSRB",
+      "task2": "Food101",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.059360371192903265,
+        "arithmetic": -0.1843790352076327,
+        "tsv": -0.0014315749300714865,
+        "ties": -0.19894643434296788,
+        "dare": 0.0435871962901407
+      },
+      "actual_performances": {
+        "weight_avg": 0.9934667646884918,
+        "arithmetic": 0.9533115923404694,
+        "tsv": 0.9965717196464539,
+        "ties": 0.8208611905574799,
+        "dare": 0.9891498684883118
+      },
+      "performance_with_predicted": 0.9934667646884918,
+      "performance_with_oracle": 0.9965717196464539,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_FashionMNIST": {
+      "task1": "GTSRB",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.05381725657673324,
+        "arithmetic": -0.18274914233138573,
+        "tsv": 0.0028000068266569563,
+        "ties": -0.18850202816968312,
+        "dare": 0.05186927775277726
+      },
+      "actual_performances": {
+        "weight_avg": 0.9700803756713867,
+        "arithmetic": 0.9181264340877533,
+        "tsv": 0.9899275302886963,
+        "ties": 0.7734293639659882,
+        "dare": 0.9690947830677032
+      },
+      "performance_with_predicted": 0.9700803756713867,
+      "performance_with_oracle": 0.9899275302886963,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_EMNIST": {
+      "task1": "GTSRB",
+      "task2": "EMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.08505630511015023,
+        "arithmetic": -0.15173994434653512,
+        "tsv": 0.003793743048314303,
+        "ties": -0.17606967824240927,
+        "dare": 0.058431180659406765
+      },
+      "actual_performances": {
+        "weight_avg": 0.9762574732303619,
+        "arithmetic": 0.9431763291358948,
+        "tsv": 0.9916384220123291,
+        "ties": 0.8221241533756256,
+        "dare": 0.9737350344657898
+      },
+      "performance_with_predicted": 0.9762574732303619,
+      "performance_with_oracle": 0.9916384220123291,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_KMNIST": {
+      "task1": "GTSRB",
+      "task2": "KMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.07744634159346049,
+        "arithmetic": -0.1644825533222062,
+        "tsv": 0.0031044870340934385,
+        "ties": -0.18614554910072287,
+        "dare": 0.05119672849328928
+      },
+      "actual_performances": {
+        "weight_avg": 0.942769318819046,
+        "arithmetic": 0.73393714427948,
+        "tsv": 0.9838006496429443,
+        "ties": 0.4096892774105072,
+        "dare": 0.9395685791969299
+      },
+      "performance_with_predicted": 0.942769318819046,
+      "performance_with_oracle": 0.9838006496429443,
+      "fold_used": "GTSRB"
+    },
+    "GTSRB_RenderedSST2": {
+      "task1": "GTSRB",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.07952240039836997,
+        "arithmetic": -0.15178439083754253,
+        "tsv": 0.0005708139286680974,
+        "ties": -0.17409236854848448,
+        "dare": 0.05935521997649765
+      },
+      "actual_performances": {
+        "weight_avg": 0.9927515983581543,
+        "arithmetic": 0.9343352615833282,
+        "tsv": 1.005533903837204,
+        "ties": 0.7957963645458221,
+        "dare": 0.9919955432415009
+      },
+      "performance_with_predicted": 0.9927515983581543,
+      "performance_with_oracle": 1.005533903837204,
+      "fold_used": "GTSRB"
+    },
+    "MNIST_DTD": {
+      "task1": "MNIST",
+      "task2": "DTD",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6567986209773085,
+        "arithmetic": -0.050463660488015046,
+        "tsv": 0.5868081159004593,
+        "ties": -0.3728815639973632,
+        "dare": -0.009101795556060836
+      },
+      "actual_performances": {
+        "weight_avg": 0.9188458919525146,
+        "arithmetic": 0.8689302206039429,
+        "tsv": 0.9683789908885956,
+        "ties": 0.7989627718925476,
+        "dare": 0.9147742390632629
+      },
+      "performance_with_predicted": 0.9188458919525146,
+      "performance_with_oracle": 0.9683789908885956,
+      "fold_used": "MNIST"
+    },
+    "MNIST_Flowers102": {
+      "task1": "MNIST",
+      "task2": "Flowers102",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "dare",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6332344786053654,
+        "arithmetic": -0.06039012422598863,
+        "tsv": 0.5578181215324873,
+        "ties": -0.3777855318845698,
+        "dare": -0.022866157199504668
+      },
+      "actual_performances": {
+        "weight_avg": 0.9134328663349152,
+        "arithmetic": 0.9086020588874817,
+        "tsv": 0.0,
+        "ties": 0.8798947632312775,
+        "dare": 0.9172298908233643
+      },
+      "performance_with_predicted": 0.9134328663349152,
+      "performance_with_oracle": 0.9172298908233643,
+      "fold_used": "MNIST"
+    },
+    "MNIST_PCAM": {
+      "task1": "MNIST",
+      "task2": "PCAM",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.5325405602228117,
+        "arithmetic": -0.05434736908382109,
+        "tsv": 0.48110040683455946,
+        "ties": -0.3222301040078313,
+        "dare": -0.00032720789044258906
+      },
+      "actual_performances": {
+        "weight_avg": 0.9676585495471954,
+        "arithmetic": 0.9403442740440369,
+        "tsv": 0.979352205991745,
+        "ties": 0.9339805543422699,
+        "dare": 0.9701192677021027
+      },
+      "performance_with_predicted": 0.9676585495471954,
+      "performance_with_oracle": 0.979352205991745,
+      "fold_used": "MNIST"
+    },
+    "MNIST_FER2013": {
+      "task1": "MNIST",
+      "task2": "FER2013",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.6861252250309579,
+        "arithmetic": -0.0557236886125601,
+        "tsv": 0.6158535168039543,
+        "ties": -0.3901276551045714,
+        "dare": -0.005213204920231076
+      },
+      "actual_performances": {
+        "weight_avg": 0.9643599390983582,
+        "arithmetic": 0.9378852248191833,
+        "tsv": 0.0,
+        "ties": 0.8897925317287445,
+        "dare": 0.9637930393218994
+      },
+      "performance_with_predicted": 0.9643599390983582,
+      "performance_with_oracle": 0.9643599390983582,
+      "fold_used": "MNIST"
+    },
+    "MNIST_OxfordIIITPet": {
+      "task1": "MNIST",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6725165445456944,
+        "arithmetic": -0.045140203854177385,
+        "tsv": 0.6033377113411342,
+        "ties": -0.37301756187632723,
+        "dare": -0.004590335857456663
+      },
+      "actual_performances": {
+        "weight_avg": 0.9901636242866516,
+        "arithmetic": 0.9840486943721771,
+        "tsv": 0.995275229215622,
+        "ties": 0.962520956993103,
+        "dare": 0.9888229370117188
+      },
+      "performance_with_predicted": 0.9901636242866516,
+      "performance_with_oracle": 0.995275229215622,
+      "fold_used": "MNIST"
+    },
+    "MNIST_STL10": {
+      "task1": "MNIST",
+      "task2": "STL10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.6652726729375499,
+        "arithmetic": -0.04144043168418382,
+        "tsv": 0.5987987902366796,
+        "ties": -0.36511877931772924,
+        "dare": 0.00016600688793958173
+      },
+      "actual_performances": {
+        "weight_avg": 0.997033029794693,
+        "arithmetic": 0.9954034686088562,
+        "tsv": 0.9965333938598633,
+        "ties": 0.9841313660144806,
+        "dare": 0.9958963990211487
+      },
+      "performance_with_predicted": 0.997033029794693,
+      "performance_with_oracle": 0.997033029794693,
+      "fold_used": "MNIST"
+    },
+    "MNIST_CIFAR100": {
+      "task1": "MNIST",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7014115406533309,
+        "arithmetic": -0.0569452535734447,
+        "tsv": 0.6313476032291686,
+        "ties": -0.3979185561122319,
+        "dare": -0.0024529384817107494
+      },
+      "actual_performances": {
+        "weight_avg": 0.9599809348583221,
+        "arithmetic": 0.9561629593372345,
+        "tsv": 0.9736426770687103,
+        "ties": 0.9268312454223633,
+        "dare": 0.9554499983787537
+      },
+      "performance_with_predicted": 0.9599809348583221,
+      "performance_with_oracle": 0.9736426770687103,
+      "fold_used": "MNIST"
+    },
+    "MNIST_CIFAR10": {
+      "task1": "MNIST",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6575043312196895,
+        "arithmetic": -0.0501655556068076,
+        "tsv": 0.5939671036699534,
+        "ties": -0.3705718196051138,
+        "dare": 0.0005070957812263722
+      },
+      "actual_performances": {
+        "weight_avg": 0.9926384687423706,
+        "arithmetic": 0.9904885292053223,
+        "tsv": 0.9962838888168335,
+        "ties": 0.9734659790992737,
+        "dare": 0.9926878809928894
+      },
+      "performance_with_predicted": 0.9926384687423706,
+      "performance_with_oracle": 0.9962838888168335,
+      "fold_used": "MNIST"
+    },
+    "MNIST_Food101": {
+      "task1": "MNIST",
+      "task2": "Food101",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "arithmetic",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6997231296140016,
+        "arithmetic": -0.0643064813468312,
+        "tsv": 0.6266821236570462,
+        "ties": -0.40722569461989705,
+        "dare": -0.007167489475166037
+      },
+      "actual_performances": {
+        "weight_avg": 0.9946547746658325,
+        "arithmetic": 0.9953086376190186,
+        "tsv": 0.992268443107605,
+        "ties": 0.9762718975543976,
+        "dare": 0.9913500845432281
+      },
+      "performance_with_predicted": 0.9946547746658325,
+      "performance_with_oracle": 0.9953086376190186,
+      "fold_used": "MNIST"
+    },
+    "MNIST_FashionMNIST": {
+      "task1": "MNIST",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6430649123487363,
+        "arithmetic": -0.053525570724517905,
+        "tsv": 0.5811361229180494,
+        "ties": -0.3671277525121135,
+        "dare": 0.00036380818346405105
+      },
+      "actual_performances": {
+        "weight_avg": 0.9713436663150787,
+        "arithmetic": 0.9539283215999603,
+        "tsv": 0.9862127602100372,
+        "ties": 0.9195784330368042,
+        "dare": 0.9688273966312408
+      },
+      "performance_with_predicted": 0.9713436663150787,
+      "performance_with_oracle": 0.9862127602100372,
+      "fold_used": "MNIST"
+    },
+    "MNIST_EMNIST": {
+      "task1": "MNIST",
+      "task2": "EMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.772346961966795,
+        "arithmetic": -0.040495253140320674,
+        "tsv": 0.7019426636306063,
+        "ties": -0.404043357732661,
+        "dare": 0.0021901569830508004
+      },
+      "actual_performances": {
+        "weight_avg": 1.0014581680297852,
+        "arithmetic": 1.00105682015419,
+        "tsv": 1.0017592906951904,
+        "ties": 0.9886488616466522,
+        "dare": 1.00140780210495
+      },
+      "performance_with_predicted": 1.0014581680297852,
+      "performance_with_oracle": 1.0017592906951904,
+      "fold_used": "MNIST"
+    },
+    "MNIST_KMNIST": {
+      "task1": "MNIST",
+      "task2": "KMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7324589455004585,
+        "arithmetic": -0.052254024963032907,
+        "tsv": 0.6620832825799027,
+        "ties": -0.40518704163885466,
+        "dare": 0.0005546141601014206
+      },
+      "actual_performances": {
+        "weight_avg": 0.8740425705909729,
+        "arithmetic": 0.737129807472229,
+        "tsv": 0.9629517197608948,
+        "ties": 0.5749548226594925,
+        "dare": 0.8690643310546875
+      },
+      "performance_with_predicted": 0.8740425705909729,
+      "performance_with_oracle": 0.9629517197608948,
+      "fold_used": "MNIST"
+    },
+    "MNIST_RenderedSST2": {
+      "task1": "MNIST",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.7117041824666831,
+        "arithmetic": -0.04468053694493813,
+        "tsv": 0.6400486867188564,
+        "ties": -0.3905898261592367,
+        "dare": -0.0019278479643035239
+      },
+      "actual_performances": {
+        "weight_avg": 1.0042341947555542,
+        "arithmetic": 0.9737119078636169,
+        "tsv": 1.009202480316162,
+        "ties": 0.927478164434433,
+        "dare": 0.9983348846435547
+      },
+      "performance_with_predicted": 1.0042341947555542,
+      "performance_with_oracle": 1.009202480316162,
+      "fold_used": "MNIST"
+    },
+    "DTD_Flowers102": {
+      "task1": "DTD",
+      "task2": "Flowers102",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1322199144490299,
+        "arithmetic": 0.26985021017755273,
+        "tsv": 1.9715407067972086,
+        "ties": -0.28395772455863116,
+        "dare": 0.21608715959275837
+      },
+      "actual_performances": {
+        "weight_avg": 0.90797159075737,
+        "arithmetic": 0.8163930773735046,
+        "tsv": 0.9731535613536835,
+        "ties": 0.7355534136295319,
+        "dare": 0.9065801203250885
+      },
+      "performance_with_predicted": 0.9731535613536835,
+      "performance_with_oracle": 0.9731535613536835,
+      "fold_used": "DTD"
+    },
+    "DTD_PCAM": {
+      "task1": "DTD",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14261826161678837,
+        "arithmetic": 0.16906352685260922,
+        "tsv": 1.5941960805979025,
+        "ties": -0.3513871636939136,
+        "dare": 0.14364346542986614
+      },
+      "actual_performances": {
+        "weight_avg": 0.8461495339870453,
+        "arithmetic": 0.8134273290634155,
+        "tsv": 0.8789701163768768,
+        "ties": 0.766570121049881,
+        "dare": 0.8402298092842102
+      },
+      "performance_with_predicted": 0.8789701163768768,
+      "performance_with_oracle": 0.8789701163768768,
+      "fold_used": "DTD"
+    },
+    "DTD_FER2013": {
+      "task1": "DTD",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.14352526716816866,
+        "arithmetic": 0.25451318061778594,
+        "tsv": 2.039367986568929,
+        "ties": -0.34401292766554636,
+        "dare": 0.21757513307190104
+      },
+      "actual_performances": {
+        "weight_avg": 0.9167492091655731,
+        "arithmetic": 0.8349648714065552,
+        "tsv": 0.981879860162735,
+        "ties": 0.7401857376098633,
+        "dare": 0.9150306284427643
+      },
+      "performance_with_predicted": 0.981879860162735,
+      "performance_with_oracle": 0.981879860162735,
+      "fold_used": "DTD"
+    },
+    "DTD_OxfordIIITPet": {
+      "task1": "DTD",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1284076713489807,
+        "arithmetic": 0.2763422932812101,
+        "tsv": 2.0060644527837805,
+        "ties": -0.2817309478391728,
+        "dare": 0.22471723353472206
+      },
+      "actual_performances": {
+        "weight_avg": 0.9448283314704895,
+        "arithmetic": 0.8717396259307861,
+        "tsv": 0.9941550195217133,
+        "ties": 0.8138095438480377,
+        "dare": 0.9439748227596283
+      },
+      "performance_with_predicted": 0.9941550195217133,
+      "performance_with_oracle": 0.9941550195217133,
+      "fold_used": "DTD"
+    },
+    "DTD_STL10": {
+      "task1": "DTD",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.12896523211921948,
+        "arithmetic": 0.27238508425204305,
+        "tsv": 1.9883127981975572,
+        "ties": -0.28997008846993805,
+        "dare": 0.2151452797607103
+      },
+      "actual_performances": {
+        "weight_avg": 0.944194883108139,
+        "arithmetic": 0.8797028660774231,
+        "tsv": 0.9886182248592377,
+        "ties": 0.8304209113121033,
+        "dare": 0.9418219029903412
+      },
+      "performance_with_predicted": 0.9886182248592377,
+      "performance_with_oracle": 0.9886182248592377,
+      "fold_used": "DTD"
+    },
+    "DTD_CIFAR100": {
+      "task1": "DTD",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1464128380173208,
+        "arithmetic": 0.2540793598274803,
+        "tsv": 2.0786594215479375,
+        "ties": -0.3596280289398828,
+        "dare": 0.22500321787975416
+      },
+      "actual_performances": {
+        "weight_avg": 0.892429918050766,
+        "arithmetic": 0.8356340527534485,
+        "tsv": 0.95200514793396,
+        "ties": 0.7590453922748566,
+        "dare": 0.8894250094890594
+      },
+      "performance_with_predicted": 0.95200514793396,
+      "performance_with_oracle": 0.95200514793396,
+      "fold_used": "DTD"
+    },
+    "DTD_CIFAR10": {
+      "task1": "DTD",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1469074766340119,
+        "arithmetic": 0.2345175931722033,
+        "tsv": 1.9270713405392343,
+        "ties": -0.34260286964499,
+        "dare": 0.19943053106266573
+      },
+      "actual_performances": {
+        "weight_avg": 0.9123061299324036,
+        "arithmetic": 0.8631896078586578,
+        "tsv": 0.9647389948368073,
+        "ties": 0.80576491355896,
+        "dare": 0.9107168018817902
+      },
+      "performance_with_predicted": 0.9647389948368073,
+      "performance_with_oracle": 0.9647389948368073,
+      "fold_used": "DTD"
+    },
+    "DTD_Food101": {
+      "task1": "DTD",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13993924718180203,
+        "arithmetic": 0.2540581391763065,
+        "tsv": 2.094152243326513,
+        "ties": -0.3656295618947439,
+        "dare": 0.2302846360442681
+      },
+      "actual_performances": {
+        "weight_avg": 0.9366259574890137,
+        "arithmetic": 0.8787708580493927,
+        "tsv": 0.9780496060848236,
+        "ties": 0.8145201206207275,
+        "dare": 0.9302436113357544
+      },
+      "performance_with_predicted": 0.9780496060848236,
+      "performance_with_oracle": 0.9780496060848236,
+      "fold_used": "DTD"
+    },
+    "DTD_FashionMNIST": {
+      "task1": "DTD",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.137938355807833,
+        "arithmetic": 0.2284497957094774,
+        "tsv": 1.91071244889153,
+        "ties": -0.35004003445747783,
+        "dare": 0.19852767213425795
+      },
+      "actual_performances": {
+        "weight_avg": 0.9029219448566437,
+        "arithmetic": 0.8391845524311066,
+        "tsv": 0.9536930918693542,
+        "ties": 0.759405791759491,
+        "dare": 0.8968301713466644
+      },
+      "performance_with_predicted": 0.9536930918693542,
+      "performance_with_oracle": 0.9536930918693542,
+      "fold_used": "DTD"
+    },
+    "DTD_EMNIST": {
+      "task1": "DTD",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1363633701020824,
+        "arithmetic": 0.2785675081894003,
+        "tsv": 2.1070192976741846,
+        "ties": -0.3223485116135725,
+        "dare": 0.23646901667469558
+      },
+      "actual_performances": {
+        "weight_avg": 0.929628849029541,
+        "arithmetic": 0.8695182502269745,
+        "tsv": 0.9684606790542603,
+        "ties": 0.8019707500934601,
+        "dare": 0.9254066050052643
+      },
+      "performance_with_predicted": 0.9684606790542603,
+      "performance_with_oracle": 0.9684606790542603,
+      "fold_used": "DTD"
+    },
+    "DTD_KMNIST": {
+      "task1": "DTD",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13662007871250312,
+        "arithmetic": 0.26709164479196756,
+        "tsv": 2.111394139854854,
+        "ties": -0.3453352782483603,
+        "dare": 0.23683689324075188
+      },
+      "actual_performances": {
+        "weight_avg": 0.8974507451057434,
+        "arithmetic": 0.6498998701572418,
+        "tsv": 0.970440000295639,
+        "ties": 0.3915392607450485,
+        "dare": 0.8924843370914459
+      },
+      "performance_with_predicted": 0.970440000295639,
+      "performance_with_oracle": 0.970440000295639,
+      "fold_used": "DTD"
+    },
+    "DTD_RenderedSST2": {
+      "task1": "DTD",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1304645582431462,
+        "arithmetic": 0.29401218971251475,
+        "tsv": 2.1311560825299893,
+        "ties": -0.29947415378858333,
+        "dare": 0.244084651531034
+      },
+      "actual_performances": {
+        "weight_avg": 0.9586927890777588,
+        "arithmetic": 0.8668419718742371,
+        "tsv": 1.00016188621521,
+        "ties": 0.7754902839660645,
+        "dare": 0.9604022800922394
+      },
+      "performance_with_predicted": 1.00016188621521,
+      "performance_with_oracle": 1.00016188621521,
+      "fold_used": "DTD"
+    },
+    "Flowers102_PCAM": {
+      "task1": "Flowers102",
+      "task2": "PCAM",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "arithmetic",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.09226569423261238,
+        "arithmetic": 0.2566738355451297,
+        "tsv": 0.37684808347098253,
+        "ties": -0.3320967738789767,
+        "dare": -0.15365492026601096
+      },
+      "actual_performances": {
+        "weight_avg": 0.8315687477588654,
+        "arithmetic": 0.8501712679862976,
+        "tsv": 0.8204136192798615,
+        "ties": 0.8421236276626587,
+        "dare": 0.8251994252204895
+      },
+      "performance_with_predicted": 0.8204136192798615,
+      "performance_with_oracle": 0.8501712679862976,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_FER2013": {
+      "task1": "Flowers102",
+      "task2": "FER2013",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.12868686471959298,
+        "arithmetic": 0.3050866033596408,
+        "tsv": 0.39017019679750187,
+        "ties": -0.39837107833028806,
+        "dare": -0.17113707442937395
+      },
+      "actual_performances": {
+        "weight_avg": 0.9375383257865906,
+        "arithmetic": 0.8832467794418335,
+        "tsv": 0.9858996272087097,
+        "ties": 0.8234350383281708,
+        "dare": 0.9315473437309265
+      },
+      "performance_with_predicted": 0.9858996272087097,
+      "performance_with_oracle": 0.9858996272087097,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_OxfordIIITPet": {
+      "task1": "Flowers102",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13142334593848057,
+        "arithmetic": 0.3129586540652271,
+        "tsv": 0.37300056476104027,
+        "ties": -0.3816958340727086,
+        "dare": -0.1561769019249218
+      },
+      "actual_performances": {
+        "weight_avg": 0.951155036687851,
+        "arithmetic": 0.9168022572994232,
+        "tsv": 0.9877088665962219,
+        "ties": 0.8872899413108826,
+        "dare": 0.9492565393447876
+      },
+      "performance_with_predicted": 0.9877088665962219,
+      "performance_with_oracle": 0.9877088665962219,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_STL10": {
+      "task1": "Flowers102",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.11994761895608037,
+        "arithmetic": 0.31839442116085226,
+        "tsv": 0.40281590925835065,
+        "ties": -0.37583280929001,
+        "dare": -0.15280703541680946
+      },
+      "actual_performances": {
+        "weight_avg": 0.9485556185245514,
+        "arithmetic": 0.9247092604637146,
+        "tsv": 0.9773210287094116,
+        "ties": 0.9037337005138397,
+        "dare": 0.9487914741039276
+      },
+      "performance_with_predicted": 0.9773210287094116,
+      "performance_with_oracle": 0.9773210287094116,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_CIFAR100": {
+      "task1": "Flowers102",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1341884853488231,
+        "arithmetic": 0.30725254399444474,
+        "tsv": 0.3886148688600017,
+        "ties": -0.41218289127371593,
+        "dare": -0.17562846004562452
+      },
+      "actual_performances": {
+        "weight_avg": 0.9050284922122955,
+        "arithmetic": 0.8862681090831757,
+        "tsv": 0.9298685789108276,
+        "ties": 0.8420133590698242,
+        "dare": 0.8992437422275543
+      },
+      "performance_with_predicted": 0.9298685789108276,
+      "performance_with_oracle": 0.9298685789108276,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_CIFAR10": {
+      "task1": "Flowers102",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.12399515462374745,
+        "arithmetic": 0.30013587360495764,
+        "tsv": 0.38643333380253675,
+        "ties": -0.3884711488848848,
+        "dare": -0.16671210625676727
+      },
+      "actual_performances": {
+        "weight_avg": 0.92568638920784,
+        "arithmetic": 0.9131375849246979,
+        "tsv": 0.9483625292778015,
+        "ties": 0.8896981179714203,
+        "dare": 0.9258008301258087
+      },
+      "performance_with_predicted": 0.9483625292778015,
+      "performance_with_oracle": 0.9483625292778015,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_Food101": {
+      "task1": "Flowers102",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13726669731630728,
+        "arithmetic": 0.3065400708647427,
+        "tsv": 0.3889814683134325,
+        "ties": -0.42081844488857995,
+        "dare": -0.18061534029335954
+      },
+      "actual_performances": {
+        "weight_avg": 0.9511600732803345,
+        "arithmetic": 0.9275592267513275,
+        "tsv": 0.9709200859069824,
+        "ties": 0.8977900445461273,
+        "dare": 0.9476495087146759
+      },
+      "performance_with_predicted": 0.9709200859069824,
+      "performance_with_oracle": 0.9709200859069824,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_FashionMNIST": {
+      "task1": "Flowers102",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.11613625216477576,
+        "arithmetic": 0.29079785883374004,
+        "tsv": 0.38972275688833513,
+        "ties": -0.38284609702725914,
+        "dare": -0.16480464571198758
+      },
+      "actual_performances": {
+        "weight_avg": 0.9146621227264404,
+        "arithmetic": 0.890452653169632,
+        "tsv": 0.9502411782741547,
+        "ties": 0.8442050814628601,
+        "dare": 0.9136041104793549
+      },
+      "performance_with_predicted": 0.9502411782741547,
+      "performance_with_oracle": 0.9502411782741547,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_EMNIST": {
+      "task1": "Flowers102",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.13379716173175346,
+        "arithmetic": 0.31989657920371317,
+        "tsv": 0.3897101692974936,
+        "ties": -0.4023413688948059,
+        "dare": -0.16805665697817726
+      },
+      "actual_performances": {
+        "weight_avg": 0.9342491626739502,
+        "arithmetic": 0.9176753461360931,
+        "tsv": 0.9617198407649994,
+        "ties": 0.8803982138633728,
+        "dare": 0.9332781732082367
+      },
+      "performance_with_predicted": 0.9617198407649994,
+      "performance_with_oracle": 0.9617198407649994,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_KMNIST": {
+      "task1": "Flowers102",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1372602164255244,
+        "arithmetic": 0.31216680496588767,
+        "tsv": 0.3844454918517124,
+        "ties": -0.4137270895136299,
+        "dare": -0.17581966183295614
+      },
+      "actual_performances": {
+        "weight_avg": 0.9076710641384125,
+        "arithmetic": 0.684119313955307,
+        "tsv": 0.9564806520938873,
+        "ties": 0.4737068638205528,
+        "dare": 0.9032084345817566
+      },
+      "performance_with_predicted": 0.9564806520938873,
+      "performance_with_oracle": 0.9564806520938873,
+      "fold_used": "Flowers102"
+    },
+    "Flowers102_RenderedSST2": {
+      "task1": "Flowers102",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.1443257963657331,
+        "arithmetic": 0.3280119657380072,
+        "tsv": 0.3822981977969744,
+        "ties": -0.40819277021486144,
+        "dare": -0.17158346686693804
+      },
+      "actual_performances": {
+        "weight_avg": 0.968035101890564,
+        "arithmetic": 0.9076785743236542,
+        "tsv": 1.0043978691101074,
+        "ties": 0.851735383272171,
+        "dare": 0.962933748960495
+      },
+      "performance_with_predicted": 1.0043978691101074,
+      "performance_with_oracle": 1.0043978691101074,
+      "fold_used": "Flowers102"
+    },
+    "PCAM_FER2013": {
+      "task1": "PCAM",
+      "task2": "FER2013",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.39754369004880014,
+        "arithmetic": 0.15279978589164883,
+        "tsv": 0.08117062808107477,
+        "ties": -0.18384171585512188,
+        "dare": -0.1242422267099039
+      },
+      "actual_performances": {
+        "weight_avg": 0.9411421418190002,
+        "arithmetic": 0.9065966308116913,
+        "tsv": 0.9520345628261566,
+        "ties": 0.8724416494369507,
+        "dare": 0.9364409446716309
+      },
+      "performance_with_predicted": 0.9065966308116913,
+      "performance_with_oracle": 0.9520345628261566,
+      "fold_used": "PCAM"
+    },
+    "PCAM_OxfordIIITPet": {
+      "task1": "PCAM",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.4003557211476512,
+        "arithmetic": 0.1611361597836704,
+        "tsv": 0.06370770317168195,
+        "ties": -0.17138040605543872,
+        "dare": -0.12678248214867172
+      },
+      "actual_performances": {
+        "weight_avg": 0.9466830492019653,
+        "arithmetic": 0.9337636530399323,
+        "tsv": 0.9486601948738098,
+        "ties": 0.9330483675003052,
+        "dare": 0.9456509649753571
+      },
+      "performance_with_predicted": 0.9337636530399323,
+      "performance_with_oracle": 0.9486601948738098,
+      "fold_used": "PCAM"
+    },
+    "PCAM_STL10": {
+      "task1": "PCAM",
+      "task2": "STL10",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.4005239063717631,
+        "arithmetic": 0.1764141372987052,
+        "tsv": 0.07816104193854784,
+        "ties": -0.1729651258399888,
+        "dare": -0.12237159412891989
+      },
+      "actual_performances": {
+        "weight_avg": 0.9574309289455414,
+        "arithmetic": 0.9364216923713684,
+        "tsv": 0.9677790999412537,
+        "ties": 0.948785275220871,
+        "dare": 0.9577779173851013
+      },
+      "performance_with_predicted": 0.9364216923713684,
+      "performance_with_oracle": 0.9677790999412537,
+      "fold_used": "PCAM"
+    },
+    "PCAM_CIFAR100": {
+      "task1": "PCAM",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.39269400155886747,
+        "arithmetic": 0.1531707469172675,
+        "tsv": 0.08151466732619686,
+        "ties": -0.18325664992009863,
+        "dare": -0.11869134362773669
+      },
+      "actual_performances": {
+        "weight_avg": 0.8957055509090424,
+        "arithmetic": 0.8985062837600708,
+        "tsv": 0.9078778326511383,
+        "ties": 0.8951649963855743,
+        "dare": 0.8877305388450623
+      },
+      "performance_with_predicted": 0.8985062837600708,
+      "performance_with_oracle": 0.9078778326511383,
+      "fold_used": "PCAM"
+    },
+    "PCAM_CIFAR10": {
+      "task1": "PCAM",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.40751691831304476,
+        "arithmetic": 0.1597409737794957,
+        "tsv": 0.05570423038200126,
+        "ties": -0.17398078413609255,
+        "dare": -0.12506026413938345
+      },
+      "actual_performances": {
+        "weight_avg": 0.951453298330307,
+        "arithmetic": 0.9390634596347809,
+        "tsv": 0.965854674577713,
+        "ties": 0.9436805844306946,
+        "dare": 0.9488524198532104
+      },
+      "performance_with_predicted": 0.9390634596347809,
+      "performance_with_oracle": 0.965854674577713,
+      "fold_used": "PCAM"
+    },
+    "PCAM_Food101": {
+      "task1": "PCAM",
+      "task2": "Food101",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "ties",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.41522436229317683,
+        "arithmetic": 0.14815621239718194,
+        "tsv": 0.055730566109732635,
+        "ties": -0.1856533783977732,
+        "dare": -0.12913388253405705
+      },
+      "actual_performances": {
+        "weight_avg": 0.9334498345851898,
+        "arithmetic": 0.9379239678382874,
+        "tsv": 0.9314878582954407,
+        "ties": 0.9488035440444946,
+        "dare": 0.9221791625022888
+      },
+      "performance_with_predicted": 0.9379239678382874,
+      "performance_with_oracle": 0.9488035440444946,
+      "fold_used": "PCAM"
+    },
+    "PCAM_FashionMNIST": {
+      "task1": "PCAM",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.3983493170000277,
+        "arithmetic": 0.1562042904438997,
+        "tsv": 0.06781205642698579,
+        "ties": -0.17787396904563033,
+        "dare": -0.1207195064779905
+      },
+      "actual_performances": {
+        "weight_avg": 0.9552822113037109,
+        "arithmetic": 0.9072892665863037,
+        "tsv": 0.9751686453819275,
+        "ties": 0.8908692598342896,
+        "dare": 0.9557935297489166
+      },
+      "performance_with_predicted": 0.9072892665863037,
+      "performance_with_oracle": 0.9751686453819275,
+      "fold_used": "PCAM"
+    },
+    "PCAM_EMNIST": {
+      "task1": "PCAM",
+      "task2": "EMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.40032833359322395,
+        "arithmetic": 0.16990679056897018,
+        "tsv": 0.07916557798427197,
+        "ties": -0.17788205310660987,
+        "dare": -0.12048417113076074
+      },
+      "actual_performances": {
+        "weight_avg": 0.9720056653022766,
+        "arithmetic": 0.9466468393802643,
+        "tsv": 0.9835166037082672,
+        "ties": 0.9252135753631592,
+        "dare": 0.974564254283905
+      },
+      "performance_with_predicted": 0.9466468393802643,
+      "performance_with_oracle": 0.9835166037082672,
+      "fold_used": "PCAM"
+    },
+    "PCAM_KMNIST": {
+      "task1": "PCAM",
+      "task2": "KMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.40367179383858687,
+        "arithmetic": 0.15941101584837833,
+        "tsv": 0.06977203001515866,
+        "ties": -0.18098417584551513,
+        "dare": -0.1216942484880478
+      },
+      "actual_performances": {
+        "weight_avg": 0.8934204578399658,
+        "arithmetic": 0.6412925869226456,
+        "tsv": 0.9730570018291473,
+        "ties": 0.5235863849520683,
+        "dare": 0.8805373013019562
+      },
+      "performance_with_predicted": 0.6412925869226456,
+      "performance_with_oracle": 0.9730570018291473,
+      "fold_used": "PCAM"
+    },
+    "PCAM_RenderedSST2": {
+      "task1": "PCAM",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.4125436717143366,
+        "arithmetic": 0.16517719779763332,
+        "tsv": 0.06263743011890796,
+        "ties": -0.17629479960570818,
+        "dare": -0.13008365357190682
+      },
+      "actual_performances": {
+        "weight_avg": 0.9670378863811493,
+        "arithmetic": 0.9234669506549835,
+        "tsv": 1.0082432329654694,
+        "ties": 0.8961361944675446,
+        "dare": 0.9720981419086456
+      },
+      "performance_with_predicted": 0.9234669506549835,
+      "performance_with_oracle": 1.0082432329654694,
+      "fold_used": "PCAM"
+    },
+    "FER2013_OxfordIIITPet": {
+      "task1": "FER2013",
+      "task2": "OxfordIIITPet",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5392371034851345,
+        "arithmetic": -0.1777241604043206,
+        "tsv": 0.6199498278740867,
+        "ties": -0.08282322112905233,
+        "dare": 0.11659326445536164
+      },
+      "actual_performances": {
+        "weight_avg": 0.9844849109649658,
+        "arithmetic": 0.9529590010643005,
+        "tsv": 1.0000777840614319,
+        "ties": 0.9057046175003052,
+        "dare": 0.9823796153068542
+      },
+      "performance_with_predicted": 1.0000777840614319,
+      "performance_with_oracle": 1.0000777840614319,
+      "fold_used": "FER2013"
+    },
+    "FER2013_STL10": {
+      "task1": "FER2013",
+      "task2": "STL10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5267327582731879,
+        "arithmetic": -0.1816081581774774,
+        "tsv": 0.6155219488893915,
+        "ties": -0.0824787223804895,
+        "dare": 0.11655011075042025
+      },
+      "actual_performances": {
+        "weight_avg": 0.9856437146663666,
+        "arithmetic": 0.9563517272472382,
+        "tsv": 1.0015774965286255,
+        "ties": 0.9225516319274902,
+        "dare": 0.9832479655742645
+      },
+      "performance_with_predicted": 1.0015774965286255,
+      "performance_with_oracle": 1.0015774965286255,
+      "fold_used": "FER2013"
+    },
+    "FER2013_CIFAR100": {
+      "task1": "FER2013",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5575015816410586,
+        "arithmetic": -0.20272584955410639,
+        "tsv": 0.6392437080979307,
+        "ties": -0.11187962966808593,
+        "dare": 0.12183590863193666
+      },
+      "actual_performances": {
+        "weight_avg": 0.95845627784729,
+        "arithmetic": 0.914677768945694,
+        "tsv": 0.9887091517448425,
+        "ties": 0.8513567447662354,
+        "dare": 0.9563805162906647
+      },
+      "performance_with_predicted": 0.9887091517448425,
+      "performance_with_oracle": 0.9887091517448425,
+      "fold_used": "FER2013"
+    },
+    "FER2013_CIFAR10": {
+      "task1": "FER2013",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5193485197852529,
+        "arithmetic": -0.19589322073208054,
+        "tsv": 0.6090973770763619,
+        "ties": -0.10262831488724568,
+        "dare": 0.11852650443025599
+      },
+      "actual_performances": {
+        "weight_avg": 0.9674012064933777,
+        "arithmetic": 0.9402166306972504,
+        "tsv": 0.9817280173301697,
+        "ties": 0.9004414081573486,
+        "dare": 0.9670808017253876
+      },
+      "performance_with_predicted": 0.9817280173301697,
+      "performance_with_oracle": 0.9817280173301697,
+      "fold_used": "FER2013"
+    },
+    "FER2013_Food101": {
+      "task1": "FER2013",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5554173260456337,
+        "arithmetic": -0.21328630365660609,
+        "tsv": 0.6409756195456747,
+        "ties": -0.1197219775218397,
+        "dare": 0.12084947662517917
+      },
+      "actual_performances": {
+        "weight_avg": 0.983462929725647,
+        "arithmetic": 0.9594064056873322,
+        "tsv": 0.9964826703071594,
+        "ties": 0.9137101173400879,
+        "dare": 0.9762195944786072
+      },
+      "performance_with_predicted": 0.9964826703071594,
+      "performance_with_oracle": 0.9964826703071594,
+      "fold_used": "FER2013"
+    },
+    "FER2013_FashionMNIST": {
+      "task1": "FER2013",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5060544096760992,
+        "arithmetic": -0.2010389366900819,
+        "tsv": 0.5973644917194286,
+        "ties": -0.10857454715967634,
+        "dare": 0.11479987773411626
+      },
+      "actual_performances": {
+        "weight_avg": 0.9503476023674011,
+        "arithmetic": 0.9096580147743225,
+        "tsv": 0.974319726228714,
+        "ties": 0.8538667857646942,
+        "dare": 0.947301983833313
+      },
+      "performance_with_predicted": 0.974319726228714,
+      "performance_with_oracle": 0.974319726228714,
+      "fold_used": "FER2013"
+    },
+    "FER2013_EMNIST": {
+      "task1": "FER2013",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5615553238577491,
+        "arithmetic": -0.19085955870479374,
+        "tsv": 0.6465154938597495,
+        "ties": -0.09545174027487933,
+        "dare": 0.12719208665459858
+      },
+      "actual_performances": {
+        "weight_avg": 0.9689960479736328,
+        "arithmetic": 0.9360524117946625,
+        "tsv": 0.9850763082504272,
+        "ties": 0.8789009749889374,
+        "dare": 0.9654057621955872
+      },
+      "performance_with_predicted": 0.9850763082504272,
+      "performance_with_oracle": 0.9850763082504272,
+      "fold_used": "FER2013"
+    },
+    "FER2013_KMNIST": {
+      "task1": "FER2013",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5616302312567426,
+        "arithmetic": -0.20147162801707388,
+        "tsv": 0.647020079083285,
+        "ties": -0.10814047330429766,
+        "dare": 0.1275172818860722
+      },
+      "actual_performances": {
+        "weight_avg": 0.9303863644599915,
+        "arithmetic": 0.7212120294570923,
+        "tsv": 0.9719176590442657,
+        "ties": 0.4973604306578636,
+        "dare": 0.93038010597229
+      },
+      "performance_with_predicted": 0.9719176590442657,
+      "performance_with_oracle": 0.9719176590442657,
+      "fold_used": "FER2013"
+    },
+    "FER2013_RenderedSST2": {
+      "task1": "FER2013",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.572814833277264,
+        "arithmetic": -0.18394194578370923,
+        "tsv": 0.6538673544374565,
+        "ties": -0.08721167561655652,
+        "dare": 0.12646863403487973
+      },
+      "actual_performances": {
+        "weight_avg": 0.9705597162246704,
+        "arithmetic": 0.9260622262954712,
+        "tsv": 0.9948287904262543,
+        "ties": 0.8652953505516052,
+        "dare": 0.9691865742206573
+      },
+      "performance_with_predicted": 0.9948287904262543,
+      "performance_with_oracle": 0.9948287904262543,
+      "fold_used": "FER2013"
+    },
+    "OxfordIIITPet_STL10": {
+      "task1": "OxfordIIITPet",
+      "task2": "STL10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6024337452102327,
+        "arithmetic": -0.16357180816668368,
+        "tsv": -0.4552505271559578,
+        "ties": -0.3871485577483044,
+        "dare": -0.15546682382111687
+      },
+      "actual_performances": {
+        "weight_avg": 0.9994222819805145,
+        "arithmetic": 0.994994044303894,
+        "tsv": 1.0020287036895752,
+        "ties": 0.984311431646347,
+        "dare": 0.9996457397937775
+      },
+      "performance_with_predicted": 0.9994222819805145,
+      "performance_with_oracle": 1.0020287036895752,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_CIFAR100": {
+      "task1": "OxfordIIITPet",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.631308254361496,
+        "arithmetic": -0.19028300155941152,
+        "tsv": -0.46401607838383546,
+        "ties": -0.4485814386496258,
+        "dare": -0.16968502439591085
+      },
+      "actual_performances": {
+        "weight_avg": 0.9821818470954895,
+        "arithmetic": 0.96259406208992,
+        "tsv": 0.9932001829147339,
+        "ties": 0.9265524744987488,
+        "dare": 0.9808689951896667
+      },
+      "performance_with_predicted": 0.9821818470954895,
+      "performance_with_oracle": 0.9932001829147339,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_CIFAR10": {
+      "task1": "OxfordIIITPet",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.606671107066429,
+        "arithmetic": -0.17718756878783962,
+        "tsv": -0.4451081533104882,
+        "ties": -0.4175541575179988,
+        "dare": -0.15551850074719759
+      },
+      "actual_performances": {
+        "weight_avg": 0.988885372877121,
+        "arithmetic": 0.9876705408096313,
+        "tsv": 0.9885061681270599,
+        "ties": 0.9714660346508026,
+        "dare": 0.9865817129611969
+      },
+      "performance_with_predicted": 0.988885372877121,
+      "performance_with_oracle": 0.988885372877121,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_Food101": {
+      "task1": "OxfordIIITPet",
+      "task2": "Food101",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6400259674600818,
+        "arithmetic": -0.19697461273819888,
+        "tsv": -0.47107573317715007,
+        "ties": -0.46720930863212984,
+        "dare": -0.17772546206923648
+      },
+      "actual_performances": {
+        "weight_avg": 1.0026602745056152,
+        "arithmetic": 0.9957226514816284,
+        "tsv": 1.0056006014347076,
+        "ties": 0.9761752188205719,
+        "dare": 1.001629263162613
+      },
+      "performance_with_predicted": 1.0026602745056152,
+      "performance_with_oracle": 1.0056006014347076,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_FashionMNIST": {
+      "task1": "OxfordIIITPet",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.5802067577331668,
+        "arithmetic": -0.17975435998620026,
+        "tsv": -0.4308732638956831,
+        "ties": -0.421915365621474,
+        "dare": -0.1566862123742671
+      },
+      "actual_performances": {
+        "weight_avg": 0.9820027947425842,
+        "arithmetic": 0.9601832628250122,
+        "tsv": 0.9939084053039551,
+        "ties": 0.9239121973514557,
+        "dare": 0.980645626783371
+      },
+      "performance_with_predicted": 0.9820027947425842,
+      "performance_with_oracle": 0.9939084053039551,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_EMNIST": {
+      "task1": "OxfordIIITPet",
+      "task2": "EMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6415286856988057,
+        "arithmetic": -0.1823332154805814,
+        "tsv": -0.47343188401206415,
+        "ties": -0.4206498850131587,
+        "dare": -0.16121703471947885
+      },
+      "actual_performances": {
+        "weight_avg": 0.9961080253124237,
+        "arithmetic": 0.9887035191059113,
+        "tsv": 0.9982663691043854,
+        "ties": 0.9598481059074402,
+        "dare": 0.9962514340877533
+      },
+      "performance_with_predicted": 0.9961080253124237,
+      "performance_with_oracle": 0.9982663691043854,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_KMNIST": {
+      "task1": "OxfordIIITPet",
+      "task2": "KMNIST",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6451424481290191,
+        "arithmetic": -0.19116296533803023,
+        "tsv": -0.47103813156242647,
+        "ties": -0.44432952124782554,
+        "dare": -0.166025122340701
+      },
+      "actual_performances": {
+        "weight_avg": 0.959946870803833,
+        "arithmetic": 0.7473545670509338,
+        "tsv": 0.9941953122615814,
+        "ties": 0.5563245266675949,
+        "dare": 0.9583096206188202
+      },
+      "performance_with_predicted": 0.959946870803833,
+      "performance_with_oracle": 0.9941953122615814,
+      "fold_used": "OxfordIIITPet"
+    },
+    "OxfordIIITPet_RenderedSST2": {
+      "task1": "OxfordIIITPet",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "weight_avg",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6590027109732405,
+        "arithmetic": -0.17866164447826335,
+        "tsv": -0.4892998458131359,
+        "ties": -0.4168045795990868,
+        "dare": -0.16721054886270315
+      },
+      "actual_performances": {
+        "weight_avg": 1.0054762363433838,
+        "arithmetic": 0.9753288924694061,
+        "tsv": 1.0128856301307678,
+        "ties": 0.9331732392311096,
+        "dare": 1.0045415759086609
+      },
+      "performance_with_predicted": 1.0054762363433838,
+      "performance_with_oracle": 1.0128856301307678,
+      "fold_used": "OxfordIIITPet"
+    },
+    "STL10_CIFAR100": {
+      "task1": "STL10",
+      "task2": "CIFAR100",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.6213073882771619,
+        "arithmetic": -0.12018786513193865,
+        "tsv": 1.523130594455876,
+        "ties": -0.17016855707490855,
+        "dare": 0.2030315748774172
+      },
+      "actual_performances": {
+        "weight_avg": 0.9820022583007812,
+        "arithmetic": 0.9674779772758484,
+        "tsv": 0.9912075698375702,
+        "ties": 0.9452472627162933,
+        "dare": 0.9800055921077728
+      },
+      "performance_with_predicted": 0.9912075698375702,
+      "performance_with_oracle": 0.9912075698375702,
+      "fold_used": "STL10"
+    },
+    "STL10_CIFAR10": {
+      "task1": "STL10",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "arithmetic",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6139616864360519,
+        "arithmetic": -0.10395084743227376,
+        "tsv": 1.5043597074838353,
+        "ties": -0.15871184228411214,
+        "dare": 0.20942186044640113
+      },
+      "actual_performances": {
+        "weight_avg": 0.98936727643013,
+        "arithmetic": 0.9945626556873322,
+        "tsv": 0.9919371604919434,
+        "ties": 0.9912838935852051,
+        "dare": 0.988961398601532
+      },
+      "performance_with_predicted": 0.9919371604919434,
+      "performance_with_oracle": 0.9945626556873322,
+      "fold_used": "STL10"
+    },
+    "STL10_Food101": {
+      "task1": "STL10",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6351230237614396,
+        "arithmetic": -0.13053353110197122,
+        "tsv": 1.5487753682222682,
+        "ties": -0.18317095596473032,
+        "dare": 0.20871474269096893
+      },
+      "actual_performances": {
+        "weight_avg": 1.0050808787345886,
+        "arithmetic": 1.003941833972931,
+        "tsv": 1.0047893524169922,
+        "ties": 0.9963735938072205,
+        "dare": 1.0029149651527405
+      },
+      "performance_with_predicted": 1.0047893524169922,
+      "performance_with_oracle": 1.0050808787345886,
+      "fold_used": "STL10"
+    },
+    "STL10_FashionMNIST": {
+      "task1": "STL10",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5720330614647594,
+        "arithmetic": -0.10178967047084123,
+        "tsv": 1.4539249100931881,
+        "ties": -0.16397244810317504,
+        "dare": 0.187672200634753
+      },
+      "actual_performances": {
+        "weight_avg": 0.9836061894893646,
+        "arithmetic": 0.9680743515491486,
+        "tsv": 0.9939169585704803,
+        "ties": 0.9443861544132233,
+        "dare": 0.9831335246562958
+      },
+      "performance_with_predicted": 0.9939169585704803,
+      "performance_with_oracle": 0.9939169585704803,
+      "fold_used": "STL10"
+    },
+    "STL10_EMNIST": {
+      "task1": "STL10",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.6301904795893744,
+        "arithmetic": -0.10573690291125112,
+        "tsv": 1.551008283857899,
+        "ties": -0.150600864423133,
+        "dare": 0.20828865781761932
+      },
+      "actual_performances": {
+        "weight_avg": 0.9997452795505524,
+        "arithmetic": 0.9974597096443176,
+        "tsv": 0.9988935887813568,
+        "ties": 0.9785729646682739,
+        "dare": 0.9994921982288361
+      },
+      "performance_with_predicted": 0.9988935887813568,
+      "performance_with_oracle": 0.9997452795505524,
+      "fold_used": "STL10"
+    },
+    "STL10_KMNIST": {
+      "task1": "STL10",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.6330190759222192,
+        "arithmetic": -0.12020252764207864,
+        "tsv": 1.5513272294451146,
+        "ties": -0.16685338591243587,
+        "dare": 0.20652082515854017
+      },
+      "actual_performances": {
+        "weight_avg": 0.9565881490707397,
+        "arithmetic": 0.7429848164319992,
+        "tsv": 0.9953024387359619,
+        "ties": 0.5766435116529465,
+        "dare": 0.9560537934303284
+      },
+      "performance_with_predicted": 0.9953024387359619,
+      "performance_with_oracle": 0.9953024387359619,
+      "fold_used": "STL10"
+    },
+    "STL10_RenderedSST2": {
+      "task1": "STL10",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.6445687137625917,
+        "arithmetic": -0.10181417257405093,
+        "tsv": 1.5777256948313694,
+        "ties": -0.14614015118656665,
+        "dare": 0.21825075903380212
+      },
+      "actual_performances": {
+        "weight_avg": 1.0081534385681152,
+        "arithmetic": 0.9859391152858734,
+        "tsv": 1.01072359085083,
+        "ties": 0.946405678987503,
+        "dare": 1.0072519183158875
+      },
+      "performance_with_predicted": 1.01072359085083,
+      "performance_with_oracle": 1.01072359085083,
+      "fold_used": "STL10"
+    },
+    "CIFAR100_CIFAR10": {
+      "task1": "CIFAR100",
+      "task2": "CIFAR10",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.4284517601309583,
+        "arithmetic": 0.5430318837142873,
+        "tsv": -0.26408447302148835,
+        "ties": -0.05622999778570236,
+        "dare": 0.10457147101306219
+      },
+      "actual_performances": {
+        "weight_avg": 0.9818175435066223,
+        "arithmetic": 0.9712204337120056,
+        "tsv": 0.9897711277008057,
+        "ties": 0.9463091492652893,
+        "dare": 0.9793682992458344
+      },
+      "performance_with_predicted": 0.9712204337120056,
+      "performance_with_oracle": 0.9897711277008057,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR100_Food101": {
+      "task1": "CIFAR100",
+      "task2": "Food101",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.4571973544514429,
+        "arithmetic": 0.5712881854002702,
+        "tsv": -0.2839735192527264,
+        "ties": -0.06902583700406613,
+        "dare": 0.10683129211613338
+      },
+      "actual_performances": {
+        "weight_avg": 0.974582701921463,
+        "arithmetic": 0.966042160987854,
+        "tsv": 0.9812163710594177,
+        "ties": 0.9372716248035431,
+        "dare": 0.9676463603973389
+      },
+      "performance_with_predicted": 0.966042160987854,
+      "performance_with_oracle": 0.9812163710594177,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR100_FashionMNIST": {
+      "task1": "CIFAR100",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.4064810473517703,
+        "arithmetic": 0.5206487486662629,
+        "tsv": -0.25528929599332795,
+        "ties": -0.06224987275508614,
+        "dare": 0.09499280324486825
+      },
+      "actual_performances": {
+        "weight_avg": 0.9510621726512909,
+        "arithmetic": 0.9333032965660095,
+        "tsv": 0.9765975773334503,
+        "ties": 0.8895882666110992,
+        "dare": 0.9489126801490784
+      },
+      "performance_with_predicted": 0.9333032965660095,
+      "performance_with_oracle": 0.9765975773334503,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR100_EMNIST": {
+      "task1": "CIFAR100",
+      "task2": "EMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.45592617668132734,
+        "arithmetic": 0.5794667597889612,
+        "tsv": -0.27906500900468445,
+        "ties": -0.05678769173738369,
+        "dare": 0.1153742909406356
+      },
+      "actual_performances": {
+        "weight_avg": 0.9720110297203064,
+        "arithmetic": 0.9609901309013367,
+        "tsv": 0.9854922294616699,
+        "ties": 0.9163067042827606,
+        "dare": 0.9685109853744507
+      },
+      "performance_with_predicted": 0.9609901309013367,
+      "performance_with_oracle": 0.9854922294616699,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR100_KMNIST": {
+      "task1": "CIFAR100",
+      "task2": "KMNIST",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.45804254793256477,
+        "arithmetic": 0.575693932132517,
+        "tsv": -0.2795980156003153,
+        "ties": -0.062474099120427756,
+        "dare": 0.11036657530236384
+      },
+      "actual_performances": {
+        "weight_avg": 0.9147355854511261,
+        "arithmetic": 0.7172344624996185,
+        "tsv": 0.9616470634937286,
+        "ties": 0.5241388082504272,
+        "dare": 0.9048236906528473
+      },
+      "performance_with_predicted": 0.7172344624996185,
+      "performance_with_oracle": 0.9616470634937286,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR100_RenderedSST2": {
+      "task1": "CIFAR100",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": 0.4665564098070606,
+        "arithmetic": 0.5944647279117775,
+        "tsv": -0.2865858693807452,
+        "ties": -0.05419662699659796,
+        "dare": 0.1268915749954965
+      },
+      "actual_performances": {
+        "weight_avg": 0.9860001802444458,
+        "arithmetic": 0.939330667257309,
+        "tsv": 1.006494402885437,
+        "ties": 0.8661559224128723,
+        "dare": 0.9827645719051361
+      },
+      "performance_with_predicted": 0.939330667257309,
+      "performance_with_oracle": 1.006494402885437,
+      "fold_used": "CIFAR100"
+    },
+    "CIFAR10_Food101": {
+      "task1": "CIFAR10",
+      "task2": "Food101",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "arithmetic",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.3568547462989411,
+        "arithmetic": 0.30259760800576907,
+        "tsv": 0.8919008914046117,
+        "ties": -0.5065221448623137,
+        "dare": -0.2930535048102005
+      },
+      "actual_performances": {
+        "weight_avg": 0.9925490617752075,
+        "arithmetic": 0.9957097470760345,
+        "tsv": 0.9918336868286133,
+        "ties": 0.9878811240196228,
+        "dare": 0.9891355633735657
+      },
+      "performance_with_predicted": 0.9918336868286133,
+      "performance_with_oracle": 0.9957097470760345,
+      "fold_used": "CIFAR10"
+    },
+    "CIFAR10_FashionMNIST": {
+      "task1": "CIFAR10",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.33646482727272375,
+        "arithmetic": 0.2881199879177499,
+        "tsv": 0.8453482170629127,
+        "ties": -0.474195052790588,
+        "dare": -0.27516791406127294
+      },
+      "actual_performances": {
+        "weight_avg": 0.9795653820037842,
+        "arithmetic": 0.962962418794632,
+        "tsv": 0.9915277659893036,
+        "ties": 0.9344253242015839,
+        "dare": 0.9782061874866486
+      },
+      "performance_with_predicted": 0.9915277659893036,
+      "performance_with_oracle": 0.9915277659893036,
+      "fold_used": "CIFAR10"
+    },
+    "CIFAR10_EMNIST": {
+      "task1": "CIFAR10",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.34547111039034595,
+        "arithmetic": 0.3101078910107908,
+        "tsv": 0.8916978475059412,
+        "ties": -0.4610146011051693,
+        "dare": -0.2869339901380012
+      },
+      "actual_performances": {
+        "weight_avg": 0.9959302246570587,
+        "arithmetic": 0.9925506412982941,
+        "tsv": 0.9982596933841705,
+        "ties": 0.9626786112785339,
+        "dare": 0.995878666639328
+      },
+      "performance_with_predicted": 0.9982596933841705,
+      "performance_with_oracle": 0.9982596933841705,
+      "fold_used": "CIFAR10"
+    },
+    "CIFAR10_KMNIST": {
+      "task1": "CIFAR10",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.34702004329875574,
+        "arithmetic": 0.3078388334815517,
+        "tsv": 0.896729708497232,
+        "ties": -0.4804839327410626,
+        "dare": -0.2880142455168236
+      },
+      "actual_performances": {
+        "weight_avg": 0.9173214733600616,
+        "arithmetic": 0.7020226269960403,
+        "tsv": 0.9885996282100677,
+        "ties": 0.5709513425827026,
+        "dare": 0.9152367413043976
+      },
+      "performance_with_predicted": 0.9885996282100677,
+      "performance_with_oracle": 0.9885996282100677,
+      "fold_used": "CIFAR10"
+    },
+    "CIFAR10_RenderedSST2": {
+      "task1": "CIFAR10",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": -0.35199073032761163,
+        "arithmetic": 0.3193277916312346,
+        "tsv": 0.9098870572319875,
+        "ties": -0.46276451269561525,
+        "dare": -0.2913061796127526
+      },
+      "actual_performances": {
+        "weight_avg": 1.006917119026184,
+        "arithmetic": 0.9795597493648529,
+        "tsv": 1.0127618312835693,
+        "ties": 0.9401501715183258,
+        "dare": 1.004425287246704
+      },
+      "performance_with_predicted": 1.0127618312835693,
+      "performance_with_oracle": 1.0127618312835693,
+      "fold_used": "CIFAR10"
+    },
+    "Food101_FashionMNIST": {
+      "task1": "Food101",
+      "task2": "FashionMNIST",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.01691499817315009,
+        "arithmetic": 0.10105050101341179,
+        "tsv": -0.1351980663446074,
+        "ties": -0.739470289519193,
+        "dare": 0.18033974201844247
+      },
+      "actual_performances": {
+        "weight_avg": 0.9815904498100281,
+        "arithmetic": 0.969293087720871,
+        "tsv": 0.9889591634273529,
+        "ties": 0.9396410882472992,
+        "dare": 0.9748052954673767
+      },
+      "performance_with_predicted": 0.9748052954673767,
+      "performance_with_oracle": 0.9889591634273529,
+      "fold_used": "Food101"
+    },
+    "Food101_EMNIST": {
+      "task1": "Food101",
+      "task2": "EMNIST",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "weight_avg",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.014424623210288772,
+        "arithmetic": 0.11762816194968591,
+        "tsv": -0.13322167640228036,
+        "ties": -0.7699802569152798,
+        "dare": 0.20692053736092433
+      },
+      "actual_performances": {
+        "weight_avg": 1.0007725954055786,
+        "arithmetic": 0.9984945356845856,
+        "tsv": 0.9987601339817047,
+        "ties": 0.964508593082428,
+        "dare": 0.9986880123615265
+      },
+      "performance_with_predicted": 0.9986880123615265,
+      "performance_with_oracle": 1.0007725954055786,
+      "fold_used": "Food101"
+    },
+    "Food101_KMNIST": {
+      "task1": "Food101",
+      "task2": "KMNIST",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.017182975755834388,
+        "arithmetic": 0.11428916428637499,
+        "tsv": -0.13542923654443778,
+        "ties": -0.7916879360331758,
+        "dare": 0.2025541649018495
+      },
+      "actual_performances": {
+        "weight_avg": 0.9640354514122009,
+        "arithmetic": 0.7484421730041504,
+        "tsv": 0.9933119416236877,
+        "ties": 0.5703688487410545,
+        "dare": 0.9578120112419128
+      },
+      "performance_with_predicted": 0.9578120112419128,
+      "performance_with_oracle": 0.9933119416236877,
+      "fold_used": "Food101"
+    },
+    "Food101_RenderedSST2": {
+      "task1": "Food101",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "dare",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.018411347522195427,
+        "arithmetic": 0.11869864220766686,
+        "tsv": -0.13914106736504672,
+        "ties": -0.7834285140093954,
+        "dare": 0.2122545586579955
+      },
+      "actual_performances": {
+        "weight_avg": 1.0084890127182007,
+        "arithmetic": 0.9870645701885223,
+        "tsv": 1.017219364643097,
+        "ties": 0.9371199309825897,
+        "dare": 1.0093318223953247
+      },
+      "performance_with_predicted": 1.0093318223953247,
+      "performance_with_oracle": 1.017219364643097,
+      "fold_used": "Food101"
+    },
+    "FashionMNIST_EMNIST": {
+      "task1": "FashionMNIST",
+      "task2": "EMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5500465607596179,
+        "arithmetic": 0.44177942753087834,
+        "tsv": 0.8191513356335265,
+        "ties": 0.03762945908863778,
+        "dare": -0.023268702662301147
+      },
+      "actual_performances": {
+        "weight_avg": 0.9807515740394592,
+        "arithmetic": 0.9623915553092957,
+        "tsv": 0.9915240108966827,
+        "ties": 0.9099797308444977,
+        "dare": 0.981162816286087
+      },
+      "performance_with_predicted": 0.9915240108966827,
+      "performance_with_oracle": 0.9915240108966827,
+      "fold_used": "FashionMNIST"
+    },
+    "FashionMNIST_KMNIST": {
+      "task1": "FashionMNIST",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5516726204771082,
+        "arithmetic": 0.436567316595653,
+        "tsv": 0.8237547828162316,
+        "ties": 0.028060461991030166,
+        "dare": -0.023293583268184617
+      },
+      "actual_performances": {
+        "weight_avg": 0.8948275148868561,
+        "arithmetic": 0.6610473245382309,
+        "tsv": 0.9797152876853943,
+        "ties": 0.5206050425767899,
+        "dare": 0.8897049427032471
+      },
+      "performance_with_predicted": 0.9797152876853943,
+      "performance_with_oracle": 0.9797152876853943,
+      "fold_used": "FashionMNIST"
+    },
+    "FashionMNIST_RenderedSST2": {
+      "task1": "FashionMNIST",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.5587310170811911,
+        "arithmetic": 0.4556520980609124,
+        "tsv": 0.8303098345433562,
+        "ties": 0.0422005938708638,
+        "dare": -0.02505840985446848
+      },
+      "actual_performances": {
+        "weight_avg": 0.9873424470424652,
+        "arithmetic": 0.9471704065799713,
+        "tsv": 1.0030388832092285,
+        "ties": 0.8903990685939789,
+        "dare": 0.9832585155963898
+      },
+      "performance_with_predicted": 1.0030388832092285,
+      "performance_with_oracle": 1.0030388832092285,
+      "fold_used": "FashionMNIST"
+    },
+    "EMNIST_KMNIST": {
+      "task1": "EMNIST",
+      "task2": "KMNIST",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.37343142070184887,
+        "arithmetic": 0.20064953308108932,
+        "tsv": 1.2577167459666376,
+        "ties": -0.3383200272629773,
+        "dare": 0.27989396143770384
+      },
+      "actual_performances": {
+        "weight_avg": 0.8855695128440857,
+        "arithmetic": 0.732825294137001,
+        "tsv": 0.9817515909671783,
+        "ties": 0.5639655366539955,
+        "dare": 0.8832789659500122
+      },
+      "performance_with_predicted": 0.9817515909671783,
+      "performance_with_oracle": 0.9817515909671783,
+      "fold_used": "EMNIST"
+    },
+    "EMNIST_RenderedSST2": {
+      "task1": "EMNIST",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "tsv",
+      "actual_best_merger": "tsv",
+      "prediction_correct": true,
+      "predicted_scores": {
+        "weight_avg": 0.3640825304760178,
+        "arithmetic": 0.2075424769720315,
+        "tsv": 1.2457199000676347,
+        "ties": -0.319747665976254,
+        "dare": 0.27306950402937247
+      },
+      "actual_performances": {
+        "weight_avg": 0.9935362935066223,
+        "arithmetic": 0.966818779706955,
+        "tsv": 1.0048738718032837,
+        "ties": 0.9123935103416443,
+        "dare": 0.9959770739078522
+      },
+      "performance_with_predicted": 1.0048738718032837,
+      "performance_with_oracle": 1.0048738718032837,
+      "fold_used": "EMNIST"
+    },
+    "KMNIST_RenderedSST2": {
+      "task1": "KMNIST",
+      "task2": "RenderedSST2",
+      "predicted_best_merger": "arithmetic",
+      "actual_best_merger": "tsv",
+      "prediction_correct": false,
+      "predicted_scores": {
+        "weight_avg": -0.01958652027773857,
+        "arithmetic": 0.7442721471619602,
+        "tsv": -0.20478510324193772,
+        "ties": -0.03781848800731693,
+        "dare": -0.1689316275150909
+      },
+      "actual_performances": {
+        "weight_avg": 0.9637519121170044,
+        "arithmetic": 0.7269954234361649,
+        "tsv": 1.003609538078308,
+        "ties": 0.5043721124529839,
+        "dare": 0.9645144641399384
+      },
+      "performance_with_predicted": 0.7269954234361649,
+      "performance_with_oracle": 1.003609538078308,
+      "fold_used": "KMNIST"
+    }
+  },
+  "summary": {
+    "total_pairs": 190,
+    "correct_predictions": 114,
+    "accuracy": 0.6,
+    "avg_performance_predicted": 0.9687500211753344,
+    "avg_performance_oracle": 0.9818797045632413,
+    "avg_performance_baselines": {
+      "weight_avg": 0.9585728342595853,
+      "arithmetic": 0.9102247192671424,
+      "tsv": 0.9715015703126004,
+      "ties": 0.8414564736971729,
+      "dare": 0.9562640521087145
+    },
+    "regret": 0.013129683387906876,
+    "best_fixed_baseline": "tsv",
+    "improvement_over_best_fixed": -0.0027515491372660517
+  }
+}

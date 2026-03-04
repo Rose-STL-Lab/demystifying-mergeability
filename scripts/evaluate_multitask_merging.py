@@ -414,13 +414,16 @@ def run_random_subsets(cfg: DictConfig):
         all_indices = list(combinations(range(n_datasets), subset_size))
         all_subsets = random.sample(all_indices, num_subsets)
 
-    # Determine results path
+    # Determine results path with run subfolder
+    benchmark_name = cfg.benchmark.get("name", f"N{n_datasets}")
+    run_folder = f"random_subsets_k{subset_size}_n{num_subsets}_{benchmark_name}"
+
     merger_name = cfg.merger._target_.split(".")[-2].replace("_merger", "")
     reg_suffix = getattr(cfg.misc, 'reg_suffix', '')
     if not reg_suffix:
         reg_suffix = generate_reg_suffix(cfg)
     merger_name_with_suffix = f"{merger_name}{reg_suffix}" if reg_suffix else merger_name
-    results_path = Path(cfg.misc.results_path) / merger_name_with_suffix
+    results_path = Path(cfg.misc.results_path) / run_folder / merger_name_with_suffix
 
     all_results = {}
     skipped = 0
@@ -459,9 +462,8 @@ def run_random_subsets(cfg: DictConfig):
 
     # Save summary
     results_path.mkdir(parents=True, exist_ok=True)
-    benchmark_name = cfg.benchmark.get("name", f"N{n_datasets}")
     alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-    summary_file = results_path / f"random_subsets_k{subset_size}_n{num_subsets}_{benchmark_name}{alignment_suffix}.json"
+    summary_file = results_path / f"summary{alignment_suffix}.json"
     with open(summary_file, "w+") as f:
         json.dump(all_results, f, indent=4)
 

@@ -18,7 +18,7 @@ defaults:
   - _self_ # as last argument to allow the override of parameters via this main config
 
 # If true, run pairwise merging evaluation for all pairs in the benchmark, instead of merging all of them and evaluate on all tasks
-all_pairwise: true
+all_pairwise: false
 
 # Random subsets mode: evaluate merging on random subsets of specified size
 random_subsets: false # this takes the priority over all_pairwise if both are set to True

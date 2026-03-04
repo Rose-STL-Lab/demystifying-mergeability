@@ -1,85 +1,65 @@
 \section{Learned Coefficient Values}
-\label{app:learned_coeffs}
+\label{app:learned_coefficients}
 
-Table~\ref{tab:learned_coefficients} reports the average learned coefficients for each mergeability metric across all merging methods. These coefficients are obtained by averaging across all 20 folds of the leave-one-task-out cross-validation procedure. The coefficients operate on min-max normalized metrics (scaled to $[-1, 1]$), with normalization statistics computed only on training data within each fold to prevent data leakage.
+Table~\ref{tab:learned_coefficients} reports the average learned coefficients for each mergeability metric across all merging methods. These coefficients are obtained by averaging across all 20 folds of the leave-one-task-out cross-validation procedure. The coefficients operate on min-max normalized metrics (scaled to $[0, 1]$), so their magnitudes reflect both the importance of each metric and its original scale.
 
 \paragraph{Interpretation.}
 A positive coefficient indicates that higher values of the corresponding metric predict better post-merge performance, while a negative coefficient indicates the opposite relationship. The magnitude of a coefficient reflects how strongly that metric influences the prediction, though direct comparison across metrics requires accounting for their different variances.
-
-\paragraph{Stable Metrics.}
-Seven metrics exhibit consistent sign across all four merging methods, suggesting they capture fundamental aspects of mergeability:
-
-\begin{itemize}
-    \item \textbf{Negative coefficients (higher values predict worse merging):}
-    \begin{itemize}
-        \item Encoder gradient L2 distance (avg: $-23.3$, range: $[-33.3, -19.5]$)
-        \item Input gradient L2 distance (avg: $-21.4$, range: $[-36.3, -8.7]$)
-        \item Input gradient dot product (avg: $-13.9$, range: $[-24.0, -0.2]$)
-    \end{itemize}
-
-    \item \textbf{Positive coefficients (higher values predict better merging):}
-    \begin{itemize}
-        \item Right subspace overlap (avg: $+16.5$, range: $[+3.3, +32.5]$)
-        \item Left subspace overlap top-$k$ (avg: $+14.0$, range: $[+11.8, +15.4]$)
-        \item Interaction matrix overlap top-$k$ (avg: $+8.8$, range: $[+5.8, +11.5]$)
-        \item Encoder gradient cosine similarity (avg: $+8.1$, range: $[+2.7, +12.1]$)
-    \end{itemize}
-\end{itemize}
 
 \paragraph{Key Observations.}
 Several patterns emerge from the coefficient values:
 
 \begin{itemize}
-    \item \textbf{Gradient-based metrics} consistently receive large-magnitude coefficients. The L2 distance metrics for both encoder and input gradients show negative coefficients across all methods, indicating that large gradient differences between task vectors are detrimental to merging success.
+    \item \textbf{Gradient-based metrics} receive consistently large-magnitude coefficients across methods, with input gradient L2 distance showing strong negative coefficients for all methods (ranging from $-25.0$ to $-42.3$). This suggests that large gradient differences between task vectors are detrimental to merging success.
 
-    \item \textbf{Subspace overlap metrics} tend to receive positive coefficients, suggesting that task vectors sharing similar principal directions merge more effectively.
+    \item \textbf{Distance metrics} (L2 distances) generally receive negative coefficients, indicating that greater dissimilarity between models predicts worse merging outcomes. Conversely, similarity metrics (cosine similarity, overlap measures) tend to receive positive coefficients.
 
-    \item \textbf{Method-specific patterns}: Weight Averaging shows distinctively large coefficients for right subspace overlap ($+20.1$), while Isotropic Merging shows large coefficients for gradient-based metrics. Task Arithmetic and TSV show more balanced distributions across metric categories.
+    \item \textbf{Method-specific patterns}: Weight Averaging shows distinctively large coefficients for right subspace overlap ($41.5$) and input gradient cosine similarity ($45.0$), suggesting these metrics are particularly informative for this method. Task Arithmetic and Isotropic show similar coefficient patterns, while TSV exhibits generally smaller coefficient magnitudes.
 
-    \item \textbf{High variance}: Many coefficients exhibit high standard deviation across folds (often exceeding the mean), reflecting the challenge of learning stable predictors from limited data and the sensitivity to which task is held out.
+    \item \textbf{Sign consistency}: Some metrics show consistent signs across all methods (e.g., input gradient L2 distance is always negative), while others flip signs depending on the merging method, highlighting the importance of method-specific prediction models.
 \end{itemize}
 
 \begin{table}[htbp]
 \centering
-\caption{Average learned coefficients for each mergeability metric across merging methods, obtained via leave-one-task-out cross-validation. Positive coefficients indicate that higher metric values predict better post-merge performance, while negative coefficients indicate the opposite. Coefficients are on normalized metrics (min-max scaled to $[-1, 1]$).}
-\label{tab:learned_coeffs}
+\caption{Average learned coefficients for each mergeability metric across merging methods, obtained via leave-one-task-out cross-validation. Positive coefficients indicate that higher metric values predict better post-merge performance, while negative coefficients indicate the opposite. Coefficients are on normalized metrics (min-max scaled to $[0, 1]$).}
+\label{tab:learned_coefficients}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{clrrrr}
 \toprule
  & \textbf{Metric} & \textbf{Task Arithmetic} & \textbf{Weight Averaging} & \textbf{Isotropic} & \textbf{TSV} \\
 \midrule
- & TV Cosine Sim & 7.29 & 5.30 & -3.94 & 4.67 \\
- & TV L2 Dist & -15.87 & 1.64 & -21.65 & 14.24 \\
-\multirow{5}{*}{\rotatebox{90}{\textbf{Task Vector Geometry}}} & TV Dot Prod & 11.64 & 2.02 & -4.70 & 9.04 \\
- & Weight Angle & 5.38 & 1.97 & 6.96 & -11.26 \\
- & TV Mag Ratio & -2.43 & -2.42 & -13.42 & 14.74 \\
+ & TV Cosine Sim & 5.31 & 25.77 & 11.68 & -6.19 \\
+ & TV L2 Dist & -20.00 & 7.54 & -19.20 & -1.38 \\
+\multirow{5}{*}{\rotatebox{90}{\textbf{Task Vector Geometry}}} & TV Dot Prod & 0.19 & 32.70 & 8.68 & -0.02 \\
+ & Weight Angle & 4.81 & 9.04 & 3.89 & 2.26 \\
+ & TV Mag Ratio & -3.46 & 3.61 & -4.70 & -4.59 \\
 \midrule
- & Eff Rank & -4.89 & 4.42 & -5.16 & 0.50 \\
- & Eff Rank Score & 7.52 & 1.99 & 2.60 & -1.11 \\
- & Stable Rank & -6.66 & -5.54 & 5.08 & -10.85 \\
-\multirow{7}{*}{\rotatebox{90}{\textbf{Effective Rank}}} & Spectral Gap & 1.56 & -1.93 & 9.19 & -23.82 \\
- & SV Ratio & -5.24 & -1.42 & -1.76 & 1.61 \\
- & Layer Eff Rank & 5.63 & -1.69 & -3.04 & -0.04 \\
- & Layer Eff Rank Score & -7.68 & -7.52 & 7.96 & 15.13 \\
+ & Eff Rank & 0.77 & -15.86 & -18.38 & -4.00 \\
+ & Eff Rank Score & 0.65 & -22.59 & 7.26 & -10.86 \\
+ & Stable Rank & -11.98 & -9.09 & -13.51 & -8.80 \\
+\multirow{7}{*}{\rotatebox{90}{\textbf{Effective Rank}}} & Spectral Gap & 2.61 & 7.01 & -13.05 & -5.88 \\
+ & SV Ratio & -3.74 & -26.14 & -10.78 & 5.65 \\
+ & Layer Eff Rank & -9.34 & -11.63 & 14.81 & 0.35 \\
+ & Layer Eff Rank Score & -9.40 & 7.37 & -3.62 & 10.91 \\
 \midrule
- & SV Overlap & -24.72 & 12.51 & -27.10 & -17.28 \\
- & Left Sub Top-$k$ & 15.36 & 11.78 & 15.01 & 13.97 \\
- & Right Sub Top-$k$ & 13.30 & 16.22 & 17.94 & -12.44 \\
-\multirow{6}{*}{\rotatebox{90}{\textbf{Subspace Overlap}}} & Right Sub Bot-$k$ & 0.38 & -12.27 & 35.02 & -11.88 \\
- & Interact Top-$k$ & 11.48 & 10.10 & 7.69 & 5.84 \\
- & Interact Bot-$k$ & 10.99 & -14.78 & 30.28 & -8.32 \\
+ & SV Overlap & -21.14 & 11.63 & -27.66 & 9.72 \\
+ & Left Sub Top-$k$ & 6.93 & -2.58 & 22.26 & 11.17 \\
+ & Right Sub Top-$k$ & 15.25 & 24.88 & 16.71 & 10.90 \\
+\multirow{6}{*}{\rotatebox{90}{\textbf{Subspace Overlap}}} & Right Sub Bot-$k$ & 2.76 & -21.46 & 13.11 & -0.86 \\
+ & Interact Top-$k$ & 21.56 & 3.05 & 16.15 & 13.93 \\
+ & Interact Bot-$k$ & 26.45 & -7.69 & 31.37 & -9.84 \\
 \midrule
- & Act L2 Dist & -12.40 & -5.33 & -9.56 & 9.23 \\
- & Act Cosine Sim & 0.70 & 3.58 & -0.46 & -6.44 \\
-\multirow{4}{*}{\rotatebox{90}{\textbf{Activation}}} & Act Mag Ratio & -10.79 & -13.26 & -10.84 & 2.99 \\
- & Act Dot Prod & 17.93 & 7.83 & -5.49 & 22.96 \\
+ & Act L2 Dist & 0.79 & -30.62 & -10.56 & -1.44 \\
+ & Act Cosine Sim & 10.00 & -1.37 & 8.94 & -0.10 \\
+\multirow{4}{*}{\rotatebox{90}{\textbf{Activation-Based}}} & Act Mag Ratio & -13.82 & -44.81 & -2.69 & -4.79 \\
+ & Act Dot Prod & 14.59 & 21.18 & -6.50 & 4.47 \\
 \midrule
- & Enc Grad Cos & 11.41 & 12.08 & 5.99 & 2.70 \\
- & Enc Grad L2 & -20.84 & -19.64 & -33.31 & -19.53 \\
- & Enc Grad Dot & 12.00 & -2.11 & 11.17 & -4.63 \\
-\multirow{6}{*}{\rotatebox{90}{\textbf{Gradient-Based}}} & Input Grad Cos & 13.86 & -3.87 & 13.96 & 25.42 \\
- & Input Grad L2 & -23.00 & -8.72 & -36.30 & -17.59 \\
- & Input Grad Dot & -20.90 & -10.32 & -24.03 & -0.25 \\
+ & Enc Grad Cos & 16.36 & -5.07 & 22.76 & 11.90 \\
+ & Enc Grad L2 & -26.21 & -13.82 & -25.24 & -5.01 \\
+ & Enc Grad Dot & 20.15 & 21.24 & 14.64 & 3.34 \\
+\multirow{6}{*}{\rotatebox{90}{\textbf{Gradient-Based}}} & Input Grad Cos & 15.08 & 44.99 & 15.52 & 6.01 \\
+ & Input Grad L2 & -31.53 & -38.55 & -42.31 & -25.02 \\
+ & Input Grad Dot & -28.27 & -9.29 & -24.26 & -1.77 \\
 \bottomrule
 \end{tabular}%
 }

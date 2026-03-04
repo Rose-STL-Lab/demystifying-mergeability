@@ -405,15 +405,19 @@ def main():
     parser = argparse.ArgumentParser(description='Reverse Greedy (Backward Elimination) LOTO Cross-Validation')
     parser.add_argument('--threshold', type=float, default=0.001,
                         help='Maximum allowed decrease in training correlation when removing a metric')
+    parser.add_argument('--exclude_metrics', type=str, nargs='+', default=[],
+                        help='List of metric names to exclude')
     args = parser.parse_args()
+
+    exclude_metrics = set(args.exclude_metrics)
 
     # Configuration
     metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
     results_base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
-    output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_reverse_greedy_selection')
+    output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_reverse_greedy_selection')
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    merge_methods = ['ties']
+    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print(f"Reverse Greedy (Backward Elimination) with LOTO CV (threshold={args.threshold})")
@@ -440,6 +444,14 @@ def main():
     print("Extracting pairwise data...")
     metrics_array, performance_matrix, pair_names, metric_names, merge_methods = \
         extract_all_mergers_data(metrics_data, performance_data_dict)
+
+    # Filter out excluded metrics
+    if exclude_metrics:
+        keep_indices = [i for i, name in enumerate(metric_names) if name not in exclude_metrics]
+        excluded_count = len(metric_names) - len(keep_indices)
+        metric_names = [metric_names[i] for i in keep_indices]
+        metrics_array = metrics_array[:, keep_indices]
+        print(f"Excluded {excluded_count} metrics: {sorted(exclude_metrics)}")
 
     print(f"Number of pairs: {len(pair_names)}")
     print(f"Number of metrics: {len(metric_names)}")
