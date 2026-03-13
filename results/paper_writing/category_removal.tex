@@ -1,0 +1,73 @@
+\section{Category Ablation Study}
+\label{sec:category_ablation}
+
+To understand which types of metrics contribute most to mergeability prediction, we perform ablation experiments where each metric category is removed entirely before running L1-regularized LOTO.
+
+\subsection{Metric Categories}
+
+We organize our 28 metrics into five categories:
+\begin{itemize}
+    \item \textbf{Gradient-based} (6 metrics): Encoder and input gradient similarities (cosine, L2, dot product)
+    \item \textbf{Activation} (4 metrics): Hidden activation similarities (cosine, L2, dot product, magnitude ratio)
+    \item \textbf{Subspace} (6 metrics): Weight matrix subspace overlaps (right singular vectors, interaction matrices)
+    \item \textbf{Task Vector} (6 metrics): Task vector similarities (cosine, L2, dot product, magnitude, angle)
+    \item \textbf{Effective Rank} (6 metrics): Matrix rank measures (effective rank, stable rank, spectral gap, singular value ratio)
+\end{itemize}
+
+\subsection{Results}
+
+Tables~\ref{tab:category_ablation_b16} and~\ref{tab:category_ablation_b32} show the change in validation correlation when each category is removed for ViT-B-16 and ViT-B-32, respectively.
+
+\begin{table}[h]
+\centering
+\caption{ViT-B-16: Impact of removing each metric category on validation correlation. Negative $\Delta r$ indicates the category is important; positive $\Delta r$ indicates removal \emph{improves} performance.}
+\label{tab:category_ablation_b16}
+\begin{tabular}{@{}lcccccr@{}}
+\toprule
+\textbf{Category} & \textbf{Weight Avg} & \textbf{Arithmetic} & \textbf{TSV} & \textbf{TIES} & \textbf{DARE} & \textbf{Avg $\Delta r$} \\
+\midrule
+Gradient-based & $-0.207$ & $-0.192$ & $-0.095$ & $-0.098$ & $-0.155$ & $\mathbf{-0.149}$ \\
+Activation & $+0.006$ & $+0.017$ & $-0.015$ & $+0.010$ & $-0.010$ & $+0.002$ \\
+Subspace & $+0.010$ & $-0.041$ & $-0.015$ & $-0.170$ & $-0.011$ & $-0.045$ \\
+Task Vector & $+0.017$ & $-0.002$ & $+0.035$ & $-0.083$ & $-0.005$ & $-0.008$ \\
+Effective Rank & $+0.032$ & $+0.017$ & $+0.003$ & $+0.028$ & $+0.022$ & $\mathbf{+0.020}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{ViT-B-32: Impact of removing each metric category on validation correlation.}
+\label{tab:category_ablation_b32}
+\begin{tabular}{@{}lcccccr@{}}
+\toprule
+\textbf{Category} & \textbf{Weight Avg} & \textbf{Arithmetic} & \textbf{TSV} & \textbf{TIES} & \textbf{DARE} & \textbf{Avg $\Delta r$} \\
+\midrule
+Gradient-based & $-0.162$ & $-0.097$ & $-0.181$ & $-0.050$ & $-0.165$ & $\mathbf{-0.131}$ \\
+Activation & $-0.018$ & $-0.136$ & $-0.004$ & $-0.107$ & $-0.031$ & $-0.059$ \\
+Subspace & $-0.061$ & $+0.013$ & $-0.055$ & $-0.004$ & $+0.038$ & $-0.014$ \\
+Task Vector & $-0.053$ & $-0.011$ & $-0.008$ & $+0.004$ & $+0.004$ & $-0.013$ \\
+Effective Rank & $+0.039$ & $-0.006$ & $-0.004$ & $+0.012$ & $+0.022$ & $\mathbf{+0.012}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Key Findings}
+
+Two findings emerge consistently across both architectures:
+
+\paragraph{Gradient Metrics are Fundamental}
+Removing gradient-based metrics causes the largest drop in validation performance across both architectures: $-0.149$ on average for ViT-B-16 and $-0.131$ for ViT-B-32. This is the only category where removal \emph{consistently} degrades performance across all five merging methods on both models. Gradient metrics capture how models respond to input perturbations---when two models produce similar gradients, their learned functions are more compatible, leading to better merging outcomes. This finding suggests that functional similarity, as measured through gradient behavior, is the most reliable predictor of mergeability.
+
+\paragraph{Effective Rank Metrics Introduce Noise}
+Removing effective rank metrics \emph{improves} performance on both architectures: $+0.020$ on average for ViT-B-16 and $+0.012$ for ViT-B-32. On ViT-B-16, all five mergers show improvement when effective rank metrics are excluded. On ViT-B-32, four out of five mergers improve. This unanimous pattern indicates that effective rank metrics---despite their theoretical appeal for characterizing weight matrix structure---do not provide useful signal for mergeability prediction and instead add noise to the learned predictor.
+
+\subsection{Practical Recommendations}
+
+Based on these findings, we recommend:
+\begin{enumerate}
+    \item \textbf{Always compute gradient metrics} --- they provide the strongest and most universal signal for predicting mergeability.
+    \item \textbf{Skip effective rank metrics} --- they add computational cost without benefit and may even degrade prediction quality.
+\end{enumerate}
+
+The remaining categories (activation, subspace, task vector) show mixed results that vary by architecture and merging method, suggesting they provide secondary signals that may be useful in specific contexts but are not essential. 

@@ -1,0 +1,68 @@
+\subsection{Optimization Objective Comparison: MSE vs. Correlation}
+\label{sec:mse_vs_pearson}
+
+A critical design choice in learning mergeability prediction coefficients is the optimization objective. We compare two objectives: maximizing Pearson correlation versus minimizing mean squared error (MSE).
+
+\paragraph{Objective Functions.}
+For Pearson correlation maximization, we optimize:
+\begin{equation}
+    \mathcal{L}_{\text{Pearson}} = -\frac{\sum_i (y_i - \bar{y})(\hat{y}_i - \bar{\hat{y}})}{\sqrt{\sum_i (y_i - \bar{y})^2 \sum_i (\hat{y}_i - \bar{\hat{y}})^2}} + \lambda \|\mathbf{w}\|_1
+\end{equation}
+where $y_i$ is the actual merge performance, $\hat{y}_i = \mathbf{w}^\top \mathbf{x}_i$ is the predicted mergeability, and $\mathbf{w}$ are the learned coefficients.
+
+For MSE minimization:
+\begin{equation}
+    \mathcal{L}_{\text{MSE}} = \frac{1}{N}\sum_i (y_i - \hat{y}_i)^2
+\end{equation}
+
+\paragraph{Results.}
+Tables~\ref{tab:objective_comparison_b16} and~\ref{tab:objective_comparison_b32} present the validation Pearson correlation for each objective across all merging methods.
+
+\begin{table}[h]
+\centering
+\caption{ViT-B-16: Validation Pearson correlation ($r$) for different optimization objectives. Higher is better.}
+\label{tab:objective_comparison_b16}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Method} & \textbf{Pearson + L1} & \textbf{MSE} & \textbf{Difference} \\
+\midrule
+Weight Avg & 0.589 & 0.244 & $+0.345$ \\
+Arithmetic & 0.445 & 0.061 & $+0.384$ \\
+TSV & 0.627 & 0.187 & $+0.440$ \\
+TIES & 0.463 & 0.098 & $+0.365$ \\
+DARE & 0.596 & 0.143 & $+0.453$ \\
+\midrule
+\textbf{Average} & \textbf{0.544} & 0.147 & $+0.397$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{ViT-B-32: Validation Pearson correlation ($r$) for different optimization objectives. Higher is better.}
+\label{tab:objective_comparison_b32}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Method} & \textbf{Pearson + L1} & \textbf{MSE} & \textbf{Difference} \\
+\midrule
+Weight Avg & 0.699 & 0.047 & $+0.652$ \\
+Arithmetic & 0.619 & 0.131 & $+0.488$ \\
+TSV & 0.692 & 0.153 & $+0.539$ \\
+TIES & 0.543 & 0.147 & $+0.396$ \\
+DARE & 0.684 & 0.236 & $+0.448$ \\
+\midrule
+\textbf{Average} & \textbf{0.648} & 0.143 & $+0.505$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Analysis.}
+
+\textbf{Pearson correlation substantially outperforms MSE.} Across both architectures and all merging methods, Pearson-based optimization vastly outperforms MSE. For ViT-B-16, the average validation correlation is 0.544 with Pearson versus 0.147 with MSE---a 3.7$\times$ improvement. For ViT-B-32, the gap is even larger: 0.648 versus 0.143, a 4.5$\times$ improvement.
+
+This performance gap arises from the fundamental mismatch between MSE and our prediction goal. Our objective is to \emph{rank} task pairs by mergeability---predicting whether pair A will merge better than pair B---rather than predicting exact merge performance values. Correlation-based objectives directly optimize for ranking quality: they are invariant to the scale and shift of predictions, focusing entirely on whether the relative ordering is preserved.
+
+In contrast, MSE optimization must simultaneously learn (1) the correct ranking and (2) the correct output scale. Since merge performance values are bounded between 0 and 1 (normalized accuracy), while our linear predictions $\hat{y} = \mathbf{w}^\top \mathbf{x}$ can take arbitrary values, the optimization must implicitly learn to constrain outputs to a valid range. This additional burden degrades ranking performance.
+
+\paragraph{Conclusion.}
+We adopt Pearson correlation with L1 regularization as our default objective. The correlation-based objective aligns with our ranking-focused prediction goal, while L1 regularization provides robustness against overfitting and produces interpretable sparse coefficient vectors.

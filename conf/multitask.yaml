@@ -10,15 +10,15 @@ defaults:
   - hydra: default
   - nn: default
   - train: default
-  - merger: dare # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, ties, dare, tall-masks, dummy (just uses pretrained), see all options in ./conf/merger
-  - benchmark: N20 # N14, N8, N20, N2
+  - merger: tsv # iso-cts, isotropic, tsv, task_arithmetic, weight_ avg, ties, dare, tall-masks, dummy (just uses pretrained), see all options in ./conf/merger
+  - benchmark: N8 # N14, N8, N20, N2
   - override hydra/launcher: basic # basic
   - override hydra/job_logging: none
   - override hydra/hydra_logging: none
   - _self_ # as last argument to allow the override of parameters via this main config
 
 # If true, run pairwise merging evaluation for all pairs in the benchmark, instead of merging all of them and evaluate on all tasks
-all_pairwise: false
+all_pairwise: true
 
 # Random subsets mode: evaluate merging on random subsets of specified size
 random_subsets: false # this takes the priority over all_pairwise if both are set to True
@@ -86,6 +86,11 @@ mergeability:
   #   - 'model.visual.ln_post'                  (after all transformer blocks, normalized features)
 
   output_path: "${oc.env:PROJECT_ROOT}/results/mergeability/${nn.encoder.model_name}/"
+
+  # Local checkpoint path (optional). If set and path exists, loads from disk; otherwise falls back to HuggingFace.
+  # Expected structure: {local_ckpt_path}/{dataset_name}/model.pt (e.g., /path/to/checkpoints/MNIST/model.pt)
+  # For pretrained: {local_ckpt_path}/base/model.pt
+  local_ckpt_path: null
 
 # Metric linear optimization configuration
 metric_linear_optimization:

@@ -1,0 +1,53 @@
+% mlp_vs_l1.tex
+% Section comparing L1-regularized linear models vs MLP for mergeability prediction
+
+\subsection{Linear vs.\ Neural Network Predictors}
+\label{sec:mlp_vs_l1}
+
+A natural question arises when designing mergeability predictors: can neural networks capture non-linear relationships between metrics and merge performance that linear models miss? To investigate this, we compare our L1-regularized linear approach against Multi-Layer Perceptrons (MLPs) trained separately for each merge method.
+
+\paragraph{Experimental Setup.}
+We train separate MLPs for each merge method using the same Leave-One-Task-Out (LOTO) cross-validation protocol. Each MLP consists of a single hidden layer with 8 units, ReLU activation, and dropout regularization (p=0.4). Models are trained for 300 epochs with early stopping based on validation loss. We evaluate both approaches on models fine-tuned with two different optimizers (AdamW and SGD) to assess generalization across training configurations.
+
+\paragraph{Results.}
+Table~\ref{tab:mlp_vs_l1} presents the aggregate validation Pearson correlation for both approaches across all merge methods. The L1-regularized linear model consistently outperforms the MLP predictor on both optimizer configurations.
+
+\begin{table}[h]
+\centering
+\caption{Comparison of L1-regularized linear models vs.\ MLPs for mergeability prediction. Values represent aggregate validation Pearson correlation ($r$) under LOTO cross-validation. Higher is better.}
+\label{tab:mlp_vs_l1}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{2}{c}{\textbf{AdamW}} & \multicolumn{2}{c}{\textbf{SGD}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & MLP & L1 Linear & MLP & L1 Linear \\
+\midrule
+Weight Avg & 0.590 & 0.590 & 0.355 & 0.558 \\
+Task Arithmetic & 0.335 & 0.445 & 0.466 & 0.628 \\
+TSV & 0.584 & 0.627 & 0.491 & 0.549 \\
+TIES & 0.452 & 0.463 & 0.582 & 0.667 \\
+DARE & 0.502 & 0.596 & 0.358 & 0.546 \\
+\midrule
+\textbf{Average} & 0.493 & \textbf{0.544} & 0.450 & \textbf{0.590} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For AdamW-finetuned models, the L1 linear approach achieves a mean validation correlation of 0.544 compared to 0.493 for the MLP, representing a 10\% relative improvement. The gap widens substantially for SGD-finetuned models, where L1 linear achieves 0.590 versus 0.450 for the MLP---a 31\% relative improvement. Notably, the L1 linear model wins on 4 out of 5 merge methods for AdamW and all 5 methods for SGD.
+
+\paragraph{Why Linear Models Suffice.}
+Several factors explain the superior performance of linear models in this setting:
+
+\begin{enumerate}
+    \item \textbf{Limited training data.} With approximately 150--180 model pairs per fold, the effective training set is small by deep learning standards. MLPs with even modest capacity risk overfitting, as evidenced by the high variance in per-fold results (standard deviation of 0.25--0.31 across folds).
+
+    \item \textbf{Inherently linear relationships.} The mergeability metrics we consider---gradient similarities, subspace overlaps, and task vector distances---capture fundamental geometric relationships between model weight spaces. These relationships translate to merge performance through approximately linear mappings, as our theoretical analysis in Section~\ref{sec:metric_design} suggests.
+
+    \item \textbf{L1 regularization as implicit feature selection.} The L1 penalty encourages sparse solutions, effectively performing feature selection during training. This prevents the model from fitting to noise in less informative metrics, a form of regularization that the MLP's dropout alone cannot replicate.
+\end{enumerate}
+
+\paragraph{Interpretability Advantage.}
+Beyond predictive performance, linear models offer a crucial interpretability advantage. The learned coefficients directly indicate each metric's contribution to predicting merge success, enabling practitioners to understand \emph{why} certain model pairs are predicted to merge well. In contrast, MLP weights lack such transparency, making it difficult to extract actionable insights about which properties of fine-tuned models drive mergeability.
+
+\paragraph{Conclusion.}
+Our results demonstrate that for mergeability prediction, simplicity prevails. L1-regularized linear models not only achieve superior generalization but also provide interpretable coefficients that reveal the relative importance of different metrics. This finding aligns with the broader machine learning principle that model complexity should match the structure of the underlying problem and the available data. For mergeability prediction---where training examples are inherently limited and interpretability is valuable---linear models represent the right inductive bias.

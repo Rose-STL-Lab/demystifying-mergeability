@@ -1,0 +1,66 @@
+\subsection{Robustness to Random Initialization}
+\label{sec:robustness}
+
+To verify that our L1-regularized LOTO framework produces stable results regardless of random initialization, we run the optimization with 10 different random seeds on ViT-B-16 and measure the variance in validation performance and metric selection.
+
+\subsubsection{Validation Performance Stability}
+
+Table~\ref{tab:seed_robustness} shows the mean, standard deviation, and range of validation Pearson correlation across 10 random seeds for each merging method.
+
+\begin{table}[h]
+\centering
+\caption{Robustness of L1 LOTO across 10 random seeds (ViT-B-16). Low standard deviations indicate that performance is not sensitive to random initialization.}
+\label{tab:seed_robustness}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Method} & \textbf{Val $r$ (mean)} & \textbf{Val $r$ (std)} & \textbf{Range} & \textbf{\#Features} \\
+\midrule
+Weight Avg & 0.609 & 0.018 & [0.577, 0.632] & 16.8 \\
+Arithmetic & 0.466 & 0.017 & [0.441, 0.489] & 17.0 \\
+TSV & 0.639 & 0.022 & [0.596, 0.666] & 16.3 \\
+TIES & 0.469 & 0.011 & [0.450, 0.482] & 16.1 \\
+DARE & 0.622 & 0.010 & [0.601, 0.638] & 16.7 \\
+\midrule
+\textbf{Average} & 0.561 & 0.016 & --- & 16.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Key Findings.}
+\begin{itemize}
+    \item \textbf{Low variance across seeds}: The standard deviation of validation correlation ranges from 0.010 (DARE) to 0.022 (TSV), indicating that random initialization has minimal impact on final performance.
+    \item \textbf{Consistent feature selection}: The number of selected features is stable across seeds (16.1--17.0 on average), suggesting that the L1 regularization consistently identifies a similar-sized subset of predictive metrics.
+    \item \textbf{Narrow performance range}: For all methods, the difference between best and worst seed is less than 0.07 in validation correlation, demonstrating robust convergence.
+\end{itemize}
+
+\subsubsection{Metric Selection Stability}
+
+Beyond overall performance, we verify that the same metrics are selected across different random seeds. Table~\ref{tab:metric_stability} shows that \texttt{encoder\_gradient\_l2\_distance} is selected with 100\% frequency across all seeds and all mergers, confirming its role as a universal predictor.
+
+\begin{table}[h]
+\centering
+\caption{Selection frequency and coefficient stability for \texttt{encoder\_gradient\_l2\_distance} across 10 random seeds.}
+\label{tab:metric_stability}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Method} & \textbf{Selection Freq} & \textbf{Coef (mean)} & \textbf{Coef (std)} \\
+\midrule
+Weight Avg & 100\% (all seeds) & $-$0.026 & 0.002 \\
+Arithmetic & 100\% (all seeds) & $-$0.016 & 0.001 \\
+TSV & 100\% (all seeds) & $-$0.022 & 0.002 \\
+TIES & 100\% (all seeds) & $-$0.012 & 0.001 \\
+DARE & 100\% (all seeds) & $-$0.025 & 0.002 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The coefficient values are also stable across seeds, with standard deviations of only 0.001--0.002. This indicates that the learned relationship between gradient distance and mergeability is consistent regardless of optimization initialization.
+
+\subsubsection{Implications}
+
+These robustness results demonstrate that:
+\begin{enumerate}
+    \item The L1 LOTO framework produces reliable, reproducible predictions
+    \item Users can run the optimization once without needing ensemble methods or multiple restarts
+    \item The identified predictive metrics (particularly gradient-based) are genuine signals, not artifacts of specific random initializations
+\end{enumerate}

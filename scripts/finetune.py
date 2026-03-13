@@ -234,6 +234,16 @@ def run(cfg: DictConfig):
         **cfg.train.trainer,
     )
 
+    # Log optimizer configuration
+    opt_cfg = cfg.nn.module.optimizer
+    pylogger.info("Optimizer configured:")
+    pylogger.info(f"  Type: {opt_cfg._target_}")
+    pylogger.info(f"  lr: {opt_cfg.lr}")
+    if hasattr(opt_cfg, 'weight_decay'):
+        pylogger.info(f"  weight_decay: {opt_cfg.weight_decay}")
+    if hasattr(opt_cfg, 'momentum'):
+        pylogger.info(f"  momentum: {opt_cfg.momentum}")
+
     pylogger.info("Starting training!")
     trainer.fit(
         model=model,

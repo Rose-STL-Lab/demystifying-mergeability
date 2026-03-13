@@ -405,22 +405,29 @@ def main():
     parser = argparse.ArgumentParser(description='Reverse Greedy (Backward Elimination) LOTO Cross-Validation')
     parser.add_argument('--threshold', type=float, default=0.001,
                         help='Maximum allowed decrease in training correlation when removing a metric')
+    parser.add_argument('--model', type=str, default='ViT-B-16', choices=['ViT-B-16', 'ViT-B-32'],
+                        help='Model architecture to use')
     parser.add_argument('--exclude_metrics', type=str, nargs='+', default=[],
                         help='List of metric names to exclude')
     args = parser.parse_args()
 
     exclude_metrics = set(args.exclude_metrics)
+    model = args.model
 
-    # Configuration
-    metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-    results_base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
-    output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_reverse_greedy_selection')
+    # Configuration - paths based on model
+    base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results')
+    metrics_path = base_path / 'mergeability' / model / 'pairwise_metrics_N20.json'
+    results_base_path = base_path / model
+
+    # Output directory - always use model-specific subfolder
+    output_dir = base_path / 'metric_linear_optimization_v2' / model.lower() / 'loto_cv_reverse_greedy_selection'
     output_dir.mkdir(parents=True, exist_ok=True)
 
     merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print(f"Reverse Greedy (Backward Elimination) with LOTO CV (threshold={args.threshold})")
+    print(f"Model: {model}")
     print("="*70)
     print()
 
@@ -444,6 +451,10 @@ def main():
     print("Extracting pairwise data...")
     metrics_array, performance_matrix, pair_names, metric_names, merge_methods = \
         extract_all_mergers_data(metrics_data, performance_data_dict)
+
+    # Always exclude redundant metrics (they are averages of _top_k and _bottom_k variants)
+    redundant_metrics = {'right_subspace_overlap'}
+    exclude_metrics = exclude_metrics | redundant_metrics
 
     # Filter out excluded metrics
     if exclude_metrics:

@@ -1,0 +1,2957 @@
+{
+  "summary": {
+    "method": "ties",
+    "n_subsets": 200,
+    "subset_size": 5,
+    "accuracy_mean": 0.8145803740024568,
+    "accuracy_std": 0.07251984519910008,
+    "accuracy_min": 0.6241928398609161,
+    "accuracy_max": 0.9556668162345886,
+    "top_5_subsets": [
+      {
+        "subset_id": 93,
+        "tasks": [
+          "MNIST",
+          "STL10",
+          "CIFAR100",
+          "CIFAR10",
+          "Food101"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.9556668162345886,
+        "raw_accuracy": 0.9119998931884765,
+        "rank": 1
+      },
+      {
+        "subset_id": 198,
+        "tasks": [
+          "MNIST",
+          "PCAM",
+          "STL10",
+          "CIFAR10",
+          "Food101"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.954484736919403,
+        "raw_accuracy": 0.9097614049911499,
+        "rank": 2
+      },
+      {
+        "subset_id": 32,
+        "tasks": [
+          "MNIST",
+          "PCAM",
+          "STL10",
+          "EMNIST",
+          "RenderedSST2"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.9388390064239502,
+        "raw_accuracy": 0.8757287263870239,
+        "rank": 3
+      },
+      {
+        "subset_id": 180,
+        "tasks": [
+          "FER2013",
+          "OxfordIIITPet",
+          "STL10",
+          "Food101",
+          "EMNIST"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.9262077569961548,
+        "raw_accuracy": 0.8537737607955933,
+        "rank": 4
+      },
+      {
+        "subset_id": 168,
+        "tasks": [
+          "SUN397",
+          "STL10",
+          "CIFAR100",
+          "CIFAR10",
+          "FashionMNIST"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.9227129697799683,
+        "raw_accuracy": 0.852049732208252,
+        "rank": 5
+      }
+    ],
+    "bottom_5_subsets": [
+      {
+        "subset_id": 36,
+        "tasks": [
+          "Cars",
+          "RESISC45",
+          "DTD",
+          "KMNIST",
+          "RenderedSST2"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.6370800018310547,
+        "raw_accuracy": 0.5493617415428161,
+        "rank": 196
+      },
+      {
+        "subset_id": 54,
+        "tasks": [
+          "Cars",
+          "RESISC45",
+          "DTD",
+          "CIFAR100",
+          "KMNIST"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.6346625238656998,
+        "raw_accuracy": 0.5677952885627746,
+        "rank": 197
+      },
+      {
+        "subset_id": 25,
+        "tasks": [
+          "EuroSAT",
+          "GTSRB",
+          "Flowers102",
+          "FashionMNIST",
+          "KMNIST"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.629719689488411,
+        "raw_accuracy": 0.6095069795846939,
+        "rank": 198
+      },
+      {
+        "subset_id": 13,
+        "tasks": [
+          "GTSRB",
+          "DTD",
+          "EMNIST",
+          "KMNIST",
+          "RenderedSST2"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.628280508518219,
+        "raw_accuracy": 0.567709618806839,
+        "rank": 199
+      },
+      {
+        "subset_id": 127,
+        "tasks": [
+          "RESISC45",
+          "DTD",
+          "Flowers102",
+          "FER2013",
+          "KMNIST"
+        ],
+        "task_indices": [],
+        "normalized_accuracy": 0.6241928398609161,
+        "raw_accuracy": 0.5461075752973557,
+        "rank": 200
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "subset_id": 93,
+      "tasks": [
+        "MNIST",
+        "STL10",
+        "CIFAR100",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9556668162345886,
+      "raw_accuracy": 0.9119998931884765,
+      "rank": 1
+    },
+    {
+      "subset_id": 198,
+      "tasks": [
+        "MNIST",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.954484736919403,
+      "raw_accuracy": 0.9097614049911499,
+      "rank": 2
+    },
+    {
+      "subset_id": 32,
+      "tasks": [
+        "MNIST",
+        "PCAM",
+        "STL10",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9388390064239502,
+      "raw_accuracy": 0.8757287263870239,
+      "rank": 3
+    },
+    {
+      "subset_id": 180,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "STL10",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9262077569961548,
+      "raw_accuracy": 0.8537737607955933,
+      "rank": 4
+    },
+    {
+      "subset_id": 168,
+      "tasks": [
+        "SUN397",
+        "STL10",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9227129697799683,
+      "raw_accuracy": 0.852049732208252,
+      "rank": 5
+    },
+    {
+      "subset_id": 49,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "CIFAR100",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9184380888938903,
+      "raw_accuracy": 0.8762721657752991,
+      "rank": 6
+    },
+    {
+      "subset_id": 38,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Food101",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9173973083496094,
+      "raw_accuracy": 0.8562090277671814,
+      "rank": 7
+    },
+    {
+      "subset_id": 126,
+      "tasks": [
+        "CIFAR100",
+        "CIFAR10",
+        "Food101",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9130147933959961,
+      "raw_accuracy": 0.8343545317649841,
+      "rank": 8
+    },
+    {
+      "subset_id": 166,
+      "tasks": [
+        "Cars",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9121026992797852,
+      "raw_accuracy": 0.8625916481018067,
+      "rank": 9
+    },
+    {
+      "subset_id": 87,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "PCAM",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9107442259788513,
+      "raw_accuracy": 0.8135188817977905,
+      "rank": 10
+    },
+    {
+      "subset_id": 158,
+      "tasks": [
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9097576260566711,
+      "raw_accuracy": 0.84228675365448,
+      "rank": 11
+    },
+    {
+      "subset_id": 3,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9056902408599854,
+      "raw_accuracy": 0.8401295304298401,
+      "rank": 12
+    },
+    {
+      "subset_id": 169,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "OxfordIIITPet",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9032963871955871,
+      "raw_accuracy": 0.8445151567459106,
+      "rank": 13
+    },
+    {
+      "subset_id": 48,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "PCAM",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.9013975024223327,
+      "raw_accuracy": 0.8290815114974975,
+      "rank": 14
+    },
+    {
+      "subset_id": 105,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "STL10",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8996119379997254,
+      "raw_accuracy": 0.8179681777954102,
+      "rank": 15
+    },
+    {
+      "subset_id": 22,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8995648980140686,
+      "raw_accuracy": 0.8390157580375671,
+      "rank": 16
+    },
+    {
+      "subset_id": 133,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "CIFAR10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8990023612976075,
+      "raw_accuracy": 0.7956199526786805,
+      "rank": 17
+    },
+    {
+      "subset_id": 17,
+      "tasks": [
+        "SVHN",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8988263368606567,
+      "raw_accuracy": 0.8621122598648071,
+      "rank": 18
+    },
+    {
+      "subset_id": 149,
+      "tasks": [
+        "PCAM",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8969617247581482,
+      "raw_accuracy": 0.815810763835907,
+      "rank": 19
+    },
+    {
+      "subset_id": 159,
+      "tasks": [
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8964850425720214,
+      "raw_accuracy": 0.8567709803581238,
+      "rank": 20
+    },
+    {
+      "subset_id": 171,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8955078840255737,
+      "raw_accuracy": 0.8153631329536438,
+      "rank": 21
+    },
+    {
+      "subset_id": 28,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "OxfordIIITPet",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8938366532325744,
+      "raw_accuracy": 0.8079190015792846,
+      "rank": 22
+    },
+    {
+      "subset_id": 136,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8930164217948914,
+      "raw_accuracy": 0.820363986492157,
+      "rank": 23
+    },
+    {
+      "subset_id": 8,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8927295446395874,
+      "raw_accuracy": 0.8620065331459046,
+      "rank": 24
+    },
+    {
+      "subset_id": 179,
+      "tasks": [
+        "SVHN",
+        "PCAM",
+        "CIFAR10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8920783758163452,
+      "raw_accuracy": 0.8076475620269775,
+      "rank": 25
+    },
+    {
+      "subset_id": 197,
+      "tasks": [
+        "Flowers102",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8914434909820557,
+      "raw_accuracy": 0.8304702639579773,
+      "rank": 26
+    },
+    {
+      "subset_id": 183,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "STL10",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8887134671211243,
+      "raw_accuracy": 0.8023117542266845,
+      "rank": 27
+    },
+    {
+      "subset_id": 131,
+      "tasks": [
+        "SUN397",
+        "MNIST",
+        "Flowers102",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8881482601165771,
+      "raw_accuracy": 0.8021161317825317,
+      "rank": 28
+    },
+    {
+      "subset_id": 130,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "OxfordIIITPet",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8872940301895141,
+      "raw_accuracy": 0.8085641145706177,
+      "rank": 29
+    },
+    {
+      "subset_id": 26,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "PCAM",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8862602710723877,
+      "raw_accuracy": 0.8439574480056763,
+      "rank": 30
+    },
+    {
+      "subset_id": 145,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "Flowers102",
+        "STL10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8861716032028198,
+      "raw_accuracy": 0.849825131893158,
+      "rank": 31
+    },
+    {
+      "subset_id": 58,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "EuroSAT",
+        "MNIST",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8860496401786804,
+      "raw_accuracy": 0.8378546953201294,
+      "rank": 32
+    },
+    {
+      "subset_id": 81,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "STL10",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8860338926315308,
+      "raw_accuracy": 0.8545414805412292,
+      "rank": 33
+    },
+    {
+      "subset_id": 164,
+      "tasks": [
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.885640025138855,
+      "raw_accuracy": 0.7913999795913697,
+      "rank": 34
+    },
+    {
+      "subset_id": 70,
+      "tasks": [
+        "Cars",
+        "PCAM",
+        "OxfordIIITPet",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8853197932243347,
+      "raw_accuracy": 0.7927640914916992,
+      "rank": 35
+    },
+    {
+      "subset_id": 124,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8850194215774536,
+      "raw_accuracy": 0.800661838054657,
+      "rank": 36
+    },
+    {
+      "subset_id": 50,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "PCAM",
+        "FER2013",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8839093685150147,
+      "raw_accuracy": 0.7980085134506225,
+      "rank": 37
+    },
+    {
+      "subset_id": 85,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "PCAM",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8832855582237243,
+      "raw_accuracy": 0.8151979088783264,
+      "rank": 38
+    },
+    {
+      "subset_id": 63,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "PCAM",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.883225965499878,
+      "raw_accuracy": 0.8484583854675293,
+      "rank": 39
+    },
+    {
+      "subset_id": 139,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "PCAM",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.880534040927887,
+      "raw_accuracy": 0.8249920606613159,
+      "rank": 40
+    },
+    {
+      "subset_id": 78,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "OxfordIIITPet",
+        "STL10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8803988814353942,
+      "raw_accuracy": 0.8089166641235351,
+      "rank": 41
+    },
+    {
+      "subset_id": 7,
+      "tasks": [
+        "Cars",
+        "Flowers102",
+        "OxfordIIITPet",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8799192190170289,
+      "raw_accuracy": 0.7944250702857971,
+      "rank": 42
+    },
+    {
+      "subset_id": 143,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8756388068199158,
+      "raw_accuracy": 0.7602929711341858,
+      "rank": 43
+    },
+    {
+      "subset_id": 9,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "MNIST",
+        "OxfordIIITPet",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8733829617500305,
+      "raw_accuracy": 0.7958794355392456,
+      "rank": 44
+    },
+    {
+      "subset_id": 12,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "OxfordIIITPet",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8694758415222168,
+      "raw_accuracy": 0.8055858254432678,
+      "rank": 45
+    },
+    {
+      "subset_id": 11,
+      "tasks": [
+        "GTSRB",
+        "Flowers102",
+        "OxfordIIITPet",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8681461811065674,
+      "raw_accuracy": 0.842351758480072,
+      "rank": 46
+    },
+    {
+      "subset_id": 30,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Food101",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8657116532325745,
+      "raw_accuracy": 0.8293456077575684,
+      "rank": 47
+    },
+    {
+      "subset_id": 112,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8653342485427856,
+      "raw_accuracy": 0.7881549715995788,
+      "rank": 48
+    },
+    {
+      "subset_id": 175,
+      "tasks": [
+        "Flowers102",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8650933027267456,
+      "raw_accuracy": 0.7733482360839844,
+      "rank": 49
+    },
+    {
+      "subset_id": 89,
+      "tasks": [
+        "GTSRB",
+        "MNIST",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8650642395019531,
+      "raw_accuracy": 0.8334288597106934,
+      "rank": 50
+    },
+    {
+      "subset_id": 176,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "STL10",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8637508988380432,
+      "raw_accuracy": 0.8321395576000213,
+      "rank": 51
+    },
+    {
+      "subset_id": 107,
+      "tasks": [
+        "DTD",
+        "PCAM",
+        "STL10",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8634418606758117,
+      "raw_accuracy": 0.7844745099544526,
+      "rank": 52
+    },
+    {
+      "subset_id": 77,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8622684001922607,
+      "raw_accuracy": 0.8029486536979675,
+      "rank": 53
+    },
+    {
+      "subset_id": 174,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8622447490692139,
+      "raw_accuracy": 0.8153987169265747,
+      "rank": 54
+    },
+    {
+      "subset_id": 64,
+      "tasks": [
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.862158477306366,
+      "raw_accuracy": 0.7860427975654602,
+      "rank": 55
+    },
+    {
+      "subset_id": 122,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8601492524147034,
+      "raw_accuracy": 0.7878742456436157,
+      "rank": 56
+    },
+    {
+      "subset_id": 181,
+      "tasks": [
+        "MNIST",
+        "DTD",
+        "FER2013",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8583298325538635,
+      "raw_accuracy": 0.7904569387435914,
+      "rank": 57
+    },
+    {
+      "subset_id": 199,
+      "tasks": [
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8580341935157776,
+      "raw_accuracy": 0.8037875115871429,
+      "rank": 58
+    },
+    {
+      "subset_id": 142,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "PCAM",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8579484462738037,
+      "raw_accuracy": 0.7714437961578369,
+      "rank": 59
+    },
+    {
+      "subset_id": 45,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8575615644454956,
+      "raw_accuracy": 0.7894286036491394,
+      "rank": 60
+    },
+    {
+      "subset_id": 170,
+      "tasks": [
+        "Cars",
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8569551587104798,
+      "raw_accuracy": 0.8176225543022155,
+      "rank": 61
+    },
+    {
+      "subset_id": 123,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "FER2013",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8567344427108765,
+      "raw_accuracy": 0.7542041182518006,
+      "rank": 62
+    },
+    {
+      "subset_id": 75,
+      "tasks": [
+        "Cars",
+        "MNIST",
+        "DTD",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.856338906288147,
+      "raw_accuracy": 0.7916621625423431,
+      "rank": 63
+    },
+    {
+      "subset_id": 114,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.855648422241211,
+      "raw_accuracy": 0.7677269577980042,
+      "rank": 64
+    },
+    {
+      "subset_id": 16,
+      "tasks": [
+        "RESISC45",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8545919895172119,
+      "raw_accuracy": 0.7979882717132568,
+      "rank": 65
+    },
+    {
+      "subset_id": 188,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "FER2013",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8541278600692749,
+      "raw_accuracy": 0.7653905749320984,
+      "rank": 66
+    },
+    {
+      "subset_id": 80,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8521297335624695,
+      "raw_accuracy": 0.7580042839050293,
+      "rank": 67
+    },
+    {
+      "subset_id": 82,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "Flowers102",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8519638895988464,
+      "raw_accuracy": 0.7639995574951172,
+      "rank": 68
+    },
+    {
+      "subset_id": 67,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8506463289260864,
+      "raw_accuracy": 0.7883979797363281,
+      "rank": 69
+    },
+    {
+      "subset_id": 109,
+      "tasks": [
+        "GTSRB",
+        "FER2013",
+        "STL10",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8494254112243652,
+      "raw_accuracy": 0.7606212019920349,
+      "rank": 70
+    },
+    {
+      "subset_id": 20,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8494216442108155,
+      "raw_accuracy": 0.7936922430992126,
+      "rank": 71
+    },
+    {
+      "subset_id": 99,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.848771846294403,
+      "raw_accuracy": 0.796890127658844,
+      "rank": 72
+    },
+    {
+      "subset_id": 121,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8478002071380615,
+      "raw_accuracy": 0.8173888802528382,
+      "rank": 73
+    },
+    {
+      "subset_id": 83,
+      "tasks": [
+        "RESISC45",
+        "FER2013",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8474696159362793,
+      "raw_accuracy": 0.7650274395942688,
+      "rank": 74
+    },
+    {
+      "subset_id": 148,
+      "tasks": [
+        "DTD",
+        "STL10",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8467286586761474,
+      "raw_accuracy": 0.7960993587970734,
+      "rank": 75
+    },
+    {
+      "subset_id": 76,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.845001471042633,
+      "raw_accuracy": 0.7570612311363221,
+      "rank": 76
+    },
+    {
+      "subset_id": 153,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "PCAM",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8440649032592773,
+      "raw_accuracy": 0.7601009428501129,
+      "rank": 77
+    },
+    {
+      "subset_id": 185,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "SVHN",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.843912410736084,
+      "raw_accuracy": 0.7897964715957642,
+      "rank": 78
+    },
+    {
+      "subset_id": 24,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "PCAM",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8429002285003662,
+      "raw_accuracy": 0.7616994857788086,
+      "rank": 79
+    },
+    {
+      "subset_id": 53,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "STL10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8401533365249634,
+      "raw_accuracy": 0.7702462315559387,
+      "rank": 80
+    },
+    {
+      "subset_id": 90,
+      "tasks": [
+        "RESISC45",
+        "PCAM",
+        "FER2013",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.839083468914032,
+      "raw_accuracy": 0.724048912525177,
+      "rank": 81
+    },
+    {
+      "subset_id": 71,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "OxfordIIITPet",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8389237523078918,
+      "raw_accuracy": 0.788176304101944,
+      "rank": 82
+    },
+    {
+      "subset_id": 146,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "SVHN",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8386693835258484,
+      "raw_accuracy": 0.7808475255966186,
+      "rank": 83
+    },
+    {
+      "subset_id": 100,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8378263711929321,
+      "raw_accuracy": 0.778885954618454,
+      "rank": 84
+    },
+    {
+      "subset_id": 68,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "EuroSAT",
+        "SVHN",
+        "OxfordIIITPet"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8376010537147522,
+      "raw_accuracy": 0.7944890141487122,
+      "rank": 85
+    },
+    {
+      "subset_id": 23,
+      "tasks": [
+        "EuroSAT",
+        "Flowers102",
+        "FER2013",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8373384833335876,
+      "raw_accuracy": 0.7464743375778198,
+      "rank": 86
+    },
+    {
+      "subset_id": 140,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8368667960166931,
+      "raw_accuracy": 0.7851712167263031,
+      "rank": 87
+    },
+    {
+      "subset_id": 43,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8348446369171143,
+      "raw_accuracy": 0.8060958862304688,
+      "rank": 88
+    },
+    {
+      "subset_id": 178,
+      "tasks": [
+        "SUN397",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.833652138710022,
+      "raw_accuracy": 0.7198458909988403,
+      "rank": 89
+    },
+    {
+      "subset_id": 98,
+      "tasks": [
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8333315253257751,
+      "raw_accuracy": 0.7630087375640869,
+      "rank": 90
+    },
+    {
+      "subset_id": 57,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "PCAM",
+        "FER2013",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8331339597702027,
+      "raw_accuracy": 0.7596317648887634,
+      "rank": 91
+    },
+    {
+      "subset_id": 39,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8329021334648132,
+      "raw_accuracy": 0.774135810136795,
+      "rank": 92
+    },
+    {
+      "subset_id": 96,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "DTD",
+        "CIFAR10",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8315502643585205,
+      "raw_accuracy": 0.7822768449783325,
+      "rank": 93
+    },
+    {
+      "subset_id": 103,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "MNIST",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8312697410583496,
+      "raw_accuracy": 0.7987373292446136,
+      "rank": 94
+    },
+    {
+      "subset_id": 1,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "SVHN",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8306055545806885,
+      "raw_accuracy": 0.8003225088119507,
+      "rank": 95
+    },
+    {
+      "subset_id": 177,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8304011702537537,
+      "raw_accuracy": 0.8036158919334412,
+      "rank": 96
+    },
+    {
+      "subset_id": 14,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "STL10",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8303960800170899,
+      "raw_accuracy": 0.7527716219425201,
+      "rank": 97
+    },
+    {
+      "subset_id": 194,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "DTD",
+        "STL10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8298007726669312,
+      "raw_accuracy": 0.7798277318477631,
+      "rank": 98
+    },
+    {
+      "subset_id": 59,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Flowers102",
+        "OxfordIIITPet",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8289953470230103,
+      "raw_accuracy": 0.79333336353302,
+      "rank": 99
+    },
+    {
+      "subset_id": 186,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8288121819496155,
+      "raw_accuracy": 0.7745233654975892,
+      "rank": 100
+    },
+    {
+      "subset_id": 15,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "FER2013",
+        "STL10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.827095627784729,
+      "raw_accuracy": 0.6966175675392151,
+      "rank": 101
+    },
+    {
+      "subset_id": 154,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "PCAM",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8269367814064026,
+      "raw_accuracy": 0.7375792860984802,
+      "rank": 102
+    },
+    {
+      "subset_id": 31,
+      "tasks": [
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "Food101",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8263384699821472,
+      "raw_accuracy": 0.7783875107765198,
+      "rank": 103
+    },
+    {
+      "subset_id": 129,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "Food101",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8246495246887207,
+      "raw_accuracy": 0.6864759683609009,
+      "rank": 104
+    },
+    {
+      "subset_id": 190,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "PCAM",
+        "CIFAR10",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8244512796401977,
+      "raw_accuracy": 0.7582371592521667,
+      "rank": 105
+    },
+    {
+      "subset_id": 56,
+      "tasks": [
+        "MNIST",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.824249005317688,
+      "raw_accuracy": 0.7495850026607513,
+      "rank": 106
+    },
+    {
+      "subset_id": 51,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "Food101",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8235417246818543,
+      "raw_accuracy": 0.7339400053024292,
+      "rank": 107
+    },
+    {
+      "subset_id": 115,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "OxfordIIITPet",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8233880639076233,
+      "raw_accuracy": 0.7636096358299256,
+      "rank": 108
+    },
+    {
+      "subset_id": 196,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "GTSRB",
+        "PCAM",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.823002278804779,
+      "raw_accuracy": 0.7553984880447387,
+      "rank": 109
+    },
+    {
+      "subset_id": 144,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "FER2013",
+        "CIFAR10",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8222357988357544,
+      "raw_accuracy": 0.7359571814537048,
+      "rank": 110
+    },
+    {
+      "subset_id": 91,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8221755504608155,
+      "raw_accuracy": 0.7383158564567566,
+      "rank": 111
+    },
+    {
+      "subset_id": 102,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "FER2013",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8213043451309204,
+      "raw_accuracy": 0.7636880993843078,
+      "rank": 112
+    },
+    {
+      "subset_id": 5,
+      "tasks": [
+        "SVHN",
+        "MNIST",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8212046980857849,
+      "raw_accuracy": 0.750522005558014,
+      "rank": 113
+    },
+    {
+      "subset_id": 94,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "SVHN",
+        "DTD",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8194156885147095,
+      "raw_accuracy": 0.7539101541042328,
+      "rank": 114
+    },
+    {
+      "subset_id": 108,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8187469959259033,
+      "raw_accuracy": 0.7158900022506713,
+      "rank": 115
+    },
+    {
+      "subset_id": 65,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "Flowers102",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8187287330627442,
+      "raw_accuracy": 0.7241401910781861,
+      "rank": 116
+    },
+    {
+      "subset_id": 193,
+      "tasks": [
+        "GTSRB",
+        "CIFAR100",
+        "FashionMNIST",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.812685513496399,
+      "raw_accuracy": 0.7464191555976868,
+      "rank": 117
+    },
+    {
+      "subset_id": 79,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "GTSRB",
+        "Flowers102",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8115038633346557,
+      "raw_accuracy": 0.7614136815071106,
+      "rank": 118
+    },
+    {
+      "subset_id": 184,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "FER2013",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.81126549243927,
+      "raw_accuracy": 0.7554221868515014,
+      "rank": 119
+    },
+    {
+      "subset_id": 152,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "GTSRB",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8097983002662659,
+      "raw_accuracy": 0.7461541175842286,
+      "rank": 120
+    },
+    {
+      "subset_id": 92,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8093685150146485,
+      "raw_accuracy": 0.7060120522975921,
+      "rank": 121
+    },
+    {
+      "subset_id": 173,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8085398316383362,
+      "raw_accuracy": 0.7614645719528198,
+      "rank": 122
+    },
+    {
+      "subset_id": 192,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8083704829216003,
+      "raw_accuracy": 0.7174198806285859,
+      "rank": 123
+    },
+    {
+      "subset_id": 21,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "GTSRB",
+        "STL10",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8072770953178405,
+      "raw_accuracy": 0.7757922291755677,
+      "rank": 124
+    },
+    {
+      "subset_id": 62,
+      "tasks": [
+        "EuroSAT",
+        "SVHN",
+        "Flowers102",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8062878489494324,
+      "raw_accuracy": 0.745223069190979,
+      "rank": 125
+    },
+    {
+      "subset_id": 182,
+      "tasks": [
+        "Cars",
+        "DTD",
+        "FER2013",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8059657692909241,
+      "raw_accuracy": 0.6850783586502075,
+      "rank": 126
+    },
+    {
+      "subset_id": 66,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "SVHN",
+        "Flowers102",
+        "FER2013"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8056824445724488,
+      "raw_accuracy": 0.6912965536117553,
+      "rank": 127
+    },
+    {
+      "subset_id": 160,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "Flowers102",
+        "FER2013",
+        "CIFAR100"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8056360721588135,
+      "raw_accuracy": 0.70797780752182,
+      "rank": 128
+    },
+    {
+      "subset_id": 2,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "RESISC45",
+        "MNIST",
+        "DTD"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8050902247428894,
+      "raw_accuracy": 0.7188573598861694,
+      "rank": 129
+    },
+    {
+      "subset_id": 156,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Flowers102",
+        "EMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8046990752220153,
+      "raw_accuracy": 0.7306304574012756,
+      "rank": 130
+    },
+    {
+      "subset_id": 60,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "PCAM",
+        "OxfordIIITPet",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8036021590232849,
+      "raw_accuracy": 0.7486589193344116,
+      "rank": 131
+    },
+    {
+      "subset_id": 27,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8032193541526794,
+      "raw_accuracy": 0.7151291966438293,
+      "rank": 132
+    },
+    {
+      "subset_id": 10,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8001126646995544,
+      "raw_accuracy": 0.7131755828857422,
+      "rank": 133
+    },
+    {
+      "subset_id": 125,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.8000819206237793,
+      "raw_accuracy": 0.7636287450790405,
+      "rank": 134
+    },
+    {
+      "subset_id": 52,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "GTSRB",
+        "FashionMNIST",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.799550461769104,
+      "raw_accuracy": 0.7605889081954956,
+      "rank": 135
+    },
+    {
+      "subset_id": 111,
+      "tasks": [
+        "RESISC45",
+        "SVHN",
+        "GTSRB",
+        "CIFAR100",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7989002704620362,
+      "raw_accuracy": 0.766111409664154,
+      "rank": 136
+    },
+    {
+      "subset_id": 165,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "FER2013",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7983206748962403,
+      "raw_accuracy": 0.7183845996856689,
+      "rank": 137
+    },
+    {
+      "subset_id": 163,
+      "tasks": [
+        "RESISC45",
+        "GTSRB",
+        "Flowers102",
+        "CIFAR100",
+        "Food101"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7979601502418519,
+      "raw_accuracy": 0.7459465622901916,
+      "rank": 138
+    },
+    {
+      "subset_id": 138,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "MNIST",
+        "FER2013",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7975249528884888,
+      "raw_accuracy": 0.7149920463562012,
+      "rank": 139
+    },
+    {
+      "subset_id": 73,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "FER2013",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7967330932617187,
+      "raw_accuracy": 0.6595738649368286,
+      "rank": 140
+    },
+    {
+      "subset_id": 137,
+      "tasks": [
+        "EuroSAT",
+        "DTD",
+        "Flowers102",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7966496348381042,
+      "raw_accuracy": 0.7053450524806977,
+      "rank": 141
+    },
+    {
+      "subset_id": 34,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "DTD",
+        "FER2013",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7948240637779236,
+      "raw_accuracy": 0.6485986709594727,
+      "rank": 142
+    },
+    {
+      "subset_id": 0,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "DTD",
+        "Flowers102",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.793338930606842,
+      "raw_accuracy": 0.716770875453949,
+      "rank": 143
+    },
+    {
+      "subset_id": 18,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Flowers102",
+        "CIFAR100",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7929030537605286,
+      "raw_accuracy": 0.7401484727859498,
+      "rank": 144
+    },
+    {
+      "subset_id": 189,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "PCAM",
+        "CIFAR100",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7916035056114197,
+      "raw_accuracy": 0.6895440638065338,
+      "rank": 145
+    },
+    {
+      "subset_id": 161,
+      "tasks": [
+        "SUN397",
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7914898753166199,
+      "raw_accuracy": 0.6789842963218689,
+      "rank": 146
+    },
+    {
+      "subset_id": 29,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7907227635383606,
+      "raw_accuracy": 0.693905770778656,
+      "rank": 147
+    },
+    {
+      "subset_id": 74,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "STL10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7883698225021363,
+      "raw_accuracy": 0.7524642229080201,
+      "rank": 148
+    },
+    {
+      "subset_id": 106,
+      "tasks": [
+        "SUN397",
+        "OxfordIIITPet",
+        "STL10",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7879043191671371,
+      "raw_accuracy": 0.7206355214118958,
+      "rank": 149
+    },
+    {
+      "subset_id": 42,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "DTD",
+        "FER2013",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7878931879997253,
+      "raw_accuracy": 0.7171367824077606,
+      "rank": 150
+    },
+    {
+      "subset_id": 157,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "GTSRB",
+        "PCAM",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7864491224288941,
+      "raw_accuracy": 0.7286497473716735,
+      "rank": 151
+    },
+    {
+      "subset_id": 141,
+      "tasks": [
+        "SUN397",
+        "SVHN",
+        "GTSRB",
+        "Flowers102",
+        "PCAM"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.785541570186615,
+      "raw_accuracy": 0.7143423080444335,
+      "rank": 152
+    },
+    {
+      "subset_id": 95,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7829081773757934,
+      "raw_accuracy": 0.7307488679885864,
+      "rank": 153
+    },
+    {
+      "subset_id": 46,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "CIFAR100",
+        "Food101",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7786861419677734,
+      "raw_accuracy": 0.7125081300735474,
+      "rank": 154
+    },
+    {
+      "subset_id": 101,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "PCAM",
+        "FER2013"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7719565391540527,
+      "raw_accuracy": 0.6741332173347473,
+      "rank": 155
+    },
+    {
+      "subset_id": 4,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "CIFAR10"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7711755871772766,
+      "raw_accuracy": 0.6994481265544892,
+      "rank": 156
+    },
+    {
+      "subset_id": 172,
+      "tasks": [
+        "SUN397",
+        "GTSRB",
+        "DTD",
+        "PCAM",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7689252853393554,
+      "raw_accuracy": 0.6503089427947998,
+      "rank": 157
+    },
+    {
+      "subset_id": 37,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "FashionMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.768543255329132,
+      "raw_accuracy": 0.6833075284957886,
+      "rank": 158
+    },
+    {
+      "subset_id": 110,
+      "tasks": [
+        "SUN397",
+        "SVHN",
+        "STL10",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7573210090398789,
+      "raw_accuracy": 0.7124260812997818,
+      "rank": 159
+    },
+    {
+      "subset_id": 72,
+      "tasks": [
+        "SVHN",
+        "GTSRB",
+        "DTD",
+        "FashionMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7545789837837219,
+      "raw_accuracy": 0.6810250878334045,
+      "rank": 160
+    },
+    {
+      "subset_id": 151,
+      "tasks": [
+        "RESISC45",
+        "GTSRB",
+        "DTD",
+        "Flowers102",
+        "EMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.753904914855957,
+      "raw_accuracy": 0.7164372324943542,
+      "rank": 161
+    },
+    {
+      "subset_id": 135,
+      "tasks": [
+        "OxfordIIITPet",
+        "Food101",
+        "FashionMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7517777770757675,
+      "raw_accuracy": 0.6778956919908523,
+      "rank": 162
+    },
+    {
+      "subset_id": 41,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7489527195692063,
+      "raw_accuracy": 0.7186907410621644,
+      "rank": 163
+    },
+    {
+      "subset_id": 120,
+      "tasks": [
+        "SUN397",
+        "EuroSAT",
+        "PCAM",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7438402593135833,
+      "raw_accuracy": 0.6820827186107635,
+      "rank": 164
+    },
+    {
+      "subset_id": 33,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.738449689745903,
+      "raw_accuracy": 0.7154596865177154,
+      "rank": 165
+    },
+    {
+      "subset_id": 61,
+      "tasks": [
+        "SUN397",
+        "PCAM",
+        "FashionMNIST",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7370491653680802,
+      "raw_accuracy": 0.6701767325401307,
+      "rank": 166
+    },
+    {
+      "subset_id": 113,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7322283089160919,
+      "raw_accuracy": 0.6761699914932251,
+      "rank": 167
+    },
+    {
+      "subset_id": 118,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "Flowers102",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7267023950815201,
+      "raw_accuracy": 0.7117712736129761,
+      "rank": 168
+    },
+    {
+      "subset_id": 88,
+      "tasks": [
+        "FER2013",
+        "CIFAR100",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7208209782838821,
+      "raw_accuracy": 0.6511816114187241,
+      "rank": 169
+    },
+    {
+      "subset_id": 187,
+      "tasks": [
+        "RESISC45",
+        "FER2013",
+        "STL10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7193138390779495,
+      "raw_accuracy": 0.6296634167432785,
+      "rank": 170
+    },
+    {
+      "subset_id": 6,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "FER2013",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7189649850130081,
+      "raw_accuracy": 0.6673867106437683,
+      "rank": 171
+    },
+    {
+      "subset_id": 40,
+      "tasks": [
+        "EuroSAT",
+        "OxfordIIITPet",
+        "CIFAR100",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7186042457818985,
+      "raw_accuracy": 0.6804893672466278,
+      "rank": 172
+    },
+    {
+      "subset_id": 104,
+      "tasks": [
+        "FER2013",
+        "CIFAR100",
+        "CIFAR10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7151096522808075,
+      "raw_accuracy": 0.6158768206834793,
+      "rank": 173
+    },
+    {
+      "subset_id": 69,
+      "tasks": [
+        "SVHN",
+        "CIFAR100",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7079374253749847,
+      "raw_accuracy": 0.648094293475151,
+      "rank": 174
+    },
+    {
+      "subset_id": 47,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "MNIST",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7053474366664887,
+      "raw_accuracy": 0.677597776055336,
+      "rank": 175
+    },
+    {
+      "subset_id": 191,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "PCAM",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7037469506263733,
+      "raw_accuracy": 0.5808826982975006,
+      "rank": 176
+    },
+    {
+      "subset_id": 155,
+      "tasks": [
+        "EuroSAT",
+        "MNIST",
+        "Flowers102",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7019559234380722,
+      "raw_accuracy": 0.6720251858234405,
+      "rank": 177
+    },
+    {
+      "subset_id": 150,
+      "tasks": [
+        "Cars",
+        "EuroSAT",
+        "MNIST",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.701926788687706,
+      "raw_accuracy": 0.6686156868934632,
+      "rank": 178
+    },
+    {
+      "subset_id": 86,
+      "tasks": [
+        "GTSRB",
+        "PCAM",
+        "STL10",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.7001681208610535,
+      "raw_accuracy": 0.6570120930671692,
+      "rank": 179
+    },
+    {
+      "subset_id": 84,
+      "tasks": [
+        "EuroSAT",
+        "PCAM",
+        "CIFAR100",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.699808731675148,
+      "raw_accuracy": 0.6509075850248337,
+      "rank": 180
+    },
+    {
+      "subset_id": 19,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "OxfordIIITPet",
+        "STL10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6986312568187714,
+      "raw_accuracy": 0.661931774020195,
+      "rank": 181
+    },
+    {
+      "subset_id": 128,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "STL10",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6961107730865479,
+      "raw_accuracy": 0.6604230850934982,
+      "rank": 182
+    },
+    {
+      "subset_id": 134,
+      "tasks": [
+        "DTD",
+        "PCAM",
+        "STL10",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6960412383079528,
+      "raw_accuracy": 0.6137001752853394,
+      "rank": 183
+    },
+    {
+      "subset_id": 97,
+      "tasks": [
+        "SVHN",
+        "FER2013",
+        "CIFAR10",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6956104755401611,
+      "raw_accuracy": 0.6413713663816452,
+      "rank": 184
+    },
+    {
+      "subset_id": 162,
+      "tasks": [
+        "Cars",
+        "GTSRB",
+        "CIFAR10",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6920783132314682,
+      "raw_accuracy": 0.6465801388025284,
+      "rank": 185
+    },
+    {
+      "subset_id": 195,
+      "tasks": [
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "EMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6833004772663116,
+      "raw_accuracy": 0.6490342825651169,
+      "rank": 186
+    },
+    {
+      "subset_id": 55,
+      "tasks": [
+        "Flowers102",
+        "FER2013",
+        "FashionMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6816596001386642,
+      "raw_accuracy": 0.5844330072402955,
+      "rank": 187
+    },
+    {
+      "subset_id": 35,
+      "tasks": [
+        "SUN397",
+        "DTD",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6771433919668197,
+      "raw_accuracy": 0.580595389008522,
+      "rank": 188
+    },
+    {
+      "subset_id": 116,
+      "tasks": [
+        "SUN397",
+        "Cars",
+        "MNIST",
+        "DTD",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6746868699789047,
+      "raw_accuracy": 0.5940167307853699,
+      "rank": 189
+    },
+    {
+      "subset_id": 119,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "PCAM",
+        "OxfordIIITPet",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6735839366912841,
+      "raw_accuracy": 0.6405960291624069,
+      "rank": 190
+    },
+    {
+      "subset_id": 167,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "Flowers102",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6718591958284378,
+      "raw_accuracy": 0.6135968625545501,
+      "rank": 191
+    },
+    {
+      "subset_id": 117,
+      "tasks": [
+        "SVHN",
+        "DTD",
+        "Food101",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.66904436647892,
+      "raw_accuracy": 0.5888791501522064,
+      "rank": 192
+    },
+    {
+      "subset_id": 132,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "CIFAR100",
+        "Food101",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6671936392784119,
+      "raw_accuracy": 0.6052986234426498,
+      "rank": 193
+    },
+    {
+      "subset_id": 44,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "CIFAR10",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6565292447805404,
+      "raw_accuracy": 0.6180749416351319,
+      "rank": 194
+    },
+    {
+      "subset_id": 147,
+      "tasks": [
+        "RESISC45",
+        "EuroSAT",
+        "DTD",
+        "PCAM",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6453660637140274,
+      "raw_accuracy": 0.5979388624429702,
+      "rank": 195
+    },
+    {
+      "subset_id": 36,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6370800018310547,
+      "raw_accuracy": 0.5493617415428161,
+      "rank": 196
+    },
+    {
+      "subset_id": 54,
+      "tasks": [
+        "Cars",
+        "RESISC45",
+        "DTD",
+        "CIFAR100",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6346625238656998,
+      "raw_accuracy": 0.5677952885627746,
+      "rank": 197
+    },
+    {
+      "subset_id": 25,
+      "tasks": [
+        "EuroSAT",
+        "GTSRB",
+        "Flowers102",
+        "FashionMNIST",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.629719689488411,
+      "raw_accuracy": 0.6095069795846939,
+      "rank": 198
+    },
+    {
+      "subset_id": 13,
+      "tasks": [
+        "GTSRB",
+        "DTD",
+        "EMNIST",
+        "KMNIST",
+        "RenderedSST2"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.628280508518219,
+      "raw_accuracy": 0.567709618806839,
+      "rank": 199
+    },
+    {
+      "subset_id": 127,
+      "tasks": [
+        "RESISC45",
+        "DTD",
+        "Flowers102",
+        "FER2013",
+        "KMNIST"
+      ],
+      "task_indices": [],
+      "normalized_accuracy": 0.6241928398609161,
+      "raw_accuracy": 0.5461075752973557,
+      "rank": 200
+    }
+  ]
+}

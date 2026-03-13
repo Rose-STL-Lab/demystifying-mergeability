@@ -37,7 +37,7 @@ from model_merging.metrics import (
 )
 from model_merging.metrics.mergeability import TUPLE_METRICS
 from model_merging.metrics.mergeability import build_calibration_loader
-from model_merging.utils.io_utils import load_model_from_hf
+from model_merging.utils.io_utils import load_model_from_hf, load_model_from_disk
 from model_merging.utils.utils import compute_task_dict, print_memory
 
 pylogger = logging.getLogger(__name__)
@@ -66,9 +66,23 @@ def run(cfg: DictConfig) -> Dict:
     pylogger.info(f"Computing pairwise mergeability metrics for {n_datasets} datasets")
     pylogger.info(f"Datasets: {dataset_names}")
 
+    # Check if local checkpoint path is configured
+    local_ckpt_path = cfg.mergeability.get("local_ckpt_path", None)
+    use_local = local_ckpt_path is not None and Path(local_ckpt_path).exists()
+
+    if use_local:
+        local_ckpt_path = Path(local_ckpt_path)
+        pylogger.info(f"Using local checkpoints from: {local_ckpt_path}")
+    else:
+        pylogger.info("Using HuggingFace checkpoints (crisostomi/{model_name}-{dataset})")
+
     # Load pretrained encoder
     pylogger.info("Loading pretrained encoder...")
-    pretrained_encoder = load_model_from_hf(model_name=cfg.nn.encoder.model_name)
+    if use_local:
+        pretrained_path = local_ckpt_path / "base" / "model.pt"
+        pretrained_encoder = load_model_from_disk(str(pretrained_path), model_name=cfg.nn.encoder.model_name)
+    else:
+        pretrained_encoder = load_model_from_hf(model_name=cfg.nn.encoder.model_name)
     pretrained_state_dict = pretrained_encoder.state_dict()
 
     # Load all fine-tuned models
@@ -76,9 +90,13 @@ def run(cfg: DictConfig) -> Dict:
     finetuned_state_dicts = {}
     for dataset_name in dataset_names:
         pylogger.info(f"  Loading {dataset_name}...")
-        finetuned = load_model_from_hf(
-            model_name=cfg.nn.encoder.model_name, dataset_name=dataset_name
-        )
+        if use_local:
+            finetuned_path = local_ckpt_path / dataset_name / "model.pt"
+            finetuned = load_model_from_disk(str(finetuned_path), model_name=cfg.nn.encoder.model_name)
+        else:
+            finetuned = load_model_from_hf(
+                model_name=cfg.nn.encoder.model_name, dataset_name=dataset_name
+            )
         finetuned_state_dicts[dataset_name] = finetuned.state_dict()
         del finetuned
         torch.cuda.empty_cache()

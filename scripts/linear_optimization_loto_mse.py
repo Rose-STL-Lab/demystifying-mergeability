@@ -13,7 +13,8 @@ from pathlib import Path
 import json
 import numpy as np
 import torch
-from scipy.stats import pearsonr
+from scipy.stats import pearsonr, spearmanr
+import argparse
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
@@ -315,16 +316,27 @@ def run_loto_cv_mse(metrics_array, performance_array, pair_names, all_tasks,
 
 
 def main():
-    # Configuration
-    metrics_path = Path('/home/lzhou/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-    results_base_path = Path('/home/lzhou/MM/Mergeability-Bench/results/ViT-B-16')
-    output_dir = Path('/home/lzhou/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_mse')
+    parser = argparse.ArgumentParser(description='LOTO Cross-Validation with MSE Objective')
+    parser.add_argument('--model', type=str, default='ViT-B-16', choices=['ViT-B-16', 'ViT-B-32'],
+                        help='Model architecture to use')
+    args = parser.parse_args()
+
+    model = args.model
+
+    # Configuration - paths based on model
+    base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results')
+    metrics_path = base_path / 'mergeability' / model / 'pairwise_metrics_N20.json'
+    results_base_path = base_path / model
+
+    # Output directory - always use model-specific subfolder
+    output_dir = base_path / 'metric_linear_optimization_v2' / model.lower() / 'loto_cv_mse'
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'isotropic']
+    merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print("Linear Optimization with LOTO Cross-Validation (MSE Objective)")
+    print(f"Model: {model}")
     print("="*70)
     print()
 
@@ -348,6 +360,15 @@ def main():
     print("Extracting pairwise data...")
     metrics_array, performance_matrix, pair_names, metric_names, merge_methods = \
         extract_all_mergers_data(metrics_data, performance_data_dict)
+
+    # Always exclude redundant metrics (they are averages of _top_k and _bottom_k variants)
+    redundant_metrics = {'right_subspace_overlap'}
+    keep_indices = [i for i, name in enumerate(metric_names) if name not in redundant_metrics]
+    if len(keep_indices) < len(metric_names):
+        excluded_count = len(metric_names) - len(keep_indices)
+        metric_names = [metric_names[i] for i in keep_indices]
+        metrics_array = metrics_array[:, keep_indices]
+        print(f"Excluded {excluded_count} redundant metrics: {sorted(redundant_metrics)}")
 
     print(f"Number of pairs: {len(pair_names)}")
     print(f"Number of metrics: {len(metric_names)}")
@@ -400,10 +421,14 @@ def main():
         print(f"Saved results to: {method_output_file}")
         print()
 
-    # Save combined results
-    combined_output_file = output_dir / 'all_methods_loto_mse_results.json'
+    # Save combined results (matching L1 LOTO format)
+    combined_results = {
+        'objective': 'MSE',
+        'methods': all_results
+    }
+    combined_output_file = output_dir / 'all_methods_loto_results.json'
     with open(combined_output_file, 'w') as f:
-        json.dump(all_results, f, indent=2)
+        json.dump(combined_results, f, indent=2)
 
     print("="*70)
     print("SUMMARY: LOTO Cross-Validation Results (MSE Objective)")

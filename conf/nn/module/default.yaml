@@ -11,7 +11,7 @@ image_encoder: ??
 classification_heads: ??
 
 optimizer:
-  _target_: torch.optim.AdamW
+  _target_: torch.optim.SGD #AdamW
   lr: 1e-5
   weight_decay: 0.1
 

@@ -4,7 +4,7 @@ import json
 import numpy as np
 
 # Load results
-results_dir = '/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda1.0'
+results_dir = '/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/vit-b-16_AdamW/loto_cv_l1_lambda1.0'
 methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
 all_results = {}

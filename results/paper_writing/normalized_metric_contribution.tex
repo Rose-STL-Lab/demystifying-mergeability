@@ -1,0 +1,182 @@
+\section{Normalized Metric Contributions}
+\label{sec:normalized_contributions}
+
+\subsection{Motivation}
+
+L1-regularized optimization does not constrain the overall scale of learned coefficients---different mergers may have coefficients with different total magnitudes depending on the signal strength in the training data. To enable fair comparison of metric importance \emph{across} mergers, we normalize the absolute coefficient values to sum to 1, yielding a relative contribution for each metric:
+\begin{equation}
+\text{contribution}_i = \frac{|\beta_i|}{\sum_{j=1}^{28} |\beta_j|}
+\end{equation}
+where $\beta_i$ is the learned coefficient for metric $i$. This normalization reveals how each merger \emph{allocates} its predictive capacity across metrics, independent of overall coefficient scale.
+
+\subsection{Results}
+
+Tables~\ref{tab:norm_contrib_b16} and~\ref{tab:norm_contrib_b32} present the top-5 metrics by normalized contribution for each merging method on ViT-B-16 and ViT-B-32, respectively.
+
+\begin{table}[h]
+\centering
+\caption{Top-5 metrics by normalized contribution for ViT-B-16. Gradient metrics (bold) dominate for all mergers except TIES.}
+\label{tab:norm_contrib_b16}
+\small
+\begin{tabular}{llllll}
+\toprule
+\textbf{Merger} & \textbf{\#1} & \textbf{\#2} & \textbf{\#3} & \textbf{\#4} & \textbf{\#5} \\
+\midrule
+Weight Avg & \textbf{enc\_grad (24.8\%)} & \textbf{inp\_grad (19.3\%)} & act\_cos (9.1\%) & rs\_top (9.1\%) & rs\_bot (6.7\%) \\
+Arithmetic & \textbf{inp\_grad (19.8\%)} & \textbf{enc\_grad (18.4\%)} & tv\_l2 (13.7\%) & im\_bot (11.1\%) & sv\_overlap (9.9\%) \\
+TSV & \textbf{enc\_grad (23.0\%)} & \textbf{inp\_grad (17.4\%)} & rs\_bot (14.4\%) & rs\_top (12.4\%) & act\_cos (9.4\%) \\
+TIES & im\_bot (16.8\%) & tv\_l2 (16.4\%) & \textbf{inp\_grad (15.3\%)} & sv\_overlap (13.2\%) & \textbf{enc\_grad (13.1\%)} \\
+DARE & \textbf{enc\_grad (27.9\%)} & \textbf{inp\_grad (20.6\%)} & act\_cos (9.8\%) & rs\_top (9.0\%) & rs\_bot (7.4\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Top-5 metrics by normalized contribution for ViT-B-32. Encoder gradient remains dominant, but input gradient is less prominent.}
+\label{tab:norm_contrib_b32}
+\small
+\begin{tabular}{llllll}
+\toprule
+\textbf{Merger} & \textbf{\#1} & \textbf{\#2} & \textbf{\#3} & \textbf{\#4} & \textbf{\#5} \\
+\midrule
+Weight Avg & \textbf{enc\_grad (32.8\%)} & rs\_top (12.3\%) & act\_mag (11.1\%) & tv\_l2 (6.8\%) & rs\_bot (5.7\%) \\
+Arithmetic & act\_mag (23.0\%) & \textbf{enc\_grad (22.3\%)} & tv\_l2 (10.9\%) & act\_dot (8.3\%) & act\_l2 (5.4\%) \\
+TSV & \textbf{enc\_grad (27.7\%)} & rs\_top (17.4\%) & rs\_bot (9.1\%) & act\_cos (7.4\%) & act\_mag (6.2\%) \\
+TIES & act\_mag (19.7\%) & \textbf{enc\_grad (13.2\%)} & tv\_l2 (11.8\%) & sv\_overlap (10.0\%) & act\_l2 (9.1\%) \\
+DARE & \textbf{enc\_grad (29.4\%)} & act\_mag (14.1\%) & rs\_top (11.4\%) & tv\_l2 (6.6\%) & rs\_bot (5.3\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Combined Gradient Contribution}
+
+Table~\ref{tab:gradient_contribution} summarizes the total contribution of gradient metrics (\texttt{encoder\_gradient\_l2\_distance} + \texttt{input\_gradient\_l2\_distance}) for each merger across both architectures.
+
+\begin{table}[h]
+\centering
+\caption{Combined contribution of gradient metrics (encoder + input gradient L2 distance) to mergeability prediction. TIES allocates substantially less predictive weight to gradient metrics than other mergers.}
+\label{tab:gradient_contribution}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Merger} & \textbf{B-16 enc\_grad} & \textbf{B-16 inp\_grad} & \textbf{B-16 Total} & \textbf{B-32 Total} \\
+\midrule
+Weight Avg & 24.8\% & 19.3\% & \textbf{44.1\%} & 34.3\% \\
+Arithmetic & 18.4\% & 19.8\% & \textbf{38.2\%} & 22.9\% \\
+TSV & 23.0\% & 17.4\% & \textbf{40.3\%} & 30.2\% \\
+TIES & 13.1\% & 15.3\% & 28.4\% & 13.9\% \\
+DARE & 27.9\% & 20.6\% & \textbf{48.5\%} & 34.0\% \\
+\midrule
+\textbf{Average (excl. TIES)} & 23.5\% & 19.3\% & \textbf{42.8\%} & 30.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Discussion}
+
+\paragraph{Gradient Metrics Dominate for Most Mergers.}
+For Weight Averaging, Arithmetic, TSV, and DARE on ViT-B-16, gradient metrics collectively account for 38--49\% of the total normalized contribution, with both metrics appearing in the top 2 positions. This concentration explains why gradient magnitude regularization during fine-tuning effectively improves these mergers: optimizing for gradient proximity directly targets nearly half of the predictive signal.
+
+\paragraph{TIES Has a Different Profile.}
+TIES allocates only 28.4\% (B-16) and 13.9\% (B-32) of its predictive weight to gradient metrics---substantially less than the 43\% average of other mergers on B-16. Instead, TIES relies more heavily on \texttt{interaction\_matrix\_overlap\_bottom\_k} (16.8\%) and \texttt{task\_vector\_l2\_distance} (16.4\%), which together exceed its gradient contribution. This distinct profile explains why gradient magnitude regularization does not improve TIES: the regularization targets metrics that contribute less than one-third of TIES's predictive signal.
+
+\paragraph{Architecture Differences.}
+On ViT-B-32, \texttt{input\_gradient\_l2\_distance} contributes less across all mergers compared to B-16. The \texttt{encoder\_gradient\_l2\_distance} remains the dominant predictor for Weight Avg, TSV, and DARE, but \texttt{activation\_magnitude\_ratio} emerges as a top-2 metric for Arithmetic and TIES. This suggests that the relative importance of metrics may vary with architecture, though gradient metrics remain important overall.
+
+\paragraph{Implications for Regularization Design.}
+The normalized contribution analysis provides a principled way to design merger-specific regularization strategies:
+\begin{itemize}
+    \item For mergers where gradient metrics contribute $>$40\% (Weight Avg, Arithmetic, TSV, DARE), gradient magnitude regularization is well-motivated.
+    \item For TIES, regularization targeting \texttt{interaction\_matrix\_overlap} or \texttt{task\_vector\_l2\_distance} may be more effective.
+    \item The contribution percentages can serve as weights for multi-objective regularization that targets multiple metric categories.
+\end{itemize}
+
+\subsection{Complete Normalized Contributions}
+
+Tables~\ref{tab:full_norm_b16} and~\ref{tab:full_norm_b32} present the complete normalized contributions for all 28 metrics across all five merging methods for ViT-B-16 and ViT-B-32, respectively.
+
+\begin{table}[h]
+\centering
+\caption{Complete normalized metric contributions for ViT-B-16 (\%). Each column sums to 100\%. Metrics are sorted alphabetically.}
+\label{tab:full_norm_b16}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Metric} & \textbf{W.Avg} & \textbf{Arith} & \textbf{TSV} & \textbf{TIES} & \textbf{DARE} \\
+\midrule
+activation\_cosine\_similarity & 9.07 & 1.83 & 9.37 & 0.55 & 9.79 \\
+activation\_dot\_product & 5.25 & 2.17 & 5.05 & 0.63 & 3.96 \\
+activation\_l2\_distance & 3.12 & 1.73 & 1.82 & 1.12 & 2.43 \\
+activation\_magnitude\_ratio & 1.37 & 2.27 & 1.33 & 3.56 & 1.86 \\
+effective\_rank & 0.70 & 0.34 & 0.17 & 0.96 & 0.11 \\
+effective\_rank\_mergeability\_score & 0.67 & 0.44 & 0.03 & 0.59 & 0.28 \\
+encoder\_gradient\_cosine\_similarity & 2.29 & 0.79 & 1.40 & 0.02 & 2.27 \\
+encoder\_gradient\_dot\_product & 0.92 & 1.65 & 0.41 & 0.62 & 1.41 \\
+\textbf{encoder\_gradient\_l2\_distance} & \textbf{24.80} & \textbf{18.39} & \textbf{22.97} & \textbf{13.10} & \textbf{27.93} \\
+input\_gradient\_cosine\_similarity & 0.43 & 0.62 & 0.47 & 0.00 & 0.76 \\
+input\_gradient\_dot\_product & 2.96 & 3.95 & 1.13 & 2.48 & 2.91 \\
+\textbf{input\_gradient\_l2\_distance} & \textbf{19.28} & \textbf{19.80} & \textbf{17.38} & \textbf{15.25} & \textbf{20.57} \\
+interaction\_matrix\_overlap\_bottom\_k & 0.29 & 11.11 & 0.07 & 16.76 & 0.69 \\
+interaction\_matrix\_overlap\_top\_k & 1.96 & 0.04 & 0.72 & 0.15 & 1.03 \\
+layerwise\_effective\_rank & 0.65 & 0.12 & 0.80 & 0.19 & 0.38 \\
+layerwise\_effective\_rank\_merg\_score & 0.91 & 0.20 & 0.72 & 0.45 & 0.39 \\
+right\_subspace\_overlap\_bottom\_k & 6.72 & 2.10 & 14.44 & 7.45 & 7.41 \\
+right\_subspace\_overlap\_top\_k & 9.07 & 3.36 & 12.39 & 0.31 & 8.98 \\
+singular\_value\_overlap & 0.33 & 9.88 & 5.04 & 13.20 & 0.19 \\
+singular\_value\_ratio & 0.44 & 0.40 & 0.16 & 0.21 & 0.26 \\
+spectral\_gap & 0.24 & 0.46 & 0.06 & 0.45 & 0.21 \\
+stable\_rank & 0.76 & 0.52 & 0.12 & 0.73 & 0.05 \\
+subspace\_overlap & 0.81 & 2.00 & 0.20 & 2.17 & 0.59 \\
+task\_vector\_cosine\_similarity & 0.28 & 0.32 & 0.40 & 0.78 & 0.20 \\
+task\_vector\_dot\_product & 0.83 & 0.61 & 0.78 & 0.46 & 0.62 \\
+task\_vector\_l2\_distance & 4.71 & 13.65 & 2.21 & 16.39 & 4.61 \\
+task\_vector\_magnitude\_ratio & 0.47 & 1.20 & 0.10 & 0.55 & 0.07 \\
+weight\_space\_angle & 0.67 & 0.09 & 0.26 & 0.86 & 0.04 \\
+\midrule
+\textbf{Sum} & 100.00 & 100.00 & 100.00 & 100.00 & 100.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Complete normalized metric contributions for ViT-B-32 (\%). Each column sums to 100\%. Metrics are sorted alphabetically.}
+\label{tab:full_norm_b32}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Metric} & \textbf{W.Avg} & \textbf{Arith} & \textbf{TSV} & \textbf{TIES} & \textbf{DARE} \\
+\midrule
+activation\_cosine\_similarity & 3.96 & 1.49 & 7.37 & 1.71 & 4.18 \\
+activation\_dot\_product & 3.90 & 8.30 & 5.34 & 7.23 & 4.73 \\
+activation\_l2\_distance & 2.34 & 5.45 & 1.15 & 9.06 & 1.72 \\
+activation\_magnitude\_ratio & 11.13 & 23.04 & 6.24 & 19.68 & 14.10 \\
+effective\_rank & 0.43 & 0.38 & 0.12 & 0.91 & 0.73 \\
+effective\_rank\_mergeability\_score & 0.19 & 0.24 & 0.06 & 1.17 & 0.64 \\
+encoder\_gradient\_cosine\_similarity & 3.26 & 2.01 & 3.30 & 2.04 & 2.28 \\
+encoder\_gradient\_dot\_product & 2.58 & 0.53 & 1.45 & 0.70 & 1.58 \\
+\textbf{encoder\_gradient\_l2\_distance} & \textbf{32.85} & \textbf{22.32} & \textbf{27.67} & \textbf{13.15} & \textbf{29.41} \\
+input\_gradient\_cosine\_similarity & 0.78 & 3.22 & 0.16 & 3.39 & 0.26 \\
+input\_gradient\_dot\_product & 0.78 & 0.82 & 1.03 & 0.46 & 0.35 \\
+input\_gradient\_l2\_distance & 1.46 & 0.56 & 2.49 & 0.78 & 4.57 \\
+interaction\_matrix\_overlap\_bottom\_k & 2.53 & 1.59 & 3.23 & 6.91 & 1.80 \\
+interaction\_matrix\_overlap\_top\_k & 1.53 & 1.15 & 1.37 & 0.51 & 1.38 \\
+layerwise\_effective\_rank & 0.88 & 0.58 & 0.27 & 1.35 & 0.88 \\
+layerwise\_effective\_rank\_merg\_score & 0.61 & 0.45 & 0.52 & 1.25 & 0.83 \\
+right\_subspace\_overlap\_bottom\_k & 5.73 & 0.16 & 9.11 & 1.65 & 5.33 \\
+right\_subspace\_overlap\_top\_k & 12.28 & 3.85 & 17.42 & 0.38 & 11.38 \\
+singular\_value\_overlap & 0.88 & 5.19 & 5.08 & 9.98 & 1.23 \\
+singular\_value\_ratio & 0.11 & 0.39 & 0.45 & 0.88 & 1.06 \\
+spectral\_gap & 0.43 & 0.70 & 0.36 & 0.61 & 1.00 \\
+stable\_rank & 0.35 & 0.04 & 0.22 & 0.81 & 0.79 \\
+subspace\_overlap & 1.16 & 2.63 & 0.14 & 0.37 & 0.67 \\
+task\_vector\_cosine\_similarity & 0.85 & 1.00 & 0.03 & 0.55 & 0.74 \\
+task\_vector\_dot\_product & 0.71 & 1.45 & 0.50 & 1.82 & 0.51 \\
+task\_vector\_l2\_distance & 6.83 & 10.85 & 3.95 & 11.75 & 6.62 \\
+task\_vector\_magnitude\_ratio & 0.40 & 0.23 & 0.47 & 0.33 & 0.62 \\
+weight\_space\_angle & 1.06 & 1.37 & 0.46 & 0.55 & 0.60 \\
+\midrule
+\textbf{Sum} & 100.00 & 100.00 & 100.00 & 100.00 & 100.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

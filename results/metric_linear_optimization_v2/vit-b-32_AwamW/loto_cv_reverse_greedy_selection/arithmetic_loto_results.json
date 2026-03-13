@@ -1,0 +1,2181 @@
+{
+  "aggregate_metrics": {
+    "train_r": 0.19382910303305734,
+    "train_p": 1.061122825919716e-29,
+    "val_r": 0.03313677218129564,
+    "val_p": 0.5240316957206587
+  },
+  "per_fold_stats": {
+    "train_r_mean": 0.7221640704743149,
+    "train_r_std": 0.19201383531140842,
+    "val_r_mean": 0.609198784745587,
+    "val_r_std": 0.24126547174880855,
+    "n_retained_mean": 22.1,
+    "n_retained_std": 2.3643180835073783
+  },
+  "average_coefficients": {
+    "task_vector_cosine_similarity": 5.908644936606288,
+    "task_vector_l2_distance": -3.178833119571209,
+    "task_vector_dot_product": 3.856766317039728,
+    "weight_space_angle": -11.689387135487049,
+    "task_vector_magnitude_ratio": 4.6899562368169425,
+    "effective_rank": -0.16714217886328697,
+    "effective_rank_mergeability_score": -4.235314309597015,
+    "stable_rank": -5.91610949721653,
+    "spectral_gap": 4.829903053352609,
+    "singular_value_ratio": -5.07320473222062,
+    "layerwise_effective_rank": -0.9163738951086998,
+    "layerwise_effective_rank_mergeability_score": 4.3634573022834955,
+    "singular_value_overlap": -10.93276944188401,
+    "subspace_overlap": 1.2659999669529498,
+    "right_subspace_overlap_top_k": 10.716234654933213,
+    "right_subspace_overlap_bottom_k": -4.625885875709355,
+    "interaction_matrix_overlap_top_k": 1.567689106427133,
+    "interaction_matrix_overlap_bottom_k": 9.652038218080998,
+    "activation_l2_distance": -9.195182048529386,
+    "activation_cosine_similarity": 9.769384013861417,
+    "activation_magnitude_ratio": 15.613577825948596,
+    "activation_dot_product": 0.07473173234611749,
+    "encoder_gradient_cosine_similarity": 0.9066412969492376,
+    "encoder_gradient_l2_distance": -16.011591472104193,
+    "encoder_gradient_dot_product": 0.5577607695013285,
+    "input_gradient_cosine_similarity": 9.517115613259374,
+    "input_gradient_l2_distance": -11.11291739246808,
+    "input_gradient_dot_product": 0.7659193057566881
+  },
+  "coefficient_std": {
+    "task_vector_cosine_similarity": 29.364234186372332,
+    "task_vector_l2_distance": 29.887636229922077,
+    "task_vector_dot_product": 35.2919646919438,
+    "weight_space_angle": 40.31163074749978,
+    "task_vector_magnitude_ratio": 15.550137843268372,
+    "effective_rank": 4.331675618073243,
+    "effective_rank_mergeability_score": 20.062629854875254,
+    "stable_rank": 17.97670777026628,
+    "spectral_gap": 20.339865183510202,
+    "singular_value_ratio": 26.73224583641403,
+    "layerwise_effective_rank": 21.520048210250717,
+    "layerwise_effective_rank_mergeability_score": 15.664610399022592,
+    "singular_value_overlap": 17.101523442398566,
+    "subspace_overlap": 12.869435230842427,
+    "right_subspace_overlap_top_k": 30.636139022344537,
+    "right_subspace_overlap_bottom_k": 24.785003048500904,
+    "interaction_matrix_overlap_top_k": 26.728991009999604,
+    "interaction_matrix_overlap_bottom_k": 23.878137478891553,
+    "activation_l2_distance": 31.678939234426622,
+    "activation_cosine_similarity": 28.06893915083373,
+    "activation_magnitude_ratio": 21.100211064512774,
+    "activation_dot_product": 30.725018893487427,
+    "encoder_gradient_cosine_similarity": 6.930921036943135,
+    "encoder_gradient_l2_distance": 25.16860192660694,
+    "encoder_gradient_dot_product": 1.7230983334798537,
+    "input_gradient_cosine_similarity": 13.653390278943572,
+    "input_gradient_l2_distance": 23.039856234502064,
+    "input_gradient_dot_product": 8.216020007713862
+  },
+  "retention_frequency": {
+    "task_vector_cosine_similarity": 0.8,
+    "task_vector_l2_distance": 1.0,
+    "task_vector_dot_product": 1.0,
+    "weight_space_angle": 0.4,
+    "task_vector_magnitude_ratio": 0.8,
+    "effective_rank": 0.35,
+    "effective_rank_mergeability_score": 0.6,
+    "stable_rank": 1.0,
+    "spectral_gap": 0.7,
+    "singular_value_ratio": 0.5,
+    "layerwise_effective_rank": 0.45,
+    "layerwise_effective_rank_mergeability_score": 0.75,
+    "singular_value_overlap": 1.0,
+    "subspace_overlap": 0.55,
+    "right_subspace_overlap_top_k": 0.65,
+    "right_subspace_overlap_bottom_k": 1.0,
+    "interaction_matrix_overlap_top_k": 0.85,
+    "interaction_matrix_overlap_bottom_k": 1.0,
+    "activation_l2_distance": 0.5,
+    "activation_cosine_similarity": 0.7,
+    "activation_magnitude_ratio": 1.0,
+    "activation_dot_product": 1.0,
+    "encoder_gradient_cosine_similarity": 0.95,
+    "encoder_gradient_l2_distance": 1.0,
+    "encoder_gradient_dot_product": 0.55,
+    "input_gradient_cosine_similarity": 1.0,
+    "input_gradient_l2_distance": 1.0,
+    "input_gradient_dot_product": 1.0
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "held_out_task": "SUN397",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.817799665731467,
+      "val_r": 0.5143606879425924,
+      "n_retained_metrics": 22,
+      "n_removed_metrics": 6,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "spectral_gap",
+        "effective_rank",
+        "activation_l2_distance",
+        "weight_space_angle",
+        "subspace_overlap",
+        "layerwise_effective_rank"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.14229793846607208,
+        "task_vector_l2_distance": -4.172908306121826,
+        "task_vector_dot_product": 0.5755807757377625,
+        "task_vector_magnitude_ratio": 1.8996127843856812,
+        "effective_rank_mergeability_score": 1.1199759244918823,
+        "stable_rank": 0.004322332795709372,
+        "singular_value_ratio": -1.9234585762023926,
+        "layerwise_effective_rank_mergeability_score": -0.01561708189547062,
+        "singular_value_overlap": -3.844590425491333,
+        "right_subspace_overlap_top_k": 1.0068506002426147,
+        "right_subspace_overlap_bottom_k": -0.04294099286198616,
+        "interaction_matrix_overlap_top_k": 1.14853835105896,
+        "interaction_matrix_overlap_bottom_k": 1.6008397340774536,
+        "activation_cosine_similarity": 3.2695441246032715,
+        "activation_magnitude_ratio": 5.349514961242676,
+        "activation_dot_product": -4.613539695739746,
+        "encoder_gradient_cosine_similarity": 1.0971201658248901,
+        "encoder_gradient_l2_distance": -6.0507965087890625,
+        "encoder_gradient_dot_product": 0.6779451966285706,
+        "input_gradient_cosine_similarity": 1.9643696546554565,
+        "input_gradient_l2_distance": 0.11186346411705017,
+        "input_gradient_dot_product": 1.9797565937042236
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.8562161393814974,
+          "decrease": -0.08891857720209284
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8563777043134992,
+          "decrease": -0.000161564932001812
+        },
+        {
+          "round": 3,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8558480336546533,
+          "decrease": 0.0005296706588459044
+        },
+        {
+          "round": 4,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8560996366520068,
+          "decrease": -0.000251602997353495
+        },
+        {
+          "round": 5,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8551800057766141,
+          "decrease": 0.0009196308753927074
+        },
+        {
+          "round": 6,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.855571236006802,
+          "decrease": -0.00039123023018783343
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "held_out_task": "Cars",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.7585326153005261,
+      "val_r": 0.6918185161049287,
+      "n_retained_metrics": 27,
+      "n_removed_metrics": 1,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "weight_space_angle"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -2.4102721214294434,
+        "task_vector_l2_distance": -15.208423614501953,
+        "task_vector_dot_product": 2.449265718460083,
+        "task_vector_magnitude_ratio": 0.9799562096595764,
+        "effective_rank": -0.8205675482749939,
+        "effective_rank_mergeability_score": 4.649295330047607,
+        "stable_rank": -1.0463461875915527,
+        "spectral_gap": 0.32595232129096985,
+        "singular_value_ratio": 0.5110909342765808,
+        "layerwise_effective_rank": 1.4971064329147339,
+        "layerwise_effective_rank_mergeability_score": 1.8254190683364868,
+        "singular_value_overlap": -10.349597930908203,
+        "subspace_overlap": 6.595292568206787,
+        "right_subspace_overlap_top_k": 1.5781517028808594,
+        "right_subspace_overlap_bottom_k": -7.517670631408691,
+        "interaction_matrix_overlap_top_k": 0.09659454971551895,
+        "interaction_matrix_overlap_bottom_k": 12.895136833190918,
+        "activation_l2_distance": -10.479628562927246,
+        "activation_cosine_similarity": -2.724862813949585,
+        "activation_magnitude_ratio": 18.21149444580078,
+        "activation_dot_product": -9.637642860412598,
+        "encoder_gradient_cosine_similarity": 7.419388294219971,
+        "encoder_gradient_l2_distance": -13.992376327514648,
+        "encoder_gradient_dot_product": 7.6179046630859375,
+        "input_gradient_cosine_similarity": 10.300605773925781,
+        "input_gradient_l2_distance": -9.554988861083984,
+        "input_gradient_dot_product": 7.788407325744629
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8232834208084026,
+          "decrease": -0.08850755079523598
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "held_out_task": "RESISC45",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.7990592499969038,
+      "val_r": 0.7945059434721922,
+      "n_retained_metrics": 21,
+      "n_removed_metrics": 7,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "weight_space_angle",
+        "encoder_gradient_dot_product",
+        "activation_l2_distance",
+        "layerwise_effective_rank",
+        "right_subspace_overlap_top_k",
+        "interaction_matrix_overlap_top_k",
+        "spectral_gap"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -1.2400410175323486,
+        "task_vector_l2_distance": -1.3224447965621948,
+        "task_vector_dot_product": 1.8752940893173218,
+        "task_vector_magnitude_ratio": -0.8036198616027832,
+        "effective_rank": 0.1001180112361908,
+        "effective_rank_mergeability_score": -0.39972490072250366,
+        "stable_rank": -0.17866715788841248,
+        "singular_value_ratio": 0.7708255052566528,
+        "layerwise_effective_rank_mergeability_score": 0.9421031475067139,
+        "singular_value_overlap": -0.7711924314498901,
+        "subspace_overlap": 0.2676248550415039,
+        "right_subspace_overlap_bottom_k": -1.4600627422332764,
+        "interaction_matrix_overlap_bottom_k": 1.6393072605133057,
+        "activation_cosine_similarity": 1.0387533903121948,
+        "activation_magnitude_ratio": 1.6628952026367188,
+        "activation_dot_product": -1.3682321310043335,
+        "encoder_gradient_cosine_similarity": 0.4571842551231384,
+        "encoder_gradient_l2_distance": -1.7676475048065186,
+        "input_gradient_cosine_similarity": 0.7933688163757324,
+        "input_gradient_l2_distance": 0.12384828180074692,
+        "input_gradient_dot_product": 0.6403571367263794
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8226088328155408,
+          "decrease": -0.2265968652818784
+        },
+        {
+          "round": 2,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8225339472216726,
+          "decrease": 7.488559386814586e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8224393430067659,
+          "decrease": 9.460421490670168e-05
+        },
+        {
+          "round": 4,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8225822083828682,
+          "decrease": -0.00014286537610230798
+        },
+        {
+          "round": 5,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8220561942553238,
+          "decrease": 0.000526014127544383
+        },
+        {
+          "round": 6,
+          "removed_metric": "interaction_matrix_overlap_top_k",
+          "train_r_after": 0.8211103091021879,
+          "decrease": 0.0009458851531359835
+        },
+        {
+          "round": 7,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.8212000787157943,
+          "decrease": -8.976961360640523e-05
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "held_out_task": "EuroSAT",
+      "n_train_pairs": 169,
+      "n_val_pairs": 17,
+      "train_r": 0.5664258762740094,
+      "val_r": 0.39560413315077825,
+      "n_retained_metrics": 22,
+      "n_removed_metrics": 6,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "encoder_gradient_dot_product",
+        "effective_rank",
+        "spectral_gap",
+        "right_subspace_overlap_top_k",
+        "effective_rank_mergeability_score",
+        "activation_l2_distance"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": 64.05476379394531,
+        "task_vector_l2_distance": -33.4636116027832,
+        "task_vector_dot_product": -11.099449157714844,
+        "weight_space_angle": -84.8085708618164,
+        "task_vector_magnitude_ratio": 67.52056121826172,
+        "stable_rank": 6.433244705200195,
+        "singular_value_ratio": -117.34323120117188,
+        "layerwise_effective_rank": 67.75299072265625,
+        "layerwise_effective_rank_mergeability_score": 62.64126968383789,
+        "singular_value_overlap": -32.47127151489258,
+        "subspace_overlap": -45.36433029174805,
+        "right_subspace_overlap_bottom_k": 52.34462356567383,
+        "interaction_matrix_overlap_top_k": 75.13693237304688,
+        "interaction_matrix_overlap_bottom_k": -16.992990493774414,
+        "activation_cosine_similarity": 64.79517364501953,
+        "activation_magnitude_ratio": 22.819915771484375,
+        "activation_dot_product": -16.457040786743164,
+        "encoder_gradient_cosine_similarity": -25.62467384338379,
+        "encoder_gradient_l2_distance": -52.03380584716797,
+        "input_gradient_cosine_similarity": 16.567232131958008,
+        "input_gradient_l2_distance": -69.33716583251953,
+        "input_gradient_dot_product": 5.927839756011963
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8197103455196103,
+          "decrease": -0.09614323486939946
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8194575994883362,
+          "decrease": 0.0002527460312741203
+        },
+        {
+          "round": 3,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.819411999155513,
+          "decrease": 4.5600332823192424e-05
+        },
+        {
+          "round": 4,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8189728028353971,
+          "decrease": 0.0004391963201159088
+        },
+        {
+          "round": 5,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.819019318157556,
+          "decrease": -4.651532215893539e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8185704116727798,
+          "decrease": 0.00044890648477624584
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "held_out_task": "SVHN",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.7847448484239575,
+      "val_r": 0.8350111057157378,
+      "n_retained_metrics": 21,
+      "n_removed_metrics": 7,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "weight_space_angle",
+        "spectral_gap",
+        "encoder_gradient_dot_product",
+        "effective_rank",
+        "layerwise_effective_rank",
+        "activation_cosine_similarity",
+        "right_subspace_overlap_top_k"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.3990270793437958,
+        "task_vector_l2_distance": -2.2575433254241943,
+        "task_vector_dot_product": 0.895017683506012,
+        "task_vector_magnitude_ratio": 0.9776617288589478,
+        "effective_rank_mergeability_score": 1.2461799383163452,
+        "stable_rank": 1.5161328315734863,
+        "singular_value_ratio": -1.24239182472229,
+        "layerwise_effective_rank_mergeability_score": 1.4882060289382935,
+        "singular_value_overlap": -1.935682773590088,
+        "subspace_overlap": 0.8756499290466309,
+        "right_subspace_overlap_bottom_k": -0.5885223746299744,
+        "interaction_matrix_overlap_top_k": 0.8831210732460022,
+        "interaction_matrix_overlap_bottom_k": 0.4992642104625702,
+        "activation_l2_distance": -2.5006580352783203,
+        "activation_magnitude_ratio": 4.528886795043945,
+        "activation_dot_product": -3.600881576538086,
+        "encoder_gradient_cosine_similarity": 1.1959083080291748,
+        "encoder_gradient_l2_distance": -5.276600360870361,
+        "input_gradient_cosine_similarity": 2.3288938999176025,
+        "input_gradient_l2_distance": 0.4250146746635437,
+        "input_gradient_dot_product": 1.9403209686279297
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8248903436917956,
+          "decrease": 0.00010283394319743344
+        },
+        {
+          "round": 2,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.8244549011209907,
+          "decrease": 0.00043544257080485593
+        },
+        {
+          "round": 3,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8247177811160519,
+          "decrease": -0.00026287999506113824
+        },
+        {
+          "round": 4,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8243179052254153,
+          "decrease": 0.000399875890636614
+        },
+        {
+          "round": 5,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8247147544139949,
+          "decrease": -0.0003968491885796288
+        },
+        {
+          "round": 6,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8244583579812916,
+          "decrease": 0.0002563964327032542
+        },
+        {
+          "round": 7,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8235449894813668,
+          "decrease": 0.0009133684999248493
+        }
+      ]
+    },
+    {
+      "fold": 5,
+      "held_out_task": "GTSRB",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.703131392352367,
+      "val_r": 0.6238389749983171,
+      "n_retained_metrics": 20,
+      "n_removed_metrics": 8,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "layerwise_effective_rank_mergeability_score",
+        "effective_rank",
+        "weight_space_angle",
+        "encoder_gradient_dot_product",
+        "right_subspace_overlap_top_k",
+        "singular_value_ratio",
+        "activation_l2_distance",
+        "interaction_matrix_overlap_top_k"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": 3.0395989418029785,
+        "task_vector_l2_distance": -44.97008514404297,
+        "task_vector_dot_product": 11.054365158081055,
+        "task_vector_magnitude_ratio": -11.92868709564209,
+        "effective_rank_mergeability_score": -4.865697860717773,
+        "stable_rank": -9.914457321166992,
+        "spectral_gap": -0.6361389756202698,
+        "layerwise_effective_rank": -7.486075401306152,
+        "singular_value_overlap": -25.365633010864258,
+        "subspace_overlap": 25.07365608215332,
+        "right_subspace_overlap_bottom_k": 8.104859352111816,
+        "interaction_matrix_overlap_bottom_k": 18.77003288269043,
+        "activation_cosine_similarity": 18.760446548461914,
+        "activation_magnitude_ratio": 36.82450485229492,
+        "activation_dot_product": 5.706343173980713,
+        "encoder_gradient_cosine_similarity": 7.841867446899414,
+        "encoder_gradient_l2_distance": -50.810821533203125,
+        "input_gradient_cosine_similarity": 34.19922637939453,
+        "input_gradient_l2_distance": -26.241024017333984,
+        "input_gradient_dot_product": 13.842162132263184
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "layerwise_effective_rank_mergeability_score",
+          "train_r_after": 0.8232024628206407,
+          "decrease": -0.10056989418562656
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8231757005694174,
+          "decrease": 2.6762251223333422e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8232214378115206,
+          "decrease": -4.57372421032165e-05
+        },
+        {
+          "round": 4,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8228167132473148,
+          "decrease": 0.00040472456420581615
+        },
+        {
+          "round": 5,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8223025968230653,
+          "decrease": 0.0005141164242494778
+        },
+        {
+          "round": 6,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8222441137168552,
+          "decrease": 5.8483106210038827e-05
+        },
+        {
+          "round": 7,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8221738500056184,
+          "decrease": 7.026371123686204e-05
+        },
+        {
+          "round": 8,
+          "removed_metric": "interaction_matrix_overlap_top_k",
+          "train_r_after": 0.8214348911517466,
+          "decrease": 0.0007389588538717629
+        }
+      ]
+    },
+    {
+      "fold": 6,
+      "held_out_task": "MNIST",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.7969623332868128,
+      "val_r": 0.7025880751209569,
+      "n_retained_metrics": 23,
+      "n_removed_metrics": 5,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "layerwise_effective_rank_mergeability_score",
+        "activation_l2_distance",
+        "weight_space_angle",
+        "effective_rank",
+        "subspace_overlap"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.23562932014465332,
+        "task_vector_l2_distance": -1.5254687070846558,
+        "task_vector_dot_product": 0.8454749584197998,
+        "task_vector_magnitude_ratio": 0.3936275839805603,
+        "effective_rank_mergeability_score": 0.2775326669216156,
+        "stable_rank": -0.4039340317249298,
+        "spectral_gap": 0.3598533272743225,
+        "singular_value_ratio": -0.0732014998793602,
+        "layerwise_effective_rank": 0.13901624083518982,
+        "singular_value_overlap": -0.9786375761032104,
+        "right_subspace_overlap_top_k": 0.20976009964942932,
+        "right_subspace_overlap_bottom_k": -0.592227578163147,
+        "interaction_matrix_overlap_top_k": 0.04791248217225075,
+        "interaction_matrix_overlap_bottom_k": 1.055730938911438,
+        "activation_cosine_similarity": 1.1674411296844482,
+        "activation_magnitude_ratio": 1.9460245370864868,
+        "activation_dot_product": -1.5018916130065918,
+        "encoder_gradient_cosine_similarity": 0.5126937031745911,
+        "encoder_gradient_l2_distance": -2.014902114868164,
+        "encoder_gradient_dot_product": 0.257574200630188,
+        "input_gradient_cosine_similarity": 0.48765283823013306,
+        "input_gradient_l2_distance": 0.014551754109561443,
+        "input_gradient_dot_product": 0.61088627576828
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "layerwise_effective_rank_mergeability_score",
+          "train_r_after": 0.8187309464373757,
+          "decrease": -0.0006620780340597099
+        },
+        {
+          "round": 2,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8186845536501044,
+          "decrease": 4.63927872712544e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8186926354657882,
+          "decrease": -8.081815683791405e-06
+        },
+        {
+          "round": 4,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8186392841775204,
+          "decrease": 5.33512882677778e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8181713550279917,
+          "decrease": 0.0004679291495287563
+        }
+      ]
+    },
+    {
+      "fold": 7,
+      "held_out_task": "DTD",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.7649874083703898,
+      "val_r": 0.2116723423047074,
+      "n_retained_metrics": 26,
+      "n_removed_metrics": 2,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "activation_cosine_similarity",
+        "subspace_overlap"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": 4.343931198120117,
+        "task_vector_l2_distance": -27.739871978759766,
+        "task_vector_dot_product": 8.133193969726562,
+        "weight_space_angle": 1.9439109563827515,
+        "task_vector_magnitude_ratio": 11.87998104095459,
+        "effective_rank": 10.783852577209473,
+        "effective_rank_mergeability_score": 14.954970359802246,
+        "stable_rank": -14.263755798339844,
+        "spectral_gap": -7.448327541351318,
+        "singular_value_ratio": -11.923261642456055,
+        "layerwise_effective_rank": 4.375636577606201,
+        "layerwise_effective_rank_mergeability_score": 0.32365337014198303,
+        "singular_value_overlap": -15.287505149841309,
+        "right_subspace_overlap_top_k": 14.502250671386719,
+        "right_subspace_overlap_bottom_k": 1.3371654748916626,
+        "interaction_matrix_overlap_top_k": -2.4170970916748047,
+        "interaction_matrix_overlap_bottom_k": 4.097006797790527,
+        "activation_l2_distance": -4.72357177734375,
+        "activation_magnitude_ratio": 23.69942283630371,
+        "activation_dot_product": -19.0683536529541,
+        "encoder_gradient_cosine_similarity": 7.221354961395264,
+        "encoder_gradient_l2_distance": -21.991540908813477,
+        "encoder_gradient_dot_product": -0.13147549331188202,
+        "input_gradient_cosine_similarity": 21.152204513549805,
+        "input_gradient_l2_distance": -9.1676607131958,
+        "input_gradient_dot_product": 6.412536144256592
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8342040751044691,
+          "decrease": -0.2259997216632018
+        },
+        {
+          "round": 2,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8342537527556089,
+          "decrease": -4.9677651139723444e-05
+        }
+      ]
+    },
+    {
+      "fold": 8,
+      "held_out_task": "Flowers102",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.7059758407909027,
+      "val_r": 0.0880245207907204,
+      "n_retained_metrics": 20,
+      "n_removed_metrics": 8,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "encoder_gradient_cosine_similarity",
+        "activation_l2_distance",
+        "encoder_gradient_dot_product",
+        "task_vector_magnitude_ratio",
+        "spectral_gap",
+        "effective_rank",
+        "subspace_overlap",
+        "weight_space_angle"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": 98.74252319335938,
+        "task_vector_l2_distance": -11.993847846984863,
+        "task_vector_dot_product": -83.06476593017578,
+        "effective_rank_mergeability_score": -16.42304039001465,
+        "stable_rank": -28.53532600402832,
+        "singular_value_ratio": 29.821073532104492,
+        "layerwise_effective_rank": -10.600960731506348,
+        "layerwise_effective_rank_mergeability_score": 34.382633209228516,
+        "singular_value_overlap": -66.1084213256836,
+        "right_subspace_overlap_top_k": 129.6757049560547,
+        "right_subspace_overlap_bottom_k": -45.823970794677734,
+        "interaction_matrix_overlap_top_k": -73.58997344970703,
+        "interaction_matrix_overlap_bottom_k": 76.2755355834961,
+        "activation_cosine_similarity": 114.27552032470703,
+        "activation_magnitude_ratio": 65.83037567138672,
+        "activation_dot_product": -52.30892562866211,
+        "encoder_gradient_l2_distance": -99.96490478515625,
+        "input_gradient_cosine_similarity": 37.87153625488281,
+        "input_gradient_l2_distance": -76.01966857910156,
+        "input_gradient_dot_product": -21.44270896911621
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "encoder_gradient_cosine_similarity",
+          "train_r_after": 0.8340118933610985,
+          "decrease": -0.07405716369762372
+        },
+        {
+          "round": 2,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8454278981383575,
+          "decrease": -0.011416004777259015
+        },
+        {
+          "round": 3,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8455295243527388,
+          "decrease": -0.0001016262143812563
+        },
+        {
+          "round": 4,
+          "removed_metric": "task_vector_magnitude_ratio",
+          "train_r_after": 0.8454626728917047,
+          "decrease": 6.685146103402317e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.8455238132011922,
+          "decrease": -6.114030948745075e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8451478166144822,
+          "decrease": 0.00037599658670994796
+        },
+        {
+          "round": 7,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.845003270683424,
+          "decrease": 0.00014454593105828195
+        },
+        {
+          "round": 8,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8448436499957839,
+          "decrease": 0.00015962068764008297
+        }
+      ]
+    },
+    {
+      "fold": 9,
+      "held_out_task": "PCAM",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.38298193782510215,
+      "val_r": 0.5567128467051292,
+      "n_retained_metrics": 23,
+      "n_removed_metrics": 5,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "effective_rank",
+        "activation_cosine_similarity",
+        "singular_value_ratio",
+        "encoder_gradient_dot_product",
+        "subspace_overlap"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -60.477230072021484,
+        "task_vector_l2_distance": 115.16871643066406,
+        "task_vector_dot_product": 133.841064453125,
+        "weight_space_angle": -166.79263305664062,
+        "task_vector_magnitude_ratio": 20.539926528930664,
+        "effective_rank_mergeability_score": -88.63143157958984,
+        "stable_rank": -77.24417877197266,
+        "spectral_gap": 92.65558624267578,
+        "layerwise_effective_rank": -66.72956848144531,
+        "layerwise_effective_rank_mergeability_score": -2.3920037746429443,
+        "singular_value_overlap": -40.17552947998047,
+        "right_subspace_overlap_top_k": 61.27278137207031,
+        "right_subspace_overlap_bottom_k": -85.99365234375,
+        "interaction_matrix_overlap_top_k": 54.567108154296875,
+        "interaction_matrix_overlap_bottom_k": 79.61656951904297,
+        "activation_l2_distance": -146.3328094482422,
+        "activation_magnitude_ratio": 72.17425537109375,
+        "activation_dot_product": 123.29003143310547,
+        "encoder_gradient_cosine_similarity": -0.3480074107646942,
+        "encoder_gradient_l2_distance": 0.5956724286079407,
+        "input_gradient_cosine_similarity": 43.512901306152344,
+        "input_gradient_l2_distance": -39.97056198120117,
+        "input_gradient_dot_product": -21.149105072021484
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.835336796063404,
+          "decrease": -0.10646346344293833
+        },
+        {
+          "round": 2,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8351889921745772,
+          "decrease": 0.00014780388882684736
+        },
+        {
+          "round": 3,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.835299778794533,
+          "decrease": -0.00011078661995578276
+        },
+        {
+          "round": 4,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8352503150855016,
+          "decrease": 4.946370903136099e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8350698520111653,
+          "decrease": 0.00018046307433627895
+        }
+      ]
+    },
+    {
+      "fold": 10,
+      "held_out_task": "FER2013",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.02823750976099423,
+      "val_r": 0.11041231598568041,
+      "n_retained_metrics": 20,
+      "n_removed_metrics": 8,
+      "retained_metrics": [
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "activation_cosine_similarity",
+        "effective_rank",
+        "task_vector_cosine_similarity",
+        "subspace_overlap",
+        "task_vector_magnitude_ratio",
+        "layerwise_effective_rank_mergeability_score"
+      ],
+      "retained_coefficients": {
+        "task_vector_l2_distance": 0.4276033639907837,
+        "task_vector_dot_product": 3.0999698638916016,
+        "weight_space_angle": -0.8419139385223389,
+        "effective_rank_mergeability_score": -0.3540695607662201,
+        "stable_rank": 0.11296641826629639,
+        "spectral_gap": 0.004302491433918476,
+        "singular_value_overlap": 1.3356819152832031,
+        "right_subspace_overlap_top_k": -2.3224196434020996,
+        "right_subspace_overlap_bottom_k": -1.2604622840881348,
+        "interaction_matrix_overlap_top_k": -2.2135329246520996,
+        "interaction_matrix_overlap_bottom_k": 1.5842314958572388,
+        "activation_l2_distance": 0.8619472980499268,
+        "activation_magnitude_ratio": 0.7205685377120972,
+        "activation_dot_product": 1.788511037826538,
+        "encoder_gradient_cosine_similarity": -0.1367512345314026,
+        "encoder_gradient_l2_distance": 1.4049819707870483,
+        "encoder_gradient_dot_product": -0.04447416961193085,
+        "input_gradient_cosine_similarity": -1.4642759561538696,
+        "input_gradient_l2_distance": -2.3820128440856934,
+        "input_gradient_dot_product": 0.7123026847839355
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8212877970002546,
+          "decrease": -0.07320798700455278
+        },
+        {
+          "round": 2,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8210337509214929,
+          "decrease": 0.0002540460787616716
+        },
+        {
+          "round": 3,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8209253476241123,
+          "decrease": 0.00010840329738059928
+        },
+        {
+          "round": 4,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8208523417703839,
+          "decrease": 7.300585372838064e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "task_vector_cosine_similarity",
+          "train_r_after": 0.8208767924159022,
+          "decrease": -2.445064551825915e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8203642963411353,
+          "decrease": 0.0005124960747668883
+        },
+        {
+          "round": 7,
+          "removed_metric": "task_vector_magnitude_ratio",
+          "train_r_after": 0.8200910424661944,
+          "decrease": 0.00027325387494092634
+        },
+        {
+          "round": 8,
+          "removed_metric": "layerwise_effective_rank_mergeability_score",
+          "train_r_after": 0.8196731553255099,
+          "decrease": 0.00041788714068446975
+        }
+      ]
+    },
+    {
+      "fold": 11,
+      "held_out_task": "OxfordIIITPet",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.7658409198079749,
+      "val_r": 0.8520148908596498,
+      "n_retained_metrics": 25,
+      "n_removed_metrics": 3,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "layerwise_effective_rank_mergeability_score",
+        "effective_rank_mergeability_score",
+        "singular_value_ratio"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -5.456697940826416,
+        "task_vector_l2_distance": -13.38408374786377,
+        "task_vector_dot_product": 5.210031986236572,
+        "weight_space_angle": 14.59582805633545,
+        "task_vector_magnitude_ratio": 2.0849695205688477,
+        "effective_rank": 1.5899769067764282,
+        "stable_rank": -0.6828763484954834,
+        "spectral_gap": 2.8748486042022705,
+        "layerwise_effective_rank": -6.75593376159668,
+        "singular_value_overlap": -11.09188175201416,
+        "subspace_overlap": 8.527013778686523,
+        "right_subspace_overlap_top_k": 15.178041458129883,
+        "right_subspace_overlap_bottom_k": -12.295567512512207,
+        "interaction_matrix_overlap_top_k": 0.21491114795207977,
+        "interaction_matrix_overlap_bottom_k": 10.892010688781738,
+        "activation_l2_distance": -13.448945999145508,
+        "activation_cosine_similarity": -6.012916564941406,
+        "activation_magnitude_ratio": 17.856924057006836,
+        "activation_dot_product": -8.760795593261719,
+        "encoder_gradient_cosine_similarity": 5.322734832763672,
+        "encoder_gradient_l2_distance": -27.562129974365234,
+        "encoder_gradient_dot_product": 2.648714303970337,
+        "input_gradient_cosine_similarity": 7.320510387420654,
+        "input_gradient_l2_distance": 4.099113941192627,
+        "input_gradient_dot_product": 8.034871101379395
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "layerwise_effective_rank_mergeability_score",
+          "train_r_after": 0.8175027067432066,
+          "decrease": -0.00592717008784005
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8173327259492977,
+          "decrease": 0.00016998079390884158
+        },
+        {
+          "round": 3,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8169035312973287,
+          "decrease": 0.0004291946519690004
+        }
+      ]
+    },
+    {
+      "fold": 12,
+      "held_out_task": "STL10",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.8074746443903269,
+      "val_r": 0.8264226215758642,
+      "n_retained_metrics": 27,
+      "n_removed_metrics": 1,
+      "retained_metrics": [
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_ratio",
+        "layerwise_effective_rank",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "task_vector_cosine_similarity"
+      ],
+      "retained_coefficients": {
+        "task_vector_l2_distance": -0.13224108517169952,
+        "task_vector_dot_product": 0.3522467613220215,
+        "weight_space_angle": -0.028028851374983788,
+        "task_vector_magnitude_ratio": 0.42693936824798584,
+        "effective_rank": -0.2259039431810379,
+        "effective_rank_mergeability_score": 0.3328704237937927,
+        "stable_rank": 0.9062657952308655,
+        "spectral_gap": 0.675855278968811,
+        "singular_value_ratio": 0.028822245076298714,
+        "layerwise_effective_rank": -0.5196895003318787,
+        "layerwise_effective_rank_mergeability_score": -0.23350366950035095,
+        "singular_value_overlap": -0.1772567480802536,
+        "subspace_overlap": 0.025762924924492836,
+        "right_subspace_overlap_top_k": 0.3691740930080414,
+        "right_subspace_overlap_bottom_k": -1.5772730112075806,
+        "interaction_matrix_overlap_top_k": -0.6962456107139587,
+        "interaction_matrix_overlap_bottom_k": 1.5640655755996704,
+        "activation_l2_distance": -0.19633910059928894,
+        "activation_cosine_similarity": 0.03466319292783737,
+        "activation_magnitude_ratio": 0.33977359533309937,
+        "activation_dot_product": -0.3103006184101105,
+        "encoder_gradient_cosine_similarity": 0.08889317512512207,
+        "encoder_gradient_l2_distance": -0.4268815517425537,
+        "encoder_gradient_dot_product": -0.014404519461095333,
+        "input_gradient_cosine_similarity": 0.12824766337871552,
+        "input_gradient_l2_distance": 0.08010046929121017,
+        "input_gradient_dot_product": 0.18430744111537933
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "task_vector_cosine_similarity",
+          "train_r_after": 0.8075103228978756,
+          "decrease": 7.527976262755587e-05
+        }
+      ]
+    },
+    {
+      "fold": 13,
+      "held_out_task": "CIFAR100",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.8328648739775291,
+      "val_r": 0.7095824344018505,
+      "n_retained_metrics": 21,
+      "n_removed_metrics": 7,
+      "retained_metrics": [
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "stable_rank",
+        "singular_value_ratio",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "activation_l2_distance",
+        "spectral_gap",
+        "effective_rank",
+        "layerwise_effective_rank",
+        "right_subspace_overlap_top_k",
+        "task_vector_cosine_similarity",
+        "effective_rank_mergeability_score"
+      ],
+      "retained_coefficients": {
+        "task_vector_l2_distance": -0.22705243527889252,
+        "task_vector_dot_product": 0.46539977192878723,
+        "weight_space_angle": 0.26979508996009827,
+        "task_vector_magnitude_ratio": 0.031187910586595535,
+        "stable_rank": 0.2148461788892746,
+        "singular_value_ratio": -0.09036211669445038,
+        "layerwise_effective_rank_mergeability_score": 0.2838529646396637,
+        "singular_value_overlap": -0.1610233634710312,
+        "subspace_overlap": 0.0982375517487526,
+        "right_subspace_overlap_bottom_k": -1.4199955463409424,
+        "interaction_matrix_overlap_top_k": -0.15927298367023468,
+        "interaction_matrix_overlap_bottom_k": 1.420315146446228,
+        "activation_cosine_similarity": 0.21112385392189026,
+        "activation_magnitude_ratio": 0.3499925136566162,
+        "activation_dot_product": -0.30278170108795166,
+        "encoder_gradient_cosine_similarity": 0.0649828165769577,
+        "encoder_gradient_l2_distance": -0.37625598907470703,
+        "encoder_gradient_dot_product": 0.02249305136501789,
+        "input_gradient_cosine_similarity": 0.11975093185901642,
+        "input_gradient_l2_distance": 0.07701963186264038,
+        "input_gradient_dot_product": 0.11131130903959274
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8359897314895954,
+          "decrease": -0.00013388654698109903
+        },
+        {
+          "round": 2,
+          "removed_metric": "spectral_gap",
+          "train_r_after": 0.8359540849875713,
+          "decrease": 3.5646502024144766e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8358227176859996,
+          "decrease": 0.0001313673015717054
+        },
+        {
+          "round": 4,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8357977758313107,
+          "decrease": 2.4941854688931286e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8358123161591113,
+          "decrease": -1.4540327800682817e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "task_vector_cosine_similarity",
+          "train_r_after": 0.835704417882793,
+          "decrease": 0.00010789827631829674
+        },
+        {
+          "round": 7,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8355811444433141,
+          "decrease": 0.00012327343947893254
+        }
+      ]
+    },
+    {
+      "fold": 14,
+      "held_out_task": "CIFAR10",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.784476270802134,
+      "val_r": 0.8099607424522935,
+      "n_retained_metrics": 22,
+      "n_removed_metrics": 6,
+      "retained_metrics": [
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "weight_space_angle",
+        "task_vector_magnitude_ratio",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "stable_rank",
+        "spectral_gap",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "activation_cosine_similarity",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_ratio",
+        "task_vector_cosine_similarity",
+        "layerwise_effective_rank",
+        "encoder_gradient_dot_product"
+      ],
+      "retained_coefficients": {
+        "task_vector_l2_distance": -5.474766731262207,
+        "task_vector_dot_product": 4.878658771514893,
+        "weight_space_angle": 1.8738698959350586,
+        "task_vector_magnitude_ratio": -0.8426628708839417,
+        "effective_rank": 1.1936496496200562,
+        "effective_rank_mergeability_score": 3.3868534564971924,
+        "stable_rank": -1.7367637157440186,
+        "spectral_gap": -2.323157548904419,
+        "singular_value_overlap": -3.047374725341797,
+        "subspace_overlap": 7.014706134796143,
+        "right_subspace_overlap_top_k": -0.7138116955757141,
+        "right_subspace_overlap_bottom_k": -5.6304450035095215,
+        "interaction_matrix_overlap_top_k": -5.34309720993042,
+        "interaction_matrix_overlap_bottom_k": 6.100466251373291,
+        "activation_l2_distance": -2.4328513145446777,
+        "activation_magnitude_ratio": 6.852077960968018,
+        "activation_dot_product": -3.4395954608917236,
+        "encoder_gradient_cosine_similarity": 1.975571870803833,
+        "encoder_gradient_l2_distance": -8.568497657775879,
+        "input_gradient_cosine_similarity": 2.9507224559783936,
+        "input_gradient_l2_distance": 1.8107545375823975,
+        "input_gradient_dot_product": 2.5148653984069824
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8161125669133532,
+          "decrease": -0.1568280427329466
+        },
+        {
+          "round": 2,
+          "removed_metric": "layerwise_effective_rank_mergeability_score",
+          "train_r_after": 0.8164058304776691,
+          "decrease": -0.0002932635643159154
+        },
+        {
+          "round": 3,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8161679496093097,
+          "decrease": 0.00023788086835940803
+        },
+        {
+          "round": 4,
+          "removed_metric": "task_vector_cosine_similarity",
+          "train_r_after": 0.8162939825598098,
+          "decrease": -0.0001260329505000657
+        },
+        {
+          "round": 5,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8154050765869265,
+          "decrease": 0.0008889059728832693
+        },
+        {
+          "round": 6,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8157340340781504,
+          "decrease": -0.000328957491223858
+        }
+      ]
+    },
+    {
+      "fold": 15,
+      "held_out_task": "Food101",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.839517043085148,
+      "val_r": 0.8317471246355356,
+      "n_retained_metrics": 19,
+      "n_removed_metrics": 9,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "layerwise_effective_rank",
+        "singular_value_ratio",
+        "weight_space_angle",
+        "effective_rank",
+        "subspace_overlap",
+        "effective_rank_mergeability_score",
+        "activation_l2_distance",
+        "right_subspace_overlap_top_k",
+        "task_vector_magnitude_ratio"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.35811689496040344,
+        "task_vector_l2_distance": -0.29021576046943665,
+        "task_vector_dot_product": 0.40647760033607483,
+        "stable_rank": 0.3159536123275757,
+        "spectral_gap": 0.08211582154035568,
+        "layerwise_effective_rank_mergeability_score": 0.3849542438983917,
+        "singular_value_overlap": -0.17676390707492828,
+        "right_subspace_overlap_bottom_k": -1.3768489360809326,
+        "interaction_matrix_overlap_top_k": 0.1941922903060913,
+        "interaction_matrix_overlap_bottom_k": 1.2899832725524902,
+        "activation_cosine_similarity": 0.26196250319480896,
+        "activation_magnitude_ratio": 0.43573254346847534,
+        "activation_dot_product": -0.4333457946777344,
+        "encoder_gradient_cosine_similarity": 0.17055165767669678,
+        "encoder_gradient_l2_distance": -0.4903896450996399,
+        "encoder_gradient_dot_product": 0.09402637928724289,
+        "input_gradient_cosine_similarity": 0.15649886429309845,
+        "input_gradient_l2_distance": 0.05925562605261803,
+        "input_gradient_dot_product": 0.2736467719078064
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.841442680401349,
+          "decrease": -0.00017473582762372875
+        },
+        {
+          "round": 2,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8415239131560627,
+          "decrease": -8.12327547137226e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8413931294882682,
+          "decrease": 0.00013078366779450956
+        },
+        {
+          "round": 4,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8413781455625524,
+          "decrease": 1.4983925715750246e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8413621288317176,
+          "decrease": 1.6016730834844672e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8408513363419046,
+          "decrease": 0.0005107924898130056
+        },
+        {
+          "round": 7,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8409970706663656,
+          "decrease": -0.0001457343244610776
+        },
+        {
+          "round": 8,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8404284669828344,
+          "decrease": 0.000568603683531288
+        },
+        {
+          "round": 9,
+          "removed_metric": "task_vector_magnitude_ratio",
+          "train_r_after": 0.8395722476975085,
+          "decrease": 0.0008562192853258654
+        }
+      ]
+    },
+    {
+      "fold": 16,
+      "held_out_task": "FashionMNIST",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.8189323678777756,
+      "val_r": 0.8396984144765008,
+      "n_retained_metrics": 19,
+      "n_removed_metrics": 9,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "singular_value_ratio",
+        "activation_l2_distance",
+        "effective_rank_mergeability_score",
+        "layerwise_effective_rank",
+        "weight_space_angle",
+        "effective_rank",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "interaction_matrix_overlap_top_k"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.21881899237632751,
+        "task_vector_l2_distance": -0.10102886706590652,
+        "task_vector_dot_product": 0.22160671651363373,
+        "task_vector_magnitude_ratio": 0.2707328200340271,
+        "stable_rank": 0.1994384378194809,
+        "spectral_gap": 0.32438144087791443,
+        "layerwise_effective_rank_mergeability_score": 0.21389082074165344,
+        "singular_value_overlap": -0.07381679117679596,
+        "right_subspace_overlap_bottom_k": -0.6594452261924744,
+        "interaction_matrix_overlap_bottom_k": 0.6629975438117981,
+        "activation_cosine_similarity": 0.11957696825265884,
+        "activation_magnitude_ratio": 0.164052814245224,
+        "activation_dot_product": -0.15193450450897217,
+        "encoder_gradient_cosine_similarity": 0.041252803057432175,
+        "encoder_gradient_l2_distance": -0.18378259241580963,
+        "encoder_gradient_dot_product": 0.011795798316597939,
+        "input_gradient_cosine_similarity": 0.06289374083280563,
+        "input_gradient_l2_distance": 0.03586240112781525,
+        "input_gradient_dot_product": 0.06304953247308731
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8215067503683358,
+          "decrease": -0.03932892569405877
+        },
+        {
+          "round": 2,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8211549193842632,
+          "decrease": 0.0003518309840725431
+        },
+        {
+          "round": 3,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.821159528077313,
+          "decrease": -4.60869304974576e-06
+        },
+        {
+          "round": 4,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8210556682765597,
+          "decrease": 0.00010385980075322543
+        },
+        {
+          "round": 5,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8210927984083476,
+          "decrease": -3.7130131787854737e-05
+        },
+        {
+          "round": 6,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8203851062455036,
+          "decrease": 0.0007076921628439425
+        },
+        {
+          "round": 7,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.819928273557971,
+          "decrease": 0.00045683268753260453
+        },
+        {
+          "round": 8,
+          "removed_metric": "right_subspace_overlap_top_k",
+          "train_r_after": 0.8189946535069859,
+          "decrease": 0.0009336200509851844
+        },
+        {
+          "round": 9,
+          "removed_metric": "interaction_matrix_overlap_top_k",
+          "train_r_after": 0.8189864148311155,
+          "decrease": 8.23867587040894e-06
+        }
+      ]
+    },
+    {
+      "fold": 17,
+      "held_out_task": "EMNIST",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.8374202738061415,
+      "val_r": 0.45952262395164695,
+      "n_retained_metrics": 22,
+      "n_removed_metrics": 6,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "encoder_gradient_dot_product",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "layerwise_effective_rank",
+        "effective_rank",
+        "weight_space_angle",
+        "singular_value_ratio",
+        "activation_l2_distance",
+        "effective_rank_mergeability_score"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.07479112595319748,
+        "task_vector_l2_distance": -0.05960147827863693,
+        "task_vector_dot_product": 0.1052553802728653,
+        "task_vector_magnitude_ratio": 0.18003690242767334,
+        "stable_rank": 0.24800336360931396,
+        "spectral_gap": 0.24288052320480347,
+        "layerwise_effective_rank_mergeability_score": 0.24650447070598602,
+        "singular_value_overlap": -0.02835577167570591,
+        "subspace_overlap": 0.03370209038257599,
+        "right_subspace_overlap_top_k": 0.09876526892185211,
+        "right_subspace_overlap_bottom_k": -0.15770329535007477,
+        "interaction_matrix_overlap_top_k": -0.13964539766311646,
+        "interaction_matrix_overlap_bottom_k": 0.18079501390457153,
+        "activation_cosine_similarity": 0.06498889625072479,
+        "activation_magnitude_ratio": 0.0811217725276947,
+        "activation_dot_product": -0.05764659866690636,
+        "encoder_gradient_cosine_similarity": 0.018951425328850746,
+        "encoder_gradient_l2_distance": -0.08322242647409439,
+        "encoder_gradient_dot_product": 0.015115979127585888,
+        "input_gradient_cosine_similarity": 0.02962777204811573,
+        "input_gradient_l2_distance": 0.015367919579148293,
+        "input_gradient_dot_product": 0.03762246295809746
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8375001970715688,
+          "decrease": -0.00022341875955445012
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8374612626331374,
+          "decrease": 3.893443843139277e-05
+        },
+        {
+          "round": 3,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8366616727907136,
+          "decrease": 0.0007995898424237868
+        },
+        {
+          "round": 4,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8360348345780617,
+          "decrease": 0.000626838212651859
+        },
+        {
+          "round": 5,
+          "removed_metric": "activation_l2_distance",
+          "train_r_after": 0.8372210332413652,
+          "decrease": -0.0011861986633034949
+        },
+        {
+          "round": 6,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8375067408443245,
+          "decrease": -0.0002857076029593175
+        }
+      ]
+    },
+    {
+      "fold": 18,
+      "held_out_task": "KMNIST",
+      "n_train_pairs": 168,
+      "n_val_pairs": 18,
+      "train_r": 0.8775089404996768,
+      "val_r": 0.8056119761307211,
+      "n_retained_metrics": 21,
+      "n_removed_metrics": 7,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "task_vector_magnitude_ratio",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_cosine_similarity",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "singular_value_ratio",
+        "subspace_overlap",
+        "effective_rank",
+        "effective_rank_mergeability_score",
+        "layerwise_effective_rank",
+        "weight_space_angle",
+        "encoder_gradient_dot_product"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": -0.15589600801467896,
+        "task_vector_l2_distance": -0.09087944030761719,
+        "task_vector_dot_product": 0.1626376062631607,
+        "task_vector_magnitude_ratio": 0.18890094757080078,
+        "stable_rank": 0.1650143563747406,
+        "spectral_gap": 0.22709906101226807,
+        "layerwise_effective_rank_mergeability_score": 0.2012239247560501,
+        "singular_value_overlap": -0.04360295459628105,
+        "right_subspace_overlap_top_k": 0.37216514348983765,
+        "right_subspace_overlap_bottom_k": -0.5844861268997192,
+        "interaction_matrix_overlap_top_k": -0.3395237326622009,
+        "interaction_matrix_overlap_bottom_k": 0.5553434491157532,
+        "activation_l2_distance": 0.13049982488155365,
+        "activation_cosine_similarity": 0.12626507878303528,
+        "activation_magnitude_ratio": 0.10240515321493149,
+        "activation_dot_product": 0.04012395441532135,
+        "encoder_gradient_cosine_similarity": 0.026992790400981903,
+        "encoder_gradient_l2_distance": -0.18730555474758148,
+        "input_gradient_cosine_similarity": 0.03007502295076847,
+        "input_gradient_l2_distance": 0.03469312563538551,
+        "input_gradient_dot_product": 0.03841502591967583
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.87849733845638,
+          "decrease": -0.00015687742935011073
+        },
+        {
+          "round": 2,
+          "removed_metric": "subspace_overlap",
+          "train_r_after": 0.8786418827748618,
+          "decrease": -0.0001445443184817652
+        },
+        {
+          "round": 3,
+          "removed_metric": "effective_rank",
+          "train_r_after": 0.8784974366716298,
+          "decrease": 0.0001444461032319433
+        },
+        {
+          "round": 4,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8781850046796194,
+          "decrease": 0.00031243199201047567
+        },
+        {
+          "round": 5,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8780528038946953,
+          "decrease": 0.00013220078492404141
+        },
+        {
+          "round": 6,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8779881698560179,
+          "decrease": 6.463403867740247e-05
+        },
+        {
+          "round": 7,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8776058428186493,
+          "decrease": 0.00038232703736862383
+        }
+      ]
+    },
+    {
+      "fold": 19,
+      "held_out_task": "RenderedSST2",
+      "n_train_pairs": 167,
+      "n_val_pairs": 19,
+      "train_r": 0.770407397126158,
+      "val_r": 0.5248654041359341,
+      "n_retained_metrics": 21,
+      "n_removed_metrics": 7,
+      "retained_metrics": [
+        "task_vector_cosine_similarity",
+        "task_vector_l2_distance",
+        "task_vector_dot_product",
+        "effective_rank",
+        "stable_rank",
+        "spectral_gap",
+        "layerwise_effective_rank_mergeability_score",
+        "singular_value_overlap",
+        "subspace_overlap",
+        "right_subspace_overlap_top_k",
+        "right_subspace_overlap_bottom_k",
+        "interaction_matrix_overlap_top_k",
+        "interaction_matrix_overlap_bottom_k",
+        "activation_l2_distance",
+        "activation_magnitude_ratio",
+        "activation_dot_product",
+        "encoder_gradient_cosine_similarity",
+        "encoder_gradient_l2_distance",
+        "input_gradient_cosine_similarity",
+        "input_gradient_l2_distance",
+        "input_gradient_dot_product"
+      ],
+      "removed_metrics": [
+        "activation_cosine_similarity",
+        "effective_rank_mergeability_score",
+        "layerwise_effective_rank",
+        "singular_value_ratio",
+        "weight_space_angle",
+        "encoder_gradient_dot_product",
+        "task_vector_magnitude_ratio"
+      ],
+      "retained_coefficients": {
+        "task_vector_cosine_similarity": 19.160900115966797,
+        "task_vector_l2_distance": -16.758907318115234,
+        "task_vector_dot_product": -3.2719998359680176,
+        "effective_rank": -15.963969230651855,
+        "stable_rank": 5.567927360534668,
+        "spectral_gap": 9.232810020446777,
+        "layerwise_effective_rank_mergeability_score": -13.02344036102295,
+        "singular_value_overlap": -7.902933120727539,
+        "subspace_overlap": 22.172683715820312,
+        "right_subspace_overlap_top_k": -6.902720928192139,
+        "right_subspace_overlap_bottom_k": 12.676908493041992,
+        "interaction_matrix_overlap_top_k": -16.037139892578125,
+        "interaction_matrix_overlap_bottom_k": -10.665877342224121,
+        "activation_l2_distance": -4.781283855438232,
+        "activation_magnitude_ratio": 32.321617126464844,
+        "activation_dot_product": -7.317466735839844,
+        "encoder_gradient_cosine_similarity": 10.786809921264648,
+        "encoder_gradient_l2_distance": -30.45062255859375,
+        "input_gradient_cosine_similarity": 11.830269813537598,
+        "input_gradient_l2_distance": 3.5272891521453857,
+        "input_gradient_dot_product": 6.797542095184326
+      },
+      "elimination_history": [
+        {
+          "round": 1,
+          "removed_metric": "activation_cosine_similarity",
+          "train_r_after": 0.8293678439243519,
+          "decrease": -0.1688708062529619
+        },
+        {
+          "round": 2,
+          "removed_metric": "effective_rank_mergeability_score",
+          "train_r_after": 0.8292238512914027,
+          "decrease": 0.00014399263294917475
+        },
+        {
+          "round": 3,
+          "removed_metric": "layerwise_effective_rank",
+          "train_r_after": 0.8293323477808017,
+          "decrease": -0.00010849648939892376
+        },
+        {
+          "round": 4,
+          "removed_metric": "singular_value_ratio",
+          "train_r_after": 0.8292486273291322,
+          "decrease": 8.372045166948894e-05
+        },
+        {
+          "round": 5,
+          "removed_metric": "weight_space_angle",
+          "train_r_after": 0.8293861845135286,
+          "decrease": -0.00013755718439645293
+        },
+        {
+          "round": 6,
+          "removed_metric": "encoder_gradient_dot_product",
+          "train_r_after": 0.8287248571115258,
+          "decrease": 0.0006613274020028648
+        },
+        {
+          "round": 7,
+          "removed_metric": "task_vector_magnitude_ratio",
+          "train_r_after": 0.82791476930289,
+          "decrease": 0.0008100878086357843
+        }
+      ]
+    }
+  ],
+  "reverse_greedy_params": {
+    "threshold": 0.001
+  }
+}

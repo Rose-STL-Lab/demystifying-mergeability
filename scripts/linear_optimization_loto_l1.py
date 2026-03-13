@@ -12,7 +12,7 @@ from pathlib import Path
 import json
 import numpy as np
 import torch
-from scipy.stats import pearsonr
+from scipy.stats import pearsonr, spearmanr
 import argparse
 
 # Add src to path
@@ -61,6 +61,8 @@ def linear_optimization_single_fold_l1(metrics_train, performance_train,
         coefficients: Optimized coefficients (sparse)
         train_r: Training Pearson r
         val_r: Validation Pearson r
+        train_rho: Training Spearman rho
+        val_rho: Validation Spearman rho
         n_iters: Number of iterations run
         n_nonzero: Number of non-zero coefficients
     """
@@ -133,10 +135,12 @@ def linear_optimization_single_fold_l1(metrics_train, performance_train,
 
     train_r, _ = pearsonr(train_pred, performance_train)
     val_r, _ = pearsonr(val_pred, performance_val)
+    train_rho, _ = spearmanr(train_pred, performance_train)
+    val_rho, _ = spearmanr(val_pred, performance_val)
 
     n_nonzero = np.sum(final_coefficients != 0)
 
-    return final_coefficients, train_r, val_r, iteration + 1, n_nonzero
+    return final_coefficients, train_r, val_r, train_rho, val_rho, iteration + 1, n_nonzero
 
 
 def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
@@ -216,7 +220,7 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
         metrics_val = normalize_metrics_with_stats(metrics_val_raw, min_vals, max_vals)
 
         # Optimize coefficients for this fold with L1
-        coefficients, train_r, val_r, n_iters, n_nonzero = linear_optimization_single_fold_l1(
+        coefficients, train_r, val_r, train_rho, val_rho, n_iters, n_nonzero = linear_optimization_single_fold_l1(
             metrics_train, performance_train,
             metrics_val, performance_val,
             lambda_l1=lambda_l1,
@@ -226,7 +230,7 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
             convergence_threshold=convergence_threshold
         )
 
-        print(f"  Converged in {n_iters} iters: train_r={train_r:.4f}, val_r={val_r:.4f}, nonzero={n_nonzero}/{n_metrics}")
+        print(f"  Converged in {n_iters} iters: train_r={train_r:.4f}, val_r={val_r:.4f}, train_ρ={train_rho:.4f}, val_ρ={val_rho:.4f}, nonzero={n_nonzero}/{n_metrics}")
 
         # Store predictions for aggregate evaluation
         train_preds = metrics_train @ coefficients
@@ -247,6 +251,8 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
             'n_val_pairs': len(val_indices),
             'train_r': float(train_r),
             'val_r': float(val_r),
+            'train_rho': float(train_rho),
+            'val_rho': float(val_rho),
             'n_iterations': int(n_iters),
             'n_nonzero_coefficients': int(n_nonzero),
             'coefficients': {name: float(coef) for name, coef in zip(metric_names, coefficients)}
@@ -267,19 +273,23 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
     all_val_preds = np.concatenate(all_val_preds)
     all_val_targets = np.concatenate(all_val_targets)
 
-    # Compute aggregate correlations
+    # Compute aggregate correlations (Pearson and Spearman)
     aggregate_train_r, aggregate_train_p = pearsonr(all_train_preds, all_train_targets)
     aggregate_val_r, aggregate_val_p = pearsonr(all_val_preds, all_val_targets)
+    aggregate_train_rho, aggregate_train_rho_p = spearmanr(all_train_preds, all_train_targets)
+    aggregate_val_rho, aggregate_val_rho_p = spearmanr(all_val_preds, all_val_targets)
 
-    print(f"Aggregate Training: r={aggregate_train_r:.4f}, p={aggregate_train_p:.2e}")
-    print(f"Aggregate Validation: r={aggregate_val_r:.4f}, p={aggregate_val_p:.2e}")
+    print(f"Aggregate Training: r={aggregate_train_r:.4f}, ρ={aggregate_train_rho:.4f}")
+    print(f"Aggregate Validation: r={aggregate_val_r:.4f}, ρ={aggregate_val_rho:.4f}")
 
     # Per-fold statistics
     fold_train_r = [f['train_r'] for f in fold_results]
     fold_val_r = [f['val_r'] for f in fold_results]
+    fold_train_rho = [f['train_rho'] for f in fold_results]
+    fold_val_rho = [f['val_rho'] for f in fold_results]
 
-    print(f"Per-fold: Train r={np.mean(fold_train_r):.4f}±{np.std(fold_train_r):.4f}")
-    print(f"Per-fold: Val r={np.mean(fold_val_r):.4f}±{np.std(fold_val_r):.4f}")
+    print(f"Per-fold: Train r={np.mean(fold_train_r):.4f}±{np.std(fold_train_r):.4f}, Train ρ={np.mean(fold_train_rho):.4f}±{np.std(fold_train_rho):.4f}")
+    print(f"Per-fold: Val r={np.mean(fold_val_r):.4f}±{np.std(fold_val_r):.4f}, Val ρ={np.mean(fold_val_rho):.4f}±{np.std(fold_val_rho):.4f}")
     print(f"Per-fold: Nonzero coeffs={np.mean(fold_nonzero_counts):.1f}±{np.std(fold_nonzero_counts):.1f}")
 
     # Average coefficients across folds
@@ -294,13 +304,21 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
             'train_r': float(aggregate_train_r),
             'train_p': float(aggregate_train_p),
             'val_r': float(aggregate_val_r),
-            'val_p': float(aggregate_val_p)
+            'val_p': float(aggregate_val_p),
+            'train_rho': float(aggregate_train_rho),
+            'train_rho_p': float(aggregate_train_rho_p),
+            'val_rho': float(aggregate_val_rho),
+            'val_rho_p': float(aggregate_val_rho_p)
         },
         'per_fold_stats': {
             'train_r_mean': float(np.mean(fold_train_r)),
             'train_r_std': float(np.std(fold_train_r)),
             'val_r_mean': float(np.mean(fold_val_r)),
             'val_r_std': float(np.std(fold_val_r)),
+            'train_rho_mean': float(np.mean(fold_train_rho)),
+            'train_rho_std': float(np.std(fold_train_rho)),
+            'val_rho_mean': float(np.mean(fold_val_rho)),
+            'val_rho_std': float(np.std(fold_val_rho)),
             'n_nonzero_mean': float(np.mean(fold_nonzero_counts)),
             'n_nonzero_std': float(np.std(fold_nonzero_counts))
         },
@@ -323,32 +341,52 @@ def run_loto_cv_l1(metrics_array, performance_array, pair_names, all_tasks,
 def main():
     parser = argparse.ArgumentParser(description='L1-Regularized LOTO Cross-Validation')
     parser.add_argument('--lambda_l1', type=float, default=0.1, help='L1 regularization strength')
+    parser.add_argument('--model', type=str, default='ViT-B-16', choices=['ViT-B-16', 'ViT-B-32'],
+                        help='Model architecture to use')
     parser.add_argument('--zero_mean', action='store_true',
                         help='Zero-mean normalize the target variable per method before optimization. '
                              'This subtracts the training mean from both train and val targets, '
                              'making the model predict deviation from mean rather than absolute performance.')
     parser.add_argument('--exclude_metrics', type=str, nargs='+', default=[],
                         help='List of metric names to exclude')
+    parser.add_argument('--seed', type=int, default=None,
+                        help='Random seed for reproducibility')
+    parser.add_argument('--output_dir', type=str, default=None,
+                        help='Custom output directory (overrides default)')
     args = parser.parse_args()
 
     lambda_l1 = args.lambda_l1
+    model = args.model
     exclude_metrics = set(args.exclude_metrics)
 
-    # Configuration
-    metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-    results_base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
+    # Set random seed if provided
+    if args.seed is not None:
+        torch.manual_seed(args.seed)
+        np.random.seed(args.seed)
 
-    # Output directory
-    if args.zero_mean:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda{lambda_l1}_zero_mean')
+    # Configuration - paths based on model
+    base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results')
+    metrics_path = base_path / 'mergeability' / model / 'pairwise_metrics_N20.json'
+    results_base_path = base_path / model
+
+    # Output directory - use custom if provided, otherwise default
+    if args.output_dir:
+        output_dir = Path(args.output_dir)
     else:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda{lambda_l1}')
+        # Always use model-specific subfolder for consistency
+        output_base = base_path / 'metric_linear_optimization_v2' / model.lower()
+
+        if args.zero_mean:
+            output_dir = output_base / f'loto_cv_l1_lambda{lambda_l1}_zero_mean'
+        else:
+            output_dir = output_base / f'loto_cv_l1_lambda{lambda_l1}'
     output_dir.mkdir(parents=True, exist_ok=True)
 
     merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
     print("="*70)
     print(f"L1-Regularized Linear Optimization with LOTO CV (lambda={lambda_l1})")
+    print(f"Model: {model}")
     print("="*70)
     print()
 
@@ -377,6 +415,10 @@ def main():
     print("Extracting pairwise data...")
     metrics_array, performance_matrix, pair_names, metric_names, merge_methods = \
         extract_all_mergers_data(metrics_data, performance_data_dict)
+
+    # Always exclude redundant metrics (they are averages of _top_k and _bottom_k variants)
+    redundant_metrics = {'right_subspace_overlap'}
+    exclude_metrics = exclude_metrics | redundant_metrics
 
     # Filter out excluded metrics
     if exclude_metrics:
@@ -447,21 +489,46 @@ def main():
     with open(combined_output_file, 'w') as f:
         json.dump(combined_results, f, indent=2)
 
-    print("="*70)
+    print("="*90)
     print("SUMMARY: L1-Regularized LOTO Cross-Validation Results")
     if args.zero_mean:
         print("(Zero-mean normalization enabled)")
-    print("="*70)
+    print("="*90)
     print()
-    print(f"{'Method':<15} {'Train r':<12} {'Val r':<12} {'Val r std':<12} {'Nonzero':<12}")
-    print("-"*70)
+    print(f"{'Method':<15} {'Train r':<10} {'Train ρ':<10} {'Val r':<10} {'Val ρ':<10} {'Val r std':<10} {'Val ρ std':<10} {'Nonzero':<8}")
+    print("-"*90)
+    # Collect values for averaging
+    all_train_r, all_train_rho, all_val_r, all_val_rho = [], [], [], []
+    all_val_r_std, all_val_rho_std, all_n_nonzero = [], [], []
+
     for method in merge_methods:
         train_r = all_results[method]['per_fold_stats']['train_r_mean']
+        train_rho = all_results[method]['per_fold_stats']['train_rho_mean']
         val_r = all_results[method]['per_fold_stats']['val_r_mean']
+        val_rho = all_results[method]['per_fold_stats']['val_rho_mean']
         val_r_std = all_results[method]['per_fold_stats']['val_r_std']
+        val_rho_std = all_results[method]['per_fold_stats']['val_rho_std']
         n_nonzero = all_results[method]['per_fold_stats']['n_nonzero_mean']
-        print(f"{method:<15} {train_r:<12.4f} {val_r:<12.4f} {val_r_std:<12.4f} {n_nonzero:<12.1f}")
-    print("="*70)
+        print(f"{method:<15} {train_r:<10.4f} {train_rho:<10.4f} {val_r:<10.4f} {val_rho:<10.4f} {val_r_std:<10.4f} {val_rho_std:<10.4f} {n_nonzero:<8.1f}")
+        all_train_r.append(train_r)
+        all_train_rho.append(train_rho)
+        all_val_r.append(val_r)
+        all_val_rho.append(val_rho)
+        all_val_r_std.append(val_r_std)
+        all_val_rho_std.append(val_rho_std)
+        all_n_nonzero.append(n_nonzero)
+
+    # Print average row
+    print("-"*90)
+    avg_train_r = np.mean(all_train_r)
+    avg_train_rho = np.mean(all_train_rho)
+    avg_val_r = np.mean(all_val_r)
+    avg_val_rho = np.mean(all_val_rho)
+    avg_val_r_std = np.mean(all_val_r_std)
+    avg_val_rho_std = np.mean(all_val_rho_std)
+    avg_n_nonzero = np.mean(all_n_nonzero)
+    print(f"{'AVERAGE':<15} {avg_train_r:<10.4f} {avg_train_rho:<10.4f} {avg_val_r:<10.4f} {avg_val_rho:<10.4f} {avg_val_r_std:<10.4f} {avg_val_rho_std:<10.4f} {avg_n_nonzero:<8.1f}")
+    print("="*90)
 
     print()
     print(f"All results saved to: {output_dir}")
@@ -489,9 +556,9 @@ def main():
                 print(f"{metric:<45} {coef:>+10.4f} {freq:>8.0%}")
 
     print()
-    print("="*70)
+    print("="*90)
     print("L1-Regularized LOTO Cross-Validation Complete!")
-    print("="*70)
+    print("="*90)
 
 
 if __name__ == "__main__":
