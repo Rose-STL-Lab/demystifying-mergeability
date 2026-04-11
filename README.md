@@ -146,23 +146,16 @@ bash scripts/run_l1_loto_ablations.sh
 
 ```
 results/
-├── metric_linear_optimization_v2/
-│   ├── vit-b-16_AdamW/         # AdamW fine-tuned ViT-B-16
-│   │   ├── loto_cv_l1_lambda1.0/
-│   │   ├── loto_cv_l1_lambda0.0/
-│   │   ├── loto_cv_mse/
-│   │   ├── loto_cv_reverse_greedy_selection/
-│   │   ├── l1_loto_cv_no_{category}/   # category ablations
-│   │   └── single_fold_l1_lambda1.0/
-│   ├── vit-b-16_SGD/           # SGD fine-tuned ViT-B-16
-│   └── vit-b-32_AwamW/         # AdamW fine-tuned ViT-B-32
-└── paper_writing/              # LaTeX sections for the paper
-    ├── mlp_vs_l1.tex
-    ├── sgd_vs_adamw.tex
-    ├── loto_vs_single.tex
-    ├── b16_vs_b32.tex
-    ├── category_removal.tex
-    └── ...
+└── metric_linear_optimization_v2/
+    ├── vit-b-16_AdamW/         # AdamW fine-tuned ViT-B-16
+    │   ├── loto_cv_l1_lambda1.0/
+    │   ├── loto_cv_l1_lambda0.0/
+    │   ├── loto_cv_mse/
+    │   ├── loto_cv_reverse_greedy_selection/
+    │   ├── l1_loto_cv_no_{category}/   # category ablations
+    │   └── single_fold_l1_lambda1.0/
+    ├── vit-b-16_SGD/           # SGD fine-tuned ViT-B-16
+    └── vit-b-32_AwamW/         # AdamW fine-tuned ViT-B-32
 ```
 
 ---
