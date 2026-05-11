@@ -1,6 +1,14 @@
-# Mergeability-Bench
+<h1 align="center">Demystifying Mergeability:<br>Interpretable Properties to Predict Model Merging Success</h1>
 
-> **Accepted at ICML 2026.**
+<p align="center">
+  <b>Luca Zhou &nbsp;·&nbsp; Bo Zhao &nbsp;·&nbsp; Rose Yu &nbsp;·&nbsp; Emanuele Rodolà</b>
+</p>
+
+<p align="center">
+  <a href="https://icml.cc/Conferences/2026"><img alt="ICML 2026" src="https://img.shields.io/badge/ICML-2026-blue.svg"></a>
+</p>
+
+---
 
 A benchmark and analysis framework for **predicting model merge quality without performing the merge**. Given two fine-tuned models, we compute geometric and statistical metrics on their weights, gradients, and activations, then learn a linear predictor that forecasts how well the models will merge under various merging algorithms.
 
