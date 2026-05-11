@@ -1,4 +1,0 @@
-We re-run "./Mergeability-Bench/scripts/compute_mergeability.py" with different calibration set size {2, 30, 100} and save the results in "./Mergeability-Bench/results/mergeability/ViT-B-16/calibration_sensitivity/{2, 30, 100}.
-
-
-Then, we re-run the LOTO linear optimization and save the results in "./Mergeability-Bench/results/metric_linear_optimization/calibration_sensitivity/{2, 30, 100}". We expect the conclusions to still approximately hold under different calibration set sizes, i.e. the gradient and subspace metrics are still be stable and the most important.
