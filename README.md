@@ -1,8 +1,10 @@
 # Mergeability-Bench
 
+> **Accepted at ICML 2026.**
+
 A benchmark and analysis framework for **predicting model merge quality without performing the merge**. Given two fine-tuned models, we compute geometric and statistical metrics on their weights, gradients, and activations, then learn a linear predictor that forecasts how well the models will merge under various merging algorithms.
 
-The repository is based on an implementation originally by **Donato Crisostomi** — [donatocrisostomi@gmail.com](mailto:donatocrisostomi@gmail.com).
+This repository builds on the [model-merging](https://github.com/crisostomi/model-merging) codebase.
 
 ---
 
