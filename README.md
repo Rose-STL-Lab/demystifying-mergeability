@@ -32,7 +32,7 @@ Fine-tune ViT models on individual tasks using:
 uv run scripts/finetune.py
 ```
 
-Configuration is in `conf/finetune.yaml`. Supported backbones: **ViT-B-16**, **ViT-B-32**. Supported optimizers: **AdamW**, **SGD**. Checkpoints are saved to `checkpoints/` and also uploaded to W&B via `scripts/upload_regularized_models_wandb.py`.
+Configuration is in `conf/finetune.yaml`. Supported backbones: **ViT-B-16**, **ViT-B-32**. Supported optimizers: **AdamW**, **SGD**. Checkpoints are saved to `checkpoints/`.
 
 ---
 
@@ -99,24 +99,13 @@ Results are saved per merge method under `results/metric_linear_optimization_v2/
 # MSE objective instead of Pearson correlation
 python scripts/linear_optimization_loto_mse.py --model ViT-B-16_AdamW
 
-# Backward elimination (reverse greedy feature selection)
-python scripts/linear_optimization_loto_reverse_greedy.py --model ViT-B-16_AdamW
+# Unregularized linear predictor (λ=0)
+python scripts/linear_optimization_loto.py --model ViT-B-16_AdamW
 
-# MLP predictor (separate MLP per merge method, LOTO CV)
-python scripts/learnable_mergeability_separate_loto.py \
+# MLP predictor (LOTO CV)
+python scripts/learnable_mergeability.py \
     "learnable_mergeability.model_name=ViT-B-16_AdamW" \
     "learnable_mergeability.merge_methods=[weight_avg,arithmetic,tsv,ties,dare]"
-```
-
-### Single-Fold Experiment
-
-Train on 10 tasks (~45 pairs), validate on disjoint 10 tasks (~45 pairs):
-
-```sh
-python scripts/linear_optimization_single_fold_l1.py \
-    --model ViT-B-16_AdamW \
-    --lambda_l1 1.0 \
-    --seed 42
 ```
 
 ---
@@ -151,9 +140,7 @@ results/
     │   ├── loto_cv_l1_lambda1.0/
     │   ├── loto_cv_l1_lambda0.0/
     │   ├── loto_cv_mse/
-    │   ├── loto_cv_reverse_greedy_selection/
-    │   ├── l1_loto_cv_no_{category}/   # category ablations
-    │   └── single_fold_l1_lambda1.0/
+    │   └── l1_loto_cv_no_{category}/   # category ablations
     ├── vit-b-16_SGD/           # SGD fine-tuned ViT-B-16
     └── vit-b-32_AwamW/         # AdamW fine-tuned ViT-B-32
 ```
