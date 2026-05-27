@@ -13,6 +13,8 @@ import json
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 
 def load_loto_results(results_dir: Path, methods: list) -> dict:
@@ -105,10 +107,10 @@ def predict_performance(metrics_vector: np.ndarray, coefficients: dict,
 
 def main():
     # Configuration
-    l1_results_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_l1_lambda1.0')
-    metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-    results_base = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
-    output_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/predicted_mergers.json')
+    l1_results_dir = Path(PROJECT_ROOT / 'results/metric_linear_optimization_v2/loto_cv_l1_lambda1.0')
+    metrics_path = Path(PROJECT_ROOT / 'results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
+    results_base = Path(PROJECT_ROOT / 'results/ViT-B-16')
+    output_path = Path(PROJECT_ROOT / 'results/metric_linear_optimization_v2/predicted_mergers.json')
 
     methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 

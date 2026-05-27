@@ -8,6 +8,8 @@ import re
 from pathlib import Path
 from scipy import stats
 import numpy as np
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 
 def extract_subset_info_from_filename(filename: str) -> tuple:
@@ -162,7 +164,7 @@ def compute_correlations(merger: str, base_path: Path) -> dict:
 
 
 def main():
-    base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/subset_rankings')
+    base_path = Path(PROJECT_ROOT / 'results/mergeability/ViT-B-16/subset_rankings')
 
     mergers = ['tsv', 'ties', 'weight_avg', 'arithmetic', 'dare']
 

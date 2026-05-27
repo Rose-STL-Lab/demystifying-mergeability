@@ -8,6 +8,8 @@ import matplotlib
 matplotlib.use('Agg')
 import seaborn as sns
 from pathlib import Path
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 # Set style with serif fonts (LaTeX-like without requiring LaTeX installation)
 plt.rcParams.update({
@@ -24,8 +26,8 @@ plt.rcParams.update({
 })
 
 # Paths
-RESULTS_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv_no_leakage')
-FIGS_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/figs')
+RESULTS_DIR = Path(PROJECT_ROOT / 'results/metric_linear_optimization/loto_cv_no_leakage')
+FIGS_DIR = Path(PROJECT_ROOT / 'results/figs')
 FIGS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Method names for display

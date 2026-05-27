@@ -1,6 +1,10 @@
-python3 << 'EOF'
+PROJECT_ROOT="${PROJECT_ROOT:-$(git rev-parse --show-toplevel 2>/dev/null || echo "$(cd "$(dirname "$0")/.." && pwd)")}"
+PROJECT_ROOT="$PROJECT_ROOT" python3 << 'EOF'
 import json
+import os
 import numpy as np
+
+PROJECT_ROOT = os.environ['PROJECT_ROOT']
 
 print("=" * 80)
 print("           DIRECT COMPARISON: ViT-B-16 vs ViT-B-32")
@@ -13,9 +17,9 @@ results_b16 = {}
 results_b32 = {}
 
 for method in methods:
-    with open(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/vit-b-16/loto_cv_l1_lambda1.0/{method}_loto_results.json') as f:
+    with open(f'{PROJECT_ROOT}/results/metric_linear_optimization_v2/vit-b-16_AdamW/loto_cv_l1_lambda1.0/{method}_loto_results.json') as f:
         results_b16[method] = json.load(f)
-    with open(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/vit-b-32/loto_cv_l1_lambda1.0/{method}_loto_results.json') as f:
+    with open(f'{PROJECT_ROOT}/results/metric_linear_optimization_v2/vit-b-32_AwamW/loto_cv_l1_lambda1.0/{method}_loto_results.json') as f:
         results_b32[method] = json.load(f)
 
 print("\n" + "=" * 70)

@@ -14,6 +14,8 @@ import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 # Set style
 sns.set_style("whitegrid")
@@ -189,7 +191,7 @@ def provide_interpretations():
 
 def main():
     # Paths
-    results_dir = Path('/home/ubuntu/thesis/MM/model-merging/results/metric_linear_optimization')
+    results_dir = Path(PROJECT_ROOT / 'results/metric_linear_optimization')
     output_dir = results_dir / 'analysis'
     output_dir.mkdir(exist_ok=True)
 

@@ -26,9 +26,6 @@ subset_cardinality: 5  # Number of tasks per subset (e.g., 5 means merge 5 model
 num_random_subsets: 200  # Number of random subsets to evaluate
 subset_random_seed: 42  # Random seed for reproducibility
 
-# Whether to apply rotation alignment before merging
-alignment: false
-
 seed_index: 0
 num_tasks: ???
 eval_on_train: false
@@ -70,8 +67,6 @@ mergeability:
   metrics: # see options in ./src/model_merging/metrics/mergeability.py, or use "all" to run all metrics.
     - all
   layer_wise: false  # If true, compute all metrics per-layer (saves full breakdown, logs average) THIS IS DEPRECATED!!! SOME METRICS ARE ALREADY LAYER-WISE EVEN WITHOUT THIS FLAG
-
-  rot_sym_align: false # Whether to perform rotation symmetry alignment before computing the mergeability metrics
 
   # Activation-based metrics configuration
   n_calibration_samples: 10  # Number of samples per dataset for calibration, for N8 it's 80 samples.

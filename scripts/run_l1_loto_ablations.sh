@@ -1,10 +1,11 @@
 #!/bin/bash
 # Run L1 LOTO ablation experiments - exclude each metric category once
 
-cd /home/ubuntu/thesis/MM/Mergeability-Bench
+PROJECT_ROOT="${PROJECT_ROOT:-$(git rev-parse --show-toplevel 2>/dev/null || echo "$(cd "$(dirname "$0")/.." && pwd)")}"
+cd "$PROJECT_ROOT"
 
 # Base output directory
-BASE_OUTPUT="/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2"
+BASE_OUTPUT="$PROJECT_ROOT/results/metric_linear_optimization_v2"
 
 # Backup existing baseline L1 results if they exist
 if [ -d "${BASE_OUTPUT}/loto_cv_l1_lambda1.0" ]; then

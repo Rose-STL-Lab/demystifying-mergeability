@@ -19,6 +19,8 @@ import argparse
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from model_merging.data_loader import load_json, extract_all_mergers_data
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 
 def normalize_metrics(metrics_array):
@@ -365,7 +367,7 @@ def main():
         np.random.seed(args.seed)
 
     # Configuration - paths based on model
-    base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results')
+    base_path = Path(PROJECT_ROOT / 'results')
     metrics_path = base_path / 'mergeability' / model / 'pairwise_metrics_N20.json'
     results_base_path = base_path / model
 

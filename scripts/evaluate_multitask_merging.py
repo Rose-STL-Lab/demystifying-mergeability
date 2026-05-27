@@ -35,7 +35,6 @@ from model_merging.utils.io_utils import (
     boilerplate,
     load_model_from_hf,
 )
-from model_merging.alignment.rotation_alignment import apply_rotation_alignment
 from model_merging.utils.plots import plot_interactive_radar_chart
 from model_merging.utils.utils import (
     build_callbacks,
@@ -179,59 +178,6 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
                 model_name=cfg.nn.encoder.model_name, dataset_name=dataset.name
             ).state_dict()
 
-    # Apply rotation symmetry alignment if enabled
-    if cfg.alignment:
-        pylogger.info("Applying rotation symmetry alignment...")
-
-        # Save original weights for comparison
-        import torch
-        original_weights = {}
-        original_models_full = {}
-        for dataset_key in finetuned_models.keys():
-            # Sample a few weights to check if they change
-            original_weights[dataset_key] = {
-                'qkv_weight': finetuned_models[dataset_key]['model.visual.transformer.resblocks.0.attn.in_proj_weight'].clone(),
-                'out_proj': finetuned_models[dataset_key]['model.visual.transformer.resblocks.0.attn.out_proj.weight'].clone()
-            }
-            # Save full state dict for later comparison
-            original_models_full[dataset_key] = {k: v.clone() for k, v in finetuned_models[dataset_key].items()}
-
-        finetuned_models = apply_rotation_alignment(
-            finetuned_state_dicts=finetuned_models,
-            model_name=cfg.nn.encoder.model_name,
-            device=cfg.device,
-            logger=pylogger
-        )
-
-        # Check if weights actually changed
-        pylogger.info("\n" + "="*70)
-        pylogger.info("WEIGHT CHANGE VERIFICATION")
-        pylogger.info("="*70)
-        for dataset_key in finetuned_models.keys():
-            dataset_name = dataset_key.name if hasattr(dataset_key, 'name') else str(dataset_key)
-            qkv_diff = torch.abs(finetuned_models[dataset_key]['model.visual.transformer.resblocks.0.attn.in_proj_weight'] -
-                                 original_weights[dataset_key]['qkv_weight']).max().item()
-            out_diff = torch.abs(finetuned_models[dataset_key]['model.visual.transformer.resblocks.0.attn.out_proj.weight'] -
-                                 original_weights[dataset_key]['out_proj']).max().item()
-            pylogger.info(f"{dataset_name}:")
-            pylogger.info(f"  QKV weight max diff: {qkv_diff:.6e}")
-            pylogger.info(f"  Out proj weight max diff: {out_diff:.6e}")
-        pylogger.info("="*70 + "\n")
-
-    # Debug: Log state dict info after alignment
-    pylogger.info("\n" + "="*70)
-    pylogger.info("STATE DICT DEBUG INFO (after alignment)")
-    pylogger.info("="*70)
-    for dataset_key, state_dict in finetuned_models.items():
-        dataset_name = dataset_key.name if hasattr(dataset_key, 'name') else str(dataset_key)
-        sample_keys = list(state_dict.keys())[:5]
-        pylogger.info(f"{dataset_name}:")
-        pylogger.info(f"  Total keys: {len(state_dict)}")
-        pylogger.info(f"  Sample keys: {sample_keys}")
-        pylogger.info(f"  Has 'model.visual' keys: {'model.visual.conv1.weight' in state_dict}")
-        pylogger.info(f"  Has 'model.positional_embedding': {'model.positional_embedding' in state_dict}")
-    pylogger.info("="*70 + "\n")
-
     if pair_name:
         pylogger.info(f"=== Evaluating pair: {pair_name} ===")
     pylogger.info(f"Number of tasks: {num_tasks}")
@@ -240,28 +186,7 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
 
     merger = instantiate(cfg.merger)
 
-    # Debug: Log a sample weight from finetuned_models before merging
-    if cfg.alignment:
-        pylogger.info("\n" + "="*70)
-        pylogger.info("PRE-MERGE WEIGHT CHECK")
-        pylogger.info("="*70)
-        for dataset_key in finetuned_models.keys():
-            dataset_name = dataset_key.name if hasattr(dataset_key, 'name') else str(dataset_key)
-            sample_weight = finetuned_models[dataset_key]['model.visual.transformer.resblocks.0.attn.in_proj_weight'][0, :5]
-            pylogger.info(f"{dataset_name} sample weight: {sample_weight}")
-        pylogger.info("="*70 + "\n")
-
     merged_encoder = merger.merge(zeroshot_encoder, finetuned_models)
-
-    # Debug: Log merged weight
-    if cfg.alignment:
-        pylogger.info("\n" + "="*70)
-        pylogger.info("POST-MERGE WEIGHT CHECK")
-        pylogger.info("="*70)
-        merged_state = merged_encoder.state_dict()
-        sample_merged = merged_state['model.visual.transformer.resblocks.0.attn.in_proj_weight'][0, :5]
-        pylogger.info(f"Merged sample weight: {sample_merged}")
-        pylogger.info("="*70 + "\n")
 
     logger.log_configuration(merged_encoder, cfg)
 
@@ -343,13 +268,10 @@ def run_single(cfg: DictConfig, datasets_to_use: Optional[List] = None, pair_nam
     results_path.mkdir(parents=True, exist_ok=True)
 
     # Use pair_name for filename if provided, otherwise use num_tasks
-    # Add suffix if rotation alignment was used
-    alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-
     if pair_name:
-        filename = f"{file_prefix}_{pair_name}{alignment_suffix}.json"
+        filename = f"{file_prefix}_{pair_name}.json"
     else:
-        filename = f"{num_tasks}{alignment_suffix}.json"
+        filename = f"{num_tasks}.json"
 
     with open(results_path / filename, "w+") as f:
         json.dump(results, f, indent=4)
@@ -433,8 +355,8 @@ def run_random_subsets(cfg: DictConfig):
         subset_name = "__".join(d.name for d in subset_datasets)
 
         # Check if result already exists
-        alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-        subset_file = results_path / f"subset_{subset_size}_{subset_name}{alignment_suffix}.json"
+        
+        subset_file = results_path / f"subset_{subset_size}_{subset_name}.json"
         if subset_file.exists():
             pylogger.info(f"[{idx+1}/{num_subsets}] Skipping {subset_name} (already exists)")
             with open(subset_file, 'r') as f:
@@ -462,8 +384,8 @@ def run_random_subsets(cfg: DictConfig):
 
     # Save summary
     results_path.mkdir(parents=True, exist_ok=True)
-    alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-    summary_file = results_path / f"summary{alignment_suffix}.json"
+    
+    summary_file = results_path / f"summary.json"
     with open(summary_file, "w+") as f:
         json.dump(all_results, f, indent=4)
 
@@ -525,8 +447,8 @@ def run(cfg: DictConfig):
             pair_name = f"{dataset_i.name}__{dataset_j.name}"
 
             # Check if result already exists - skip if so
-            alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-            pair_file = results_path / f"pair_{pair_name}{alignment_suffix}.json"
+            
+            pair_file = results_path / f"pair_{pair_name}.json"
             if pair_file.exists():
                 pylogger.info(f"[{pair_idx}/{n_pairs}] Skipping {pair_name} (already exists)")
                 with open(pair_file, 'r') as f:
@@ -567,8 +489,8 @@ def run(cfg: DictConfig):
 
     # Get benchmark name from config (e.g., "N8", "N20")
     benchmark_name = cfg.benchmark.get("name", f"N{n_datasets}")
-    alignment_suffix = "_rot_aligned" if cfg.alignment else ""
-    summary_file = results_path / f"all_pairwise_summary_{benchmark_name}{alignment_suffix}.json"
+    
+    summary_file = results_path / f"all_pairwise_summary_{benchmark_name}.json"
     with open(summary_file, "w+") as f:
         json.dump(all_results, f, indent=4)
 

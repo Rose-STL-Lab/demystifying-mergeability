@@ -9,10 +9,12 @@ import json
 import numpy as np
 from scipy import stats
 from pathlib import Path
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 # Paths
-RESULTS_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
-METRICS_PATH = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
+RESULTS_DIR = Path(PROJECT_ROOT / 'results/ViT-B-16')
+METRICS_PATH = Path(PROJECT_ROOT / 'results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
 
 # Methods to analyze (main ones used in the paper)
 METHODS = ['arithmetic', 'weight_avg', 'isotropic', 'tsv']
@@ -234,7 +236,7 @@ def main():
     print(latex)
 
     # Save results
-    output_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/individual_metric_correlations.json')
+    output_path = Path(PROJECT_ROOT / 'results/individual_metric_correlations.json')
     with open(output_path, 'w') as f:
         # Convert to serializable format
         serializable = {}
@@ -247,7 +249,7 @@ def main():
     print(f"\nResults saved to {output_path}")
 
     # Save LaTeX table
-    latex_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/individual_metric_correlations.tex')
+    latex_path = Path(PROJECT_ROOT / 'results/individual_metric_correlations.tex')
     with open(latex_path, 'w') as f:
         f.write(latex)
     print(f"LaTeX table saved to {latex_path}")

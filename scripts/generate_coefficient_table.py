@@ -3,9 +3,11 @@
 
 import json
 from pathlib import Path
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
-RESULTS_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv')
-OUTPUT_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results')
+RESULTS_DIR = Path(PROJECT_ROOT / 'results/metric_linear_optimization/loto_cv')
+OUTPUT_DIR = Path(PROJECT_ROOT / 'results')
 
 METHODS = ['arithmetic', 'weight_avg', 'isotropic', 'tsv']
 METHOD_NAMES = {

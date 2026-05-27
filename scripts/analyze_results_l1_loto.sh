@@ -1,10 +1,12 @@
 #!/bin/bash
-cd /home/ubuntu/thesis/MM/Mergeability-Bench && python3 << 'EOF'
+PROJECT_ROOT="${PROJECT_ROOT:-$(git rev-parse --show-toplevel 2>/dev/null || echo "$(cd "$(dirname "$0")/.." && pwd)")}"
+cd "$PROJECT_ROOT" && PROJECT_ROOT="$PROJECT_ROOT" python3 << 'EOF'
 import json
+import os
 import numpy as np
 
 # Load results
-results_dir = '/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/vit-b-16_AdamW/loto_cv_l1_lambda1.0'
+results_dir = os.path.join(os.environ['PROJECT_ROOT'], 'results/metric_linear_optimization_v2/vit-b-16_AdamW/loto_cv_l1_lambda1.0')
 methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']
 
 all_results = {}

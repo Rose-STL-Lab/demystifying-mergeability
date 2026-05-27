@@ -14,6 +14,8 @@ import pandas as pd
 from pathlib import Path
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 sns.set_style("whitegrid")
 
@@ -251,7 +253,7 @@ def create_comparison_heatmap(stability_results, output_dir):
 
 def main():
     # Paths
-    results_dir = Path('/home/ubuntu/thesis/MM/model-merging/results/metric_linear_optimization/loto_cv')
+    results_dir = Path(PROJECT_ROOT / 'results/metric_linear_optimization/loto_cv')
     output_dir = results_dir / 'stability_analysis'
     output_dir.mkdir(parents=True, exist_ok=True)
 

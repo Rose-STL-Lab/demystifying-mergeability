@@ -25,7 +25,6 @@ from nn_core.common.utils import seed_index_everything
 
 # Force the execution of __init__.py if this file is executed directly.
 import model_merging  # noqa
-from model_merging.alignment.rotation_alignment import apply_rotation_alignment
 from model_merging.metrics import (
     METRIC_REGISTRY,
     compute_metric,
@@ -101,18 +100,7 @@ def run(cfg: DictConfig) -> Dict:
         del finetuned
         torch.cuda.empty_cache()
 
-    # Apply rotation symmetry alignment if enabled
-    if cfg.mergeability.get("rot_sym_align", False):
-        pylogger.info("Applying rotation symmetry alignment...")
-        finetuned_state_dicts = apply_rotation_alignment(
-            finetuned_state_dicts=finetuned_state_dicts,
-            model_name=cfg.nn.encoder.model_name,
-            device=cfg.device,
-            logger=pylogger
-        )
-        pylogger.info("Rotation alignment completed.")
-
-    # Compute task vectors from (potentially aligned) fine-tuned models
+    # Compute task vectors from fine-tuned models
     pylogger.info("Computing task vectors...")
     task_dicts = {}
     for dataset_name in dataset_names:
@@ -235,14 +223,12 @@ def run(cfg: DictConfig) -> Dict:
     output_path = Path(cfg.mergeability.output_path)
     output_path.mkdir(parents=True, exist_ok=True)
     benchmark_name = cfg.mergeability.get("benchmark_name", None)
-    rot_sym_align = cfg.mergeability.get("rot_sym_align", False)
-    rot_suffix = "_rot_aligned" if rot_sym_align else ""
 
     if benchmark_name:
-        output_file = output_path / f"pairwise_metrics_{benchmark_name}{rot_suffix}.json"
+        output_file = output_path / f"pairwise_metrics_{benchmark_name}.json"
     else:
         datasets_suffix = "_".join(dataset_names)
-        output_file = output_path / f"pairwise_metrics_{n_datasets}tasks_{datasets_suffix}{rot_suffix}.json"
+        output_file = output_path / f"pairwise_metrics_{n_datasets}tasks_{datasets_suffix}.json"
 
     # Progress tracking file for resuming interrupted runs
     progress_file = output_path / f"progress_{output_file.stem}.json"

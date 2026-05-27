@@ -28,6 +28,8 @@ import argparse
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from model_merging.data_loader import load_json, extract_all_mergers_data
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 # Define metric groups for ablation
 METRIC_GROUPS = {
@@ -377,16 +379,16 @@ def main():
         exclude_metrics.update(METRIC_GROUPS[args.exclude_group])
 
     # Configuration
-    metrics_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-    results_base_path = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16')
+    metrics_path = Path(PROJECT_ROOT / 'results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
+    results_base_path = Path(PROJECT_ROOT / 'results/ViT-B-16')
 
     # Output directory with optional suffix
     if args.output_suffix:
-        output_dir = Path(f'/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_{args.output_suffix}')
+        output_dir = Path(fPROJECT_ROOT / 'results/metric_linear_optimization_v2/loto_cv_{args.output_suffix}')
     elif args.zero_mean:
-        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_no_leakage_zero_mean')
+        output_dir = Path(PROJECT_ROOT / 'results/metric_linear_optimization_v2/loto_cv_no_leakage_zero_mean')
     else:
-        output_dir = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization_v2/loto_cv_no_leakage')
+        output_dir = Path(PROJECT_ROOT / 'results/metric_linear_optimization_v2/loto_cv_no_leakage')
     output_dir.mkdir(parents=True, exist_ok=True)
 
     merge_methods = ['weight_avg', 'arithmetic', 'tsv', 'ties', 'dare']

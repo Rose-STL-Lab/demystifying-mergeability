@@ -126,7 +126,6 @@ def main():
                     overrides=[
                         f"merger={merger_config}",
                         "benchmark=N20",
-                        "alignment=false",
                     ]
                 )
 

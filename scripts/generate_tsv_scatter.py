@@ -8,6 +8,8 @@ import matplotlib
 matplotlib.use('Agg')
 from pathlib import Path
 from scipy.stats import pearsonr
+import os
+PROJECT_ROOT = Path(os.environ.get('PROJECT_ROOT', Path(__file__).resolve().parent.parent))
 
 # Set style with serif fonts (LaTeX-like without requiring LaTeX installation)
 plt.rcParams.update({
@@ -24,10 +26,10 @@ plt.rcParams.update({
 })
 
 # Paths
-METRICS_PATH = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
-PERFORMANCE_PATH = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/ViT-B-16/tsv/all_pairwise_summary_N20.json')
-LOTO_RESULTS_PATH = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/metric_linear_optimization/loto_cv/tsv_loto_results.json')
-FIGS_DIR = Path('/home/ubuntu/thesis/MM/Mergeability-Bench/results/figs')
+METRICS_PATH = Path(PROJECT_ROOT / 'results/mergeability/ViT-B-16/pairwise_metrics_N20.json')
+PERFORMANCE_PATH = Path(PROJECT_ROOT / 'results/ViT-B-16/tsv/all_pairwise_summary_N20.json')
+LOTO_RESULTS_PATH = Path(PROJECT_ROOT / 'results/metric_linear_optimization/loto_cv/tsv_loto_results.json')
+FIGS_DIR = Path(PROJECT_ROOT / 'results/figs')
 
 TARGET_METRIC = 'acc/test/avg'
 
